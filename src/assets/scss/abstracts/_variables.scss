@@ -1,0 +1,115 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+// https://bootstrapvars.com/4.4/
+
+//figma
+$grey-0: #f7f7f7;
+$grey-1: #f2f2f2;
+$grey-2: #ebebeb;
+$grey-2-5: #d6d6d6;
+$grey-3: #b6b6b6;
+$grey-4: #929292;
+$grey-5: #5A5A5A;
+$red: #ff0000;
+$green: #44b049;
+$blue: #0057ff;
+$blueHover: rgba(0, 87, 255, 0.8);
+$blue-2-hover: #1858D6;
+$blue-light-hover: #dee9ff;
+$blue-signal: #028dff;
+$blue-signal-active: #0078db;
+$blue-2: #6096ff;
+
+//other
+$grey:                        #a1b0c7;
+$gray-100:                    #f7f7f7;
+$gray-200:                    #e4e4e4;
+$gray-900:                    #30302e;
+$beige-100:                   #f0ebe3;
+$primary:                       $gray-900;
+$secondary:                     $beige-100;
+$success:                       $secondary;
+$info:                          $gray-900;
+$warning:                       $primary;
+$danger:                        $red;
+$black: #1c1c1c;
+$white:                         #fff;
+$decor-black:                   #151a28;
+
+
+// Text Colors
+$text-color-1:                  #111111;
+$text-color-2:                  $primary;
+$text-color-3:                  $black;
+$text-color-4:                  #031532;
+
+
+
+// Font Family
+$font-family: "Onest", sans-serif;
+
+// Font Size
+$font-size-base: 1rem;
+
+// Font Weight
+$font-weight-lighter:           lighter;
+$font-weight-light:             300;
+$font-weight-normal:            400;
+$font-weight-medium:            500;
+$font-weight-semibold:          600;
+$font-weight-bold:              700;
+$font-weight-bolder:            800;
+$font-weight-black:             900;
+$font-weight-base:              $font-weight-light;
+$line-height-base:              1.5;
+
+// Header
+$h1-font-size:                  $font-size-base * 4;
+$h2-font-size:                  $font-size-base * 2.4375;
+$h3-font-size:                  $font-size-base * 1.5;
+$h4-font-size:                  $font-size-base * 0.9375;
+$h5-font-size:                  $font-size-base * 0.75;
+$h6-font-size:                  $font-size-base * 0.6875;
+$h1-line-height:                $font-size-base * 4.5;
+$h2-line-height:                $font-size-base * 3;
+$h3-line-height:                $font-size-base * 2.25;
+$h4-line-height:                $font-size-base * 1.5;
+$h5-line-height:                $font-size-base * 1.5;
+$h6-line-height:                $font-size-base * 1.5;
+
+// Header Touch
+$h1-font-size-touch:            $font-size-base * 2.25;
+$h2-font-size-touch:            $font-size-base * 1.5;
+$h3-font-size-touch:            $font-size-base * 1.0625;
+$h4-font-size-touch:            $font-size-base * 0.875;
+$h5-font-size-touch:            $font-size-base * 0.75;
+$h6-font-size-touch:            $font-size-base * 0.6875;
+$h1-line-height-touch:          $font-size-base * 2.5;
+$h2-line-height-touch:          $font-size-base * 2.25;
+$h3-line-height-touch:          $font-size-base * 1.5;
+$h4-line-height-touch:          $font-size-base * 1.5;
+$h5-line-height-touch:          $font-size-base * 1.5;
+$h6-line-height-touch:          $font-size-base * 1.5;
+
+
+//transition
+$trns: .3s ease-in-out;
+
+// Grid breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+  xxl: 1440px
+);
+
+// Grid containers
+$container-max-widths: (
+  sm: 100%,
+  md: 100%,
+  lg: 940px,
+  xl: 1280px,
+);
