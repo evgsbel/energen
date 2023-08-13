@@ -16,7 +16,7 @@ main {
 }
 
 body {
-  background-color: #fff;
+  background-color: #f7f7f7;
   color: $black;
   font-size: 15px;
   line-height: 1.5;
@@ -27,18 +27,7 @@ body {
   //}
 }
 
-.container {
-    padding-left: 30px;
-    padding-right: 30px;
-}
-div[class*='col-'] {
-    padding-left: 30px;
-    padding-right: 30px;
-}
-.row {
-   margin-left: -30px;
-   margin-right: -30px;
-}
+
 
 /**
  * Make all elements from the DOM inherit from the parent box-sizing
@@ -102,20 +91,20 @@ img {
     border: 1px solid $blue-signal;
     &:hover {
       background-color: $blue-signal-active;
+      color: #fff;
     }
   }
   &_trnsp {
     color: $grey-5;
     border: 1px solid $blue-signal;
+    gap: 0 10px;
     &:hover {
       background-color: $blue-light-hover;
     }
   }
-
   &:focus,
   &:active {
     outline: none;
-    border: none;
     box-shadow: none;
   }
 }
@@ -148,5 +137,64 @@ img {
 .mobile-hidden {
   @include r(768) {
     display: none;
+  }
+}
+
+.section {
+  margin-bottom: 60px;
+}
+
+.row-gap {
+  gap: 30px 0;
+}
+
+.title-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0 5px;
+  line-height: 1;
+  font-weight: 500;
+  transition: color $trns;
+  &:hover {
+    color: $grey-4;
+    svg {
+      stroke:$grey-4 ;
+    }
+  }
+  svg {
+    stroke: #1c1c1c;
+    stroke-width: 2;
+    transition: stroke $trns;
+  }
+}
+
+.slider-navigation {
+  position: absolute;
+  top: 45%;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.35);
+    border-radius: 50%;
+    &_prev {
+      margin-left: -20px;
+    }
+    &_next {
+      margin-right: 35px;
+    }
+    svg {
+      stroke: $grey-4;
+      stroke-width: 2;
+    }
   }
 }

@@ -96,6 +96,13 @@ $h6-line-height-touch:          $font-size-base * 1.5;
 //transition
 $trns: .3s ease-in-out;
 
+//cols
+
+  $columns-count: 4; /* кол-во столбцов */
+  $row-height: 32px; /* высота строчки в столбце */
+  $rows-count: 7; /* кол-во строчек */
+
+
 // Grid breakpoints
 $grid-breakpoints: (
   xs: 0,
@@ -111,5 +118,5 @@ $container-max-widths: (
   sm: 100%,
   md: 100%,
   lg: 940px,
-  xl: 1280px,
+  xl: 1250px,
 );
