@@ -48,12 +48,39 @@ $(function () {
 //
 //
 
-$('.js-open-header-catalog').click(function () {
-  $(this).toggleClass('is-active');
+//hover top menu
+var hoverTimeout;
+$('.js-nav-item-sub').hover(function () {
+  var _this = $(this);
+  hoverTimeout = setTimeout(function () {
+    _this.addClass('hover');
+    _this.find("ul:first").addClass('is-open');
+  }, 700);
+}, function () {
+  //Скрываем меню
+  $(this).removeClass('is-open');
+  $(this).find("ul:first").removeClass('is-open');
+  clearTimeout(hoverTimeout);
 });
-$('.nav-tabs a').on('click', function (e) {
-  e.preventDefault();
-  $(this).tab('show');
+//header catalog
+$(function () {
+  var menu = $(".js-header-catalog"),
+    menuBtn = $(".js-open-header-catalog");
+  menuBtn.on("click", function () {
+    if ($(this).hasClass("is-active")) {
+      $(this).removeClass("is-active");
+      menu.removeClass('is-open');
+    } else {
+      $(this).addClass("is-active");
+      menu.addClass('is-open');
+    }
+  });
+  $(document).click(function (e) {
+    if (!menuBtn.is(e.target) && !menu.is(e.target) && menu.has(e.target).length === 0) {
+      menu.removeClass('is-open');
+      menuBtn.removeClass("is-active");
+    }
+  });
 });
 $(function () {
   // select2
@@ -161,4 +188,72 @@ $(function () {
       prevEl: ".swiper-button-prev"
     }
   });
+});
+
+//change city
+$(function () {
+  $(".js-change-city-btn").click(function (event) {
+    toggleMenu();
+    event.stopPropagation();
+  });
+  $('.js-city-item').click(function () {
+    $('.js-change-city-btn').find('span').html($(this).text());
+    $('.js-change-city-caption').html($(this).text());
+    toggleMenu();
+  });
+  function toggleMenu() {
+    var menu = $(".js-city-drop-down");
+    var menuBtn = $('.js-change-city-btn');
+    if (!menu.hasClass('is-open')) {
+      window.addEventListener('click', closeMenu);
+    } else {
+      window.removeEventListener('click', closeMenu);
+    }
+    menu.toggleClass("is-open");
+    $(document).click(function (e) {
+      if (!menuBtn.is(e.target) && !menu.is(e.target) && menu.has(e.target).length === 0) {
+        menu.removeClass('is-open');
+        menuBtn.removeClass("is-active");
+      }
+    });
+  }
+  function closeMenu() {
+    $(".js-city-drop-down").removeClass("active");
+  }
+  $('.js-city-drop-down').click(function (event) {
+    event.stopPropagation();
+  });
+});
+$('.js-city-field').on('input', function () {
+  var search = $(this).val();
+  searchData(search);
+});
+function searchData(search) {
+  var towns = $('.js-city-item');
+  towns.each(function () {
+    if ($(this).text().toLowerCase().indexOf(search.toLowerCase()) === -1) {
+      $(this).addClass('is-hidden');
+    } else {
+      $(this).removeClass('is-hidden');
+    }
+  });
+}
+
+//search
+$('.header-search__btn').click(function () {
+  $(this).addClass('is-active');
+  $('.js-search-input').addClass('is-visible');
+});
+$('.js-search-field').focus(function () {
+  $('.js-search-drop-down').addClass('is-open');
+});
+$(document).click(function (e) {
+  var input = $(".js-search-input");
+  var inputBtn = $('.js-search-btn');
+  var inputSvg = $('.js-search-btn').find('svg');
+  if (!inputBtn.is(e.target) && !inputSvg.is(e.target) && !input.is(e.target) && input.has(e.target).length === 0) {
+    input.removeClass('is-visible');
+    inputBtn.removeClass("is-active");
+    $('.js-search-drop-down').removeClass('is-open');
+  }
 });

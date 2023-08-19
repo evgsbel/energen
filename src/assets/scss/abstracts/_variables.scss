@@ -98,9 +98,13 @@ $trns: .3s ease-in-out;
 
 //cols
 
-  $columns-count: 4; /* кол-во столбцов */
-  $row-height: 32px; /* высота строчки в столбце */
-  $rows-count: 7; /* кол-во строчек */
+$columns-count: 4; /* кол-во столбцов */
+$row-height: 32px; /* высота строчки в столбце */
+$rows-count: 7; /* кол-во строчек */
+
+$columns-count2: 3; /* кол-во столбцов */
+$row-height2: 30px; /* высота строчки в столбце */
+$rows-count2: 11; /* кол-во строчек */
 
 
 // Grid breakpoints

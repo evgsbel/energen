@@ -381,6 +381,10 @@
     font-size: 14px;
     background-color: $grey-1;
     border-radius: 10px;
+    transition: background-color $trns;
+    &:hover {
+      background-color: $grey-2-5;
+    }
   }
   &__img {
     display: block;

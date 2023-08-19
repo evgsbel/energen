@@ -21,21 +21,72 @@
 <body class="is-home-page">
     <header class="header">
       <div class="header__top">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 d-flex align-items-center justify-content-between">
-    
-              <button class="btn-reset header__location flex flex_ai-center">
-                <svg width="16" height="16">
-                  <use xlink:href="assets/img/sprite.svg#icon-location"></use>
-                </svg>
-                <span>Санкт-Петербург</span>
-              </button>
-              <nav class="header__nav nav">
-                <ul class="nav__list">
+        <div class="container h-100">
+          <div class="row align-items-center h-100">
+            <div class="col-12 d-flex align-items-center justify-content-between h-100">
+              <!--  change city -->
+              <div class="change-city">
+                <button class="btn-reset header__location flex flex_ai-center js-change-city-btn">
+                  <svg width="16" height="16">
+                    <use xlink:href="assets/img/sprite.svg#icon-location"></use>
+                  </svg>
+                  <span>Санкт-Петербург</span>
+                </button>
+                <div class="js-city-drop-down change-city__drop-down">
+                  <div class="x-drop-down__search">
+                    <p class="change-city__caption">Ваш город: <span class="js-change-city-caption">Санкт-Петербург</span>
+                    </p>
+                    <div class="x-input change-city__input">
+                      <input type="text" class="js-city-field change-city__field" autocomplete="off" value=""
+                             placeholder="Введите название Вашего города или выберете из списка ниже">
+                    </div>
+                  </div>
+                  <ul class="x-drop-down__list js-dropdown change-city__list">
+                    <li class="js-city-item  change-city__list-item">Волгоград</li>
+                    <li class="js-city-item  change-city__list-item">Воронеж</li>
+                    <li class="js-city-item  change-city__list-item">Екатеринбург</li>
+                    <li class="js-city-item  change-city__list-item">Ижевск</li>
+                    <li class="js-city-item  change-city__list-item">Казань</li>
+                    <li class="js-city-item  change-city__list-item">Калининград</li>
+                    <li class="js-city-item  change-city__list-item">Кемерово</li>
+                    <li class="js-city-item  change-city__list-item">Кострома</li>
+                    <li class="js-city-item  change-city__list-item">Красноярск</li>
+                    <li class="js-city-item  change-city__list-item">Магнитогорск</li>
+                    <li class="js-city-item  change-city__list-item">Москва</li>
+                    <li class="js-city-item  change-city__list-item">Набережные челны</li>
+                    <li class="js-city-item  change-city__list-item">Новосибирск</li>
+                    <li class="js-city-item  change-city__list-item">Нижний Новгород</li>
+                    <li class="js-city-item  change-city__list-item">Омск</li>
+                    <li class="js-city-item  change-city__list-item">Пенза</li>
+                    <li class="js-city-item  change-city__list-item">Пермь</li>
+                    <li class="js-city-item  change-city__list-item">Ростов-на-Дону</li>
+                    <li class="js-city-item  change-city__list-item">Самара</li>
+                    <li class="js-city-item  change-city__list-item">Санкт-Петербург</li>
+                    <li class="js-city-item  change-city__list-item"> Тюмень</li>
+                    <li class="js-city-item  change-city__list-item">Уфа</li>
+                    <li class="js-city-item  change-city__list-item">Челябинск</li>
+                  </ul>
+                </div>
+              </div>
+              <nav class="header__nav nav h-100">
+                <ul class="nav__list h-100">
                   <li class="nav__item"><a href="" class="nav__link">Производство</a></li>
-                  <li class="nav__item nav__item_sub"><a href="" class="nav__link">Услуги и сервис</a></li>
-                  <li class="nav__item nav__item_sub"><a href="" class="nav__link">О заводе</a></li>
+                  <li class="nav__item nav__item_sub js-nav-item-sub">
+                    <a href="" class="nav__link">Услуги и сервис</a>
+                    <ul class="sub-menu">
+                      <li class="sub-menu__item"><a href="" class="sub-menu__link">Аренда электростанций</a></li>
+                      <li class="sub-menu__item"><a href="" class="sub-menu__link">Сервис и ремонт</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav__item nav__item_sub js-nav-item-sub">
+                    <a href="" class="nav__link">О заводе</a>
+                    <ul class="sub-menu">
+                      <li class="sub-menu__item"><a href="" class="sub-menu__link">О компании</a></li>
+                      <li class="sub-menu__item"><a href="" class="sub-menu__link">Оплата</a></li>
+                      <li class="sub-menu__item"><a href="" class="sub-menu__link">Отзывы</a></li>
+                      <li class="sub-menu__item"><a href="" class="sub-menu__link">Гарантия</a></li>
+                    </ul>
+                  </li>
                   <li class="nav__item"><a href="" class="nav__link">Доставка</a></li>
                   <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
                 </ul>
@@ -84,12 +135,91 @@
                   Каталог
                 </button>
               </div>
-              <div class="header-search">
-                <button class="btn-reset header-search__btn">
+              <!--  search-->
+              <div class="header-search position-relative">
+                <form action="" class="header-search__bar js-search-input">
+                  <input type="search" name="search" pattern=".*\S.*" class=" header-search__input js-search-field" autocomplete="off">
+                  <button class="header-search__reset btn-reset" type="reset">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-close-sm"></use>
+                    </svg>
+                  </button>
+                </form>
+                <button class="btn-reset header-search__btn js-search-btn" type="button">
                   <svg width="24" height="24">
                     <use xlink:href="assets/img/sprite.svg#icon-loup"></use>
                   </svg>
                 </button>
+                <div class="header-search__drop-down js-search-drop-down" data-simplebar="" data-simplebar-auto-hide="false">
+                  <ul class="header-search__list">
+                    <li class="header-search__list-item header-search__list-item_with-close">
+                      <a href="" class="header-search__list-link">дизельный генератор</a>
+                      <button class="header-search__del btn-reset">
+                        <svg width="24" height="24">
+                          <use xlink:href="assets/img/sprite.svg#icon-close-sm"></use>
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="header-search__list-item header-search__list-item_with-close">
+                      <a href="" class="header-search__list-link">дизельный генератор 100 кВт</a>
+                      <button class="header-search__del btn-reset">
+                        <svg width="24" height="24">
+                          <use xlink:href="assets/img/sprite.svg#icon-close-sm"></use>
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="header-search__list-item header-search__list-item_with-close">
+                      <a href="" class="header-search__list-link">дизельный генератор 100 кВт в кожухе</a>
+                      <button class="header-search__del btn-reset">
+                        <svg width="24" height="24">
+                          <use xlink:href="assets/img/sprite.svg#icon-close-sm"></use>
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
+                  <ul class="header-search__list">
+                    <li class="header-search__list-item"><a href="" class="header-search__list-link">дизельный генератор 100 кВт в кожухе</a></li>
+                    <li class="header-search__list-item"><a href="" class="header-search__list-link">дизельный генератор 100 кВт в контейнере</a></li>
+                    <li class="header-search__list-item"><a href="" class="header-search__list-link">дизельный генератор 100 кВт передвижной</a></li>
+                    <li class="header-search__list-item"><a href="" class="header-search__list-link">дизельный генератор 100 кВт резервный</a></li>
+                  </ul>
+                  <ul class="header-search__list">
+                    <li class="header-search__list-item">
+                      <a href="" class="header-search__list-link">дизельный генератор 100 кВт в кожухе</a>
+                      <span>Категория</span>
+                    </li>
+                    <li class="header-search__list-item">
+                      <a href="" class="header-search__list-link">дизельный генератор 100 кВт в контейнере</a>
+                      <span>Категория</span>
+                    </li>
+                    <li class="header-search__list-item">
+                      <a href="" class="header-search__list-link">дизельный генератор 100 кВт передвижной</a>
+                      <span>Категория</span>
+                    </li>
+                    <li class="header-search__list-item">
+                      <a href="" class="header-search__list-link">дизельный генератор 100 кВт резервный</a>
+                      <span>Категория</span>
+                    </li>
+                  </ul>
+                  <ul class="header-search__list">
+                    <li class="header-search__list-item">
+                      <a href="" class="header-search__list-link">Cummins</a>
+                      <span>Бренды</span>
+                    </li>
+                    <li class="header-search__list-item">
+                      <a href="" class="header-search__list-link">ТСС</a>
+                      <span>Бренды</span>
+                    </li>
+                    <li class="header-search__list-item">
+                      <a href="" class="header-search__list-link">SDMO</a>
+                      <span>Бренды</span>
+                    </li>
+                    <li class="header-search__list-item">
+                      <a href="" class="header-search__list-link">FG Wilson</a>
+                      <span>Бренды</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
               <div class="header__contacts-item">
                 <a href="mailto:info@dizel-generator.ru" class="header__contact">info@dizel-generator.ru</a>
@@ -104,28 +234,209 @@
                 <a href="" class="header__contacts-link">Заказать звонок</a>
               </div>
               <a href="" class="header__mini-cart mini-cart header__icon">
-                 <svg width="24" height="24">
-                    <use xlink:href="assets/img/sprite.svg#icon-cart"></use>
-                  </svg>
+                <svg width="24" height="24">
+                  <use xlink:href="assets/img/sprite.svg#icon-cart"></use>
+                </svg>
                 <span>Корзина</span>
               </a>
               <a href="" class="header__favorite header__icon">
-                 <svg width="24" height="24">
-                    <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
-                  </svg>
+                <svg width="24" height="24">
+                  <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                </svg>
                 <span>Отложено</span>
               </a>
               <a href="" class="header__compare header__icon">
-                 <svg width="24" height="24">
-                    <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
-                  </svg>
+                <svg width="24" height="24">
+                  <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                </svg>
                 <span>Сравнение</span>
               </a>
             </div>
           </div>
+    
         </div>
       </div>
+      <!--  catalog menu-->
+      <div class="catalog-menu  js-header-catalog">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="catalog-menu__nav">
+                <ul class="nav catalog-menu__nav-list" role="tablist">
+                  <li class="catalog-menu__nav-item">
+                    <a class="catalog-menu__nav-link active" data-toggle="tab" href="#menu-one" role="tab">Дизельные
+                      генераторы</a>
+                  </li>
+                  <li class="catalog-menu__nav-item">
+                    <a class="catalog-menu__nav-link" data-toggle="tab" href="#menu-two" role="tab" aria-selected="false">Газовые
+                      генераторы</a>
+                  </li>
+                  <li class="catalog-menu__nav-item">
+                    <a class="catalog-menu__nav-link" data-toggle="tab" href="#menu-tree" role="tab"
+                       aria-selected="false">ИБП</a>
+                  </li>
+                  <li class="catalog-menu__nav-item">
+                    <a class="catalog-menu__nav-link" data-toggle="tab" href="#menu-four" role="tab" aria-selected="false">Стабилизаторы
+                      напряжения</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-content" id="">
+                <div class="catalog-menu__wrapper  tab-pane fade show active" id="menu-one" role="tabpanel"
+                     aria-labelledby="home-tab">
+                  <div class="catalog-menu__content">
+                    <div class="catalog-menu__col">
+                      <p class="catalog-menu__caption">Подбор по мощности</p>
+                      <ul class="catalog-menu__list">
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">10 кВт</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">12 кВт</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">15 кВт</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">16 кВт</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">20 кВт</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">25 кВт</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">30 кВт</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">40 кВт</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">50 кВт</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">60 кВт</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">70 кВт</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">75 кВт</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">80 кВт</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">100 кВт</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">120 кВт</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">150 кВт</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">160 кВт</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">200 кВт</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">220 кВт</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">250 кВт</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">300 кВт</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">350 кВт</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">400 кВт</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">500 кВт</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">600 кВт</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">800 кВт</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">900 кВт</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">1000 кВт</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">1100 кВт</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">2000 кВт</a></li>
+                      </ul>
+                      <a href="" class="catalog-menu__link-all">
+                        Все мощности
+                        <svg width="24" height="24">
+                          <use xlink:href="assets/img/sprite.svg#icon-arrow-right"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="catalog-menu__col">
+                      <p class="catalog-menu__caption">По марке</p>
+                      <ul class="catalog-menu__list">
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">ТСС</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Азимут</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Wilson</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">SDMO</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Cummins</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">ЯМЗ</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">AKSA</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Perkins</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Caterpillar</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Iveco</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">АД</a></li>
+                      </ul>
+                      <a href="" class="catalog-menu__link-all">
+                        Все марки
+                        <svg width="24" height="24">
+                          <use xlink:href="assets/img/sprite.svg#icon-arrow-right"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="catalog-menu__col">
+                      <p class="catalog-menu__caption">По марке</p>
+                      <ul class="catalog-menu__list h-auto">
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">С автозапуском</a>
+                        </li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Промышленный</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">В контейнере</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Передвижной</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">В кожухе</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Резервный</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Стационарный</a></li>
+                      </ul>
+                      <p class="catalog-menu__caption ">Оснащение ДГУ</p>
+                      <ul class="catalog-menu__list h-auto">
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Кожухи для
+                          генераторов</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Контейнеры для
+                          генераторов</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Контейнер Север для
+                          ДГУ</a></li>
+                      </ul>
+                    </div>
+                    <div class="catalog-menu__col w-25">
+                      <p class="catalog-menu__caption">Популярные подборки</p>
+                      <ul class="catalog-menu__scroll-list js-scroll-list" data-simplebar data-simplebar-auto-hide="false">
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Дизель генератор с
+                          автозапуском</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Дизель генератор на
+                          шасси</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Дизель генератор
+                          промышленный</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Дизель генератор
+                          380В</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Дизель генератор с
+                          АВР</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Дизель генератор 380В
+                          с автозапуском</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Дизель генератор
+                          трехфазный</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Генератор
+                          трехфазный</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Генератор в
+                          кожухе</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Дизель генератор
+                          ТСС</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Дизель генератор
+                          SDMO</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Дизель генератор
+                          SDMO</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Дизель генератор
+                          SDMO</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Дизель генератор
+                          SDMO</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Дизель генератор
+                          SDMO</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Дизель генератор
+                          SDMO</a></li>
+                        <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Дизель генератор
+                          SDMO</a></li>
+                      </ul>
+                    </div>
+                  </div>
+    
+                </div>
+                <div class="catalog-menu__content tab-pane fade" id="menu-two" role="tabpanel" aria-labelledby="home-tab">
+                  456
+                </div>
+                <div class="catalog-menu__content tab-pane fade" id="menu-tree" role="tabpanel" aria-labelledby="home-tab">
+                  789
+                </div>
+                <div class="catalog-menu__content tab-pane fade" id="menu-four" role="tabpanel" aria-labelledby="home-tab">
+                  000
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn-reset btn catalog-menu__btn">
+            Перейти в каталог
+            <svg width="24" height="24">
+              <use xlink:href="assets/img/sprite.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    
+    
     </header>
+    
+    
     <main role="main" class="main">
         
         <section class="hero section">
@@ -175,7 +486,7 @@
                                     type="number"
                                     class="main-filters__power main-filters__power_from"
                                     id="power_from"
-                                    value="10">
+                                    placeholder="10">
                                 </label>
                                 <label for="power_to" class="main-filters__label">
                                   <span class="main-filters__caption main-filters__caption_power">мощность, кВт</span>
@@ -184,7 +495,7 @@
                                     type="number"
                                     class="main-filters__power main-filters__power_to"
                                     id="power_to"
-                                    value="3200">
+                                    placeholder="3200">
                                 </label>
                               </div>
                               <div class="main-filters__group">
@@ -882,12 +1193,12 @@
                     <p class="directions__description">Электростанции, произведённые в России не уступают по качеству
                       электростанциям зарубежного производства и лучше подготовлены к российским реалиям.</p>
                     <ul class="directions__tags-list">
-                      <li class="directions__tags-item">ММЗ</li>
-                      <li class="directions__tags-item">Perkins</li>
-                      <li class="directions__tags-item">Mitsubishi</li>
-                      <li class="directions__tags-item">Iveco-FPT</li>
-                      <li class="directions__tags-item">Doosan</li>
-                      <li class="directions__tags-item">Volvo Penta</li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">ММЗ</a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Perkins</a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Mitsubishi</a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Iveco-FPT</a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Doosan</a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Volvo Penta</a></li>
                     </ul>
                   </div>
                   <img src="assets/img/dr-01.png" alt="" class="directions__img">
@@ -900,9 +1211,9 @@
                     <p class="directions__description">Мы выпускаем несколько типов блок-контейнеров для размещения
                       электростанций и устанавливаем в них генераторы различной мощности.</p>
                     <ul class="directions__tags-list">
-                      <li class="directions__tags-item">Серия “БКМ” на базе морских контейнеров</li>
-                      <li class="directions__tags-item">Серия “БКС” из сендвич-панелей</li>
-                      <li class="directions__tags-item">Серия “БКС-Мини” уменьшенного размера</li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Серия “БКМ” на базе морских контейнеров</a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Серия “БКС” из сендвич-панелей</a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Серия “БКС-Мини” уменьшенного размера</a></li>
                     </ul>
                   </div>
                   <img src="assets/img/dr-02.png" alt="" class="directions__img">
@@ -915,9 +1226,9 @@
                     <p class="directions__description">Производственный комплекс выпускает несколько модификаций кожухов для
                       защиты электростанций от внешней среды, которые разработал наш отдел проектирования.</p>
                     <ul class="directions__tags-list">
-                      <li class="directions__tags-item">Погодозащитный капот</li>
-                      <li class="directions__tags-item">Шумозащитный кохуж “Standart”</li>
-                      <li class="directions__tags-item">Шумозащитный кохуж “Winter” до -30С</li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Погодозащитный капот</a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Шумозащитный кохуж “Standart”</a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Шумозащитный кохуж “Winter” до -30С</a></li>
                     </ul>
                   </div>
                   <img src="assets/img/dr-03.png" alt="" class="directions__img">
@@ -930,12 +1241,12 @@
                     <p class="directions__description">Мы являемся официальными дилерами зарубежных производителей
                       электростанций с полномочиями продажи и последующего гарантийного обслуживания.</p>
                     <ul class="directions__tags-list">
-                      <li class="directions__tags-item">SDMO (Франиция)</li>
-                      <li class="directions__tags-item">AKSA (Турция)</li>
-                      <li class="directions__tags-item">FG Wilson (Англия)</li>
-                      <li class="directions__tags-item">Pramac (Итлаия)</li>
-                      <li class="directions__tags-item">Cummins (США)</li>
-                      <li class="directions__tags-item">Teksan (Турция)</li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">SDMO (Франиция)</a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">AKSA (Турция)</a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">FG Wilson (Англия)</a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Pramac (Итлаия)</a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Cummins (США)</a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Teksan (Турция)</a></li>
                     </ul>
                   </div>
                   <img src="assets/img/dr-01.png" alt="" class="directions__img">
@@ -948,12 +1259,12 @@
                     <p class="directions__description">Производим электростанции для использования в качестве основного
                       источника энергии на природном газе в контейнерах и открытом исполнении.</p>
                     <ul class="directions__tags-list">
-                      <li class="directions__tags-item">SDMO (Франиция)</li>
-                      <li class="directions__tags-item">AKSA (Турция)</li>
-                      <li class="directions__tags-item">FG Wilson (Англия)</li>
-                      <li class="directions__tags-item">Pramac (Итлаия)</li>
-                      <li class="directions__tags-item">Cummins (США)</li>
-                      <li class="directions__tags-item">Teksan (Турция)</li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">SDMO (Франиция)</a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">AKSA (Турция)</a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">FG Wilson (Англия)</a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Pramac (Итлаия)</a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Cummins (США)</a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Teksan (Турция)</a></li>
                     </ul>
                   </div>
                   <img src="assets/img/dr-05.png" alt="" class="directions__img">
@@ -967,12 +1278,12 @@
                     <p class="directions__description">Производим и поставляем электростанции единичной мощностью до 3200 кВт и
                       энергокомплексы из нескольких электростанций с паралельной работой.</p>
                     <ul class="directions__tags-list">
-                      <li class="directions__tags-item">1 мВт</li>
-                      <li class="directions__tags-item">1,5 мВт</li>
-                      <li class="directions__tags-item">2,0 мВт</li>
-                      <li class="directions__tags-item">2,5 мВт</li>
-                      <li class="directions__tags-item">3,0 мВт</li>
-                      <li class="directions__tags-item">3,0 мВт</li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">1 мВт</a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">1,5 мВт</a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">2,0 мВт</a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">2,5 мВт</a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">3,0 мВт</a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">3,0 мВт</a></li>
                     </ul>
                   </div>
                   <img src="assets/img/dr-06.png" alt="" class="directions__img">
