@@ -50,6 +50,9 @@ ul {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
+  @include r(1280) {
+    font-size: 30px;
+  }
 }
 
 .title-h2 {

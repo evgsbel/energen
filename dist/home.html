@@ -132,7 +132,7 @@
                   <span class="header-catalog__lines">
                     <i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>
                   </span>
-                  Каталог
+                  <span class="header-catalog__title">Каталог</span>
                 </button>
               </div>
               <!--  search-->
@@ -222,15 +222,15 @@
                 </div>
               </div>
               <div class="header__contacts-item">
-                <a href="mailto:info@dizel-generator.ru" class="header__contact">info@dizel-generator.ru</a>
+                <p class="header__contact">info@dizel-generator.ru</p>
                 <a href="" class="header__contacts-link">Отправить заявку</a>
               </div>
               <div class="header__contacts-item">
-                <a href="tel:88009007070" class="header__contact">8 (800) 900-70-70</a>
+                <p class="header__contact">8 (800) 900-70-70</p>
                 <p class="header__contacts-text">Бесплатно по России</p>
               </div>
               <div class="header__contacts-item">
-                <a href="+78009007070" class="header__contact">+7 (800) 900-70-70</a>
+                <p class="header__contact">+7 (800) 900-70-70</p>
                 <a href="" class="header__contacts-link">Заказать звонок</a>
               </div>
               <a href="" class="header__mini-cart mini-cart header__icon">
@@ -453,31 +453,58 @@
                           генераторы</a>
                       </li>
                       <li class="main-filters__nav-item">
-                        <a class="main-filters__nav-link" data-toggle="tab" href="#three" role="tab" aria-selected="false">Стабилизаторы
-                          напряжения</a>
-                      </li>
-                      <li class="main-filters__nav-item">
                         <a class="main-filters__nav-link" data-toggle="tab" href="#two" role="tab" aria-selected="false">ИБП</a>
                       </li>
                       <li class="main-filters__nav-item">
                         <a class="main-filters__nav-link" data-toggle="tab" href="#five" role="tab" aria-selected="false">Газопоршневые
                           генераторы</a>
                       </li>
+                      <li class="main-filters__nav-item">
+                        <a class="main-filters__nav-link" data-toggle="tab" href="#three" role="tab" aria-selected="false">Стабилизаторы
+                          <span>напряжения</span></a>
+                      </li>
                     </ul>
                     <div class="tab-content main-filters__tab-wrapper" id="">
                       <div class="tab-pane fade show active" id="one" role="tabpanel" aria-labelledby="home-tab">
-                        <div class="main-filters__tags">
-                          <button class="btn-reset main-filters__tags-btn">Немецкие</button>
-                          <button class="btn-reset main-filters__tags-btn">Бесшумные</button>
-                          <button class="btn-reset main-filters__tags-btn">Автономные</button>
-                          <button class="btn-reset main-filters__tags-btn">Уличные</button>
-                          <button class="btn-reset main-filters__tags-btn">Японские</button>
-                          <button class="btn-reset main-filters__tags-btn">Стационарные</button>
-                          <button class="btn-reset main-filters__tags-btn">С водяным охлаждением</button>
+                        <div class="main-filters__tags js-main-filters-tags swiper">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <a href="" class="btn-reset main-filters__tags-btn">Немецкие</a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a href="" class="btn-reset main-filters__tags-btn">Бесшумные</a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a href="" class="btn-reset main-filters__tags-btn">Автономные</a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a href="" class="btn-reset main-filters__tags-btn">Уличные</a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a href="" class="btn-reset main-filters__tags-btn">Японские</a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a href="" class="btn-reset main-filters__tags-btn">Стационарные</a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a href="" class="btn-reset main-filters__tags-btn">С водяным охлаждением</a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a href="" class="btn-reset main-filters__tags-btn">Уличные</a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a href="" class="btn-reset main-filters__tags-btn">Японские</a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a href="" class="btn-reset main-filters__tags-btn">Стационарные</a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a href="" class="btn-reset main-filters__tags-btn">С водяным охлаждением</a>
+                            </div>
+                          </div>
                         </div>
                         <form class="hero-form main-filters__form">
                           <div class="main-filters__row">
-                            <div class="main-filters__col main-filters__col_power">
                               <div class="main-filters__group">
                                 <label for="power_from" class="main-filters__label">
                                   <span class="main-filters__caption main-filters__caption_power">мощность, кВт</span>
@@ -517,8 +544,6 @@
                                   </select>
                                 </label>
                               </div>
-                            </div>
-                            <div class="main-filters__col">
                               <div class="main-filters__group">
                                 <label for="mark" class="main-filters__label">
                                   <span class="main-filters__caption">марка двигателя</span>
@@ -557,8 +582,6 @@
                                   </select>
                                 </label>
                               </div>
-                            </div>
-                            <div class="main-filters__col">
                               <div class="main-filters__group">
                                 <label for="voltage" class="main-filters__label">
                                   <span class="main-filters__caption">напряжение тока, В</span>
@@ -600,31 +623,31 @@
                                 </label>
                               </div>
                             </div>
-                            <div class="main-filters__col">
-                              <button class="btn-reset btn btn_blue main-filters__btn-blue">
-                                <svg width="24" height="24">
-                                  <use xlink:href="assets/img/sprite.svg#icon-loup"></use>
-                                </svg>
-                                Подобрать
-                              </button>
-                              <button class="btn-reset btn btn_trnsp main-filters__btn-trnsp">
-                                Перейти в каталог
-                                <svg width="24" height="24">
-                                  <use xlink:href="assets/img/sprite.svg#icon-arrow-right"></use>
-                                </svg>
-                              </button>
-                            </div>
+        
+                          <div class="main-filters__col">
+                            <button class="btn-reset btn btn_blue main-filters__btn-blue">
+                              <svg width="24" height="24">
+                                <use xlink:href="assets/img/sprite.svg#icon-loup"></use>
+                              </svg>
+                              Подобрать
+                            </button>
+                            <button class="btn-reset btn btn_trnsp main-filters__btn-trnsp">
+                              Перейти в каталог
+                              <svg width="24" height="24">
+                                <use xlink:href="assets/img/sprite.svg#icon-arrow-right"></use>
+                              </svg>
+                            </button>
                           </div>
-                        </form>
-                      </div>
-                      <div class="tab-pane fade" id="two" role="tabpanel" aria-labelledby="profile-tab">465</div>
-                      <div class="tab-pane fade" id="three" role="tabpanel" aria-labelledby="contact-tab">789</div>
-                      <div class="tab-pane fade" id="five" role="tabpanel" aria-labelledby="contact-tab">131415</div>
+                      </form>
                     </div>
+                    <div class="tab-pane fade" id="two" role="tabpanel" aria-labelledby="profile-tab">465</div>
+                    <div class="tab-pane fade" id="three" role="tabpanel" aria-labelledby="contact-tab">789</div>
+                    <div class="tab-pane fade" id="five" role="tabpanel" aria-labelledby="contact-tab">131415</div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
           </div>
         </section>
         <section class="generators section">
@@ -1211,9 +1234,12 @@
                     <p class="directions__description">Мы выпускаем несколько типов блок-контейнеров для размещения
                       электростанций и устанавливаем в них генераторы различной мощности.</p>
                     <ul class="directions__tags-list">
-                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Серия “БКМ” на базе морских контейнеров</a></li>
-                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Серия “БКС” из сендвич-панелей</a></li>
-                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Серия “БКС-Мини” уменьшенного размера</a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Серия “БКМ” на базе морских
+                        контейнеров</a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Серия “БКС” из
+                        сендвич-панелей</a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Серия “БКС-Мини” уменьшенного
+                        размера</a></li>
                     </ul>
                   </div>
                   <img src="assets/img/dr-02.png" alt="" class="directions__img">
@@ -1227,8 +1253,10 @@
                       защиты электростанций от внешней среды, которые разработал наш отдел проектирования.</p>
                     <ul class="directions__tags-list">
                       <li class="directions__tags-item"><a href="" class="directions__tags-link">Погодозащитный капот</a></li>
-                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Шумозащитный кохуж “Standart”</a></li>
-                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Шумозащитный кохуж “Winter” до -30С</a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Шумозащитный кохуж
+                        “Standart”</a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Шумозащитный кохуж “Winter” до
+                        -30С</a></li>
                     </ul>
                   </div>
                   <img src="assets/img/dr-03.png" alt="" class="directions__img">
@@ -1237,16 +1265,18 @@
               <div class="col-md-4">
                 <div class="directions__item">
                   <div class="directions__inner">
-                    <p class="directions__caption">Генераторы ведущих зарубежных производителей</p>
+                    <p class="directions__caption">Поставляем генераторы ведущих зарубежных производителей</p>
                     <p class="directions__description">Мы являемся официальными дилерами зарубежных производителей
                       электростанций с полномочиями продажи и последующего гарантийного обслуживания.</p>
                     <ul class="directions__tags-list">
-                      <li class="directions__tags-item"><a href="" class="directions__tags-link">SDMO (Франиция)</a></li>
-                      <li class="directions__tags-item"><a href="" class="directions__tags-link">AKSA (Турция)</a></li>
-                      <li class="directions__tags-item"><a href="" class="directions__tags-link">FG Wilson (Англия)</a></li>
-                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Pramac (Итлаия)</a></li>
-                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Cummins (США)</a></li>
-                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Teksan (Турция)</a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">SDMO <span>(Франиция)</span></a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">AKSA <span>(Турция)</span></a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">FG Wilson <span>(Англия)</span></a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Pramac <span>(Итлаия)</span></a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Cummins <span>(США)</span></a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Teksan <span>(Турция)</span></a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Teksan <span>(Турция)</span></a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Teksan <span>(Турция)</span></a></li>
                     </ul>
                   </div>
                   <img src="assets/img/dr-01.png" alt="" class="directions__img">
@@ -1259,12 +1289,14 @@
                     <p class="directions__description">Производим электростанции для использования в качестве основного
                       источника энергии на природном газе в контейнерах и открытом исполнении.</p>
                     <ul class="directions__tags-list">
-                      <li class="directions__tags-item"><a href="" class="directions__tags-link">SDMO (Франиция)</a></li>
-                      <li class="directions__tags-item"><a href="" class="directions__tags-link">AKSA (Турция)</a></li>
-                      <li class="directions__tags-item"><a href="" class="directions__tags-link">FG Wilson (Англия)</a></li>
-                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Pramac (Итлаия)</a></li>
-                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Cummins (США)</a></li>
-                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Teksan (Турция)</a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">SDMO <span>(Франиция)</span></a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">AKSA <span>(Турция)</span></a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">FG Wilson <span>(Англия)</span></a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Pramac <span>(Итлаия)</span></a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Cummins <span>(США)</span></a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Teksan <span>(Турция)</span></a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Teksan <span>(Турция)</span></a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">Teksan <span>(Турция)</span></a></li>
                     </ul>
                   </div>
                   <img src="assets/img/dr-05.png" alt="" class="directions__img">
@@ -1284,6 +1316,7 @@
                       <li class="directions__tags-item"><a href="" class="directions__tags-link">2,5 мВт</a></li>
                       <li class="directions__tags-item"><a href="" class="directions__tags-link">3,0 мВт</a></li>
                       <li class="directions__tags-item"><a href="" class="directions__tags-link">3,0 мВт</a></li>
+                      <li class="directions__tags-item"><a href="" class="directions__tags-link">>3,0 мВт</a></li>
                     </ul>
                   </div>
                   <img src="assets/img/dr-06.png" alt="" class="directions__img">
@@ -1359,96 +1392,96 @@
                   <div class="populars__item">
                     <div class="populars__inner">
                       <div class="populars__heading">
-                        <p class="populars__caption">30 кВт</p>
+                        <p class="populars__caption">0000 кВт</p>
                         <svg width="24" height="24">
                           <use xlink:href="assets/img/sprite.svg#icon-arrow-right-blue"></use>
                         </svg>
                       </div>
-                      <p class="populars__count">12 моделей</p>
+                      <p class="populars__count">0000 моделей</p>
                     </div>
                     <div class="populars__circle" style="border-color: #01AFEA;"></div>
                   </div>
                   <div class="populars__item">
                     <div class="populars__inner">
                       <div class="populars__heading">
-                        <p class="populars__caption">50 кВт</p>
+                        <p class="populars__caption">0000 кВт</p>
                         <svg width="24" height="24">
                           <use xlink:href="assets/img/sprite.svg#icon-arrow-right-blue"></use>
                         </svg>
                       </div>
-                      <p class="populars__count">10 моделей</p>
+                      <p class="populars__count">0000 моделей</p>
                     </div>
                     <div class="populars__circle" style="border-color: #01E284;"></div>
                   </div>
                   <div class="populars__item">
                     <div class="populars__inner">
                       <div class="populars__heading">
-                        <p class="populars__caption">100 кВт</p>
+                        <p class="populars__caption">0000 кВт</p>
                         <svg width="24" height="24">
                           <use xlink:href="assets/img/sprite.svg#icon-arrow-right-blue"></use>
                         </svg>
                       </div>
-                      <p class="populars__count">25 моделей</p>
+                      <p class="populars__count">0000 моделей</p>
                     </div>
                     <div class="populars__circle" style="border-color: #15FF42;"></div>
                   </div>
                   <div class="populars__item">
                     <div class="populars__inner">
                       <div class="populars__heading">
-                        <p class="populars__caption">120 кВт</p>
+                        <p class="populars__caption">0000 кВт</p>
                         <svg width="24" height="24">
                           <use xlink:href="assets/img/sprite.svg#icon-arrow-right-blue"></use>
                         </svg>
                       </div>
-                      <p class="populars__count">30 моделей</p>
+                      <p class="populars__count">0000 моделей</p>
                     </div>
                     <div class="populars__circle" style="border-color: #68FF29;"></div>
                   </div>
                   <div class="populars__item">
                     <div class="populars__inner">
                       <div class="populars__heading">
-                        <p class="populars__caption">200 кВт</p>
+                        <p class="populars__caption">0000 кВт</p>
                         <svg width="24" height="24">
                           <use xlink:href="assets/img/sprite.svg#icon-arrow-right-blue"></use>
                         </svg>
                       </div>
-                      <p class="populars__count">10 моделей</p>
+                      <p class="populars__count">10000 моделей</p>
                     </div>
                     <div class="populars__circle" style="border-color: #BAFF10;"></div>
                   </div>
                   <div class="populars__item">
                     <div class="populars__inner">
                       <div class="populars__heading">
-                        <p class="populars__caption">250 кВт</p>
+                        <p class="populars__caption">0000 кВт</p>
                         <svg width="24" height="24">
                           <use xlink:href="assets/img/sprite.svg#icon-arrow-right-blue"></use>
                         </svg>
                       </div>
-                      <p class="populars__count">5 моделей</p>
+                      <p class="populars__count">0000 моделей</p>
                     </div>
                     <div class="populars__circle" style="border-color: #EED701;"></div>
                   </div>
                   <div class="populars__item">
                     <div class="populars__inner">
                       <div class="populars__heading">
-                        <p class="populars__caption">400 кВт</p>
+                        <p class="populars__caption">0000 кВт</p>
                         <svg width="24" height="24">
                           <use xlink:href="assets/img/sprite.svg#icon-arrow-right-blue"></use>
                         </svg>
                       </div>
-                      <p class="populars__count">13 моделей</p>
+                      <p class="populars__count">0000 моделей</p>
                     </div>
                     <div class="populars__circle" style="border-color: #F76701;"></div>
                   </div>
                   <div class="populars__item">
                     <div class="populars__inner">
                       <div class="populars__heading">
-                        <p class="populars__caption">500 кВт</p>
+                        <p class="populars__caption">0000 кВт</p>
                         <svg width="24" height="24">
                           <use xlink:href="assets/img/sprite.svg#icon-arrow-right-blue"></use>
                         </svg>
                       </div>
-                      <p class="populars__count">7 моделей</p>
+                      <p class="populars__count">0000 моделей</p>
                     </div>
                     <div class="populars__circle" style="border-color: #FF0901;"></div>
                   </div>
@@ -2317,7 +2350,7 @@
         <section class="section faq">
           <div class="container">
             <div class="row">
-              <div class="col-md-8">
+              <div class="col-xl-8 col-md-7">
                 <h2 class="title-h2">Ответы на популярные вопросы</h2>
                 <div id="accordion">
                   <div class="faq__item">
@@ -2368,7 +2401,8 @@
                     </div>
                   </div>
                   <div class="faq__item">
-                    <button class="btn-reset faq__open collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+                    <button class="btn-reset faq__open collapsed" data-toggle="collapse" data-target="#collapseFour"
+                            aria-expanded="false" aria-controls="collapseTwo">
                       <span>Личный кабинет на Маркетплейсе ВБЦ?</span>
                       <svg width="24" height="24">
                         <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
@@ -2376,13 +2410,14 @@
                     </button>
                     <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
                       <div class="faq__content">
-                         Достаточно лишь зарегистрироваться указав ваши ФИО, e-mail, телефон и ИНН. При этом для полноценной
-                          работы вам потребуется Квалифицированная Электронная Подпись.
+                        Достаточно лишь зарегистрироваться указав ваши ФИО, e-mail, телефон и ИНН. При этом для полноценной
+                        работы вам потребуется Квалифицированная Электронная Подпись.
                       </div>
                     </div>
                   </div>
                   <div class="faq__item">
-                    <button class="btn-reset faq__open collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                    <button class="btn-reset faq__open collapsed" data-toggle="collapse" data-target="#collapseFive"
+                            aria-expanded="false" aria-controls="collapseThree">
                       <span> Личный кабинет на Маркетплейсе ВБЦ?</span>
                       <svg width="24" height="24">
                         <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
@@ -2396,7 +2431,8 @@
                     </div>
                   </div>
                   <div class="faq__item">
-                    <button class="btn-reset faq__open collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                    <button class="btn-reset faq__open collapsed" data-toggle="collapse" data-target="#collapseSix"
+                            aria-expanded="false" aria-controls="collapseThree">
                       <span> Личный кабинет на Маркетплейсе ВБЦ?</span>
                       <svg width="24" height="24">
                         <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
@@ -2411,14 +2447,15 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-xl-4 col-md-5">
                 <div class="feedback">
-        <p class="feedback__caption">Остались вопросы?</p>
+                  <p class="feedback__caption">Остались вопросы?</p>
                   <p class="feedback__subcaption">Напишите и мы ответим в течении 5 минут</p>
                   <form action="" class="form feedback__form">
                     <label for="feed-phone" class="form__label">
                       <span class="form__caption">номер телефона</span>
-                      <input type="tel" name="feed-phone" id="feed-phone" placeholder="+7 911-609-73-15" class="form__input phone-mask">
+                      <input type="tel" name="feed-phone" id="feed-phone" placeholder="+7 911-609-73-15"
+                             class="form__input phone-mask">
                     </label>
                     <label for="feed-mess" class="form__label">
                       <span class="form__caption">название поля</span>

@@ -66,21 +66,28 @@ $('.js-nav-item-sub').hover(function () {
 $(function () {
   var menu = $(".js-header-catalog"),
     menuBtn = $(".js-open-header-catalog");
-  menuBtn.on("click", function () {
-    if ($(this).hasClass("is-active")) {
-      $(this).removeClass("is-active");
-      menu.removeClass('is-open');
-    } else {
-      $(this).addClass("is-active");
-      menu.addClass('is-open');
-    }
-  });
-  $(document).click(function (e) {
-    if (!menuBtn.is(e.target) && !menu.is(e.target) && menu.has(e.target).length === 0) {
-      menu.removeClass('is-open');
-      menuBtn.removeClass("is-active");
-    }
-  });
+  if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    menuBtn.on("click", function () {
+      console.log(456);
+      if ($(this).hasClass("is-active")) {
+        $(this).removeClass("is-active");
+        menu.removeClass('is-open');
+      } else {
+        $(this).addClass("is-active");
+        menu.addClass('is-open');
+      }
+    });
+    $(document).click(function (e) {
+      if (!menuBtn.is(e.target) && !menu.is(e.target) && menu.has(e.target).length === 0 && menuBtn.has(e.target).length === 0) {
+        menu.removeClass('is-open');
+        menuBtn.removeClass("is-active");
+      }
+    });
+  } else {
+    menuBtn.on("click", function () {
+      console.log(123);
+    });
+  }
 });
 $(function () {
   // select2
@@ -135,49 +142,45 @@ $(function () {
 $(function () {
   var homeBestSlider = new Swiper(".js-best-slider", {
     speed: 700,
-    slidesPerView: 4,
     watchSlidesProgress: true,
-    spaceBetween: 30
-    // breakpoints: {
-    //   0: {
-    //     pagination: {
-    //       el: ".js-home-best-slider-pagination",
-    //       clickable: true,
-    //     },
-    //     slidesPerView: 1,
-    //   },
-    //   576: {
-    //     pagination: {
-    //       el: ".js-home-best-slider-pagination",
-    //       clickable: true,
-    //     },
-    //     slidesPerView: 2,
-    //   },
-    //   768: {
-    //     pagination: {
-    //       el: ".js-home-best-slider-pagination",
-    //       clickable: true,
-    //     },
-    //     slidesPerView: 3,
-    //
-    //   },
-    //   1290: {
-    //     slidesPerView: 4,
-    //     navigation: {
-    //       nextEl: ".js-home-best-slider-next",
-    //       prevEl: ".js-home-best-slider-prev",
-    //     },
-    //   },
-    //   1560: {
-    //     slidesPerView: 4,
-    //     navigation: {
-    //       nextEl: ".js-home-best-slider-next",
-    //       prevEl: ".js-home-best-slider-prev",
-    //     },
-    //   },
-    // }
+    breakpoints: {
+      0: {
+        slidesPerView: 1
+      },
+      576: {
+        slidesPerView: 2.5,
+        spaceBetween: 12
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      },
+      1280: {
+        slidesPerView: 4,
+        spaceBetween: 30
+      }
+    }
   });
-
+  var filterTagsSlider = new Swiper(".js-main-filters-tags", {
+    speed: 700,
+    loop: true,
+    spaceBetween: 16,
+    watchSlidesProgress: true,
+    breakpoints: {
+      0: {
+        slidesPerView: 1
+      },
+      576: {
+        slidesPerView: 3
+      },
+      768: {
+        slidesPerView: 6.5
+      },
+      1280: {
+        slidesPerView: 8.5
+      }
+    }
+  });
   var homeNewsSlider = new Swiper(".js-news-slider", {
     speed: 700,
     slidesPerView: 3,

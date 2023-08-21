@@ -188,6 +188,9 @@ img {
     border-radius: 50%;
     &_prev {
       margin-left: -20px;
+      @include r(1280) {
+        margin-left: -15px;
+      }
     }
     &_next {
       margin-right: 35px;
