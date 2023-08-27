@@ -1,5 +1,5 @@
 <header class="header">
-  <div class="header__top">
+  <div class="header__top d-none d-lg-block">
     <div class="container h-100">
       <div class="row align-items-center h-100">
         <div class="col-12 d-flex align-items-center justify-content-between h-100">
@@ -100,11 +100,13 @@
   <div class="header__bottom">
     <div class="container">
       <div class="row">
-        <div class="col-12 d-flex align-items-center justify-content-between">
+        <div class="col-12 header__bottom-wr">
           <a href="home.html" class="logo header__logo">
-            <svg class="logo__icon">
-              <use xlink:href="assets/img/sprite.svg#logo"></use>
-            </svg>
+            <p class="logo__subtitle">Завод генераторов</p>
+            <p class="logo__title">Energen</p>
+<!--            <svg class="logo__icon">-->
+<!--              <use xlink:href="assets/img/sprite.svg#logo"></use>-->
+<!--            </svg>-->
           </a>
           <div class="header-catalog">
             <button class="btn-reset btn btn_blue header-catalog__btn js-open-header-catalog"><!--js-open-mobile-menu js-open-header-catalog-->
@@ -115,7 +117,7 @@
             </button>
           </div>
           <!--  search-->
-          <div class="header-search position-relative">
+          <div class="header-search position-relative d-none d-lg-block">
             <form action="" class="header-search__bar js-search-input">
               <input type="search" name="search" pattern=".*\S.*" class=" header-search__input js-search-field" autocomplete="off">
               <button class="header-search__reset btn-reset" type="reset">
@@ -200,15 +202,15 @@
               </ul>
             </div>
           </div>
-          <div class="header__contacts-item">
+          <div class="header__contacts-item  d-none d-lg-block">
             <p class="header__contact">info@dizel-generator.ru</p>
             <a href="" class="header__contacts-link">Отправить заявку</a>
           </div>
-          <div class="header__contacts-item">
+          <div class="header__contacts-item  d-none d-lg-block">
             <p class="header__contact">8 (800) 900-70-70</p>
             <p class="header__contacts-text">Бесплатно по России</p>
           </div>
-          <div class="header__contacts-item">
+          <div class="header__contacts-item  d-none d-lg-block">
             <p class="header__contact">+7 (800) 900-70-70</p>
             <a href="" class="header__contacts-link">Заказать звонок</a>
           </div>
@@ -230,6 +232,23 @@
             </svg>
             <span>Сравнение</span>
           </a>
+          <ul class="header__social social d-flex d-lg-none">
+            <li class="social__item"><a href="" class="social__link">
+              <svg width="24" height="24">
+                <use xlink:href="assets/img/sprite.svg#icon-tlg"></use>
+              </svg>
+            </a></li>
+            <li class="social__item"><a href="" class="social__link">
+              <svg width="24" height="24">
+                <use xlink:href="assets/img/sprite.svg#icon-vk"></use>
+              </svg>
+            </a></li>
+            <li class="social__item"><a href="" class="social__link">
+              <svg width="24" height="24">
+                <use xlink:href="assets/img/sprite.svg#icon-wup"></use>
+              </svg>
+            </a></li>
+          </ul>
         </div>
       </div>
 

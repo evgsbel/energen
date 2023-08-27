@@ -33,6 +33,9 @@
     @include r(1280) {
       align-items: flex-end;
     }
+    @include r(960) {
+      flex-wrap: wrap;
+    }
   }
   &__nav {
     justify-content: space-between;
@@ -55,6 +58,10 @@
     font-size: 16px;
     color: $grey-5;
     transition: color $trns, background-color $trns;
+    @include r(960) {
+      font-size: 14px;
+      padding: 15px 20px;
+    }
     &::before {
       content: '';
       position: absolute;
@@ -108,11 +115,28 @@
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 0 22px;
+    @include r(960) {
+      justify-content: space-between;
+    }
   }
   &__col {
     flex: 0 0 230px;
     max-width: 230px;
+    @include r(960) {
+      flex: 0 0 100%;
+      max-width: 100%;
+      display: flex;
+      justify-content: space-between;
+      gap: 0 22px;
+    }
   }
+  &__btn {
+    @include r(960) {
+    flex: 0 0  calc(50% - 22px);
+    max-width: calc(50% - 22px);
+    }
+  }
+
   &__group {
     position: relative;
     flex: 0 0  calc((100% - 2 * 22px) / 3);
@@ -328,6 +352,9 @@
     flex: 0 0 20%;
     position: relative;
     cursor: pointer;
+    @include r(960) {
+      flex: 0 0 33%;
+    }
     &:hover {
       .gallery__link::before {
         opacity: 1;
@@ -582,6 +609,9 @@
       box-shadow: 0px 0px 25px 6px rgba(0, 0, 0, 0.25);
     }
   }
+  .swiper-slide {
+    height: calc((100% - 30px) / 2) !important;
+  }
 }
 //certificates
 .certificates {
@@ -708,6 +738,11 @@
     &:hover {
       background-color: $grey-2-5;
     }
+    span {
+      @include r(960) {
+        display: none;
+      }
+    }
   }
   &__link {
     display: flex;
@@ -735,16 +770,19 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 15px 40px;
+
   }
   &__item {
-    flex: 0 0 calc((100% - 9 * 40px) / 10);
+    //flex: 0 0 calc((100% - 9 * 40px) / 10);
     cursor: pointer;
     filter: grayscale(100%);
     transition: filter $trns;
     &:hover {
       filter: grayscale(0);
     }
+  }
+  .swiper-slide {
+    height: calc((100% - 20px) / 2) !important;
   }
 }
 //news
@@ -788,6 +826,10 @@
   &__slider {
     padding: 0 25px;
     margin: 0 -25px;
+    @include r(1024) {
+      padding: 0 15px;
+      margin: 0 -15px;
+    }
   }
 }
 //faq
@@ -810,6 +852,9 @@
     text-align: left;
     border-bottom: 1px solid transparent;
     transition: border-color $trns;
+    @include r(960) {
+      font-size: 16px;
+    }
     svg {
       transition: transform $trns;
       transform: rotate(-180deg);
@@ -827,6 +872,15 @@
     font-size: 15px;
     line-height: 1.6;
     color: $grey-5;
+    @include r(960) {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  &__title {
+    @include r(960) {
+      font-size: 18px;
+    }
   }
 }
 //articles
@@ -863,12 +917,19 @@
       font-size: 14px;
     }
   }
+  &__img {
+    width: 100%;
+  }
 }
 .feedback {
   padding: 35px 30px 30px;
   height: 100%;
   background-color: $grey-5;
   border-radius: 10px;
+  @include r(960) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   &__caption {
     margin-bottom: 10px;
     font-weight: 700;
@@ -881,5 +942,8 @@
     font-weight: 500;
     line-height: 1.2;
     color: #fff;
+    @include r(960) {
+      font-size: 14px;
+    }
   }
 }

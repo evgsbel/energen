@@ -16,6 +16,20 @@
       color: $grey-4;
     }
   }
+  &__navs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 50px;
+    @include r(960) {
+      gap: 20px 0;
+      justify-content: space-between;
+    }
+  }
+  &__navs-item {
+    @include r(960) {
+    flex: 0 0 50%;
+    }
+  }
   &__nav {
     display: flex;
     flex-direction: column;
@@ -31,6 +45,9 @@
   }
   &__social {
     margin-bottom: 20px;
+    @include r(960) {
+      justify-content: flex-start;
+    }
   }
   &__info {
     margin-bottom: 23px;
@@ -55,6 +72,13 @@
     font-size: 14px;
     line-height: 1.2;
     color: $grey-4;
+    @include r(960) {
+      display: block;
+      padding-top: 10px;
+      border-top: 1px solid $grey-2-5;
+      text-align: center;
+      margin-bottom: 15px;
+    }
   }
   &__dev {
     display: block;
@@ -62,6 +86,9 @@
     font-size: 14px;
     line-height: 1.2;
     color: $grey-4;
+    @include r(960) {
+      text-align: center;
+    }
     a {
       text-transform: uppercase;
       color: $blue;

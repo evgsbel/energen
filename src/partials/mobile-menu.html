@@ -1,7 +1,183 @@
-<nav class="mobile-menu js-mobile-menu">
-<p class="mobile-menu__caption">Меню</p>
-  <button class="btn-reset js-close-mobile-menu">
-    X
-  </button>
-</nav>
+<div class="mobile-menu js-mobile-menu" data-simplebar data-simplebar-auto-hide="false">
+  <div class="mobile-menu__heading">
+    <p class="mobile-menu__title">Меню</p>
+    <button class="btn-reset js-close-mobile-menu">
+      <svg width="24" height="24">
+        <use xlink:href="assets/img/sprite.svg#icon-close-big"></use>
+      </svg>
+    </button>
+  </div>
+  <p class="mobile-menu__caption">Продукция</p>
+  <ul class="mobile-menu__list" id="mobile-sub-menu-production">
+    <li class="mobile-menu__item">
+      <a href="" class="mobile-menu__link mobile-menu__link_with-sub collapsed" data-toggle="collapse"
+         data-target="#collapseMenuOne" aria-expanded="true">Дизельные генераторы</a>
+      <div class="collapse" id="collapseMenuOne" aria-labelledby="headingOne" data-parent="#mobile-sub-menu-production">
+        <ul class="mobile-menu__sub-menu">
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 01</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 02</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 03</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 04</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 05</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="" class="mobile-menu__link mobile-menu__link_with-sub collapsed" data-toggle="collapse"
+         data-target="#collapseMenuTwo" aria-expanded="true">Газовые генераторы</a>
+      <div class="collapse" id="collapseMenuTwo" aria-labelledby="headingOne"
+           data-parent="#mobile-sub-menu-production">
+        <ul class="mobile-menu__sub-menu">
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 01</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 02</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 03</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 04</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 05</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="" class="mobile-menu__link mobile-menu__link_with-sub collapsed" data-toggle="collapse"
+         data-target="#collapseMenuThree" aria-expanded="true">Источники бесперебойного питания</a>
+      <div class="collapse" id="collapseMenuThree" aria-labelledby="headingOne"
+           data-parent="#mobile-sub-menu-production">
+        <ul class="mobile-menu__sub-menu">
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 01</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 02</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 03</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 04</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 05</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="" class="mobile-menu__link mobile-menu__link_with-sub collapsed" data-toggle="collapse"
+         data-target="#collapseMenuFour" aria-expanded="true">Стабилизаторы напряжения</a>
+      <div class="collapse" id="collapseMenuFour" aria-labelledby="headingOne"
+           data-parent="#mobile-sub-menu-production">
+        <ul class="mobile-menu__sub-menu">
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 01</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 02</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 03</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 04</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 05</a></li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+  <ul class="mobile-menu__list" id="mobile-sub-menu-other">
+    <li class="mobile-menu__item">
+      <a href="" class="mobile-menu__link">Наше производство</a>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="" class="mobile-menu__link mobile-menu__link_with-sub collapsed" data-toggle="collapse"
+         data-target="#collapseMenuFive" aria-expanded="true">Услуги и сервис</a>
+      <div class="collapse" id="collapseMenuFive" aria-labelledby="headingOne"
+           data-parent="#mobile-sub-menu-other">
+        <ul class="mobile-menu__sub-menu">
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Аренда электростанций</a>
+          </li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Сервис и ремонт</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="" class="mobile-menu__link mobile-menu__link_with-sub collapsed" data-toggle="collapse"
+         data-target="#collapseMenuSix" aria-expanded="true">О компании</a>
+      <div class="collapse" id="collapseMenuSix" aria-labelledby="headingOne"
+           data-parent="#mobile-sub-menu-other">
+        <ul class="mobile-menu__sub-menu">
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">О компании</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Новости / Проекты</a>
+          </li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Отзывы</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Гарантия</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Оплата</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="" class="mobile-menu__link">Доставка</a>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="" class="mobile-menu__link">Контакты</a>
+    </li>
+  </ul>
+  <div class="mobile-menu__contacts">
+    <div class="mobile-menu__contacts--item">
+      <a href="tel:88009007070" class="mobile-menu__contacts--link">8 (800) 900-70-70</a>
+      <p class="mobile-menu__contacts--caption">Бесплатно по России</p>
+    </div>
+    <div class="mobile-menu__contacts--item ml-auto">
+      <a href="tel:88009007070" class="mobile-menu__contacts--link">8 (800) 900-70-70</a>
+      <p class="mobile-menu__contacts--caption">Перезвоните мне</p>
+    </div>
+    <div class="mobile-menu__contacts--item">
+      <a href="mailto:info@dizel-generator.ru" class="mobile-menu__contacts--link">info@dizel-generator.ru</a>
+      <p class="mobile-menu__contacts--caption">Отправить заявку</p>
+    </div>
+  </div>
+  <div class="mobile-menu__bottom">
+    <div class="change-city">
+      <button class="btn-reset header__location flex flex_ai-center js-change-city-btn">
+        <svg width="16" height="16">
+          <use xlink:href="assets/img/sprite.svg#icon-location"></use>
+        </svg>
+        <span>Санкт-Петербург</span>
+      </button>
+      <div class="js-city-drop-down change-city__drop-down">
+        <div class="x-drop-down__search">
+          <p class="change-city__caption">Ваш город: <span class="js-change-city-caption">Санкт-Петербург</span>
+          </p>
+          <div class="x-input change-city__input">
+            <input type="text" class="js-city-field change-city__field" autocomplete="off" value=""
+                   placeholder="Введите название Вашего города или выберете из списка ниже">
+          </div>
+        </div>
+        <ul class="x-drop-down__list js-dropdown change-city__list">
+          <li class="js-city-item  change-city__list-item">Волгоград</li>
+          <li class="js-city-item  change-city__list-item">Воронеж</li>
+          <li class="js-city-item  change-city__list-item">Екатеринбург</li>
+          <li class="js-city-item  change-city__list-item">Ижевск</li>
+          <li class="js-city-item  change-city__list-item">Казань</li>
+          <li class="js-city-item  change-city__list-item">Калининград</li>
+          <li class="js-city-item  change-city__list-item">Кемерово</li>
+          <li class="js-city-item  change-city__list-item">Кострома</li>
+          <li class="js-city-item  change-city__list-item">Красноярск</li>
+          <li class="js-city-item  change-city__list-item">Магнитогорск</li>
+          <li class="js-city-item  change-city__list-item">Москва</li>
+          <li class="js-city-item  change-city__list-item">Набережные челны</li>
+          <li class="js-city-item  change-city__list-item">Новосибирск</li>
+          <li class="js-city-item  change-city__list-item">Нижний Новгород</li>
+          <li class="js-city-item  change-city__list-item">Омск</li>
+          <li class="js-city-item  change-city__list-item">Пенза</li>
+          <li class="js-city-item  change-city__list-item">Пермь</li>
+          <li class="js-city-item  change-city__list-item">Ростов-на-Дону</li>
+          <li class="js-city-item  change-city__list-item">Самара</li>
+          <li class="js-city-item  change-city__list-item">Санкт-Петербург</li>
+          <li class="js-city-item  change-city__list-item"> Тюмень</li>
+          <li class="js-city-item  change-city__list-item">Уфа</li>
+          <li class="js-city-item  change-city__list-item">Челябинск</li>
+        </ul>
+      </div>
+    </div>
+    <ul class="header__social social">
+      <li class="social__item"><a href="" class="social__link">
+        <svg width="24" height="24">
+          <use xlink:href="assets/img/sprite.svg#icon-tlg"></use>
+        </svg>
+      </a></li>
+      <li class="social__item"><a href="" class="social__link">
+        <svg width="24" height="24">
+          <use xlink:href="assets/img/sprite.svg#icon-vk"></use>
+        </svg>
+      </a></li>
+      <li class="social__item"><a href="" class="social__link">
+        <svg width="24" height="24">
+          <use xlink:href="assets/img/sprite.svg#icon-wup"></use>
+        </svg>
+      </a></li>
+    </ul>
+  </div>
+</div>
 <div class="overlay js-overlay"></div>

@@ -20,11 +20,9 @@ body {
   color: $black;
   font-size: 15px;
   line-height: 1.5;
-  //&.opened-menu {
-  //  @include r(1024) {
-  //  overflow: hidden;
-  //  }
-  //}
+  &.opened-menu {
+    overflow: hidden;
+  }
 }
 
 
@@ -194,10 +192,17 @@ img {
     }
     &_next {
       margin-right: 35px;
+      @include r(1024) {
+        margin-right: 15px;
+      }
     }
     svg {
       stroke: $grey-4;
       stroke-width: 2;
     }
   }
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after,
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+  content: none;
 }

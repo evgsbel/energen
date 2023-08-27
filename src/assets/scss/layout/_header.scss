@@ -9,6 +9,17 @@
   &__bottom {
     padding: 28px 0;
     background-color: $grey-0;
+    @include r(960) {
+      padding: 12px 0;
+    }
+  }
+  &__bottom-wr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include r(960) {
+      justify-content: flex-start;
+    }
   }
   &__location {
     position: relative;
@@ -35,6 +46,7 @@
       line-height: 1;
     }
   }
+
   &__contacts-link {
     font-size: 14px;
     line-height: 1.2;
@@ -59,6 +71,9 @@
     line-height: 1.2;
     @include r(1280) {
       font-size: 10px;
+    }
+    @include r(960) {
+      display: none;
     }
     svg {
       display: block;
@@ -109,6 +124,11 @@
   display: flex;
   align-items: center;
   gap: 0  15px;
+  @include r(960) {
+    margin-left: auto;
+    justify-content: flex-end;
+    order: 3;
+  }
   svg {
     fill: $grey-5;
     transition: fill $trns;
@@ -119,14 +139,42 @@
 }
 
 .logo {
-  &__icon {
-    max-width: 160px;
-    max-height: 45px;
+  @include r(960) {
+    order: 2;
+  }
+  &__title {
+    color: $blue-signal;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 900;
+    line-height: 1;
+    font-family: 'MuseoSansCyrl', sans-serif;
     @include r(1280) {
-      max-width: 140px;
-      max-height: 37px;
+      font-size: 32px;
+    }
+    @include r(960) {
+      font-size: 28px;
     }
   }
+  &__subtitle {
+    color: $grey-5;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1;
+    font-family: 'MuseoSansCyrl', sans-serif;
+   @include r(1280) {
+     font-size: 14px;
+   }
+  @include r(960) {
+    font-size: 12px;
+  }
+  }
+  //&__icon {
+  //  max-width: 160px;
+  //  max-height: 45px;
+
+  //}
 }
 
 .header-catalog {
@@ -169,6 +217,9 @@
       -o-transition: .25s ease-in-out;
       transition: .25s ease-in-out;
       border-radius: 7px;
+      @include r(960) {
+        background-color: $grey-5;
+      }
       &:nth-child(1) {
         top: 5px;
         -webkit-transform-origin: left center;
@@ -206,6 +257,10 @@
     color: #fff;
     @include r(1280) {
       padding: 12px 15px;
+    }
+    @include r(960) {
+      background-color: transparent;
+      border: none;
     }
     &:hover {
       color: #fff;
@@ -649,9 +704,11 @@
   top: 0;
   left: 0;
   z-index: 150;
+  padding: 15px;
   background-color: #fff;
-  width: 30vw;
+  width: 50vw;
   height: 100vh;
+  overflow: auto;
   box-shadow: 0 19px 20px 0 rgba(0, 0, 0, 0.10);
   opacity: 0;
   transform: translateX(-100%);
@@ -662,6 +719,100 @@
     visibility: visible;
     -webkit-transform: translateX(0);
     transform: translateX(0);
+  }
+  &__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  &__title {
+    font-size: 24px;
+    font-weight: 400;
+    color: $grey-5;
+  }
+  &__caption {
+    margin-bottom: 22px;
+    font-size: 16px;
+    font-weight: 500;
+    color: $grey-5;
+  }
+  &__list {
+    margin-bottom: 20px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid $grey-2-5;
+  }
+  &__item {
+    margin-bottom: 24px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__link {
+    position: relative;
+    display: block;
+    font-size: 16px;
+    color: $grey-5;
+    &:hover,
+    &:active {
+      color: $grey-5;
+    }
+    &_with-sub::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 24px;
+      height: 24px;
+      background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Icon Frame'%3E%3Cpath id='Vector' d='M7 10L12 15L17 10' stroke='%235A5A5A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      transition: transform $trns;
+    }
+    &.collapsed::before {
+      transform: rotate(-90deg);
+    }
+  }
+  &__sub-menu {
+    padding: 10px 0 10px 15px;
+    background-color: $grey-1;
+  }
+  &__sub-menu-item {
+    font-size: 16px;
+    color: $grey-5;
+    margin-bottom: 24px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__contacts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px 0;
+    margin-bottom: 20px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid $grey-2-5;
+  }
+  &__contacts--item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  &__contacts--link {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  &__contacts--caption {
+    font-size: 14px;
+    color: $grey-5;
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    & > * {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
   }
 }
 
