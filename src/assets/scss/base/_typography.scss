@@ -53,6 +53,9 @@ ul {
   @include r(1280) {
     font-size: 30px;
   }
+  @include r(600) {
+    font-size: 24px;
+  }
 }
 
 .title-h2 {
@@ -60,5 +63,8 @@ ul {
   font-size: 24px;
   margin-bottom: 30px;
   line-height: 1.2;
+  @include r(600) {
+    font-size: 18px;
+  }
 }
 

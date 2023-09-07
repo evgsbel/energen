@@ -118,11 +118,6 @@ $(() => {
 });
 
 $(() => {
-
-})
-
-$(() => {
-
 // select2
   $('select').select2({
     minimumResultsForSearch: Infinity,
@@ -186,10 +181,11 @@ $(() => {
 
     breakpoints: {
       0: {
-        slidesPerView: 1,
+        slidesPerView: 1.2,
+        spaceBetween: 12,
       },
-      576: {
-        slidesPerView: 2.5,
+      600: {
+        slidesPerView: 2.2,
         spaceBetween: 12,
       },
       960: {
@@ -235,7 +231,7 @@ $(() => {
       0: {
         slidesPerView: 1,
       },
-      768: {
+      576: {
         slidesPerView: 2,
       },
       960: {
@@ -245,18 +241,18 @@ $(() => {
   });
 //brands slider
   var brandsSlider = new Swiper(".js-brands-slider", {
-    slidesPerView: 6,
+    slidesPerView: 10,
     grid: {
       rows: 2,
       fill: "row",
     },
-    spaceBetween: 30,
+    spaceBetween: 20,
     breakpoints: {
       0: {
-        slidesPerView: 2,
+        slidesPerView: 2.5,
       },
       768: {
-        slidesPerView: 5,
+        slidesPerView: 4,
       },
       960: {
         slidesPerView: 6,
@@ -273,7 +269,7 @@ $(() => {
     spaceBetween: 20,
     breakpoints: {
       0: {
-        slidesPerView: 4,
+        slidesPerView: 3.5,
       },
       768: {
         slidesPerView: 9,
@@ -283,6 +279,8 @@ $(() => {
       }
     }
   });
+
+  //articles slider
   const articlesSlider = new Swiper(".js-articles-slider", {
     speed: 700,
     slidesPerView: 3,
@@ -294,17 +292,50 @@ $(() => {
     },
     breakpoints: {
       0: {
-        slidesPerView: 1,
+        slidesPerView: 1.2,
       },
-      576: {
-        slidesPerView: 2,
+      600: {
+        slidesPerView: 2.5,
       },
       768: {
-        slidesPerView: 3,
+        slidesPerView: 3.5,
       },
       960: {
         slidesPerView: 4,
       }
+    }
+  });
+  const certSlider = new Swiper(".js-cert-slider", {
+    speed: 700,
+    slidesPerView: 3,
+    spaceBetween: 30,
+    breakpoints: {
+      0: {
+        slidesPerView: 1.5,
+      },
+      576: {
+        slidesPerView: 2.5,
+      },
+      768: {
+        slidesPerView: 3.5,
+      },
+      960: {
+        slidesPerView: 4,
+      }
+    }
+  });
+
+  const reviewssSlider = new Swiper(".js-reviews-slider", {
+    speed: 700,
+    loop: true,
+    spaceBetween: 30,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      600: {
+        slidesPerView: 2,
+      },
     }
   });
 });
@@ -385,3 +416,30 @@ $(document).click(function (e) {
     $('.js-search-drop-down').removeClass('is-open')
   }
 });
+
+
+//btn up
+$(() => {
+document.querySelector('.js-btn-up').onclick = () => {
+  // переместим в начало страницы
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  });
+}
+});
+
+//readmore
+$('.js-open-content').on('click', function(){
+  if ($(this).find('span').text() != "Свернуть") {
+    $(this).find('span').text('Свернуть');
+  } else {
+    $(this).find('span').text('Развернуть');
+  }
+  $(this).toggleClass('is-active')
+  $(this)
+    .parent()
+    .find('.content__wrapper')
+    .toggleClass('is-open')
+})

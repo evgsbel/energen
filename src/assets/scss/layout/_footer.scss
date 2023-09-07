@@ -3,6 +3,9 @@
   border-top: 1px solid $grey-2;
   &__top {
     margin-bottom: 75px;
+    @include r(767) {
+      margin-bottom: 20px;
+    }
   }
   &__logo  {
     display: block;
@@ -23,6 +26,9 @@
     @include r(960) {
       gap: 20px 0;
       justify-content: space-between;
+    }
+    @include r(767) {
+      margin-bottom: 30px;
     }
   }
   &__navs-item {
@@ -96,6 +102,36 @@
       &:hover {
         color: $blueHover;
       }
+    }
+  }
+  &__flex {
+    @include r(767) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+.bottom-menu {
+  padding: 6px 0;
+  border-top: 1px solid $grey-2;
+  background-color: $grey-1;
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @include r(600) {
+      justify-content: space-between;
+    }
+  }
+  &__link {
+    display: block;
+    font-size: 12px;
+    color: $grey-5;
+    svg {
+      display: block;
+      margin: 0 auto 3px;
+
     }
   }
 }

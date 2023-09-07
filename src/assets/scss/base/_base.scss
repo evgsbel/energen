@@ -151,6 +151,7 @@ img {
   align-items: center;
   justify-content: flex-end;
   gap: 0 5px;
+  margin-bottom: 20px;
   line-height: 1;
   font-weight: 500;
   transition: color $trns;
@@ -175,6 +176,9 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include r(600) {
+    top: 55%;
+  }
   &__btn {
     display: flex;
     align-items: center;

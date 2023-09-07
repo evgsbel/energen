@@ -48,6 +48,9 @@
     color: #fff;
     font-weight: 500;
     line-height: 1.2;
+    @include r(600) {
+      font-size: 14px;
+    }
     a {
       text-decoration: underline;
     }

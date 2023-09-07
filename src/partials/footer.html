@@ -2,20 +2,41 @@
   <div class="container">
     <div class="row footer__top">
       <div class="col-md-3">
-        <a href="home.html" class="logo  footer__logo mb-4">
-          <p class="logo__subtitle">Завод генераторов</p>
-          <p class="logo__title">Energen</p>
-          <!--            <svg class="logo__icon">-->
-          <!--              <use xlink:href="assets/img/sprite.svg#logo"></use>-->
-          <!--            </svg>-->
-        </a>
-        <div class="header__contacts-item mb-4">
-          <a href="tel:88009007070" class="header__contact">8 (800) 900-70-70</a>
-          <p class="header__contacts-text">Бесплатно по России</p>
+        <div class="footer__flex">
+          <a href="home.html" class="logo  footer__logo mb-4">
+            <p class="logo__subtitle">Завод генераторов</p>
+            <p class="logo__title">Energen</p>
+            <!--            <svg class="logo__icon">-->
+            <!--              <use xlink:href="assets/img/sprite.svg#logo"></use>-->
+            <!--            </svg>-->
+          </a>
+          <ul class="header__social social footer__social d-md-none">
+            <li class="social__item"><a href="" class="social__link">
+              <svg width="24" height="24">
+                <use xlink:href="assets/img/sprite.svg#icon-tlg"></use>
+              </svg>
+            </a></li>
+            <li class="social__item"><a href="" class="social__link">
+              <svg width="24" height="24">
+                <use xlink:href="assets/img/sprite.svg#icon-vk"></use>
+              </svg>
+            </a></li>
+            <li class="social__item"><a href="" class="social__link">
+              <svg width="24" height="24">
+                <use xlink:href="assets/img/sprite.svg#icon-wup"></use>
+              </svg>
+            </a></li>
+          </ul>
         </div>
-        <div class="header__contacts-item mb-4">
-          <a href="+78009007070" class="header__contact">+7 (800) 900-70-70</a>
-          <a href="" class="header__contacts-link">Заказать звонок</a>
+        <div class="footer__flex">
+          <div class="header__contacts-item mb-4">
+            <a href="tel:88009007070" class="header__contact">8 (800) 900-70-70</a>
+            <p class="header__contacts-text">Бесплатно по России</p>
+          </div>
+          <div class="header__contacts-item mb-4">
+            <a href="+78009007070" class="header__contact">+7 (800) 900-70-70</a>
+            <a href="" class="header__contacts-link">Заказать звонок</a>
+          </div>
         </div>
         <div class="header__contacts-item mb-4">
           <a href="mailto:info@dizel-generator.ru" class="header__contact">info@dizel-generator.ru</a>
@@ -51,7 +72,7 @@
         </div>
       </div>
       <div class="col-md-4 col-lg-3">
-        <ul class="header__social social footer__social">
+        <ul class="header__social social footer__social d-none d-md-flex">
           <li class="social__item"><a href="" class="social__link">
             <svg width="24" height="24">
               <use xlink:href="assets/img/sprite.svg#icon-tlg"></use>
@@ -85,3 +106,53 @@
     </div>
   </div>
 </footer>
+<div class="bottom-menu">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <ul class="bottom-menu__list">
+          <li class="bottom-menu__item">
+            <a href="" class="bottom-menu__link">
+              <svg width="24" height="24">
+                <use xlink:href="assets/img/sprite.svg#icon-main"></use>
+              </svg>
+              <span>Главная</span>
+            </a>
+          </li>
+          <li class="bottom-menu__item">
+            <button class="bottom-menu__link js-open-header-catalog btn-reset">
+              <svg width="24" height="24">
+                <use xlink:href="assets/img/sprite.svg#icon-search"></use>
+              </svg>
+              <span>Каталог</span>
+            </button>
+          </li>
+          <li class="bottom-menu__item">
+            <a href="tel:+78009007070" class="bottom-menu__link">
+              <svg width="24" height="24">
+                <use xlink:href="assets/img/sprite.svg#icon-phone"></use>
+              </svg>
+              <span>Позвонить</span>
+            </a>
+          </li>
+          <li class="bottom-menu__item">
+            <button class="bottom-menu__link js-open-header-catalog btn-reset">
+              <svg width="24" height="24">
+                <use xlink:href="assets/img/sprite.svg#icon-list"></use>
+              </svg>
+              <span>Меню</span>
+            </button>
+          </li>
+          <li class="bottom-menu__item">
+            <button class="bottom-menu__link btn-reset js-btn-up">
+              <svg width="24" height="24">
+                <use xlink:href="assets/img/sprite.svg#icon-arrow-top"></use>
+              </svg>
+              <span>Наверх</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
