@@ -270,6 +270,10 @@
 .mobile-category {
   margin-top: -60px;
   margin-bottom: 30px;
+  display: none;
+  @include r(600) {
+    display: block;
+  }
   &__list {
     display: flex;
     justify-content: space-between;
@@ -467,6 +471,11 @@
     gap: 0 15px;
     @include r(1280) {
       &:last-of-type {
+        display: none;
+      }
+    }
+    @include r(960) {
+      &:nth-of-type(3) {
         display: none;
       }
     }

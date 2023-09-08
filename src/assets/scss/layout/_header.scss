@@ -262,6 +262,9 @@
       background-color: transparent;
       border: none;
     }
+    @include r(600) {
+      padding: 12px 20px 12px 0;
+    }
     &:hover {
       color: #fff;
     }
@@ -803,6 +806,10 @@
   &__contacts--item {
     flex: 0 0 50%;
     max-width: 50%;
+    &:last-child {
+      flex: 0 0 1000%;
+      max-width: 100%;
+    }
   }
   &__contacts--link {
     font-size: 16px;
