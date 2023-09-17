@@ -1,5 +1,6 @@
 .header {
   position: relative;
+  border-bottom: 1px solid #ebebeb;
   &__top {
     height: 46px;
     //padding: 10px 0 11px;
@@ -846,4 +847,6 @@
   }
 }
 
-
+.is-home-page .header {
+  border-bottom: none;
+}

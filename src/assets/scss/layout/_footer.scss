@@ -113,9 +113,13 @@
   }
 }
 .bottom-menu {
+  display: none;
   padding: 6px 0;
   border-top: 1px solid $grey-2;
   background-color: $grey-1;
+  @include r(960) {
+    display: block;
+  }
   &__list {
     display: flex;
     justify-content: space-around;

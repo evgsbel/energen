@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="{{root}}assets/img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{title}}</title>
+  <!-- build:css -->
+  <link rel="stylesheet" href="{{root}}assets/vendor/css/animate.css">
+  <!--    <link rel="stylesheet" href="{{root}}assets/vendor/css/swiper.min.css">-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="{{root}}assets/vendor/css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="{{root}}assets/vendor/css/simplebar.css">
+  <link rel="stylesheet" href="{{root}}assets/vendor/css/select2.min.css">
+  <link rel="stylesheet" href="{{root}}assets/css/main.css">
+  <!-- endbuild -->
+  <link rel="stylesheet" href="{{root}}assets/css/rtl.css">
+</head>
+
+<body class="is-{{page}}-page">
+{{> header}}
+{{> mobile-menu}}
+<main role="main" class="main">
+  {{> breadcrumbs}}
+  {{> body}}
+</main>
+<div class="js-stop-header"></div>
+{{> footer}}
+<div class="overlay js-overlay"></div>
+{{> popups}}
+{{> scripts}}
+</body>
+
+</html>

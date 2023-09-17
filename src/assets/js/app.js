@@ -52,32 +52,16 @@ $(() => {
     })
   }
 });
+
 //header catalog
 $(() => {
   function checkWidth() {
     let windowWidth = $('body').innerWidth()
     let menuBtn = $(".js-open-header-catalog");
+    const closeBtn = $('.js-close-mobile-menu');
 
-    if ((!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) && windowWidth > 960) {
-      const menu = $(".js-header-catalog");
-      menuBtn.on("click", function () {
+    if ((/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) && windowWidth < 960) {
 
-        if ($(this).hasClass("is-active")) {
-          $(this).removeClass("is-active");
-          menu.removeClass('is-open');
-        } else {
-          $(this).addClass("is-active");
-          menu.addClass('is-open');
-        }
-
-      })
-      $(document).click(function (e) {
-        if (!menuBtn.is(e.target) && !menu.is(e.target) && menu.has(e.target).length === 0 && menuBtn.has(e.target).length === 0) {
-          menu.removeClass('is-open');
-          menuBtn.removeClass("is-active");
-        }
-      });
-    } else {
       // mobile menu
 
       const menu = document.querySelector('.js-mobile-menu');
@@ -105,21 +89,42 @@ $(() => {
         menu.classList.remove('is-open');
         body.classList.remove('opened-menu')
         overlay.classList.remove('is-visible')
+        menuBtn.removeClass("is-active");
       });
 
+    } else {
+      const menu = $(".js-header-catalog");
+      menuBtn.on("click", function () {
+
+        if ($(this).hasClass("is-active")) {
+          $(this).removeClass("is-active");
+          menu.removeClass('is-open');
+        } else {
+          $(this).addClass("is-active");
+          menu.addClass('is-open');
+        }
+
+      })
+      $(document).click(function (e) {
+        if (!menuBtn.is(e.target) && !menu.is(e.target) && menu.has(e.target).length === 0 && menuBtn.has(e.target).length === 0)  {
+          menu.removeClass('is-open');
+          menuBtn.removeClass("is-active");
+        }
+      });
     }
   }
 
   checkWidth();
   $(window).resize(function () {
+    console.log('resize')
     checkWidth(); // проверит при изменении размера окна клиента
-
   });
+
 });
 
 $(() => {
 // select2
-  $('select').select2({
+  $('.js-select').select2({
     minimumResultsForSearch: Infinity,
     width: '100%',
     closeOnSelect: false,

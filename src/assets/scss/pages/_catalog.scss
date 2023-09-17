@@ -1,0 +1,127 @@
+.category {
+  &__mb {
+    margin-bottom: 40px;
+  }
+  &__item {
+    position: relative;
+    padding: 10px;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+    transition: box-shadow $trns;
+    &:hover {
+      box-shadow: 0px 0px 25px 6px rgba(0, 0, 0, 0.25);
+    }
+  }
+  &__img {
+    display: block;
+    margin: 0 auto 10px;
+  }
+  &__caption {
+    font-size: 14px;
+    color: $grey-5;
+  }
+  &__text {
+    p {
+      margin-bottom: 10px;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+  }
+  &__text--link {
+    display: block;
+    width: max-content;
+  }
+}
+.category-tags {
+  &__heading {
+    display: flex;
+    align-items: center;
+    gap: 0  20px;
+    margin-bottom: 15px;
+  }
+  &__title {
+    color: #1c1c1c;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  &__link-all {
+    font-size: 15px;
+    color: $blue;
+    transition: color $trns;
+    &:hover {
+      color: $blue-2-hover;
+    }
+  }
+  &__list,
+  &__hide {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+  }
+  &__item {
+    font-size: 15px;
+    color: $grey-5;
+    transition: color $trns;
+    &:hover {
+      color: $grey-4;
+    }
+  }
+}
+
+.catalog {
+  &__list {
+    gap: 30px 0;
+    margin-bottom: 30px;
+  }
+}
+
+.sorting {
+  margin-bottom: 30px;
+}
+
+.pagination {
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 5px;
+    width: 100%;
+  }
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 16px;
+    font-weight: 500;
+    color: $grey-5;
+    transition: background-color $trns;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 500;
+    &:hover {
+      background-color: #dee9ff;
+    }
+    &.active {
+      border-color: $grey-3;
+    }
+  }
+}
+
+.advantages {
+  &__item {
+    text-align: center;
+  }
+  &__icon {
+    margin-bottom: 10px;
+  }
+  &__caption {
+    font-size: 15px;
+    font-weight: 500;
+  }
+}

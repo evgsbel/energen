@@ -226,7 +226,7 @@
               </div>
               <div class="header__contacts-item  d-none d-lg-block">
                 <p class="header__contact">info@dizel-generator.ru</p>
-                <a href="" class="header__contacts-link">Отправить заявку</a>
+                <button  class="btn-reset header__contacts-link" data-toggle="modal" data-target="#getOffer">Отправить заявку</button>
               </div>
               <div class="header__contacts-item  d-none d-lg-block">
                 <p class="header__contact">8 (800) 900-70-70</p>
@@ -234,7 +234,7 @@
               </div>
               <div class="header__contacts-item  d-none d-lg-block">
                 <p class="header__contact">+7 (800) 900-70-70</p>
-                <a href="" class="header__contacts-link">Заказать звонок</a>
+                <button  class="btn-reset header__contacts-link" data-toggle="modal" data-target="#callback">Заказать звонок</button>
               </div>
               <a href="" class="header__mini-cart mini-cart header__icon">
                 <svg width="24" height="24">
@@ -729,7 +729,7 @@
                             <div class="main-filters__group">
                               <label for="station" class="main-filters__label">
                                 <span class="main-filters__caption">марка электростанции</span>
-                                <select name="station" id="station" multiple="multiple" data-placeholder="не важно">
+                                <select class="js-select" name="station" id="station" multiple="multiple" data-placeholder="не важно">
                                   <option value="AKSA">AKSA</option>
                                   <option value="Cummins">Cummins</option>
                                   <option value="Cummins-China">Cummins-China</option>
@@ -748,7 +748,7 @@
                             <div class="main-filters__group">
                               <label for="mark" class="main-filters__label">
                                 <span class="main-filters__caption">марка двигателя</span>
-                                <select name="mark" id="mark" multiple="multiple" data-placeholder="не важно">
+                                <select class="js-select" name="mark" id="mark" multiple="multiple" data-placeholder="не важно">
                                   <option value="AKSA">AKSA</option>
                                   <option value="Cummins">Cummins</option>
                                   <option value="Cummins-China">Cummins-China</option>
@@ -767,7 +767,7 @@
                             <div class="main-filters__group">
                               <label for="execution" class="main-filters__label">
                                 <span class="main-filters__caption">исполнение</span>
-                                <select name="execution" id="execution" multiple="multiple" data-placeholder="не важно">
+                                <select class="js-select" name="execution" id="execution" multiple="multiple" data-placeholder="не важно">
                                   <option value="AKSA">AKSA</option>
                                   <option value="Cummins">Cummins</option>
                                   <option value="Cummins-China">Cummins-China</option>
@@ -786,7 +786,7 @@
                             <div class="main-filters__group">
                               <label for="voltage" class="main-filters__label">
                                 <span class="main-filters__caption">напряжение тока, В</span>
-                                <select name="voltage" id="voltage" multiple="multiple" data-placeholder="не важно">
+                                <select class="js-select" name="voltage" id="voltage" multiple="multiple" data-placeholder="не важно">
         
                                   <option value="AKSA">AKSA</option>
                                   <option value="Cummins">Cummins</option>
@@ -806,7 +806,7 @@
                             <div class="main-filters__group">
                               <label for="automation" class="main-filters__label">
                                 <span class="main-filters__caption">степень автоматизации</span>
-                                <select name="automation" id="automation" multiple="multiple" data-placeholder="не важно">
+                                <select class="js-select" name="automation" id="automation" multiple="multiple" data-placeholder="не важно">
         
                                   <option value="AKSA">AKSA</option>
                                   <option value="Cummins">Cummins</option>
@@ -2140,7 +2140,7 @@
           <div class="container">
             <div class="row">
               <div class="col-12">
-                <h2 class="title-h2 populars__title">Наши услуги</h2>
+                <h2 class="title-h2 populars__title">Популярные дизель-генераторы</h2>
               </div>
             </div>
             <div class="row">
@@ -2307,7 +2307,7 @@
                         <p class="product-card__price">00 000 000 ₽</p>
                         <p class="product-card__old-price">36 175 175</p>
                         <span class="product-card__discount">15%</span></div>
-        
+            
                       <div class="product-card__mobile-bottom">
                         <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
                         <div>
@@ -2374,7 +2374,7 @@
                       </ul>
                       <p class="product-card__delivery product-card__delivery_grey">Снято с производства</p>
                       <div class="product-card__sum">
-        
+            
                       </div>
                       <div class="product-card__mobile-bottom">
                         <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
@@ -2658,7 +2658,7 @@
                       </ul>
                       <p class="product-card__delivery product-card__delivery_grey">Снято с производства</p>
                       <div class="product-card__sum">
-        
+            
                       </div>
                       <div class="product-card__mobile-bottom">
                         <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
@@ -3627,6 +3627,102 @@
       </div>
     </div>
     <div class="overlay js-overlay"></div>
+    <!-- callback -->
+    <div class="modal fade" id="callback" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button type="button" class="btn-reset modal__close" data-dismiss="modal" aria-label="Close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M5.63574 5.63574L18.3637 18.3637" stroke="#1C1C1C" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"/>
+              <path d="M5.63574 18.3638L18.3637 5.63585" stroke="#1C1C1C" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <p class="modal__title">Заказать обратный звонок</p>
+          <form action="" class="modal-form modal__form">
+            <div class="modal-form__group">
+              <label for="name" class="modal-form__label">название поля</label>
+              <input type="text" id="name" name="name" class="modal-form__input" placeholder="При заполнении">
+            </div>
+            <div class="modal-form__group">
+              <label for="name2" class="modal-form__label">название поля</label>
+              <input type="text" id="name2" name="name2" class="modal-form__input" placeholder="При заполнении">
+            </div>
+            <div class="modal-form__group">
+              <label for="name3" class="modal-form__label">удобное время звонка</label>
+              <select name="name3" id="name3" class="modal-form__select">
+                <option value="В ближайшее время" name="now">В ближайшее время</option>
+                <option value="one" name="one">one</option>
+                <option value="two" name="two">two</option>
+                <option value="three" name="three">three</option>
+              </select>
+            </div>
+            <button class="btn-reset btn btn_blue modal-form__submit" type="submit">Отправить запрос</button>
+            <div class="modal-form__conf">
+              <label for="modal-conf" class="conf-checkbox__label">
+                <input
+                  type="checkbox"
+                  class="conf-checkbox"
+                  id="modal-conf"
+                  name="conf"
+                  checked
+                >
+                <span class="conf-checkbox__pane"></span>
+                Я даю согласие <a href="">на обработку моих персональных данных </a>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <!--get offer-->
+    <div class="modal fade" id="getOffer" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button type="button" class="btn-reset modal__close" data-dismiss="modal" aria-label="Close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M5.63574 5.63574L18.3637 18.3637" stroke="#1C1C1C" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"/>
+              <path d="M5.63574 18.3638L18.3637 5.63585" stroke="#1C1C1C" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <p class="modal__title">Получить предложение</p>
+          <form action="" class="modal-form modal__form">
+            <div class="modal-form__group">
+              <label for="name" class="modal-form__label">название поля</label>
+              <input type="text" id="name" name="name" class="modal-form__input" placeholder="При заполнении">
+            </div>
+            <div class="modal-form__group">
+              <label for="name2" class="modal-form__label">название поля</label>
+              <input type="text" id="name2" name="name2" class="modal-form__input" placeholder="При заполнении">
+            </div>
+            <div class="modal-form__group">
+              <label for="name3" class="modal-form__label">название поля</label>
+              <input type="text" id="name3" name="name3" class="modal-form__input" placeholder="При заполнении">
+            </div>
+            <button class="btn-reset btn btn_blue modal-form__submit" type="submit">Отправить запрос</button>
+            <div class="modal-form__conf">
+              <label for="modal-conf" class="conf-checkbox__label">
+                <input
+                  type="checkbox"
+                  class="conf-checkbox"
+                  id="modal-conf"
+                  name="conf"
+                  checked
+                >
+                <span class="conf-checkbox__pane"></span>
+                Я даю согласие <a href="">на обработку моих персональных данных </a>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <!-- build:js -->
     <script src="assets/vendor/js/jquery.js"></script>
     <script src="assets/vendor/js/popper.js"></script>
