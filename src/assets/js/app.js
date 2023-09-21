@@ -2,56 +2,37 @@
 $(() => {
   Inputmask({"mask": "+7 999 999-99-99"}).mask('.phone-mask');
 });
-//
-// // tabs
-// document.addEventListener('DOMContentLoaded', function () {
-//   const tabsBtn = document.querySelectorAll('.tabs__btn');
-//   tabsBtn.forEach(function (el) {
-//     el.addEventListener('click', function (event) {
-//       tabsBtn.forEach(tabsBtn => {
-//         tabsBtn.classList.remove('is-active');
-//       });
-//       const path = event.currentTarget.dataset.path;
-//       document.querySelectorAll('.tabs__content').forEach(function (tabContent) {
-//         tabContent.classList.remove('is-active');
-//       });
-//       document.querySelector(`[data-target="${path}"]`).classList.add('is-active');
-//       el.classList.add('is-active');
-//     });
-//   });
-// });
-
 
 //hover top menu
 $(() => {
-  var timer, pause = 3000;
+  var timer, pause = 900;
   $(".js-header-nav").on("mouseenter mouseleave", function (event) {
     window.clearTimeout(timer);
     var that = this;
     if (event.type == "mouseenter") {
       timer = window.setTimeout(function () {
         that.classList.add("is-hover")
-        openSubMenu()
       }, pause)
     } else {
       this.classList.remove("is-hover")
 
     }
   })
-
-  function openSubMenu() {
-    $('.js-nav-item-sub').mouseenter(function () {
-      if ($(this).parent().hasClass('is-hover')) {
-        $(this).addClass('is-hover')
-        $(this).find("ul:first").addClass('is-open');
-      }
-    })
-    $('.js-nav-item-sub').mouseleave(function () {
-      $(this).removeClass('is-hover')
-      $(this).find("ul:first").removeClass('is-open');
-    })
-  }
+  $(".js-nav-item-sub").on("mouseenter mouseleave", function (event) {
+    window.clearTimeout(timer);
+    var that = this;
+    if (event.type == "mouseenter") {
+      timer = window.setTimeout(function () {
+        that.classList.add('is-hover')
+        that.querySelector('ul').classList.add('is-open');
+      }, pause)
+    } else {
+      this.classList.remove("is-hover")
+      that.querySelector('ul').classList.remove('is-open');
+    }
+  });
 });
+
 
 //header catalog
 $(() => {
@@ -106,7 +87,7 @@ $(() => {
 
       })
       $(document).click(function (e) {
-        if (!menuBtn.is(e.target) && !menu.is(e.target) && menu.has(e.target).length === 0 && menuBtn.has(e.target).length === 0)  {
+        if (!menuBtn.is(e.target) && !menu.is(e.target) && menu.has(e.target).length === 0 && menuBtn.has(e.target).length === 0) {
           menu.removeClass('is-open');
           menuBtn.removeClass("is-active");
         }
@@ -180,6 +161,28 @@ $(() => {
 
 //sliders
 $(() => {
+  //news slider
+  const homeNewsSlider = new Swiper(".js-news-slider", {
+    speed: 700,
+    watchSlidesProgress: true,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: ".news-slider-nav-next",
+      prevEl: ".news-slider-nav-prev",
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      576: {
+        slidesPerView: 2,
+      },
+      960: {
+        slidesPerView: 3,
+      }
+    }
+  });
+
   const homeBestSlider = new Swiper(".js-best-slider", {
     speed: 700,
     watchSlidesProgress: true,
@@ -223,27 +226,7 @@ $(() => {
       }
     }
   });
-  const homeNewsSlider = new Swiper(".js-news-slider", {
-    speed: 700,
-    slidesPerView: 3,
-    watchSlidesProgress: true,
-    spaceBetween: 30,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
-      },
-      576: {
-        slidesPerView: 2,
-      },
-      960: {
-        slidesPerView: 3,
-      }
-    }
-  });
+
 //brands slider
   var brandsSlider = new Swiper(".js-brands-slider", {
     slidesPerView: 10,
@@ -288,13 +271,9 @@ $(() => {
   //articles slider
   const articlesSlider = new Swiper(".js-articles-slider", {
     speed: 700,
-    slidesPerView: 3,
     watchSlidesProgress: true,
     spaceBetween: 30,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+
     breakpoints: {
       0: {
         slidesPerView: 1.2,
@@ -425,18 +404,18 @@ $(document).click(function (e) {
 
 //btn up
 $(() => {
-document.querySelector('.js-btn-up').onclick = () => {
-  // переместим в начало страницы
-  window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: 'smooth'
-  });
-}
+  document.querySelector('.js-btn-up').onclick = () => {
+    // переместим в начало страницы
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }
 });
 
 //readmore
-$('.js-open-content').on('click', function(){
+$('.js-open-content').on('click', function () {
   if ($(this).find('span').text() != "Свернуть") {
     $(this).find('span').text('Свернуть');
   } else {
@@ -448,3 +427,44 @@ $('.js-open-content').on('click', function(){
     .find('.content__wrapper')
     .toggleClass('is-open')
 })
+
+//filters checkbox
+// $('.filters-check__input').on('change', function() {
+//   var values = $('.filters-check__input:checked').map(function() {
+//     return this.value;
+//   }).get().join(', ');
+//   $('#cs-input').html(values);
+// });
+
+var unit = $('.filters__caption').text().split(':'),
+checkbox = $('.filters-check__input').on('change', function() {
+
+  $('#unit').html('');
+  var checked = checkbox.filter(':checked');
+  //$('#count').html('Выбрано: ' + checked.length);
+
+  var blocks = $('.filters__item');
+  $.each(blocks,function(block_number,block_content) {
+
+    var labelText = checked.map(function(i, el) {
+      return $(block_content).find('.filters-check__label').filter('[for="' + el.id + '"]').text();
+    }).get().join(',').trim();
+
+    var response = labelText;
+    if ((response)&&(response!==',')) {
+      $('#unit').append( $(block_content).find('.filters__caption').text() + response);
+      $('#unit').append('<br>');
+    }
+  });
+});
+
+//filters show more
+$(() => {
+  $('.js-filters-showall').click(function () {
+    if ($(this).text() != "Свернуть") {
+      $(this).text('Свернуть');
+    } else {
+      $(this).text('Показать все');
+    }
+  });
+});

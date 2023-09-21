@@ -1,0 +1,484 @@
+<div class="filters">
+  <div class="filters__item">
+    <div class="filters__heading" data-toggle="collapse" data-target="#filItm1">
+      <p class="filters__caption">Исполнение</p>
+      <svg width="24" height="24">
+        <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+      </svg>
+    </div>
+    <div class="filters__hide collapse show" id="filItm1">
+      <div class="filters-check">
+        <input class="filters-check__input" type="checkbox" value="" id="defaultCheck1">
+        <label class="filters-check__label" for="defaultCheck1">
+          Открытые на раме
+        </label>
+      </div>
+      <div class="filters-check">
+        <input class="filters-check__input" type="checkbox" value="" id="defaultCheck2">
+        <label class="filters-check__label" for="defaultCheck2">
+          В контейнере на базе морского
+        </label>
+      </div>
+      <div class="filters-check">
+        <input class="filters-check__input" type="checkbox" value="" id="defaultCheck3">
+        <label class="filters-check__label" for="defaultCheck3">
+          В контейнере из сендвич панелей
+        </label>
+      </div>
+      <div class="filters-check">
+        <input class="filters-check__input" type="checkbox" value="В кожухе шумозащитном" id="defaultCheck4">
+        <label class="filters-check__label" for="defaultCheck4">
+          В кожухе шумозащитном
+        </label>
+      </div>
+      <div class="filters-check">
+        <input class="filters-check__input" type="checkbox" value="В мини-контейнере" id="defaultCheck5">
+        <label class="filters-check__label" for="defaultCheck5">
+          В кожухе шумозащитном
+        </label>
+      </div>
+      <div class="filters-check">
+        <input class="filters-check__input" type="checkbox" value=" " id="defaultCheck6">
+        <label class="filters-check__label" for="defaultCheck6">
+          В капоте погодозащитном
+        </label>
+      </div>
+      <div class="filters-check">
+        <input class="filters-check__input" type="checkbox" value=" " id="defaultCheck20">
+        <label class="filters-check__label" for="defaultCheck20">
+          В мини-контейнере
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="filters__item">
+    <div class="filters__heading" data-toggle="collapse" data-target="#filItm2">
+      <p class="filters__caption">Особенности исполнения</p>
+      <svg width="24" height="24">
+        <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+      </svg>
+    </div>
+    <div class="filters__hide collapse show" id="filItm2">
+      <div class="filters-check">
+        <input class="filters-check__input" type="checkbox" value="" id="defaultCheck7" disabled>
+        <label class="filters-check__label" for="defaultCheck7">
+          На шасси (передвижной)
+        </label>
+      </div>
+      <div class="filters-check">
+        <input class="filters-check__input" type="checkbox" value="" id="defaultCheck8">
+        <label class="filters-check__label" for="defaultCheck8">
+          1 степень (ручной запуск)
+        </label>
+      </div>
+      <div class="filters-check">
+        <input class="filters-check__input" type="checkbox" value="" id="defaultCheck9">
+        <label class="filters-check__label" for="defaultCheck9">
+          2 степень (с АВР, автозапуск)
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="filters__item">
+    <div class="filters__heading" data-toggle="collapse" data-target="#filItm3">
+      <p class="filters__caption">Выбор мощности, кВт</p>
+      <svg width="24" height="24">
+        <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+      </svg>
+    </div>
+    <div class="filters__hide collapse show" id="filItm3">
+      <div class="filters__group">
+        <label for="power-from" class="filters__label">
+          <span class="filters__label--caption">от</span>
+          <input type="number" min="10" value="10" class="filters__input" id="power-from">
+        </label>
+        <hr>
+        <label for="power-to" class="filters__label">
+          <span class="filters__label--caption">до</span>
+          <input type="number" max="3200" value="3200" class="filters__input" id="power-to">
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="filters__item filters__item_pwr">
+    <div class="filters__heading" data-toggle="collapse" data-target="#filItm4">
+      <p class="filters__caption">Подбор по мощности, кВт</p>
+      <svg width="24" height="24">
+        <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+      </svg>
+    </div>
+    <div class="filters__hide collapse show" id="filItm4">
+      <label for="filters-search" class="filters-search">
+        <input type="search" placeholder="Поиск по мощности" id="filters-search" class="filters-search__input filters__input">
+        <span class="filters-search__loup"></span>
+      </label>
+    </div>
+  </div>
+  <div class="filters__item filters__item_pwr">
+    <div class="filters__heading" data-toggle="collapse" data-target="#filPwr1">
+      <p class="filters__caption filters__caption_bold">10-55 кВт</p>
+      <svg width="24" height="24">
+        <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+      </svg>
+    </div>
+    <div class="filters__hide collapse" id="filPwr1">
+      ///
+    </div>
+  </div>
+  <div class="filters__item filters__item_pwr">
+    <div class="filters__heading" data-toggle="collapse" data-target="#filPwr2">
+      <p class="filters__caption filters__caption_bold">60-184 кВт</p>
+      <svg width="24" height="24">
+        <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+      </svg>
+    </div>
+    <div class="filters__hide collapse" id="filPwr2">
+      ///
+    </div>
+  </div>
+  <div class="filters__item filters__item_pwr">
+    <div class="filters__heading" data-toggle="collapse" data-target="#filPwr3">
+      <p class="filters__caption filters__caption_bold">200-550 кВт</p>
+      <svg width="24" height="24">
+        <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+      </svg>
+    </div>
+    <div class="filters__hide collapse" id="filPwr3">
+      ///
+    </div>
+  </div>
+  <div class="filters__item filters__item_pwr">
+    <div class="filters__heading" data-toggle="collapse" data-target="#filPwr4">
+      <p class="filters__caption filters__caption_bold">560-1300 кВт</p>
+      <svg width="24" height="24">
+        <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+      </svg>
+    </div>
+    <div class="filters__hide collapse" id="filPwr4">
+      ///
+    </div>
+  </div>
+  <div class="filters__item filters__item_pwr">
+    <div class="filters__heading" data-toggle="collapse" data-target="#filPwr5">
+      <p class="filters__caption filters__caption_bold">1400-3200 кВт</p>
+      <svg width="24" height="24">
+        <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+      </svg>
+    </div>
+    <div class="filters__hide collapse" id="filPwr5">
+      ///
+    </div>
+  </div>
+  <div class="filters__item">
+    <div class="filters__heading" data-toggle="collapse" data-target="#filItm5">
+      <p class="filters__caption">Напряжение тока</p>
+      <svg width="24" height="24">
+        <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+      </svg>
+    </div>
+    <div class="filters__hide collapse show" id="filItm5">
+      <div class="filters-check">
+        <input class="filters-check__input" type="checkbox" value="" id="defaultCheck10">
+        <label class="filters-check__label" for="defaultCheck10">
+          400/230В
+        </label>
+      </div>
+      <div class="filters-check">
+        <input class="filters-check__input" type="checkbox" value="" id="defaultCheck11">
+        <label class="filters-check__label" for="defaultCheck11">
+          230В
+        </label>
+      </div>
+      <div class="filters-check">
+        <input class="filters-check__input" type="checkbox" value="" id="defaultCheck12">
+        <label class="filters-check__label" for="defaultCheck12">
+          6300В
+        </label>
+      </div>
+      <div class="filters-check">
+        <input class="filters-check__input" type="checkbox" value="" id="defaultCheck13">
+        <label class="filters-check__label" for="defaultCheck13">
+          10500В
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="filters__item">
+    <div class="filters__heading" data-toggle="collapse" data-target="#filItm6">
+      <p class="filters__caption">Марка электростанции</p>
+      <svg width="24" height="24">
+        <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+      </svg>
+    </div>
+    <div class="filters__hide collapse show" id="filItm6">
+      <div class="filters-check">
+        <input class="filters-check__input" type="checkbox" value="" id="defaultCheck14">
+        <label class="filters-check__label" for="defaultCheck14">
+          AKSA
+        </label>
+      </div>
+      <div class="filters-check">
+        <input class="filters-check__input" type="checkbox" value="" id="defaultCheck15">
+        <label class="filters-check__label" for="defaultCheck15">
+          Cummins
+        </label>
+      </div>
+      <div class="filters-check">
+        <input class="filters-check__input" type="checkbox" value="" id="defaultCheck16">
+        <label class="filters-check__label" for="defaultCheck16">
+          Doosan
+        </label>
+      </div>
+      <div class="filters-check">
+        <input class="filters-check__input" type="checkbox" value="" id="defaultCheck17">
+        <label class="filters-check__label" for="defaultCheck17">
+          Iveco FPT
+        </label>
+      </div>
+      <div class="filters-check">
+        <input class="filters-check__input" type="checkbox" value="" id="defaultCheck18">
+        <label class="filters-check__label" for="defaultCheck18">
+          Mitsubishi
+        </label>
+      </div>
+      <div class="filters-check">
+        <input class="filters-check__input" type="checkbox" value="" id="defaultCheck19">
+        <label class="filters-check__label" for="defaultCheck19">
+          Perkins
+        </label>
+      </div>
+      <div class="collapse" id="filtItm6-in">
+        <div class="filters-check">
+          <input class="filters-check__input" type="checkbox" value="" id="defaultCheck14">
+          <label class="filters-check__label" for="defaultCheck14">
+            AKSA
+          </label>
+        </div>
+        <div class="filters-check">
+          <input class="filters-check__input" type="checkbox" value="" id="defaultCheck15">
+          <label class="filters-check__label" for="defaultCheck15">
+            Cummins
+          </label>
+        </div>
+        <div class="filters-check">
+          <input class="filters-check__input" type="checkbox" value="" id="defaultCheck16">
+          <label class="filters-check__label" for="defaultCheck16">
+            Doosan
+          </label>
+        </div>
+        <div class="filters-check">
+          <input class="filters-check__input" type="checkbox" value="" id="defaultCheck17">
+          <label class="filters-check__label" for="defaultCheck17">
+            Iveco FPT
+          </label>
+        </div>
+        <div class="filters-check">
+          <input class="filters-check__input" type="checkbox" value="" id="defaultCheck18">
+          <label class="filters-check__label" for="defaultCheck18">
+            Mitsubishi
+          </label>
+        </div>
+        <div class="filters-check">
+          <input class="filters-check__input" type="checkbox" value="" id="defaultCheck19">
+          <label class="filters-check__label" for="defaultCheck19">
+            Perkins
+          </label>
+        </div>
+      </div>
+      <button class="btn-reset filters__showall js-filters-showall" data-toggle="collapse" data-target="#filtItm6-in">Показать все</button>
+    </div>
+  </div>
+  <div class="filters__item">
+    <div class="filters__heading" data-toggle="collapse" data-target="#filItm7">
+      <p class="filters__caption">Марка двигателя</p>
+      <svg width="24" height="24">
+        <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+      </svg>
+    </div>
+    <div class="filters__hide collapse show" id="filItm7">
+      <div class="filters-check">
+        <input class="filters-check__input" type="checkbox" value="" id="defaultCheck21">
+        <label class="filters-check__label" for="defaultCheck21">
+          AKSA (Турция)
+        </label>
+      </div>
+      <div class="filters-check">
+        <input class="filters-check__input" type="checkbox" value="" id="defaultCheck22">
+        <label class="filters-check__label" for="defaultCheck22">
+          Baudouin (Франция-Китай)
+        </label>
+      </div>
+      <div class="filters-check">
+        <input class="filters-check__input" type="checkbox" value="" id="defaultCheck23">
+        <label class="filters-check__label" for="defaultCheck23">
+          Cummins (США)
+        </label>
+      </div>
+      <div class="filters-check">
+        <input class="filters-check__input" type="checkbox" value="" id="defaultCheck24">
+        <label class="filters-check__label" for="defaultCheck24">
+          Cummins-China (США-Китай)
+        </label>
+      </div>
+      <div class="filters-check">
+        <input class="filters-check__input" type="checkbox" value="" id="defaultCheck25">
+        <label class="filters-check__label" for="defaultCheck25">
+          Doosan (Корея)
+        </label>
+      </div>
+      <div class="filters-check">
+        <input class="filters-check__input" type="checkbox" value="" id="defaultCheck26">
+        <label class="filters-check__label" for="defaultCheck26">
+          Iveco FPT (Италия)
+        </label>
+      </div>
+      <div class="collapse" id="filtItm7-in">
+        <div class="filters-check">
+          <input class="filters-check__input" type="checkbox" value="" id="defaultCheck21">
+          <label class="filters-check__label" for="defaultCheck21">
+            AKSA (Турция)
+          </label>
+        </div>
+        <div class="filters-check">
+          <input class="filters-check__input" type="checkbox" value="" id="defaultCheck22">
+          <label class="filters-check__label" for="defaultCheck22">
+            Baudouin (Франция-Китай)
+          </label>
+        </div>
+        <div class="filters-check">
+          <input class="filters-check__input" type="checkbox" value="" id="defaultCheck23">
+          <label class="filters-check__label" for="defaultCheck23">
+            Cummins (США)
+          </label>
+        </div>
+        <div class="filters-check">
+          <input class="filters-check__input" type="checkbox" value="" id="defaultCheck24">
+          <label class="filters-check__label" for="defaultCheck24">
+            Cummins-China (США-Китай)
+          </label>
+        </div>
+        <div class="filters-check">
+          <input class="filters-check__input" type="checkbox" value="" id="defaultCheck25">
+          <label class="filters-check__label" for="defaultCheck25">
+            Doosan (Корея)
+          </label>
+        </div>
+        <div class="filters-check">
+          <input class="filters-check__input" type="checkbox" value="" id="defaultCheck26">
+          <label class="filters-check__label" for="defaultCheck26">
+            Iveco FPT (Италия)
+          </label>
+        </div>
+      </div>
+      <button class="btn-reset filters__showall js-filters-showall" data-toggle="collapse" data-target="#filtItm7-in">Показать все</button>
+    </div>
+  </div>
+  <div class="filters__item">
+    <div class="filters__heading" data-toggle="collapse" data-target="#filItm8">
+      <p class="filters__caption">Длина, мм</p>
+      <svg width="24" height="24">
+        <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+      </svg>
+    </div>
+    <div class="filters__hide collapse show" id="filItm8">
+      <div class="filters__group">
+        <label for="power-from" class="filters__label">
+          <span class="filters__label--caption">от</span>
+          <input type="number"  value="500" class="filters__input" id="length-from">
+        </label>
+        <hr>
+        <label for="power-to" class="filters__label">
+          <span class="filters__label--caption">до</span>
+          <input type="number"  value="5425" class="filters__input" id="length-to">
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="filters__item">
+    <div class="filters__heading" data-toggle="collapse" data-target="#filItm9">
+      <p class="filters__caption">Ширина, мм</p>
+      <svg width="24" height="24">
+        <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+      </svg>
+    </div>
+    <div class="filters__hide collapse show" id="filItm9">
+      <div class="filters__group">
+        <label for="power-from" class="filters__label">
+          <span class="filters__label--caption">от</span>
+          <input type="number"  value="500" class="filters__input" id="width-from">
+        </label>
+        <hr>
+        <label for="power-to" class="filters__label">
+          <span class="filters__label--caption">до</span>
+          <input type="number"  value="5425" class="filters__input" id="width-to">
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="filters__item">
+    <div class="filters__heading" data-toggle="collapse" data-target="#filItm10">
+      <p class="filters__caption">Высота, мм</p>
+      <svg width="24" height="24">
+        <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+      </svg>
+    </div>
+    <div class="filters__hide collapse show" id="filItm10">
+      <div class="filters__group">
+        <label for="power-from" class="filters__label">
+          <span class="filters__label--caption">от</span>
+          <input type="number"  value="500" class="filters__input" id="height-from">
+        </label>
+        <hr>
+        <label for="power-to" class="filters__label">
+          <span class="filters__label--caption">до</span>
+          <input type="number"  value="5425" class="filters__input" id="height-to">
+        </label>
+      </div>
+    </div>
+  </div>
+  <button class="btn-reset btn btn_blue filters__submit">
+    <svg width="24" height="24">
+      <use xlink:href="assets/img/sprite.svg#icon-loup"></use>
+    </svg>
+    Подобрать
+  </button>
+  <button class="btn-reset btn btn_grey filters__reset">
+    <svg width="24" height="24">
+      <use xlink:href="assets/img/sprite.svg#icon-close-big"></use>
+    </svg>
+    Сбросить все фильтры
+  </button>
+  <div class="filters__item">
+    <div class="filters__heading" data-toggle="collapse" data-target="#filItm11">
+      <p class="filters__caption">Популярные подборки</p>
+      <svg width="24" height="24">
+        <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+      </svg>
+    </div>
+    <div class="filters__hide collapse show" id="filItm11">
+      <div class="filters__group filters__collections" data-simplebar data-simplebar-auto-hide="false">
+        <a href="" class="filters__link">Двигатель 1500 об/мин</a>
+        <a href="" class="filters__link">С водяным охлаждением</a>
+        <a href="" class="filters__link">Бесшумные</a>
+        <a href="" class="filters__link">Блочные</a>
+        <a href="" class="filters__link">Аварийные</a>
+        <a href="" class="filters__link">Автономные</a>
+        <a href="" class="filters__link">Промышленные</a>
+        <a href="" class="filters__link">Резервные</a>
+        <a href="" class="filters__link">Уличные</a>
+        <a href="" class="filters__link">///</a>
+        <a href="" class="filters__link">///</a>
+        <a href="" class="filters__link">///</a>
+        <a href="" class="filters__link">///</a>
+        <a href="" class="filters__link">///</a>
+        <a href="" class="filters__link">///</a>
+        <a href="" class="filters__link">///</a>
+        <a href="" class="filters__link">///</a>
+        <a href="" class="filters__link">///</a>
+        <a href="" class="filters__link">///</a>
+        <a href="" class="filters__link">///</a>
+        <a href="" class="filters__link">///</a>
+      </div>
+    </div>
+  </div>
+</div>
