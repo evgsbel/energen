@@ -429,32 +429,27 @@ $('.js-open-content').on('click', function () {
 })
 
 //filters checkbox
-// $('.filters-check__input').on('change', function() {
-//   var values = $('.filters-check__input:checked').map(function() {
-//     return this.value;
-//   }).get().join(', ');
-//   $('#cs-input').html(values);
-// });
+$(() => {
+  var unit = $('.filters__caption').text().split(':'),
+  checkbox = $('.filters-check__input').on('change', function() {
 
-var unit = $('.filters__caption').text().split(':'),
-checkbox = $('.filters-check__input').on('change', function() {
+    $('#unit').html('');
+    var checked = checkbox.filter(':checked');
+    //$('#count').html('Выбрано: ' + checked.length);
 
-  $('#unit').html('');
-  var checked = checkbox.filter(':checked');
-  //$('#count').html('Выбрано: ' + checked.length);
+    var blocks = $('.filters__item');
+    $.each(blocks,function(block_number,block_content) {
 
-  var blocks = $('.filters__item');
-  $.each(blocks,function(block_number,block_content) {
+      var labelText = checked.map(function(i, el) {
+        return $(block_content).find('.filters-check__label').filter('[for="' + el.id + '"]').text();
+      }).get().join(',').trim();
 
-    var labelText = checked.map(function(i, el) {
-      return $(block_content).find('.filters-check__label').filter('[for="' + el.id + '"]').text();
-    }).get().join(',').trim();
-
-    var response = labelText;
-    if ((response)&&(response!==',')) {
-      $('#unit').append( $(block_content).find('.filters__caption').text() + response);
-      $('#unit').append('<br>');
-    }
+      var response = labelText;
+      if ((response)&&(response!==',')) {
+        $('#unit').append( $(block_content).find('.filters__caption').text() + response);
+        $('#unit').append('<br>');
+      }
+    });
   });
 });
 
@@ -468,3 +463,23 @@ $(() => {
     }
   });
 });
+
+//sorting btn
+$('.js-sorting-btn').click(function () {
+  $(this).toggleClass('is-active')
+})
+
+//switcher
+$('.js-switcher').click(function () {
+  $('.js-switcher').removeClass('is-active')
+  $(this).addClass('is-active')
+})
+
+//sorting quantity
+$(() => {
+  $('.js-select-quantity').select2({
+    minimumResultsForSearch: Infinity,
+    width: '204px',
+    closeOnSelect: true,
+  })
+})

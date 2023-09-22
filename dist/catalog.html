@@ -1348,9 +1348,36 @@
         </div>
         <div class="col-md-9">
           <div class="sorting">
-            Sorting
-  
-            <div id="unit"></div>
+            <div class="sorting__left">
+              <div id="unit"></div>
+              <button class="btn-reset sorting__btn js-sorting-btn">
+                <svg width="24" height="24">
+                  <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom-2"></use>
+                </svg>
+                По популярности
+              </button>
+            </div>
+            <div class="sorting__right">
+              <p class="sorting__count">Найдено товаров: <span>376</span></p>
+              <select name="" id="" class="sorting__quantity js-select-quantity">
+                <option value="30">Выводить по  30</option>
+                <option value="50">Выводить по  50</option>
+                <option value="10">Выводить по  100</option>
+              </select>
+              <div class="catalog-switcher">
+                <button class="btn-reset catalog-switcher__btn js-switcher js-list-view">
+                  <svg width="24" height="24">
+                    <use xlink:href="assets/img/sprite.svg#icon-catalog-list"></use>
+                  </svg>
+                </button>
+                <button class="btn-reset catalog-switcher__btn is-active js-switcher js-table-view">
+                  <svg width="24" height="24">
+                    <use xlink:href="assets/img/sprite.svg#icon-catalog-card"></use>
+                  </svg>
+                </button>
+                <span class="catalog-switcher__label"></span>
+              </div>
+            </div>
           </div>
           <div class="catalog__list row">
             <div class="col-4">
@@ -3032,58 +3059,173 @@
         </div>
         <div class="row advantages__list">
           <div class="col-md-2">
-          <div class="advantages__item">
-            <svg class="advantages__icon" width="32" height="32">
-              <use xlink:href="assets/img/sprite.svg#ad-01"></use>
-            </svg>
-            <p class="advantages__caption">Собственное производство</p>
+            <div class="advantages__item">
+              <svg class="advantages__icon" width="32" height="32">
+                <use xlink:href="assets/img/sprite.svg#ad-01"></use>
+              </svg>
+              <p class="advantages__caption">Собственное производство</p>
             </div>
           </div>
           <div class="col-md-2">
-          <div class="advantages__item">
-            <svg class="advantages__icon" width="32" height="32">
-              <use xlink:href="assets/img/sprite.svg#ad-02"></use>
-            </svg>
-            <p class="advantages__caption">Отдел <br>пректирования</p>
+            <div class="advantages__item">
+              <svg class="advantages__icon" width="32" height="32">
+                <use xlink:href="assets/img/sprite.svg#ad-02"></use>
+              </svg>
+              <p class="advantages__caption">Отдел <br>пректирования</p>
             </div>
           </div>
           <div class="col-md-2">
-          <div class="advantages__item">
-            <svg class="advantages__icon" width="32" height="32">
-              <use xlink:href="assets/img/sprite.svg#ad-03"></use>
-            </svg>
-            <p class="advantages__caption">Решения под любой&nbsp;бюджет</p>
+            <div class="advantages__item">
+              <svg class="advantages__icon" width="32" height="32">
+                <use xlink:href="assets/img/sprite.svg#ad-03"></use>
+              </svg>
+              <p class="advantages__caption">Решения под любой&nbsp;бюджет</p>
             </div>
           </div>
           <div class="col-md-2">
-          <div class="advantages__item">
-            <svg class="advantages__icon" width="32" height="32">
-              <use xlink:href="assets/img/sprite.svg#ad-04"></use>
-            </svg>
-            <p class="advantages__caption">Широкий модельный&nbsp;ряд</p>
+            <div class="advantages__item">
+              <svg class="advantages__icon" width="32" height="32">
+                <use xlink:href="assets/img/sprite.svg#ad-04"></use>
+              </svg>
+              <p class="advantages__caption">Широкий модельный&nbsp;ряд</p>
             </div>
           </div>
           <div class="col-md-2">
-          <div class="advantages__item">
-            <svg class="advantages__icon" width="32" height="32">
-              <use xlink:href="assets/img/sprite.svg#ad-05"></use>
-            </svg>
-            <p class="advantages__caption">Сертифицированная продукция</p>
+            <div class="advantages__item">
+              <svg class="advantages__icon" width="32" height="32">
+                <use xlink:href="assets/img/sprite.svg#ad-05"></use>
+              </svg>
+              <p class="advantages__caption">Сертифицированная продукция</p>
             </div>
           </div>
           <div class="col-md-2">
-          <div class="advantages__item">
-            <svg class="advantages__icon" width="32" height="32">
-              <use xlink:href="assets/img/sprite.svg#ad-06"></use>
-            </svg>
-            <p class="advantages__caption">Специальные <br>решения</p>
+            <div class="advantages__item">
+              <svg class="advantages__icon" width="32" height="32">
+                <use xlink:href="assets/img/sprite.svg#ad-06"></use>
+              </svg>
+              <p class="advantages__caption">Специальные <br>решения</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <section class="section specialist">
+    <div class="container">
+      <div class="row">
+        <div class="col-12"><h2 class="title-h2">Контакты специалистов</h2></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="specialist__item">
+            <div class="specialist__heading">
+              <p class="specialist__question">По техническим <br>вопросам</p>
+              <p class="specialist__contacts  specialist__contacts_phone">8 (800) 900-70-70
+                <span>Бесплатно по России</span>
+              </p>
+              <p class="specialist__contacts  specialist__contacts_phone">info@dizel-generator.ru
+                <a href="">Отправить письмо</a>
+              </p>
+            </div>
+            <div class="specialist__flex">
+              <img src="/assets/img/spc-01.png" alt="" class="specialist__photo">
+              <div class="specialist__description">
+                <p class="specialist__status">Руководитель проектов</p>
+                <p class="specialist__name">Мария Александровна Иванова</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="specialist__item">
+            <div class="specialist__heading">
+              <p class="specialist__question">По коммерческим <br> вопросам</p>
+              <p class="specialist__contacts  specialist__contacts_phone">8 (800) 900-70-70
+                <span>Бесплатно по России</span>
+              </p>
+              <p class="specialist__contacts  specialist__contacts_phone">info@dizel-generator.ru
+                <a href="">Отправить письмо</a>
+              </p>
+            </div>
+            <div class="specialist__flex">
+              <img src="/assets/img/spc-02.png" alt="" class="specialist__photo">
+              <div class="specialist__description">
+                <p class="specialist__status">Руководитель проектов</p>
+                <p class="specialist__name">Мария Александровна Иванова</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   
+  </section>
+  <section class="callback section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <form action="" class="callback__form form">
+            <p class="callback__caption">
+              Заказать обратный звонок
+              <span>Напишите и мы ответим в течение 5 минут</span>
+            </p>
+            <label for="feed-phone" class="form__label">
+              <span class="form__caption">номер телефона</span>
+              <input type="tel" name="feed-phone" id="feed-phone" placeholder="+7 911-609-73-15"
+                     class="form__input phone-mask callback__input">
+            </label>
+            <button class="btn-reset btn btn_blue form__submit callback__submit" type="submit">Перезвоните мне</button>
+            <label for="conf" class="checkbox__label">
+              <input type="checkbox" name="conf" id="conf" class="checkbox__input js-hero-checkbox" checked>
+              <span class="checkbox__pane"></span>
+              Я даю согласие на <a href="/">обработку моих персональных данных</a>
+            </label>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="catalog-collections section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="title-h2 catalog-collections__title">Место для всяких ссылок на подборки</h2>
+          <ul class="catalog-collections__list">
+            <li class="catalog-collections__item"><a href="">Двигатель 1500 об/мин</a></li>
+            <li class="catalog-collections__item"><a href="">С водяным охлаждением</a></li>
+            <li class="catalog-collections__item"><a href="">Бесшумные</a></li>
+            <li class="catalog-collections__item"><a href="">Блочные</a></li>
+            <li class="catalog-collections__item"><a href="">Английские</a></li>
+            <li class="catalog-collections__item"><a href="">Американские</a></li>
+            <li class="catalog-collections__item"><a href="">Белоруссккие</a></li>
+            <li class="catalog-collections__item"><a href="">Итальянские</a></li>
+            <li class="catalog-collections__item"><a href="">Европейские</a></li>
+            <li class="catalog-collections__item"><a href="">Китайские</a></li>
+            <li class="catalog-collections__item"><a href="">Корейские</a></li>
+            <li class="catalog-collections__item"><a href="">Немецкие</a></li>
+            <li class="catalog-collections__item"><a href="">Российские</a></li>
+            <li class="catalog-collections__item"><a href="">Японские</a></li>
+            <li class="catalog-collections__item"><a href="">Аварийные</a></li>
+            <li class="catalog-collections__item"><a href="">Автономные</a></li>
+            <li class="catalog-collections__item"><a href="">Промышленные</a></li>
+            <li class="catalog-collections__item"><a href="">Резервные</a></li>
+            <li class="catalog-collections__item"><a href="">Стационарные</a></li>
+            <li class="catalog-collections__item"><a href="">Уличные</a></li>
+            <li class="catalog-collections__item"><a href="">///</a></li>
+            <li class="catalog-collections__item"><a href="">///</a></li>
+            <li class="catalog-collections__item"><a href="">///</a></li>
+            <li class="catalog-collections__item"><a href="">///</a></li>
+            <li class="catalog-collections__item"><a href="">///</a></li>
+            <li class="catalog-collections__item"><a href="">///</a></li>
+            <li class="catalog-collections__item"><a href="">///</a></li>
+            <li class="catalog-collections__item"><a href="">///</a></li>
+            <li class="catalog-collections__item"><a href="">///</a></li>
+            <li class="catalog-collections__item"><a href="">///</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="section news">
     <div class="container">
       <div class="row align-items-center">
@@ -4611,6 +4753,48 @@
       </div>
     </div>
   </section>
+  <section class="section regions">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="title-h2 regions__title">Energen регионы</h2>
+          <ul class="regions__list">
+            <li class="regions__item"><a href="">Волгоград</a></li>
+            <li class="regions__item"><a href="">Воронеж</a></li>
+            <li class="regions__item"><a href="">Екатеринбург</a></li>
+            <li class="regions__item"><a href="">Ижевск</a></li>
+            <li class="regions__item"><a href="">Казань</a></li>
+            <li class="regions__item"><a href="">Калининград</a></li>
+            <li class="regions__item"><a href="">Кемерово</a></li>
+            <li class="regions__item"><a href="">Кострома</a></li>
+            <li class="regions__item"><a href="">Красноярск</a></li>
+            <li class="regions__item"><a href="">Магнитогорск</a></li>
+            <li class="regions__item"><a href="">Москва</a></li>
+            <li class="regions__item"><a href="">Набережные челны</a></li>
+            <li class="regions__item"><a href="">Новосибирск</a></li>
+            <li class="regions__item"><a href="">Нижний Новгород</a></li>
+            <li class="regions__item"><a href="">Омск</a></li>
+            <li class="regions__item"><a href="">Пенза</a></li>
+            <li class="regions__item"><a href="">Пермь</a></li>
+            <li class="regions__item"><a href="">Ростов-на-Дону</a></li>
+            <li class="regions__item"><a href="">Кемерово</a></li>
+            <li class="regions__item"><a href="">Кострома</a></li>
+            <li class="regions__item"><a href="">Красноярск</a></li>
+            <li class="regions__item"><a href="">Магнитогорск</a></li>
+            <li class="regions__item"><a href="">Москва</a></li>
+            <li class="regions__item"><a href="">Набережные челны</a></li>
+            <li class="regions__item"><a href="">Санкт-Петербург</a></li>
+            <li class="regions__item"><a href="">Самара</a></li>
+            <li class="regions__item"><a href="">Тюмень</a></li>
+            <li class="regions__item"><a href="">Уфа</a></li>
+            <li class="regions__item"><a href="">Челябинск</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
   
 </main>
 <div class="js-stop-header"></div>
