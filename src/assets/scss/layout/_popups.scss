@@ -3,12 +3,22 @@
     font-size: 28px;
     line-height: 1.2;
     font-weight: 500;
+    margin-bottom: 10px;
+    @include r(576) {
+      font-size: 22px;
+    }
+  }
+  &__subtitle {
+    font-size: 15px;
+    color: $grey-5;
+    line-height: 1.2;
     margin-bottom: 30px;
   }
   &__close {
     display: flex;
     justify-content: flex-end;
     margin-right: -30px;
+    margin-top: -15px;
   }
 }
 .modal-form {
@@ -68,6 +78,9 @@
     color: $grey-3;
     cursor: pointer;
     max-width: 70%;
+    @include r(576) {
+      max-width: 100%;
+    }
     a {
       color: $blue;
       text-decoration: underline;
@@ -103,7 +116,7 @@
   }
 }
 .modal-content {
-  padding: 10px 40px;
+  padding: 30px 40px;
 }
 .modal-dialog {
   width: 460px;

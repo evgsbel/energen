@@ -192,6 +192,62 @@
     gap: 30px 0;
     margin-bottom: 30px;
   }
+  &_horizontal  {
+    .product-card {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      align-items: stretch;
+      gap: 0 25px;
+      & > div {
+        flex: 0 0 auto;
+      }
+      &__actions {
+        justify-content: flex-start;
+        flex-direction: row;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+      }
+      &__img {
+        margin: 0 0 15px;
+        object-fit: contain;
+        height: 100%;
+      }
+      &__sum {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 8px;
+      }
+      &__price {
+        width: 100%;
+      }
+      &__delivery_horizontal-show {
+        display: block;
+      }
+      &__delivery_horizontal-hide {
+        display: none;
+      }
+      &__request-price {
+        margin-left: 0;
+        span br {
+          display: none;
+        }
+      }
+    }
+    &--right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+  }
+  &_vertical {
+    .product-card {
+      &__delivery_horizontal-show {
+        display: none;
+      }
+    }
+  }
 }
 
 .sorting {
@@ -375,4 +431,50 @@
     }
   }
 
+}
+
+.catalog-tag-list {
+  margin-bottom: 30px;
+  &__hidden {
+    display: none;
+  }
+  &__checked {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    div {
+      display: inline-block;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 6px 15px 6px 20px;
+    font-size: 15px;
+    background-color: #fff;
+    color: $grey-5;
+    border-radius: 6px;
+    transition: background-color $trns, color $trns;
+    cursor: pointer;
+    &:hover {
+      background-color: $grey-2;
+      color: $grey-4;
+    }
+  }
+  &__del {
+    cursor: pointer;
+    padding-left: 10px;
+    transition:  color $trns;
+    svg {
+      fill:  $grey-5;
+    }
+    &:hover {
+      svg {
+        fill:  $grey-4;
+      }
+    }
+  }
+  &__category {
+    color: $grey-4;
+  }
 }

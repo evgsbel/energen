@@ -567,11 +567,11 @@
         </div>
         <div class="mobile-menu__contacts--item ml-auto">
           <a href="tel:88009007070" class="mobile-menu__contacts--link">8 (800) 900-70-70</a>
-          <p class="mobile-menu__contacts--caption">Перезвоните мне</p>
+          <button class="btn-reset mobile-menu__contacts--caption" data-toggle="modal" data-target="#callback">Перезвоните мне</button>
         </div>
         <div class="mobile-menu__contacts--item">
-          <a href="mailto:info@dizel-generator.ru" class="mobile-menu__contacts--link">info@dizel-generator.ru</a>
-          <p class="mobile-menu__contacts--caption">Отправить заявку</p>
+          <a href="mailto:info@dizel-generator.ru" class="mobile-menu__contacts--link" >info@dizel-generator.ru</a>
+          <button class="mobile-menu__contacts--caption btn-reset" data-toggle="modal" data-target="#getOffer">Отправить заявку</button>
         </div>
       </div>
       <div class="mobile-menu__bottom">
@@ -3692,6 +3692,100 @@
             </svg>
           </button>
           <p class="modal__title">Получить предложение</p>
+          <form action="" class="modal-form modal__form">
+            <div class="modal-form__group">
+              <label for="name" class="modal-form__label">название поля</label>
+              <input type="text" id="name" name="name" class="modal-form__input" placeholder="При заполнении">
+            </div>
+            <div class="modal-form__group">
+              <label for="name2" class="modal-form__label">название поля</label>
+              <input type="text" id="name2" name="name2" class="modal-form__input" placeholder="При заполнении">
+            </div>
+            <div class="modal-form__group">
+              <label for="name3" class="modal-form__label">название поля</label>
+              <input type="text" id="name3" name="name3" class="modal-form__input" placeholder="При заполнении">
+            </div>
+            <button class="btn-reset btn btn_blue modal-form__submit" type="submit">Отправить запрос</button>
+            <div class="modal-form__conf">
+              <label for="modal-conf" class="conf-checkbox__label">
+                <input
+                  type="checkbox"
+                  class="conf-checkbox"
+                  id="modal-conf"
+                  name="conf"
+                  checked
+                >
+                <span class="conf-checkbox__pane"></span>
+                Я даю согласие <a href="">на обработку моих персональных данных </a>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <!--get price-->
+    <div class="modal fade" id="getPrice" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button type="button" class="btn-reset modal__close" data-dismiss="modal" aria-label="Close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M5.63574 5.63574L18.3637 18.3637" stroke="#1C1C1C" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"/>
+              <path d="M5.63574 18.3638L18.3637 5.63585" stroke="#1C1C1C" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <p class="modal__title">Запросить стоимость</p>
+          <p class="modal__subtitle">Специалист нашей компании уточнит стоимость, условия поставки и свяжется с вами</p>
+          <form action="" class="modal-form modal__form">
+            <div class="modal-form__group">
+              <label for="name" class="modal-form__label">название поля</label>
+              <input type="text" id="name" name="name" class="modal-form__input" placeholder="При заполнении">
+            </div>
+            <div class="modal-form__group">
+              <label for="name2" class="modal-form__label">название поля</label>
+              <input type="text" id="name2" name="name2" class="modal-form__input" placeholder="При заполнении">
+            </div>
+            <div class="modal-form__group">
+              <label for="name3" class="modal-form__label">название поля</label>
+              <input type="text" id="name3" name="name3" class="modal-form__input" placeholder="При заполнении">
+            </div>
+            <button class="btn-reset btn btn_blue modal-form__submit" type="submit">Отправить запрос</button>
+            <div class="modal-form__conf">
+              <label for="modal-conf" class="conf-checkbox__label">
+                <input
+                  type="checkbox"
+                  class="conf-checkbox"
+                  id="modal-conf"
+                  name="conf"
+                  checked
+                >
+                <span class="conf-checkbox__pane"></span>
+                Я даю согласие <a href="">на обработку моих персональных данных </a>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <!--get discount-->
+    <div class="modal fade" id="getDiscount" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button type="button" class="btn-reset modal__close" data-dismiss="modal" aria-label="Close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M5.63574 5.63574L18.3637 18.3637" stroke="#1C1C1C" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"/>
+              <path d="M5.63574 18.3638L18.3637 5.63585" stroke="#1C1C1C" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <p class="modal__title">Получить скидку</p>
+          <p class="modal__subtitle">Специалист нашей компании уточнит стоимость, условия поставки и свяжется с вами</p>
           <form action="" class="modal-form modal__form">
             <div class="modal-form__group">
               <label for="name" class="modal-form__label">название поля</label>
