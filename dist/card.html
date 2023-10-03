@@ -1,0 +1,3159 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Product</title>
+  <!-- build:css -->
+  <link rel="stylesheet" href="assets/vendor/css/animate.css">
+  <!--    <link rel="stylesheet" href="assets/vendor/css/swiper.min.css">-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/vendor/css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="assets/vendor/css/simplebar.css">
+  <link rel="stylesheet" href="assets/vendor/css/select2.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <!-- endbuild -->
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+
+<body class="is-card-page">
+<header class="header">
+  <div class="header__top d-none d-lg-block">
+    <div class="container h-100">
+      <div class="row align-items-center h-100">
+        <div class="col-12 d-flex align-items-center justify-content-between h-100">
+          <!--  change city -->
+          <div class="change-city">
+            <button class="btn-reset header__location flex flex_ai-center js-change-city-btn">
+              <svg width="16" height="16">
+                <use xlink:href="assets/img/sprite.svg#icon-location"></use>
+              </svg>
+              <span>Санкт-Петербург</span>
+            </button>
+            <div class="js-city-drop-down change-city__drop-down">
+              <div class="x-drop-down__search">
+                <p class="change-city__caption">Ваш город: <span class="js-change-city-caption">Санкт-Петербург</span>
+                </p>
+                <div class="x-input change-city__input">
+                  <input type="text" class="js-city-field change-city__field" autocomplete="off" value=""
+                         placeholder="Введите название Вашего города или выберете из списка ниже">
+                </div>
+              </div>
+              <ul class="x-drop-down__list js-dropdown change-city__list">
+                <li class="js-city-item  change-city__list-item">Волгоград</li>
+                <li class="js-city-item  change-city__list-item">Воронеж</li>
+                <li class="js-city-item  change-city__list-item">Екатеринбург</li>
+                <li class="js-city-item  change-city__list-item">Ижевск</li>
+                <li class="js-city-item  change-city__list-item">Казань</li>
+                <li class="js-city-item  change-city__list-item">Калининград</li>
+                <li class="js-city-item  change-city__list-item">Кемерово</li>
+                <li class="js-city-item  change-city__list-item">Кострома</li>
+                <li class="js-city-item  change-city__list-item">Красноярск</li>
+                <li class="js-city-item  change-city__list-item">Магнитогорск</li>
+                <li class="js-city-item  change-city__list-item">Москва</li>
+                <li class="js-city-item  change-city__list-item">Набережные челны</li>
+                <li class="js-city-item  change-city__list-item">Новосибирск</li>
+                <li class="js-city-item  change-city__list-item">Нижний Новгород</li>
+                <li class="js-city-item  change-city__list-item">Омск</li>
+                <li class="js-city-item  change-city__list-item">Пенза</li>
+                <li class="js-city-item  change-city__list-item">Пермь</li>
+                <li class="js-city-item  change-city__list-item">Ростов-на-Дону</li>
+                <li class="js-city-item  change-city__list-item">Самара</li>
+                <li class="js-city-item  change-city__list-item">Санкт-Петербург</li>
+                <li class="js-city-item  change-city__list-item"> Тюмень</li>
+                <li class="js-city-item  change-city__list-item">Уфа</li>
+                <li class="js-city-item  change-city__list-item">Челябинск</li>
+              </ul>
+            </div>
+          </div>
+          <nav class="header__nav nav h-100">
+            <ul class="nav__list h-100  js-header-nav">
+              <li class="nav__item"><a href="" class="nav__link">Производство</a></li>
+              <li class="nav__item nav__item_sub js-nav-item-sub">
+                <a href="" class="nav__link">Услуги и сервис</a>
+                <ul class="sub-menu">
+                  <li class="sub-menu__item"><a href="" class="sub-menu__link">Аренда электростанций</a></li>
+                  <li class="sub-menu__item"><a href="" class="sub-menu__link">Сервис и ремонт</a></li>
+                </ul>
+              </li>
+              <li class="nav__item nav__item_sub js-nav-item-sub">
+                <a href="" class="nav__link">О заводе</a>
+                <ul class="sub-menu">
+                  <li class="sub-menu__item"><a href="" class="sub-menu__link">О компании</a></li>
+                  <li class="sub-menu__item"><a href="" class="sub-menu__link">Оплата</a></li>
+                  <li class="sub-menu__item"><a href="" class="sub-menu__link">Отзывы</a></li>
+                  <li class="sub-menu__item"><a href="" class="sub-menu__link">Гарантия</a></li>
+                </ul>
+              </li>
+              <li class="nav__item"><a href="" class="nav__link">Доставка</a></li>
+              <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="header__time flex flex_ai-center">
+            <svg width="20" height="20">
+              <use xlink:href="assets/img/sprite.svg#icon-clock"></use>
+            </svg>
+            <span>пн-пт 09:00 - 18:00</span>
+          </div>
+          <ul class="header__social social">
+            <li class="social__item"><a href="" class="social__link">
+              <svg width="24" height="24">
+                <use xlink:href="assets/img/sprite.svg#icon-tlg"></use>
+              </svg>
+            </a></li>
+            <li class="social__item"><a href="" class="social__link">
+              <svg width="24" height="24">
+                <use xlink:href="assets/img/sprite.svg#icon-vk"></use>
+              </svg>
+            </a></li>
+            <li class="social__item"><a href="" class="social__link">
+              <svg width="24" height="24">
+                <use xlink:href="assets/img/sprite.svg#icon-wup"></use>
+              </svg>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 header__bottom-wr">
+          <a href="home.html" class="logo header__logo">
+            <p class="logo__subtitle">Завод генераторов</p>
+            <p class="logo__title">Energen</p>
+<!--            <svg class="logo__icon">-->
+<!--              <use xlink:href="assets/img/sprite.svg#logo"></use>-->
+<!--            </svg>-->
+          </a>
+          <div class="header-catalog">
+            <button class="btn-reset btn btn_blue header-catalog__btn js-open-header-catalog"><!--js-open-mobile-menu js-open-header-catalog-->
+              <span class="header-catalog__lines">
+                <i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>
+              </span>
+              <span class="header-catalog__title">Каталог</span>
+            </button>
+          </div>
+          <!--  search-->
+          <div class="header-search position-relative d-none d-lg-block">
+            <form action="" class="header-search__bar js-search-input">
+              <input type="search" name="search" pattern=".*\S.*" class=" header-search__input js-search-field" autocomplete="off">
+              <button class="header-search__reset btn-reset" type="reset">
+                <svg width="24" height="24">
+                  <use xlink:href="assets/img/sprite.svg#icon-close-sm"></use>
+                </svg>
+              </button>
+            </form>
+            <button class="btn-reset header-search__btn js-search-btn" type="button">
+              <svg width="24" height="24">
+                <use xlink:href="assets/img/sprite.svg#icon-loup"></use>
+              </svg>
+            </button>
+            <div class="header-search__drop-down js-search-drop-down" data-simplebar="" data-simplebar-auto-hide="false">
+              <ul class="header-search__list">
+                <li class="header-search__list-item header-search__list-item_with-close">
+                  <a href="" class="header-search__list-link">дизельный генератор</a>
+                  <button class="header-search__del btn-reset">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-close-sm"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="header-search__list-item header-search__list-item_with-close">
+                  <a href="" class="header-search__list-link">дизельный генератор 100 кВт</a>
+                  <button class="header-search__del btn-reset">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-close-sm"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="header-search__list-item header-search__list-item_with-close">
+                  <a href="" class="header-search__list-link">дизельный генератор 100 кВт в кожухе</a>
+                  <button class="header-search__del btn-reset">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-close-sm"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+              <ul class="header-search__list">
+                <li class="header-search__list-item"><a href="" class="header-search__list-link">дизельный генератор 100 кВт в кожухе</a></li>
+                <li class="header-search__list-item"><a href="" class="header-search__list-link">дизельный генератор 100 кВт в контейнере</a></li>
+                <li class="header-search__list-item"><a href="" class="header-search__list-link">дизельный генератор 100 кВт передвижной</a></li>
+                <li class="header-search__list-item"><a href="" class="header-search__list-link">дизельный генератор 100 кВт резервный</a></li>
+              </ul>
+              <ul class="header-search__list">
+                <li class="header-search__list-item">
+                  <a href="" class="header-search__list-link">дизельный генератор 100 кВт в кожухе</a>
+                  <span>Категория</span>
+                </li>
+                <li class="header-search__list-item">
+                  <a href="" class="header-search__list-link">дизельный генератор 100 кВт в контейнере</a>
+                  <span>Категория</span>
+                </li>
+                <li class="header-search__list-item">
+                  <a href="" class="header-search__list-link">дизельный генератор 100 кВт передвижной</a>
+                  <span>Категория</span>
+                </li>
+                <li class="header-search__list-item">
+                  <a href="" class="header-search__list-link">дизельный генератор 100 кВт резервный</a>
+                  <span>Категория</span>
+                </li>
+              </ul>
+              <ul class="header-search__list">
+                <li class="header-search__list-item">
+                  <a href="" class="header-search__list-link">Cummins</a>
+                  <span>Бренды</span>
+                </li>
+                <li class="header-search__list-item">
+                  <a href="" class="header-search__list-link">ТСС</a>
+                  <span>Бренды</span>
+                </li>
+                <li class="header-search__list-item">
+                  <a href="" class="header-search__list-link">SDMO</a>
+                  <span>Бренды</span>
+                </li>
+                <li class="header-search__list-item">
+                  <a href="" class="header-search__list-link">FG Wilson</a>
+                  <span>Бренды</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header__contacts-item  d-none d-lg-block">
+            <p class="header__contact">info@dizel-generator.ru</p>
+            <button  class="btn-reset header__contacts-link" data-toggle="modal" data-target="#getOffer">Отправить заявку</button>
+          </div>
+          <div class="header__contacts-item  d-none d-lg-block">
+            <p class="header__contact">8 (800) 900-70-70</p>
+            <p class="header__contacts-text">Бесплатно по России</p>
+          </div>
+          <div class="header__contacts-item  d-none d-lg-block">
+            <p class="header__contact">+7 (800) 900-70-70</p>
+            <button  class="btn-reset header__contacts-link" data-toggle="modal" data-target="#callback">Заказать звонок</button>
+          </div>
+          <a href="" class="header__mini-cart mini-cart header__icon">
+            <svg width="24" height="24">
+              <use xlink:href="assets/img/sprite.svg#icon-cart"></use>
+            </svg>
+            <span>Корзина</span>
+          </a>
+          <a href="" class="header__favorite header__icon">
+            <svg width="24" height="24">
+              <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+            </svg>
+            <span>Отложено</span>
+          </a>
+          <a href="" class="header__compare header__icon">
+            <svg width="24" height="24">
+              <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+            </svg>
+            <span>Сравнение</span>
+          </a>
+          <ul class="header__social social d-flex d-lg-none">
+            <li class="social__item"><a href="" class="social__link">
+              <svg width="24" height="24">
+                <use xlink:href="assets/img/sprite.svg#icon-tlg"></use>
+              </svg>
+            </a></li>
+            <li class="social__item"><a href="" class="social__link">
+              <svg width="24" height="24">
+                <use xlink:href="assets/img/sprite.svg#icon-vk"></use>
+              </svg>
+            </a></li>
+            <li class="social__item"><a href="" class="social__link">
+              <svg width="24" height="24">
+                <use xlink:href="assets/img/sprite.svg#icon-wup"></use>
+              </svg>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--  catalog menu-->
+  <div class="catalog-menu  js-header-catalog">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="catalog-menu__nav">
+            <ul class="nav catalog-menu__nav-list" role="tablist">
+              <li class="catalog-menu__nav-item">
+                <a class="catalog-menu__nav-link active" data-toggle="tab" href="#menu-one" role="tab">Дизельные
+                  генераторы</a>
+              </li>
+              <li class="catalog-menu__nav-item">
+                <a class="catalog-menu__nav-link" data-toggle="tab" href="#menu-two" role="tab" aria-selected="false">Газовые
+                  генераторы</a>
+              </li>
+              <li class="catalog-menu__nav-item">
+                <a class="catalog-menu__nav-link" data-toggle="tab" href="#menu-tree" role="tab"
+                   aria-selected="false">ИБП</a>
+              </li>
+              <li class="catalog-menu__nav-item">
+                <a class="catalog-menu__nav-link" data-toggle="tab" href="#menu-four" role="tab" aria-selected="false">Стабилизаторы
+                  напряжения</a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content" id="">
+            <div class="catalog-menu__wrapper  tab-pane fade show active" id="menu-one" role="tabpanel"
+                 aria-labelledby="home-tab">
+              <div class="catalog-menu__content">
+                <div class="catalog-menu__col">
+                  <p class="catalog-menu__caption">Подбор по мощности</p>
+                  <ul class="catalog-menu__list">
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">10 кВт</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">12 кВт</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">15 кВт</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">16 кВт</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">20 кВт</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">25 кВт</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">30 кВт</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">40 кВт</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">50 кВт</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">60 кВт</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">70 кВт</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">75 кВт</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">80 кВт</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">100 кВт</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">120 кВт</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">150 кВт</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">160 кВт</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">200 кВт</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">220 кВт</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">250 кВт</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">300 кВт</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">350 кВт</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">400 кВт</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">500 кВт</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">600 кВт</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">800 кВт</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">900 кВт</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">1000 кВт</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">1100 кВт</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">2000 кВт</a></li>
+                  </ul>
+                  <a href="" class="catalog-menu__link-all">
+                    Все мощности
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="catalog-menu__col">
+                  <p class="catalog-menu__caption">По марке</p>
+                  <ul class="catalog-menu__list">
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">ТСС</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Азимут</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Wilson</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">SDMO</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Cummins</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">ЯМЗ</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">AKSA</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Perkins</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Caterpillar</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Iveco</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">АД</a></li>
+                  </ul>
+                  <a href="" class="catalog-menu__link-all">
+                    Все марки
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="catalog-menu__col">
+                  <p class="catalog-menu__caption">По марке</p>
+                  <ul class="catalog-menu__list h-auto">
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">С автозапуском</a>
+                    </li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Промышленный</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">В контейнере</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Передвижной</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">В кожухе</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Резервный</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Стационарный</a></li>
+                  </ul>
+                  <p class="catalog-menu__caption ">Оснащение ДГУ</p>
+                  <ul class="catalog-menu__list h-auto">
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Кожухи для
+                      генераторов</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Контейнеры для
+                      генераторов</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Контейнер Север для
+                      ДГУ</a></li>
+                  </ul>
+                </div>
+                <div class="catalog-menu__col w-25">
+                  <p class="catalog-menu__caption">Популярные подборки</p>
+                  <ul class="catalog-menu__scroll-list js-scroll-list" data-simplebar data-simplebar-auto-hide="false">
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Дизель генератор с
+                      автозапуском</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Дизель генератор на
+                      шасси</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Дизель генератор
+                      промышленный</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Дизель генератор
+                      380В</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Дизель генератор с
+                      АВР</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Дизель генератор 380В
+                      с автозапуском</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Дизель генератор
+                      трехфазный</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Генератор
+                      трехфазный</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Генератор в
+                      кожухе</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Дизель генератор
+                      ТСС</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Дизель генератор
+                      SDMO</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Дизель генератор
+                      SDMO</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Дизель генератор
+                      SDMO</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Дизель генератор
+                      SDMO</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Дизель генератор
+                      SDMO</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Дизель генератор
+                      SDMO</a></li>
+                    <li class="catalog-menu__list-item"><a href="" class="catalog-menu__list-link">Дизель генератор
+                      SDMO</a></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+            <div class="catalog-menu__content tab-pane fade" id="menu-two" role="tabpanel" aria-labelledby="home-tab">
+              456
+            </div>
+            <div class="catalog-menu__content tab-pane fade" id="menu-tree" role="tabpanel" aria-labelledby="home-tab">
+              789
+            </div>
+            <div class="catalog-menu__content tab-pane fade" id="menu-four" role="tabpanel" aria-labelledby="home-tab">
+              000
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn-reset btn catalog-menu__btn">
+        Перейти в каталог
+        <svg width="24" height="24">
+          <use xlink:href="assets/img/sprite.svg#icon-arrow-right"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+
+<div class="mobile-menu js-mobile-menu" data-simplebar data-simplebar-auto-hide="false">
+  <div class="mobile-menu__heading">
+    <p class="mobile-menu__title">Меню</p>
+    <button class="btn-reset js-close-mobile-menu">
+      <svg width="24" height="24">
+        <use xlink:href="assets/img/sprite.svg#icon-close-big"></use>
+      </svg>
+    </button>
+  </div>
+  <p class="mobile-menu__caption">Продукция</p>
+  <ul class="mobile-menu__list" id="mobile-sub-menu-production">
+    <li class="mobile-menu__item">
+      <a href="" class="mobile-menu__link mobile-menu__link_with-sub collapsed" data-toggle="collapse"
+         data-target="#collapseMenuOne" aria-expanded="true">Дизельные генераторы</a>
+      <div class="collapse" id="collapseMenuOne" aria-labelledby="headingOne" data-parent="#mobile-sub-menu-production">
+        <ul class="mobile-menu__sub-menu">
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 01</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 02</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 03</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 04</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 05</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="" class="mobile-menu__link mobile-menu__link_with-sub collapsed" data-toggle="collapse"
+         data-target="#collapseMenuTwo" aria-expanded="true">Газовые генераторы</a>
+      <div class="collapse" id="collapseMenuTwo" aria-labelledby="headingOne"
+           data-parent="#mobile-sub-menu-production">
+        <ul class="mobile-menu__sub-menu">
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 01</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 02</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 03</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 04</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 05</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="" class="mobile-menu__link mobile-menu__link_with-sub collapsed" data-toggle="collapse"
+         data-target="#collapseMenuThree" aria-expanded="true">Источники бесперебойного питания</a>
+      <div class="collapse" id="collapseMenuThree" aria-labelledby="headingOne"
+           data-parent="#mobile-sub-menu-production">
+        <ul class="mobile-menu__sub-menu">
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 01</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 02</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 03</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 04</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 05</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="" class="mobile-menu__link mobile-menu__link_with-sub collapsed" data-toggle="collapse"
+         data-target="#collapseMenuFour" aria-expanded="true">Стабилизаторы напряжения</a>
+      <div class="collapse" id="collapseMenuFour" aria-labelledby="headingOne"
+           data-parent="#mobile-sub-menu-production">
+        <ul class="mobile-menu__sub-menu">
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 01</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 02</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 03</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 04</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Пункт 05</a></li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+  <ul class="mobile-menu__list" id="mobile-sub-menu-other">
+    <li class="mobile-menu__item">
+      <a href="" class="mobile-menu__link">Наше производство</a>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="" class="mobile-menu__link mobile-menu__link_with-sub collapsed" data-toggle="collapse"
+         data-target="#collapseMenuFive" aria-expanded="true">Услуги и сервис</a>
+      <div class="collapse" id="collapseMenuFive" aria-labelledby="headingOne"
+           data-parent="#mobile-sub-menu-other">
+        <ul class="mobile-menu__sub-menu">
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Аренда электростанций</a>
+          </li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Сервис и ремонт</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="" class="mobile-menu__link mobile-menu__link_with-sub collapsed" data-toggle="collapse"
+         data-target="#collapseMenuSix" aria-expanded="true">О компании</a>
+      <div class="collapse" id="collapseMenuSix" aria-labelledby="headingOne"
+           data-parent="#mobile-sub-menu-other">
+        <ul class="mobile-menu__sub-menu">
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">О компании</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Новости / Проекты</a>
+          </li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Отзывы</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Гарантия</a></li>
+          <li class="mobile-menu__sub-menu-item"><a href="" class="mobile-menu__sub-menu-link">Оплата</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="" class="mobile-menu__link">Доставка</a>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="" class="mobile-menu__link">Контакты</a>
+    </li>
+  </ul>
+  <div class="mobile-menu__contacts">
+    <div class="mobile-menu__contacts--item">
+      <a href="tel:88009007070" class="mobile-menu__contacts--link">8 (800) 900-70-70</a>
+      <p class="mobile-menu__contacts--caption">Бесплатно по России</p>
+    </div>
+    <div class="mobile-menu__contacts--item ml-auto">
+      <a href="tel:88009007070" class="mobile-menu__contacts--link">8 (800) 900-70-70</a>
+      <button class="btn-reset mobile-menu__contacts--caption" data-toggle="modal" data-target="#callback">Перезвоните мне</button>
+    </div>
+    <div class="mobile-menu__contacts--item">
+      <a href="mailto:info@dizel-generator.ru" class="mobile-menu__contacts--link" >info@dizel-generator.ru</a>
+      <button class="mobile-menu__contacts--caption btn-reset" data-toggle="modal" data-target="#getOffer">Отправить заявку</button>
+    </div>
+  </div>
+  <div class="mobile-menu__bottom">
+    <div class="change-city">
+      <button class="btn-reset header__location flex flex_ai-center js-change-city-btn">
+        <svg width="16" height="16">
+          <use xlink:href="assets/img/sprite.svg#icon-location"></use>
+        </svg>
+        <span>Санкт-Петербург</span>
+      </button>
+      <div class="js-city-drop-down change-city__drop-down">
+        <div class="x-drop-down__search">
+          <p class="change-city__caption">Ваш город: <span class="js-change-city-caption">Санкт-Петербург</span>
+          </p>
+          <div class="x-input change-city__input">
+            <input type="text" class="js-city-field change-city__field" autocomplete="off" value=""
+                   placeholder="Введите название Вашего города или выберете из списка ниже">
+          </div>
+        </div>
+        <ul class="x-drop-down__list js-dropdown change-city__list">
+          <li class="js-city-item  change-city__list-item">Волгоград</li>
+          <li class="js-city-item  change-city__list-item">Воронеж</li>
+          <li class="js-city-item  change-city__list-item">Екатеринбург</li>
+          <li class="js-city-item  change-city__list-item">Ижевск</li>
+          <li class="js-city-item  change-city__list-item">Казань</li>
+          <li class="js-city-item  change-city__list-item">Калининград</li>
+          <li class="js-city-item  change-city__list-item">Кемерово</li>
+          <li class="js-city-item  change-city__list-item">Кострома</li>
+          <li class="js-city-item  change-city__list-item">Красноярск</li>
+          <li class="js-city-item  change-city__list-item">Магнитогорск</li>
+          <li class="js-city-item  change-city__list-item">Москва</li>
+          <li class="js-city-item  change-city__list-item">Набережные челны</li>
+          <li class="js-city-item  change-city__list-item">Новосибирск</li>
+          <li class="js-city-item  change-city__list-item">Нижний Новгород</li>
+          <li class="js-city-item  change-city__list-item">Омск</li>
+          <li class="js-city-item  change-city__list-item">Пенза</li>
+          <li class="js-city-item  change-city__list-item">Пермь</li>
+          <li class="js-city-item  change-city__list-item">Ростов-на-Дону</li>
+          <li class="js-city-item  change-city__list-item">Самара</li>
+          <li class="js-city-item  change-city__list-item">Санкт-Петербург</li>
+          <li class="js-city-item  change-city__list-item"> Тюмень</li>
+          <li class="js-city-item  change-city__list-item">Уфа</li>
+          <li class="js-city-item  change-city__list-item">Челябинск</li>
+        </ul>
+      </div>
+    </div>
+    <ul class="header__social social">
+      <li class="social__item"><a href="" class="social__link">
+        <svg width="24" height="24">
+          <use xlink:href="assets/img/sprite.svg#icon-tlg"></use>
+        </svg>
+      </a></li>
+      <li class="social__item"><a href="" class="social__link">
+        <svg width="24" height="24">
+          <use xlink:href="assets/img/sprite.svg#icon-vk"></use>
+        </svg>
+      </a></li>
+      <li class="social__item"><a href="" class="social__link">
+        <svg width="24" height="24">
+          <use xlink:href="assets/img/sprite.svg#icon-wup"></use>
+        </svg>
+      </a></li>
+    </ul>
+  </div>
+</div>
+
+<main role="main" class="main">
+   <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Главная</a></li>
+              <li class="breadcrumb-item"><a href="#">Уровень 2</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Активная страница</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  
+  <section class="product">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="title-h2 product__title">Дизельный генератор АД-200С-Т400-РМ1 CAME BX608 COMBO CLASSICO
+            (001U2625RU)</h1>
+          <div class="product-heading product__heading">
+            <button
+              class="btn-reset product-heading__action product-heading__action_favorite product-heading__link js-card-favorite">
+              <svg width="20" height="20">
+                <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+              </svg>
+              <span>В избранное</span>
+            </button>
+            <button
+              class="btn-reset product-heading__action product-heading__action_matching product-heading__link js-card-matches">
+              <svg width="20" height="20">
+                <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+              </svg>
+              <span>Сравнить</span>
+            </button>
+            <a href="" class="product-heading__pdf product-heading__link">
+              <svg width="20" height="20">
+                <use xlink:href="assets/img/sprite.svg#icon-file"></use>
+              </svg>
+              <span>Скачать описание в pdf</span>
+            </a>
+            <button class="btn-reset product-heading__link">
+              <svg width="20" height="20">
+                <use xlink:href="assets/img/sprite.svg#icon-print"></use>
+              </svg>
+              <span>Распечатать</span>
+            </button>
+            <p class="product-heading__sales">Уже продано: <span>24 шт</span></p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="product-images__big swiper js-product-images-slider-big">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/img/ci-01.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/ci-01.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/ci-01.jpg" alt="">
+              </div>
+            </div>
+            <button class="slider-navigation__btn slider-navigation__btn_prev btn-reset swiper-button-prev product-images-nav-prev">
+              <svg width="24" height="24">
+                <use xlink:href="assets/img/sprite.svg#icon-arrow-left"></use>
+              </svg>
+            </button>
+            <button class="slider-navigation__btn slider-navigation__btn_next btn-reset swiper-button-next product-images-nav-next">
+              <svg width="24" height="24">
+                <use xlink:href="assets/img/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="product-images__small swiper js-product-images-slider-small">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="product-images__img">
+                  <img src="assets/img/ci-01.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-images__img">
+                  <img src="assets/img/ci-01.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-images__img">
+                  <img src="assets/img/ci-01.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="" class="product-images__link">Обзор марки SDMO</a>
+        </div>
+        <div class="col-lg-5">
+          <div class="product__content">
+            <div class="product-check">
+  
+            </div>
+          </div>
+          <ul class="product-card__properties-list ">
+            <li class="product-card__properties-item">
+              <p class="product-card__properties-caption">Мощность</p>
+              <p class="product-card__properties-dots"></p>
+              <a href="#" class="product-card__properties-value is-active">200 кВт</a></li>
+            <li class="product-card__properties-item">
+              <p class="product-card__properties-caption">Напряжение</p>
+              <p class="product-card__properties-dots"></p>
+              <a href="#" class="product-card__properties-value is-active">400/230В</a></li>
+            <li class="product-card__properties-item">
+              <p class="product-card__properties-caption">Расход топлива</p>
+              <p class="product-card__properties-dots"></p>
+              <a href="#" class="product-card__properties-value">121 л/ч</a></li>
+            <li class="product-card__properties-item">
+              <p class="product-card__properties-caption">Двигатель</p>
+              <p class="product-card__properties-dots"></p>
+              <a href="#" class="product-card__properties-value is-active">Baudouin Moteurs
+                (Франция-Китай) </a></li>
+            <li class="product-card__properties-item">
+              <p class="product-card__properties-caption">Модель</p>
+              <p class="product-card__properties-dots"></p>
+              <a href="#" class="product-card__properties-value">1104C-44TAG55 </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <div class="product-buy product__buy">
+            <p class="product-buy__price-caption">Цена с НДС:</p>
+            <p class="product-buy__price">36 175 175 ₽</p>
+            <button class="btn-reset product-card__request-price product-buy__get-discount" data-toggle="modal"
+                    data-target="#getDiscount">
+              <svg width="20" height="20">
+                <use xlink:href="assets/img/sprite.svg#percent-in-circle"></use>
+              </svg>
+              <span>Получить скидку</span>
+            </button>
+            <p class="product-buy__availability">В наличии 1-2 шт</p>
+            <button class="btn-reset btn btn_blue product-buy__btn product-buy__btn_order">Запросить КП</button>
+            <button class="btn-reset btn btn_grey product-buy__btn product-buy__btn_to-cart">В корзину</button>
+            <button class="btn-reset product-buy__one-click">Купить в один клик</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section articles">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-7">
+          <h2 class="title-h2 articles__title">Советы по выбору генератора</h2>
+        </div>
+      </div>
+      
+          <div class="row">
+            <div class="col-12">
+              <div class="swiper js-articles-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="articles__item">
+                      <img src="assets/img/art-01.jpg" alt="" class="articles__img">
+                      <div class="articles__inner">
+                        <p class="articles__caption">Монтаж стационарного генератора</p>
+                        <p class="articles__date">Декабрь 2021</p>
+                        <a href="" class="lnk"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="articles__item">
+                      <img src="assets/img/art-02.jpg" alt="" class="articles__img">
+                      <div class="articles__inner">
+                        <p class="articles__caption">Подключение ДГУ (электростанции) </p>
+                        <p class="articles__date">Декабрь 2021</p>
+                        <a href="" class="lnk"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="articles__item">
+                      <img src="assets/img/art-03.jpg" alt="" class="articles__img">
+                      <div class="articles__inner">
+                        <p class="articles__caption">Резервное электроснабжение ...</p>
+                        <p class="articles__date">Декабрь 2021</p>
+                        <a href="" class="lnk"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="articles__item">
+                      <img src="assets/img/art-04.jpg" alt="" class="articles__img">
+                      <div class="articles__inner">
+                        <p class="articles__caption">Стабилизатор Ortea Orion Plus 500-15 для ...</p>
+                        <p class="articles__date">Декабрь 2021</p>
+                        <a href="" class="lnk"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+    </div>
+  </section>
+  <section class="section specialist">
+    <div class="container">
+      <div class="row">
+        <div class="col-12"><h2 class="title-h2">Контакты специалистов</h2></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="specialist__item">
+            <div class="specialist__heading">
+              <p class="specialist__question">По техническим <br>вопросам</p>
+              <p class="specialist__contacts  specialist__contacts_phone">8 (800) 900-70-70
+                <span>Бесплатно по России</span>
+              </p>
+              <p class="specialist__contacts  specialist__contacts_phone">info@dizel-generator.ru
+                <a href="">Отправить письмо</a>
+              </p>
+            </div>
+            <div class="specialist__flex">
+              <img src="/assets/img/spc-01.png" alt="" class="specialist__photo">
+              <div class="specialist__description">
+                <p class="specialist__status">Руководитель проектов</p>
+                <p class="specialist__name">Мария Александровна Иванова</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="specialist__item">
+            <div class="specialist__heading">
+              <p class="specialist__question">По коммерческим <br> вопросам</p>
+              <p class="specialist__contacts  specialist__contacts_phone">8 (800) 900-70-70
+                <span>Бесплатно по России</span>
+              </p>
+              <p class="specialist__contacts  specialist__contacts_phone">info@dizel-generator.ru
+                <a href="">Отправить письмо</a>
+              </p>
+            </div>
+            <div class="specialist__flex">
+              <img src="/assets/img/spc-02.png" alt="" class="specialist__photo">
+              <div class="specialist__description">
+                <p class="specialist__status">Руководитель проектов</p>
+                <p class="specialist__name">Мария Александровна Иванова</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </section>
+  <section class="callback section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <form action="" class="callback__form form">
+            <p class="callback__caption">
+              Заказать обратный звонок
+              <span>Напишите и мы ответим в течение 5 минут</span>
+            </p>
+            <label for="feed-phone" class="form__label">
+              <span class="form__caption">номер телефона</span>
+              <input type="tel" name="feed-phone" id="feed-phone" placeholder="+7 911-609-73-15"
+                     class="form__input phone-mask callback__input">
+            </label>
+            <button class="btn-reset btn btn_blue form__submit callback__submit" type="submit">Перезвоните мне</button>
+            <label for="conf" class="checkbox__label">
+              <input type="checkbox" name="conf" id="conf" class="checkbox__input js-hero-checkbox" checked>
+              <span class="checkbox__pane"></span>
+              Я даю согласие на <a href="/">обработку моих персональных данных</a>
+            </label>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section best">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="title-h2 best__title">Аналоги по мощности</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="js-best-slider swiper best__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-card__actions">
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                    </svg>
+                  </button>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <img src="assets/img/prc-01.png" alt="" class="product-card__img">
+                <a href="card.html" class="product-card__caption">Дизельный генератор 100 кВт в контейнере
+                  АД-200С-Т400-РМ1</a>
+                <ul class="product-card__properties-list">
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Мощность</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">200 кВт</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Напряжение</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">400/230В</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Расход топлива</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">121 л/ч</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Двигатель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">Mitsubishi (Япония) </a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Модель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">1104C-44TAG55 </a>
+                  </li>
+                </ul>
+                <p class="product-card__delivery product-card__delivery_green">Поставка 6 недель</p>
+                <div class="product-card__sum">
+                  <p class="product-card__price">00 000 000 ₽</p>
+                  <p class="product-card__old-price">36 175 175</p>
+                  <span class="product-card__discount">15%</span></div>
+      
+                <div class="product-card__mobile-bottom">
+                  <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                  <div>
+                    <button
+                      class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle">
+                      <svg width="24" height="24">
+                        <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                <button class="btn-reset product-card__link">Купить в один клик</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-card__actions">
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle is-active">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                    </svg>
+                  </button>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <img src="assets/img/prc-01.png" alt="" class="product-card__img">
+                <a href="card.html" class="product-card__caption">Дизельный генератор 100 кВт в контейнере
+                  АД-200С-Т400-РМ1</a>
+                <ul class="product-card__properties-list">
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Мощность</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">200 кВт</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Напряжение</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">400/230В</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Расход топлива</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">121 л/ч</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Двигатель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">Baudouin Moteurs
+                      (Франция-Китай) </a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Модель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">1104C-44TAG55 </a>
+                  </li>
+                </ul>
+                <p class="product-card__delivery product-card__delivery_grey">Снято с производства</p>
+                <div class="product-card__sum">
+      
+                </div>
+                <div class="product-card__mobile-bottom">
+                  <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                  <div>
+                    <button
+                      class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle">
+                      <svg width="24" height="24">
+                        <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                <button class="btn-reset product-card__link">Купить в один клик</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-card__actions">
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                    </svg>
+                  </button>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle is-active">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <img src="assets/img/prc-01.png" alt="" class="product-card__img">
+                <a href="card.html" class="product-card__caption">Дизельный генератор 100 кВт в контейнере
+                  АД-200С-Т400-РМ1</a>
+                <ul class="product-card__properties-list">
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Мощность</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">200 кВт</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Напряжение</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">400/230В</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Расход топлива</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">121 л/ч</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Двигатель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">Baudouin Moteurs
+                      (Франция-Китай) </a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Модель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">1104C-44TAG55 </a>
+                  </li>
+                </ul>
+                <p class="product-card__delivery"></p>
+                <div class="product-card__sum">
+                  <p class="product-card__price">по запросу</p>
+                  <div class="product-card__request-price">
+                    <svg width="20" height="20">
+                      <use xlink:href="assets/img/sprite.svg#icon-check-in-circle"></use>
+                    </svg>
+                    <span>Запросить цену</span>
+                  </div>
+                </div>
+                <div class="product-card__mobile-bottom">
+                  <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                  <div>
+                    <button
+                      class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle">
+                      <svg width="24" height="24">
+                        <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                <button class="btn-reset product-card__link">Купить в один клик</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-card__actions">
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle is-active">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                    </svg>
+                  </button>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle is-active">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <img src="assets/img/prc-01.png" alt="" class="product-card__img">
+                <a href="card.html" class="product-card__caption">Дизельный генератор 100 кВт в контейнере
+                  АД-200С-Т400-РМ1</a>
+                <ul class="product-card__properties-list">
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Мощность</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">200 кВт</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Напряжение</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">400/230В</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Расход топлива</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">121 л/ч</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Двигатель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">Baudouin Moteurs
+                      (Франция-Китай) </a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Модель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">1104C-44TAG55 </a>
+                  </li>
+                </ul>
+                <p class="product-card__delivery"></p>
+                <div class="product-card__sum">
+                  <p class="product-card__price">00 000 000 ₽</p>
+                  <div class="product-card__request-price">
+                    <svg width="20" height="20">
+                      <use xlink:href="assets/img/sprite.svg#percent-in-circle"></use>
+                    </svg>
+                    <span>Получить <br> скидку</span>
+                  </div>
+                </div>
+                <div class="product-card__mobile-bottom">
+                  <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                  <div>
+                    <button
+                      class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle">
+                      <svg width="24" height="24">
+                        <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                <button class="btn-reset product-card__link">Купить в один клик</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-card__actions">
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                    </svg>
+                  </button>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <img src="assets/img/prc-01.png" alt="" class="product-card__img">
+                <a href="card.html" class="product-card__caption">Дизельный генератор 100 кВт в контейнере
+                  АД-200С-Т400-РМ1</a>
+                <ul class="product-card__properties-list">
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Мощность</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">200 кВт</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Напряжение</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">400/230В</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Расход топлива</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">121 л/ч</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Двигатель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">Mitsubishi (Япония) </a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Модель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">1104C-44TAG55 </a>
+                  </li>
+                </ul>
+                <p class="product-card__delivery product-card__delivery_green">Поставка 6 недель</p>
+                <div class="product-card__sum">
+                  <p class="product-card__price">00 000 000 ₽</p>
+                  <p class="product-card__old-price">36 175 175</p>
+                  <span class="product-card__discount">15%</span></div>
+                <div class="product-card__mobile-bottom">
+                  <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                  <div>
+                    <button
+                      class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle">
+                      <svg width="24" height="24">
+                        <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                <button class="btn-reset product-card__link">Купить в один клик</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-card__actions">
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle is-active">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                    </svg>
+                  </button>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <img src="assets/img/prc-01.png" alt="" class="product-card__img">
+                <a href="card.html" class="product-card__caption">Дизельный генератор 100 кВт в контейнере
+                  АД-200С-Т400-РМ1</a>
+                <ul class="product-card__properties-list">
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Мощность</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">200 кВт</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Напряжение</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">400/230В</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Расход топлива</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">121 л/ч</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Двигатель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">Baudouin Moteurs
+                      (Франция-Китай) </a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Модель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">1104C-44TAG55 </a>
+                  </li>
+                </ul>
+                <p class="product-card__delivery product-card__delivery_grey">Снято с производства</p>
+                <div class="product-card__sum">
+      
+                </div>
+                <div class="product-card__mobile-bottom">
+                  <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                  <div>
+                    <button
+                      class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle">
+                      <svg width="24" height="24">
+                        <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                <button class="btn-reset product-card__link">Купить в один клик</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-card__actions">
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                    </svg>
+                  </button>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle is-active">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <img src="assets/img/prc-01.png" alt="" class="product-card__img">
+                <a href="card.html" class="product-card__caption">Дизельный генератор 100 кВт в контейнере
+                  АД-200С-Т400-РМ1</a>
+                <ul class="product-card__properties-list">
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Мощность</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">200 кВт</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Напряжение</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">400/230В</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Расход топлива</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">121 л/ч</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Двигатель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">Baudouin Moteurs
+                      (Франция-Китай) </a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Модель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">1104C-44TAG55 </a>
+                  </li>
+                </ul>
+                <p class="product-card__delivery"></p>
+                <div class="product-card__sum">
+                  <p class="product-card__price">по запросу</p>
+                  <div class="product-card__request-price">
+                    <svg width="20" height="20">
+                      <use xlink:href="assets/img/sprite.svg#icon-check-in-circle"></use>
+                    </svg>
+                    <span>Запросить цену</span>
+                  </div>
+                </div>
+                <div class="product-card__mobile-bottom">
+                  <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                  <div>
+                    <button
+                      class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle">
+                      <svg width="24" height="24">
+                        <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                <button class="btn-reset product-card__link">Купить в один клик</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-card__actions">
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle is-active">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                    </svg>
+                  </button>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle is-active">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <img src="assets/img/prc-01.png" alt="" class="product-card__img">
+                <a href="card.html" class="product-card__caption">Дизельный генератор 100 кВт в контейнере
+                  АД-200С-Т400-РМ1</a>
+                <ul class="product-card__properties-list">
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Мощность</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">200 кВт</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Напряжение</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">400/230В</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Расход топлива</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">121 л/ч</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Двигатель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">Baudouin Moteurs
+                      (Франция-Китай) </a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Модель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">1104C-44TAG55 </a>
+                  </li>
+                </ul>
+                <p class="product-card__delivery"></p>
+                <div class="product-card__sum">
+                  <p class="product-card__price">00 000 000 ₽</p>
+                  <div class="product-card__request-price">
+                    <svg width="20" height="20">
+                      <use xlink:href="assets/img/sprite.svg#percent-in-circle"></use>
+                    </svg>
+                    <span>Получить <br> скидку</span>
+                  </div>
+                </div>
+                <div class="product-card__mobile-bottom">
+                  <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                  <div>
+                    <button
+                      class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle">
+                      <svg width="24" height="24">
+                        <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                <button class="btn-reset product-card__link">Купить в один клик</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section best">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="title-h2 best__title">Аналоги по стоимости</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="js-best-slider swiper best__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-card__actions">
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                    </svg>
+                  </button>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <img src="assets/img/prc-01.png" alt="" class="product-card__img">
+                <a href="card.html" class="product-card__caption">Дизельный генератор 100 кВт в контейнере
+                  АД-200С-Т400-РМ1</a>
+                <ul class="product-card__properties-list">
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Мощность</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">200 кВт</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Напряжение</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">400/230В</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Расход топлива</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">121 л/ч</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Двигатель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">Mitsubishi (Япония) </a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Модель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">1104C-44TAG55 </a>
+                  </li>
+                </ul>
+                <p class="product-card__delivery product-card__delivery_green">Поставка 6 недель</p>
+                <div class="product-card__sum">
+                  <p class="product-card__price">00 000 000 ₽</p>
+                  <p class="product-card__old-price">36 175 175</p>
+                  <span class="product-card__discount">15%</span></div>
+      
+                <div class="product-card__mobile-bottom">
+                  <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                  <div>
+                    <button
+                      class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle">
+                      <svg width="24" height="24">
+                        <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                <button class="btn-reset product-card__link">Купить в один клик</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-card__actions">
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle is-active">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                    </svg>
+                  </button>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <img src="assets/img/prc-01.png" alt="" class="product-card__img">
+                <a href="card.html" class="product-card__caption">Дизельный генератор 100 кВт в контейнере
+                  АД-200С-Т400-РМ1</a>
+                <ul class="product-card__properties-list">
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Мощность</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">200 кВт</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Напряжение</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">400/230В</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Расход топлива</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">121 л/ч</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Двигатель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">Baudouin Moteurs
+                      (Франция-Китай) </a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Модель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">1104C-44TAG55 </a>
+                  </li>
+                </ul>
+                <p class="product-card__delivery product-card__delivery_grey">Снято с производства</p>
+                <div class="product-card__sum">
+      
+                </div>
+                <div class="product-card__mobile-bottom">
+                  <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                  <div>
+                    <button
+                      class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle">
+                      <svg width="24" height="24">
+                        <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                <button class="btn-reset product-card__link">Купить в один клик</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-card__actions">
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                    </svg>
+                  </button>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle is-active">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <img src="assets/img/prc-01.png" alt="" class="product-card__img">
+                <a href="card.html" class="product-card__caption">Дизельный генератор 100 кВт в контейнере
+                  АД-200С-Т400-РМ1</a>
+                <ul class="product-card__properties-list">
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Мощность</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">200 кВт</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Напряжение</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">400/230В</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Расход топлива</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">121 л/ч</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Двигатель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">Baudouin Moteurs
+                      (Франция-Китай) </a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Модель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">1104C-44TAG55 </a>
+                  </li>
+                </ul>
+                <p class="product-card__delivery"></p>
+                <div class="product-card__sum">
+                  <p class="product-card__price">по запросу</p>
+                  <div class="product-card__request-price">
+                    <svg width="20" height="20">
+                      <use xlink:href="assets/img/sprite.svg#icon-check-in-circle"></use>
+                    </svg>
+                    <span>Запросить цену</span>
+                  </div>
+                </div>
+                <div class="product-card__mobile-bottom">
+                  <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                  <div>
+                    <button
+                      class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle">
+                      <svg width="24" height="24">
+                        <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                <button class="btn-reset product-card__link">Купить в один клик</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-card__actions">
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle is-active">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                    </svg>
+                  </button>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle is-active">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <img src="assets/img/prc-01.png" alt="" class="product-card__img">
+                <a href="card.html" class="product-card__caption">Дизельный генератор 100 кВт в контейнере
+                  АД-200С-Т400-РМ1</a>
+                <ul class="product-card__properties-list">
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Мощность</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">200 кВт</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Напряжение</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">400/230В</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Расход топлива</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">121 л/ч</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Двигатель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">Baudouin Moteurs
+                      (Франция-Китай) </a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Модель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">1104C-44TAG55 </a>
+                  </li>
+                </ul>
+                <p class="product-card__delivery"></p>
+                <div class="product-card__sum">
+                  <p class="product-card__price">00 000 000 ₽</p>
+                  <div class="product-card__request-price">
+                    <svg width="20" height="20">
+                      <use xlink:href="assets/img/sprite.svg#percent-in-circle"></use>
+                    </svg>
+                    <span>Получить <br> скидку</span>
+                  </div>
+                </div>
+                <div class="product-card__mobile-bottom">
+                  <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                  <div>
+                    <button
+                      class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle">
+                      <svg width="24" height="24">
+                        <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                <button class="btn-reset product-card__link">Купить в один клик</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-card__actions">
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                    </svg>
+                  </button>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <img src="assets/img/prc-01.png" alt="" class="product-card__img">
+                <a href="card.html" class="product-card__caption">Дизельный генератор 100 кВт в контейнере
+                  АД-200С-Т400-РМ1</a>
+                <ul class="product-card__properties-list">
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Мощность</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">200 кВт</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Напряжение</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">400/230В</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Расход топлива</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">121 л/ч</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Двигатель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">Mitsubishi (Япония) </a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Модель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">1104C-44TAG55 </a>
+                  </li>
+                </ul>
+                <p class="product-card__delivery product-card__delivery_green">Поставка 6 недель</p>
+                <div class="product-card__sum">
+                  <p class="product-card__price">00 000 000 ₽</p>
+                  <p class="product-card__old-price">36 175 175</p>
+                  <span class="product-card__discount">15%</span></div>
+                <div class="product-card__mobile-bottom">
+                  <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                  <div>
+                    <button
+                      class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle">
+                      <svg width="24" height="24">
+                        <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                <button class="btn-reset product-card__link">Купить в один клик</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-card__actions">
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle is-active">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                    </svg>
+                  </button>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <img src="assets/img/prc-01.png" alt="" class="product-card__img">
+                <a href="card.html" class="product-card__caption">Дизельный генератор 100 кВт в контейнере
+                  АД-200С-Т400-РМ1</a>
+                <ul class="product-card__properties-list">
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Мощность</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">200 кВт</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Напряжение</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">400/230В</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Расход топлива</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">121 л/ч</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Двигатель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">Baudouin Moteurs
+                      (Франция-Китай) </a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Модель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">1104C-44TAG55 </a>
+                  </li>
+                </ul>
+                <p class="product-card__delivery product-card__delivery_grey">Снято с производства</p>
+                <div class="product-card__sum">
+      
+                </div>
+                <div class="product-card__mobile-bottom">
+                  <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                  <div>
+                    <button
+                      class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle">
+                      <svg width="24" height="24">
+                        <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                <button class="btn-reset product-card__link">Купить в один клик</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-card__actions">
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                    </svg>
+                  </button>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle is-active">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <img src="assets/img/prc-01.png" alt="" class="product-card__img">
+                <a href="card.html" class="product-card__caption">Дизельный генератор 100 кВт в контейнере
+                  АД-200С-Т400-РМ1</a>
+                <ul class="product-card__properties-list">
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Мощность</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">200 кВт</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Напряжение</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">400/230В</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Расход топлива</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">121 л/ч</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Двигатель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">Baudouin Moteurs
+                      (Франция-Китай) </a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Модель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">1104C-44TAG55 </a>
+                  </li>
+                </ul>
+                <p class="product-card__delivery"></p>
+                <div class="product-card__sum">
+                  <p class="product-card__price">по запросу</p>
+                  <div class="product-card__request-price">
+                    <svg width="20" height="20">
+                      <use xlink:href="assets/img/sprite.svg#icon-check-in-circle"></use>
+                    </svg>
+                    <span>Запросить цену</span>
+                  </div>
+                </div>
+                <div class="product-card__mobile-bottom">
+                  <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                  <div>
+                    <button
+                      class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle">
+                      <svg width="24" height="24">
+                        <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                <button class="btn-reset product-card__link">Купить в один клик</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-card__actions">
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle is-active">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                    </svg>
+                  </button>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle is-active">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <img src="assets/img/prc-01.png" alt="" class="product-card__img">
+                <a href="card.html" class="product-card__caption">Дизельный генератор 100 кВт в контейнере
+                  АД-200С-Т400-РМ1</a>
+                <ul class="product-card__properties-list">
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Мощность</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">200 кВт</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Напряжение</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">400/230В</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Расход топлива</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">121 л/ч</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Двигатель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">Baudouin Moteurs
+                      (Франция-Китай) </a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Модель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">1104C-44TAG55 </a>
+                  </li>
+                </ul>
+                <p class="product-card__delivery"></p>
+                <div class="product-card__sum">
+                  <p class="product-card__price">00 000 000 ₽</p>
+                  <div class="product-card__request-price">
+                    <svg width="20" height="20">
+                      <use xlink:href="assets/img/sprite.svg#percent-in-circle"></use>
+                    </svg>
+                    <span>Получить <br> скидку</span>
+                  </div>
+                </div>
+                <div class="product-card__mobile-bottom">
+                  <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                  <div>
+                    <button
+                      class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle">
+                      <svg width="24" height="24">
+                        <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                <button class="btn-reset product-card__link">Купить в один клик</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section best">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="title-h2 best__title">Ранее просмотренные товары</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="js-best-slider swiper best__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-card__actions">
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                    </svg>
+                  </button>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <img src="assets/img/prc-01.png" alt="" class="product-card__img">
+                <a href="card.html" class="product-card__caption">Дизельный генератор 100 кВт в контейнере
+                  АД-200С-Т400-РМ1</a>
+                <ul class="product-card__properties-list">
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Мощность</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">200 кВт</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Напряжение</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">400/230В</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Расход топлива</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">121 л/ч</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Двигатель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">Mitsubishi (Япония) </a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Модель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">1104C-44TAG55 </a>
+                  </li>
+                </ul>
+                <p class="product-card__delivery product-card__delivery_green">Поставка 6 недель</p>
+                <div class="product-card__sum">
+                  <p class="product-card__price">00 000 000 ₽</p>
+                  <p class="product-card__old-price">36 175 175</p>
+                  <span class="product-card__discount">15%</span></div>
+      
+                <div class="product-card__mobile-bottom">
+                  <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                  <div>
+                    <button
+                      class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle">
+                      <svg width="24" height="24">
+                        <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                <button class="btn-reset product-card__link">Купить в один клик</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-card__actions">
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle is-active">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                    </svg>
+                  </button>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <img src="assets/img/prc-01.png" alt="" class="product-card__img">
+                <a href="card.html" class="product-card__caption">Дизельный генератор 100 кВт в контейнере
+                  АД-200С-Т400-РМ1</a>
+                <ul class="product-card__properties-list">
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Мощность</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">200 кВт</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Напряжение</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">400/230В</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Расход топлива</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">121 л/ч</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Двигатель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">Baudouin Moteurs
+                      (Франция-Китай) </a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Модель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">1104C-44TAG55 </a>
+                  </li>
+                </ul>
+                <p class="product-card__delivery product-card__delivery_grey">Снято с производства</p>
+                <div class="product-card__sum">
+      
+                </div>
+                <div class="product-card__mobile-bottom">
+                  <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                  <div>
+                    <button
+                      class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle">
+                      <svg width="24" height="24">
+                        <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                <button class="btn-reset product-card__link">Купить в один клик</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-card__actions">
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                    </svg>
+                  </button>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle is-active">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <img src="assets/img/prc-01.png" alt="" class="product-card__img">
+                <a href="card.html" class="product-card__caption">Дизельный генератор 100 кВт в контейнере
+                  АД-200С-Т400-РМ1</a>
+                <ul class="product-card__properties-list">
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Мощность</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">200 кВт</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Напряжение</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">400/230В</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Расход топлива</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">121 л/ч</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Двигатель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">Baudouin Moteurs
+                      (Франция-Китай) </a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Модель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">1104C-44TAG55 </a>
+                  </li>
+                </ul>
+                <p class="product-card__delivery"></p>
+                <div class="product-card__sum">
+                  <p class="product-card__price">по запросу</p>
+                  <div class="product-card__request-price">
+                    <svg width="20" height="20">
+                      <use xlink:href="assets/img/sprite.svg#icon-check-in-circle"></use>
+                    </svg>
+                    <span>Запросить цену</span>
+                  </div>
+                </div>
+                <div class="product-card__mobile-bottom">
+                  <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                  <div>
+                    <button
+                      class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle">
+                      <svg width="24" height="24">
+                        <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                <button class="btn-reset product-card__link">Купить в один клик</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-card__actions">
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle is-active">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                    </svg>
+                  </button>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle is-active">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <img src="assets/img/prc-01.png" alt="" class="product-card__img">
+                <a href="card.html" class="product-card__caption">Дизельный генератор 100 кВт в контейнере
+                  АД-200С-Т400-РМ1</a>
+                <ul class="product-card__properties-list">
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Мощность</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">200 кВт</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Напряжение</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">400/230В</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Расход топлива</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">121 л/ч</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Двигатель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">Baudouin Moteurs
+                      (Франция-Китай) </a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Модель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">1104C-44TAG55 </a>
+                  </li>
+                </ul>
+                <p class="product-card__delivery"></p>
+                <div class="product-card__sum">
+                  <p class="product-card__price">00 000 000 ₽</p>
+                  <div class="product-card__request-price">
+                    <svg width="20" height="20">
+                      <use xlink:href="assets/img/sprite.svg#percent-in-circle"></use>
+                    </svg>
+                    <span>Получить <br> скидку</span>
+                  </div>
+                </div>
+                <div class="product-card__mobile-bottom">
+                  <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                  <div>
+                    <button
+                      class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle">
+                      <svg width="24" height="24">
+                        <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                <button class="btn-reset product-card__link">Купить в один клик</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-card__actions">
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                    </svg>
+                  </button>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <img src="assets/img/prc-01.png" alt="" class="product-card__img">
+                <a href="card.html" class="product-card__caption">Дизельный генератор 100 кВт в контейнере
+                  АД-200С-Т400-РМ1</a>
+                <ul class="product-card__properties-list">
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Мощность</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">200 кВт</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Напряжение</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">400/230В</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Расход топлива</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">121 л/ч</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Двигатель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">Mitsubishi (Япония) </a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Модель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">1104C-44TAG55 </a>
+                  </li>
+                </ul>
+                <p class="product-card__delivery product-card__delivery_green">Поставка 6 недель</p>
+                <div class="product-card__sum">
+                  <p class="product-card__price">00 000 000 ₽</p>
+                  <p class="product-card__old-price">36 175 175</p>
+                  <span class="product-card__discount">15%</span></div>
+                <div class="product-card__mobile-bottom">
+                  <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                  <div>
+                    <button
+                      class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle">
+                      <svg width="24" height="24">
+                        <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                <button class="btn-reset product-card__link">Купить в один клик</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-card__actions">
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle is-active">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                    </svg>
+                  </button>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <img src="assets/img/prc-01.png" alt="" class="product-card__img">
+                <a href="card.html" class="product-card__caption">Дизельный генератор 100 кВт в контейнере
+                  АД-200С-Т400-РМ1</a>
+                <ul class="product-card__properties-list">
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Мощность</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">200 кВт</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Напряжение</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">400/230В</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Расход топлива</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">121 л/ч</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Двигатель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">Baudouin Moteurs
+                      (Франция-Китай) </a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Модель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">1104C-44TAG55 </a>
+                  </li>
+                </ul>
+                <p class="product-card__delivery product-card__delivery_grey">Снято с производства</p>
+                <div class="product-card__sum">
+      
+                </div>
+                <div class="product-card__mobile-bottom">
+                  <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                  <div>
+                    <button
+                      class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle">
+                      <svg width="24" height="24">
+                        <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                <button class="btn-reset product-card__link">Купить в один клик</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-card__actions">
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                    </svg>
+                  </button>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle is-active">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <img src="assets/img/prc-01.png" alt="" class="product-card__img">
+                <a href="card.html" class="product-card__caption">Дизельный генератор 100 кВт в контейнере
+                  АД-200С-Т400-РМ1</a>
+                <ul class="product-card__properties-list">
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Мощность</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">200 кВт</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Напряжение</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">400/230В</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Расход топлива</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">121 л/ч</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Двигатель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">Baudouin Moteurs
+                      (Франция-Китай) </a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Модель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">1104C-44TAG55 </a>
+                  </li>
+                </ul>
+                <p class="product-card__delivery"></p>
+                <div class="product-card__sum">
+                  <p class="product-card__price">по запросу</p>
+                  <div class="product-card__request-price">
+                    <svg width="20" height="20">
+                      <use xlink:href="assets/img/sprite.svg#icon-check-in-circle"></use>
+                    </svg>
+                    <span>Запросить цену</span>
+                  </div>
+                </div>
+                <div class="product-card__mobile-bottom">
+                  <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                  <div>
+                    <button
+                      class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle">
+                      <svg width="24" height="24">
+                        <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                <button class="btn-reset product-card__link">Купить в один клик</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-card__actions">
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle is-active">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                    </svg>
+                  </button>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle is-active">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <img src="assets/img/prc-01.png" alt="" class="product-card__img">
+                <a href="card.html" class="product-card__caption">Дизельный генератор 100 кВт в контейнере
+                  АД-200С-Т400-РМ1</a>
+                <ul class="product-card__properties-list">
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Мощность</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">200 кВт</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Напряжение</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">400/230В</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Расход топлива</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">121 л/ч</a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Двигатель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">Baudouin Moteurs
+                      (Франция-Китай) </a></li>
+                  <li class="product-card__properties-item">
+                    <p class="product-card__properties-caption">Модель</p>
+                    <p class="product-card__properties-dots"></p>
+                    <a href="#" class="product-card__properties-value">1104C-44TAG55 </a>
+                  </li>
+                </ul>
+                <p class="product-card__delivery"></p>
+                <div class="product-card__sum">
+                  <p class="product-card__price">00 000 000 ₽</p>
+                  <div class="product-card__request-price">
+                    <svg width="20" height="20">
+                      <use xlink:href="assets/img/sprite.svg#percent-in-circle"></use>
+                    </svg>
+                    <span>Получить <br> скидку</span>
+                  </div>
+                </div>
+                <div class="product-card__mobile-bottom">
+                  <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                  <div>
+                    <button
+                      class="btn-reset product-card__actions-button product-card__actions-button_favorite js-item-card-toggle">
+                      <svg width="24" height="24">
+                        <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button
+                    class="btn-reset product-card__actions-button product-card__actions-button_matching js-item-card-toggle">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+                    </svg>
+                  </button>
+                </div>
+                <button class="btn btn_blue btn-reset product-card__btn">Получить КП</button>
+                <button class="btn-reset product-card__link">Купить в один клик</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section clients">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="title-h2">Наши клиенты</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 swiper js-clients-slider">
+          <ul class="clients__list swiper-wrapper">
+            <li class="clients__item swiper-slide">
+              <img src="assets/img/cl-01.png" alt="" class="clients__img">
+            </li>
+            <li class="clients__item swiper-slide">
+              <img src="assets/img/cl-02.png" alt="" class="clients__img">
+            </li>
+            <li class="clients__item swiper-slide">
+              <img src="assets/img/cl-03.png" alt="" class="clients__img">
+            </li>
+            <li class="clients__item swiper-slide">
+              <img src="assets/img/cl-04.png" alt="" class="clients__img">
+            </li>
+            <li class="clients__item swiper-slide">
+              <img src="assets/img/cl-05.png" alt="" class="clients__img">
+            </li>
+            <li class="clients__item swiper-slide">
+              <img src="assets/img/cl-06.png" alt="" class="clients__img">
+            </li>
+            <li class="clients__item swiper-slide">
+              <img src="assets/img/cl-07.png" alt="" class="clients__img">
+            </li>
+            <li class="clients__item swiper-slide">
+              <img src="assets/img/cl-08.png" alt="" class="clients__img">
+            </li>
+            <li class="clients__item swiper-slide">
+              <img src="assets/img/cl-09.png" alt="" class="clients__img">
+            </li>
+            <li class="clients__item swiper-slide">
+              <img src="assets/img/cl-010.png" alt="" class="clients__img">
+            </li>
+            <li class="clients__item swiper-slide">
+              <img src="assets/img/cl-011.png" alt="" class="clients__img">
+            </li>
+            <li class="clients__item swiper-slide">
+              <img src="assets/img/cl-012.png" alt="" class="clients__img">
+            </li>
+            <li class="clients__item swiper-slide">
+              <img src="assets/img/cl-013.png" alt="" class="clients__img">
+            </li>
+            <li class="clients__item swiper-slide">
+              <img src="assets/img/cl-014.png" alt="" class="clients__img">
+            </li>
+            <li class="clients__item swiper-slide">
+              <img src="assets/img/cl-015.png" alt="" class="clients__img">
+            </li>
+            <li class="clients__item swiper-slide">
+              <img src="assets/img/cl-016.png" alt="" class="clients__img">
+            </li>
+            <li class="clients__item swiper-slide">
+              <img src="assets/img/cl-017.png" alt="" class="clients__img">
+            </li>
+            <li class="clients__item swiper-slide">
+              <img src="assets/img/cl-018.png" alt="" class="clients__img">
+            </li>
+            <li class="clients__item swiper-slide">
+              <img src="assets/img/cl-019.png" alt="" class="clients__img">
+            </li>
+            <li class="clients__item swiper-slide">
+              <img src="assets/img/cl-020.png" alt="" class="clients__img">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="catalog-collections section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="title-h2 catalog-collections__title">Место для всяких ссылок на подборки</h2>
+          <ul class="catalog-collections__list">
+            <li class="catalog-collections__item"><a href="">Двигатель 1500 об/мин</a></li>
+            <li class="catalog-collections__item"><a href="">С водяным охлаждением</a></li>
+            <li class="catalog-collections__item"><a href="">Бесшумные</a></li>
+            <li class="catalog-collections__item"><a href="">Блочные</a></li>
+            <li class="catalog-collections__item"><a href="">Английские</a></li>
+            <li class="catalog-collections__item"><a href="">Американские</a></li>
+            <li class="catalog-collections__item"><a href="">Белоруссккие</a></li>
+            <li class="catalog-collections__item"><a href="">Итальянские</a></li>
+            <li class="catalog-collections__item"><a href="">Европейские</a></li>
+            <li class="catalog-collections__item"><a href="">Китайские</a></li>
+            <li class="catalog-collections__item"><a href="">Корейские</a></li>
+            <li class="catalog-collections__item"><a href="">Немецкие</a></li>
+            <li class="catalog-collections__item"><a href="">Российские</a></li>
+            <li class="catalog-collections__item"><a href="">Японские</a></li>
+            <li class="catalog-collections__item"><a href="">Аварийные</a></li>
+            <li class="catalog-collections__item"><a href="">Автономные</a></li>
+            <li class="catalog-collections__item"><a href="">Промышленные</a></li>
+            <li class="catalog-collections__item"><a href="">Резервные</a></li>
+            <li class="catalog-collections__item"><a href="">Стационарные</a></li>
+            <li class="catalog-collections__item"><a href="">Уличные</a></li>
+            <li class="catalog-collections__item"><a href="">///</a></li>
+            <li class="catalog-collections__item"><a href="">///</a></li>
+            <li class="catalog-collections__item"><a href="">///</a></li>
+            <li class="catalog-collections__item"><a href="">///</a></li>
+            <li class="catalog-collections__item"><a href="">///</a></li>
+            <li class="catalog-collections__item"><a href="">///</a></li>
+            <li class="catalog-collections__item"><a href="">///</a></li>
+            <li class="catalog-collections__item"><a href="">///</a></li>
+            <li class="catalog-collections__item"><a href="">///</a></li>
+            <li class="catalog-collections__item"><a href="">///</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+</main>
+<div class="js-stop-header"></div>
+<footer class="footer">
+  <div class="container">
+    <div class="row footer__top">
+      <div class="col-md-3">
+        <div class="footer__flex">
+          <a href="home.html" class="logo  footer__logo mb-4">
+            <p class="logo__subtitle">Завод генераторов</p>
+            <p class="logo__title">Energen</p>
+            <!--            <svg class="logo__icon">-->
+            <!--              <use xlink:href="assets/img/sprite.svg#logo"></use>-->
+            <!--            </svg>-->
+          </a>
+          <ul class="header__social social footer__social d-md-none">
+            <li class="social__item"><a href="" class="social__link">
+              <svg width="24" height="24">
+                <use xlink:href="assets/img/sprite.svg#icon-tlg"></use>
+              </svg>
+            </a></li>
+            <li class="social__item"><a href="" class="social__link">
+              <svg width="24" height="24">
+                <use xlink:href="assets/img/sprite.svg#icon-vk"></use>
+              </svg>
+            </a></li>
+            <li class="social__item"><a href="" class="social__link">
+              <svg width="24" height="24">
+                <use xlink:href="assets/img/sprite.svg#icon-wup"></use>
+              </svg>
+            </a></li>
+          </ul>
+        </div>
+        <div class="footer__flex">
+          <div class="header__contacts-item mb-4">
+            <a href="tel:88009007070" class="header__contact">8 (800) 900-70-70</a>
+            <p class="header__contacts-text">Бесплатно по России</p>
+          </div>
+          <div class="header__contacts-item mb-4">
+            <a href="+78009007070" class="header__contact">+7 (800) 900-70-70</a>
+            <a href="" class="header__contacts-link">Заказать звонок</a>
+          </div>
+        </div>
+        <div class="header__contacts-item mb-4">
+          <a href="mailto:info@dizel-generator.ru" class="header__contact">info@dizel-generator.ru</a>
+          <a href="" class="header__contacts-link">Отправить заявку</a>
+        </div>
+      </div>
+      <div class="col-md-5 col-lg-6">
+        <div class="footer__navs">
+          <div class="footer__navs-item">
+            <a href="#" class="footer__caption">Продукция</a>
+            <ul class="footer__nav">
+              <li class="footer__nav-item"><a href="" class="footer__nav-link">Полный каталог</a></li>
+              <li class="footer__nav-item"><a href="" class="footer__nav-link">Производство</a></li>
+              <li class="footer__nav-item"><a href="" class="footer__nav-link">Доставка</a></li>
+              <li class="footer__nav-item"><a href="" class="footer__nav-link">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer__navs-item order-3 order-lg-0">
+            <a href="#" class="footer__caption">Услуги и сервис</a>
+            <ul class="footer__nav">
+              <li class="footer__nav-item"><a href="" class="footer__nav-link">Аренда</a></li>
+              <li class="footer__nav-item"><a href="" class="footer__nav-link">Сервис и ремонт</a></li>
+            </ul>
+          </div>
+          <div class="footer__navs-item">
+            <a href="#" class="footer__caption">О компании</a>
+            <ul class="footer__nav">
+              <li class="footer__nav-item"><a href="" class="footer__nav-link">Отзывы</a></li>
+              <li class="footer__nav-item"><a href="" class="footer__nav-link">Оплата</a></li>
+              <li class="footer__nav-item"><a href="" class="footer__nav-link">Гарантия</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3">
+        <ul class="header__social social footer__social d-none d-md-flex">
+          <li class="social__item"><a href="" class="social__link">
+            <svg width="24" height="24">
+              <use xlink:href="assets/img/sprite.svg#icon-tlg"></use>
+            </svg>
+          </a></li>
+          <li class="social__item"><a href="" class="social__link">
+            <svg width="24" height="24">
+              <use xlink:href="assets/img/sprite.svg#icon-vk"></use>
+            </svg>
+          </a></li>
+          <li class="social__item"><a href="" class="social__link">
+            <svg width="24" height="24">
+              <use xlink:href="assets/img/sprite.svg#icon-wup"></use>
+            </svg>
+          </a></li>
+        </ul>
+        <p class="footer__info">Вся представленная на сайте информация, касающаяся технических характеристик, наличия на
+          складе, стоимости товаров, носит информационный характер и ни при каких условиях не является публичной
+          офертой, определяемой положениями Статьи 437 (2) Гражданского кодекса РФ.</p>
+        <a href="" class="footer__link">Политика конфиденциальности</a>
+        <a href="" class="footer__link">Обработка персональных данных</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <p class="footer__copy">Все права защищены и охраняются законом 2009 - 2022</p>
+      </div>
+      <div class="col-lg-6">
+        <p class="footer__dev">Создание и продвижение сайта - <a href="">OZHGIBESOV.NET</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="bottom-menu">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <ul class="bottom-menu__list">
+          <li class="bottom-menu__item">
+            <a href="" class="bottom-menu__link">
+              <svg width="24" height="24">
+                <use xlink:href="assets/img/sprite.svg#icon-main"></use>
+              </svg>
+              <span>Главная</span>
+            </a>
+          </li>
+          <li class="bottom-menu__item">
+            <button class="bottom-menu__link js-open-header-catalog btn-reset">
+              <svg width="24" height="24">
+                <use xlink:href="assets/img/sprite.svg#icon-search"></use>
+              </svg>
+              <span>Каталог</span>
+            </button>
+          </li>
+          <li class="bottom-menu__item">
+            <a href="tel:+78009007070" class="bottom-menu__link">
+              <svg width="24" height="24">
+                <use xlink:href="assets/img/sprite.svg#icon-phone"></use>
+              </svg>
+              <span>Позвонить</span>
+            </a>
+          </li>
+          <li class="bottom-menu__item">
+            <button class="bottom-menu__link js-open-header-catalog btn-reset">
+              <svg width="24" height="24">
+                <use xlink:href="assets/img/sprite.svg#icon-list"></use>
+              </svg>
+              <span>Меню</span>
+            </button>
+          </li>
+          <li class="bottom-menu__item">
+            <button class="bottom-menu__link btn-reset js-btn-up">
+              <svg width="24" height="24">
+                <use xlink:href="assets/img/sprite.svg#icon-arrow-top"></use>
+              </svg>
+              <span>Наверх</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="overlay js-overlay"></div>
+<!-- callback -->
+<div class="modal fade" id="callback" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="btn-reset modal__close" data-dismiss="modal" aria-label="Close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M5.63574 5.63574L18.3637 18.3637" stroke="#1C1C1C" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"/>
+          <path d="M5.63574 18.3638L18.3637 5.63585" stroke="#1C1C1C" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <p class="modal__title">Заказать обратный звонок</p>
+      <form action="" class="modal-form modal__form">
+        <div class="modal-form__group">
+          <label for="name" class="modal-form__label">название поля</label>
+          <input type="text" id="name" name="name" class="modal-form__input" placeholder="При заполнении">
+        </div>
+        <div class="modal-form__group">
+          <label for="name2" class="modal-form__label">название поля</label>
+          <input type="text" id="name2" name="name2" class="modal-form__input" placeholder="При заполнении">
+        </div>
+        <div class="modal-form__group">
+          <label for="name3" class="modal-form__label">удобное время звонка</label>
+          <select name="name3" id="name3" class="modal-form__select">
+            <option value="В ближайшее время" name="now">В ближайшее время</option>
+            <option value="one" name="one">one</option>
+            <option value="two" name="two">two</option>
+            <option value="three" name="three">three</option>
+          </select>
+        </div>
+        <button class="btn-reset btn btn_blue modal-form__submit" type="submit">Отправить запрос</button>
+        <div class="modal-form__conf">
+          <label for="modal-conf" class="conf-checkbox__label">
+            <input
+              type="checkbox"
+              class="conf-checkbox"
+              id="modal-conf"
+              name="conf"
+              checked
+            >
+            <span class="conf-checkbox__pane"></span>
+            Я даю согласие <a href="">на обработку моих персональных данных </a>
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!--get offer-->
+<div class="modal fade" id="getOffer" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="btn-reset modal__close" data-dismiss="modal" aria-label="Close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M5.63574 5.63574L18.3637 18.3637" stroke="#1C1C1C" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"/>
+          <path d="M5.63574 18.3638L18.3637 5.63585" stroke="#1C1C1C" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <p class="modal__title">Получить предложение</p>
+      <form action="" class="modal-form modal__form">
+        <div class="modal-form__group">
+          <label for="name" class="modal-form__label">название поля</label>
+          <input type="text" id="name" name="name" class="modal-form__input" placeholder="При заполнении">
+        </div>
+        <div class="modal-form__group">
+          <label for="name2" class="modal-form__label">название поля</label>
+          <input type="text" id="name2" name="name2" class="modal-form__input" placeholder="При заполнении">
+        </div>
+        <div class="modal-form__group">
+          <label for="name3" class="modal-form__label">название поля</label>
+          <input type="text" id="name3" name="name3" class="modal-form__input" placeholder="При заполнении">
+        </div>
+        <button class="btn-reset btn btn_blue modal-form__submit" type="submit">Отправить запрос</button>
+        <div class="modal-form__conf">
+          <label for="modal-conf" class="conf-checkbox__label">
+            <input
+              type="checkbox"
+              class="conf-checkbox"
+              id="modal-conf"
+              name="conf"
+              checked
+            >
+            <span class="conf-checkbox__pane"></span>
+            Я даю согласие <a href="">на обработку моих персональных данных </a>
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!--get price-->
+<div class="modal fade" id="getPrice" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="btn-reset modal__close" data-dismiss="modal" aria-label="Close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M5.63574 5.63574L18.3637 18.3637" stroke="#1C1C1C" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"/>
+          <path d="M5.63574 18.3638L18.3637 5.63585" stroke="#1C1C1C" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <p class="modal__title">Запросить стоимость</p>
+      <p class="modal__subtitle">Специалист нашей компании уточнит стоимость, условия поставки и свяжется с вами</p>
+      <form action="" class="modal-form modal__form">
+        <div class="modal-form__group">
+          <label for="name" class="modal-form__label">название поля</label>
+          <input type="text" id="name" name="name" class="modal-form__input" placeholder="При заполнении">
+        </div>
+        <div class="modal-form__group">
+          <label for="name2" class="modal-form__label">название поля</label>
+          <input type="text" id="name2" name="name2" class="modal-form__input" placeholder="При заполнении">
+        </div>
+        <div class="modal-form__group">
+          <label for="name3" class="modal-form__label">название поля</label>
+          <input type="text" id="name3" name="name3" class="modal-form__input" placeholder="При заполнении">
+        </div>
+        <button class="btn-reset btn btn_blue modal-form__submit" type="submit">Отправить запрос</button>
+        <div class="modal-form__conf">
+          <label for="modal-conf" class="conf-checkbox__label">
+            <input
+              type="checkbox"
+              class="conf-checkbox"
+              id="modal-conf"
+              name="conf"
+              checked
+            >
+            <span class="conf-checkbox__pane"></span>
+            Я даю согласие <a href="">на обработку моих персональных данных </a>
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!--get discount-->
+<div class="modal fade" id="getDiscount" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="btn-reset modal__close" data-dismiss="modal" aria-label="Close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M5.63574 5.63574L18.3637 18.3637" stroke="#1C1C1C" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"/>
+          <path d="M5.63574 18.3638L18.3637 5.63585" stroke="#1C1C1C" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <p class="modal__title">Получить скидку</p>
+      <p class="modal__subtitle">Специалист нашей компании уточнит стоимость, условия поставки и свяжется с вами</p>
+      <form action="" class="modal-form modal__form">
+        <div class="modal-form__group">
+          <label for="name" class="modal-form__label">название поля</label>
+          <input type="text" id="name" name="name" class="modal-form__input" placeholder="При заполнении">
+        </div>
+        <div class="modal-form__group">
+          <label for="name2" class="modal-form__label">название поля</label>
+          <input type="text" id="name2" name="name2" class="modal-form__input" placeholder="При заполнении">
+        </div>
+        <div class="modal-form__group">
+          <label for="name3" class="modal-form__label">название поля</label>
+          <input type="text" id="name3" name="name3" class="modal-form__input" placeholder="При заполнении">
+        </div>
+        <button class="btn-reset btn btn_blue modal-form__submit" type="submit">Отправить запрос</button>
+        <div class="modal-form__conf">
+          <label for="modal-conf" class="conf-checkbox__label">
+            <input
+              type="checkbox"
+              class="conf-checkbox"
+              id="modal-conf"
+              name="conf"
+              checked
+            >
+            <span class="conf-checkbox__pane"></span>
+            Я даю согласие <a href="">на обработку моих персональных данных </a>
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- build:js -->
+<script src="assets/vendor/js/jquery.js"></script>
+<script src="assets/vendor/js/popper.js"></script>
+<script src="assets/vendor/js/bootstrap.js"></script>
+<!--<script src="assets/vendor/js/swiper-bundle.js"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="assets/vendor/js/inputmask.min.js"></script>
+<script src="assets/vendor/js/jquery.fancybox.min.js"></script>
+<script src="assets/vendor/js/simplebar.min.js"></script>
+<script src="assets/vendor/js/select2.min.js"></script>
+<script src="assets/js/util/crossPlatform.js"></script>
+<script src="assets/js/app.js"></script>
+<!-- endbuild -->
+
+
+</body>
+
+</html>
