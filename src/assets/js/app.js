@@ -509,6 +509,13 @@ $(() => {
       $(this).text('Показать все');
     }
   });
+  $('.js-collapse-variants').click(function () {
+    if ($(this).find('span').text() != "Свернуть") {
+      $(this).find('span').text('Свернуть');
+    } else {
+      $(this).find('span').text('Развернуть');
+    }
+  });
 });
 
 //sorting btn
