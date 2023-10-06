@@ -13,10 +13,16 @@
     &:hover {
       box-shadow: 0px 0px 25px 6px rgba(0, 0, 0, 0.25);
     }
+    @include r(1024) {
+      padding: 5px;
+    }
   }
   &__img {
     display: block;
     margin: 0 auto 10px;
+    @include r(1024) {
+      max-width: 120px;
+    }
   }
   &__caption {
     font-size: 14px;
@@ -240,6 +246,14 @@
       justify-content: space-between;
       margin-bottom: 30px;
     }
+    .seo-card {
+      &_third {
+        display: none;
+      }
+      &__img {
+        width: 100%;
+      }
+    }
   }
   &_vertical {
     .product-card {
@@ -307,11 +321,21 @@
     display: flex;
     gap: 0 45px;
     margin-bottom: 20px;
+    @include r(1280) {
+      flex-wrap: wrap;
+    }
   }
   &__question {
     font-size: 15px;
     color: $grey-5;
     flex: 0 0 auto;
+    @include r(1280) {
+      flex: 0 0 100%;
+      margin-bottom: 15px;
+      br {
+        display: none;
+      }
+    }
   }
   &__contacts {
     flex: 0 0 auto;
@@ -355,6 +379,9 @@
     padding: 30px 25px;
     border-radius: 10px;
     background-color: $grey-5;
+    @include r(1280) {
+      flex-wrap: wrap;
+    }
   }
   &__caption {
     font-weight: 700;
@@ -378,6 +405,14 @@
     flex: 0 0 250px;
     max-width: 250px;
     font-size: 14px;
+    @include r(1280) {
+      flex: 0 0 50%;
+      max-width: 50%;
+      margin-left: auto;
+      margin-top: 20px;
+      padding-top: 5px;
+      margin-right: 85px;
+    }
   }
   &__input {
     height: 56px;
@@ -476,5 +511,34 @@
   }
   &__category {
     color: $grey-4;
+  }
+}
+
+.seo-card {
+  position: relative;
+  padding-bottom: 17px;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: box-shadow $trns;
+  &__img {
+    display: block;
+    margin-bottom: 12px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  &__caption {
+    display: block;
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: $black;
+    line-height: 1.5;
+    transition: color $trns;
+  }
+  &:hover {
+    box-shadow: 0px 0px 25px 6px rgba(0, 0, 0, 0.25);
+    .seo-card__caption {
+      color: $grey-4;
+    }
   }
 }

@@ -550,6 +550,13 @@ $(document).ready(function () {
       $('.js-catalog-item').addClass('col-12');
       $('.js-catalog-item').removeClass('col-lg-4 col-sm-6');
     }
+    if ($('.js-catalog-seo-card').hasClass('col-md-6')) {
+      $('.js-catalog-seo-card').addClass('col-lg-4 col-sm-6');
+      $('.js-catalog-seo-card').removeClass('col-md-6');
+    } else {
+      $('.js-catalog-seo-card').addClass('col-md-6');
+      $('.js-catalog-seo-card').removeClass('col-lg-4 col-sm-6');
+    }
     return false;
   });
   $(".js-vertical-view").click(function () {
@@ -565,6 +572,13 @@ $(document).ready(function () {
     } else {
       $('.js-catalog-item').addClass('col-lg-4 col-sm-6');
       $('.js-catalog-item').removeClass('col-12');
+    }
+    if ($('.js-catalog-seo-card').hasClass('col-lg-4 col-sm-6')) {
+      $('.js-catalog-seo-card').addClass('col-md-6');
+      $('.js-catalog-seo-card').removeClass('col-lg-4 col-sm-6');
+    } else {
+      $('.js-catalog-seo-card').addClass('col-lg-4 col-sm-6');
+      $('.js-catalog-seo-card').removeClass('col-md-6');
     }
     return false;
   });

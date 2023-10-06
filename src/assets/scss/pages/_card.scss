@@ -509,3 +509,61 @@
     }
   }
 }
+
+
+.delivery {
+  &__specialist {
+
+  }
+  &__btn {
+    margin-left: auto;
+    margin-right: 20px;
+    width: 190px;
+    height: 48px;
+  }
+  &__card {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  &__title {
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 500;
+    color: $black;
+    line-height: 1.5;
+  }
+  &__description {
+    margin-bottom: 50px;
+  }
+  &__text {
+    margin-bottom: 10px;
+    color: $black;
+    font-size: 15px;
+    line-height: 1.5;
+    &_strong {
+      margin-bottom: 5px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+  }
+  &__subtitle {
+    display: block;
+    margin-top: 15px;
+    font-size: 12px;
+    line-height: 1.5;
+    a {
+      color: $blue;
+      &:hover {
+        color: $blueHover
+      }
+    }
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+}
