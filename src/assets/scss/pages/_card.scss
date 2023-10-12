@@ -66,21 +66,31 @@
     margin-bottom: 7px;
     font-size: 12px;
     color: $grey-5;
+    min-height: 18px;
   }
   &__price {
     margin-bottom: 10px;
     font-size: 24px;
     font-weight: 700;
     color: $black;
+    min-height: 36px;
   }
   &__get-discount {
     margin-bottom: 20px;
     margin-left: 0;
+    min-height: 20px;
+    &_hide {
+      display: none;
+    }
   }
   &__availability {
     margin-bottom: 25px;
     font-size: 14px;
     color: $green;
+    min-height: 20px;
+    &_grey {
+      color: $grey-5;
+    }
   }
   &__btn {
     margin-bottom: 10px;
@@ -88,6 +98,10 @@
     height: 48px;
     &_to-cart {
       color: $grey-5;
+      &_hidden {
+        opacity: 0;
+        visibility: hidden;
+      }
     }
   }
   &__one-click {
@@ -95,6 +109,7 @@
     color: $grey-4;
     margin: 0 auto;
     display: block;
+    min-height: 21px;
   }
   &__links {
     display: flex;
@@ -109,6 +124,17 @@
     &:hover {
       color: $grey-4;
     }
+  }
+  &__with-discount {
+    display: flex;
+    align-items: center;
+    gap: 0 5px;
+    margin-bottom: 22px;
+  }
+  &__old {
+    font-size: 14px;
+    color: $grey-5;
+    text-decoration: line-through;
   }
 }
 

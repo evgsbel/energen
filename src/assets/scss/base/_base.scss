@@ -221,7 +221,9 @@ img {
 .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
   content: none;
 }
-
+.swiper-wrapper {
+  height: auto !important;
+}
 // lists
 .list {
   margin: 12px 0;

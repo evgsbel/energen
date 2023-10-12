@@ -1362,3 +1362,115 @@ title: Product
     </div>
   </div>
 </section>
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+<!--      Обычная (Стандартная)-->
+      <div class="col-lg-3">
+        <div class="product-buy product__buy">
+          <p class="product-buy__price-caption">Цена с НДС:</p>
+          <p class="product-buy__price">36 175 175 ₽</p>
+          <button class="btn-reset product-card__request-price product-buy__get-discount" >
+
+          </button>
+          <p class="product-buy__availability">В наличии 1-2 шт</p>
+          <button class="btn-reset btn btn_blue product-buy__btn product-buy__btn_order">Запросить КП</button>
+          <button class="btn-reset btn btn_grey product-buy__btn product-buy__btn_to-cart">В корзину</button>
+          <button class="btn-reset product-buy__one-click">Купить в один клик</button>
+        </div>
+        <div class="product-buy__links">
+          <a href="" class="product-buy__link">Расчет доставки</a>
+          <a href="" class="product-buy__link">Оплата</a>
+          <a href="" class="product-buy__link">Гарантия</a>
+        </div>
+      </div>
+<!--      Без цены-->
+      <div class="col-lg-3">
+        <div class="product-buy product__buy">
+          <p class="product-buy__price-caption">Цена с НДС:</p>
+          <p class="product-buy__price">по запросу</p>
+          <button class="btn-reset product-card__request-price product-buy__get-discount" data-toggle="modal" data-target="#getDiscount">
+            <svg width="20" height="20">
+              <use xlink:href="assets/img/sprite.svg#icon-check-in-circle"></use>
+            </svg>
+            <span>Запросить цену</span>
+          </button>
+          <p class="product-buy__availability"></p>
+          <button class="btn-reset btn btn_blue product-buy__btn product-buy__btn_order">Запросить КП</button>
+          <button class="btn-reset btn btn_grey product-buy__btn product-buy__btn_to-cart">В корзину</button>
+          <button class="btn-reset product-buy__one-click">Купить в один клик</button>
+        </div>
+        <div class="product-buy__links">
+          <a href="" class="product-buy__link">Расчет доставки</a>
+          <a href="" class="product-buy__link">Оплата</a>
+          <a href="" class="product-buy__link">Гарантия</a>
+        </div>
+      </div>
+<!--      Запросить скидку-->
+      <div class="col-lg-3">
+        <div class="product-buy product__buy">
+          <p class="product-buy__price-caption">Цена с НДС:</p>
+          <p class="product-buy__price">36 175 175 ₽</p>
+          <button class="btn-reset product-card__request-price product-buy__get-discount" data-toggle="modal" data-target="#getDiscount">
+            <svg width="20" height="20">
+              <use xlink:href="assets/img/sprite.svg#percent-in-circle"></use>
+            </svg>
+            <span>Получить скидку</span>
+          </button>
+          <p class="product-buy__availability">Поставка 6 недель</p>
+          <button class="btn-reset btn btn_blue product-buy__btn product-buy__btn_order">Запросить КП</button>
+          <button class="btn-reset btn btn_grey product-buy__btn product-buy__btn_to-cart">В корзину</button>
+          <button class="btn-reset product-buy__one-click">Купить в один клик</button>
+        </div>
+        <div class="product-buy__links">
+          <a href="" class="product-buy__link">Расчет доставки</a>
+          <a href="" class="product-buy__link">Оплата</a>
+          <a href="" class="product-buy__link">Гарантия</a>
+        </div>
+      </div>
+<!--      Снято с пр-ва / Не поставляется-->
+      <div class="col-lg-3">
+        <div class="product-buy product__buy">
+          <p class="product-buy__price-caption"></p>
+          <p class="product-buy__price"></p>
+          <button class="btn-reset product-card__request-price product-buy__get-discount"></button>
+          <p class="product-buy__availability product-buy__availability_grey">Снято с производства</p>
+          <button class="btn-reset btn btn_blue product-buy__btn product-buy__btn_order">Аналоги</button>
+          <button class="btn-reset btn btn_grey product-buy__btn product-buy__btn_to-cart product-buy__btn_to-cart_hidden">В корзину</button>
+          <button class="btn-reset product-buy__one-click"></button>
+        </div>
+        <div class="product-buy__links">
+          <a href="" class="product-buy__link">Расчет доставки</a>
+          <a href="" class="product-buy__link">Оплата</a>
+          <a href="" class="product-buy__link">Гарантия</a>
+        </div>
+      </div>
+<!--      Со скидкой
+P.S. Класс mt-5 тут просто для отделения карточек от остальных, при посадке он не нужен-->
+      <div class="col-lg-3 mt-5">
+        <div class="product-buy product__buy">
+          <p class="product-buy__price-caption">Цена с НДС:</p>
+          <p class="product-buy__price">36 175 175 ₽</p>
+          <div class="product-buy__with-discount">
+            <p class="product-buy__old">36 175 175 ₽ </p>
+            <span class="product-card__discount">15%</span>
+          </div>
+          <button class="btn-reset product-card__request-price product-buy__get-discount product-buy__get-discount_hide">
+
+          </button>
+          <p class="product-buy__availability">В наличии 1-2 шт</p>
+          <button class="btn-reset btn btn_blue product-buy__btn product-buy__btn_order">Запросить КП</button>
+          <button class="btn-reset btn btn_grey product-buy__btn product-buy__btn_to-cart">В корзину</button>
+          <button class="btn-reset product-buy__one-click">Купить в один клик</button>
+        </div>
+        <div class="product-buy__links">
+          <a href="" class="product-buy__link">Расчет доставки</a>
+          <a href="" class="product-buy__link">Оплата</a>
+          <a href="" class="product-buy__link">Гарантия</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
