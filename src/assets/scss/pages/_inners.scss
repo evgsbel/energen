@@ -1,0 +1,142 @@
+// reviews
+.reviews-list {
+  &__item {
+    display: flex;
+    gap: 0 40px;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__caption {
+    margin-bottom: 10px;
+    color: $black;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  &__text {
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: $grey-5;
+    line-height: 1.6;
+  }
+  .reviews__bottom {
+    justify-content: flex-start;
+    gap: 0 30px;
+  }
+}
+
+.reviews-in {
+  &__name {
+    font-weight: 500;
+    color: $black;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  &__content {
+    p {
+      margin-bottom: 20px;
+      font-size: 15px;
+      line-height: 1.6;
+      color: $grey-5;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+
+//articles
+.articles-list {
+  .articles__item {
+    transition: box-shadow $trns;
+    &:hover {
+      box-shadow: 0px 0px 25px 6px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+
+.articles-in {
+  &__heading {
+    display: flex;
+    align-items: center;
+    gap: 0 50px;
+    margin-bottom: 30px;
+  }
+  &__watching {
+    display: flex;
+    align-items: center;
+    gap: 0 8px;
+    p {
+      font-size: 15px;
+      color: $grey-5;
+    }
+  }
+  &__content {
+    img {
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    p {
+      color: $black;
+      font-size: 15px;
+      margin-bottom: 15px;
+      line-height: 1.6;
+      &:last-child {
+        margin-bottom: 30px;
+      }
+      strong {
+        font-weight: 500;
+        font-size: 18px;
+      }
+      a {
+        color: $blue;
+        border-bottom: 1px dashed $blue;
+      }
+    }
+
+  }
+  &__img {
+    margin-bottom: 60px;
+  }
+  &__quote {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    p {
+      font-size: 16px;
+      margin-bottom: 0;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.articles-in-navigation {
+  padding: 20px;
+  background-color: #fff;
+  &__caption {
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: $black;
+  }
+  &__list {
+    padding-left: 20px;
+    list-style-type: disc;
+  }
+  &__item {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: $grey-5;
+    line-height: 1.5;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

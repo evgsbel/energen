@@ -1,0 +1,25 @@
+---
+layout: inner
+title: Favorite
+---
+
+<section class="favorite">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="title-h2">Отложенные товары</h1>
+        {{> products-slider}}
+        <div class="swiper-button-next favorite-nav-next favorite__next favorite__nav-btn">
+          <svg width="32" height="32">
+            <use xlink:href="assets/img/sprite.svg#icon-arrow-right"></use>
+          </svg>
+        </div>
+        <div class="swiper-button-prev favorite-nav-prev favorite__prev favorite__nav-btn">
+          <svg width="32" height="32">
+            <use xlink:href="assets/img/sprite.svg#icon-arrow-left "></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

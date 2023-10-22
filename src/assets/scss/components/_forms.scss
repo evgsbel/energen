@@ -264,6 +264,30 @@
   background-color: $grey-3;
 }
 
-
-
-
+// input count
+//input count(number)
+.input-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 20px;
+  width: 157px;
+  height: 57px;
+  &__input {
+    max-width: 40px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    color: $black;
+    text-align: center;
+    border: none;
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}

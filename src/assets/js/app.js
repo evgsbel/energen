@@ -209,7 +209,40 @@ $(() => {
   const homeBestSlider = new Swiper(".js-best-slider", {
     speed: 700,
     watchSlidesProgress: true,
+    navigation: {
+      nextEl: ".favorite-nav-next",
+      prevEl: ".favorite-nav-prev",
 
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1.2,
+        spaceBetween: 12,
+      },
+      600: {
+        slidesPerView: 2.2,
+        spaceBetween: 12,
+      },
+      960: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1280: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      }
+    }
+  });
+
+  const compareBestSlider = new Swiper(".js-compare-slider", {
+    speed: 700,
+    watchSlidesProgress: true,
+    allowTouchMove: false,
+    navigation: {
+      nextEl: ".favorite-nav-next",
+      prevEl: ".favorite-nav-prev",
+
+    },
     breakpoints: {
       0: {
         slidesPerView: 1.2,
@@ -603,3 +636,85 @@ $(function () {
 });
 
 
+//input number
+$(() => {
+
+  $('.input-count .input-count_minus').click(function () {
+    let $input = $(this).parent().find('.js-input-number');
+    let count = parseInt($input.val()) - 1;
+    count = count < 1 ? 1 : count;
+    $input.val(count);
+  });
+
+  $('.input-count .input-count_plus').click(function () {
+    let $input = $(this).parent().find('.js-input-number');
+    let count = parseInt($input.val()) + 1;
+    count = count > parseInt($input.data('max-count')) ? parseInt($input.data('max-count')) : count;
+    $input.val(parseInt(count));
+  });
+
+  $('.input-count .js-input-number').bind("change keyup input click", function () {
+    if (this.value.match(/[^0-9]/g)) {
+      this.value = this.value.replace(/[^0-9]/g, '');
+    }
+    if (this.value == "") {
+      this.value = 1;
+    }
+    if (this.value > parseInt($(this).data('max-count'))) {
+      this.value = parseInt($(this).data('max-count'));
+    }
+  });
+});
+
+//fixed compare slider
+$(document).ready(function () {
+  $(function () {
+    var timer = null;
+    window.addEventListener('scroll', function () {
+      if (timer !== null) {
+        var stickySidebar = function stickySidebar() {
+          var scrollDistance = $(document).scrollTop(),
+            headerHeight = $('.compare__slider').outerHeight(true),
+            // sidebarHeight = $('aside').outerHeight(true),
+            footerOffsetTop = $('.js-stop-header').offset().top,
+            $header = $('.compare__slider')
+          if (scrollDistance >= headerHeight + 200) {
+            $header.addClass('is-fixed');
+          } else {
+            $header.removeClass('is-fixed');
+          }
+          if (scrollDistance + headerHeight >= footerOffsetTop) {
+            $header.removeClass('is-fixed');
+          }
+        };
+        clearTimeout(timer);
+        //document.querySelector('header').classList.add('out', 'is-fixed');
+        stickySidebar();
+        $(document).scroll(function () {
+          stickySidebar();
+        });
+      }
+      timer = setTimeout(function () {
+        // document.querySelector('header').classList.remove('out');
+      }, 800);
+    }, false);
+  });
+});
+
+// anchors
+$(() => {
+  const anchors = document.querySelectorAll('a[href*="#"]')
+
+  for (let anchor of anchors) {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault()
+
+      const blockID = anchor.getAttribute('href').substr(1)
+
+      document.getElementById(blockID).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      })
+    })
+  }
+})
