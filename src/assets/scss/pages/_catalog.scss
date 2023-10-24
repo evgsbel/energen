@@ -2,8 +2,22 @@
   &__mb {
     margin-bottom: 40px;
   }
+  &__wrapper {
+    display: flex;
+    gap: 0 30px;
+    justify-content: space-between;
+    @include r(1280) {
+      gap: 0 12px;
+    }
+    @include r(1024) {
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+  }
   &__item {
     position: relative;
+    flex: 0 0 calc((100% - 5 * 30px) / 6);
     padding: 10px;
     height: 100%;
     border-radius: 10px;
@@ -13,8 +27,16 @@
     &:hover {
       box-shadow: 0px 0px 25px 6px rgba(0, 0, 0, 0.25);
     }
+    @include r(1280) {
+      padding: 10px 5px;
+      flex: 0 0 calc((100% - 5 * 12px) / 6);
+    }
     @include r(1024) {
-      padding: 5px;
+      flex: 0 0 calc((100% - 3 * 10px) / 4);
+      height: auto;
+    }
+    @include r(576) {
+      flex: 0 0 calc((100% - 2 * 10px) / 2);
     }
   }
   &__img {
@@ -46,6 +68,9 @@
     align-items: center;
     gap: 0  20px;
     margin-bottom: 15px;
+    @include r(576) {
+      align-items: flex-end;
+    }
   }
   &__title {
     color: #1c1c1c;
@@ -57,16 +82,26 @@
     font-size: 15px;
     color: $blue;
     transition: color $trns;
+    @include r(576) {
+      width: 58%;
+      text-align: right;
+    }
     &:hover {
       color: $blue-2-hover;
     }
   }
-  &__list,
-  &__hide {
+  &__list {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 8px 20px;
+    max-height: 60px;
+    overflow: hidden;
+    transition: all $trns;
+    &.is-open {
+      max-height: 500px;
+      transition: all $trns;
+    }
   }
   &__item {
     font-size: 15px;
@@ -81,10 +116,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @include r(1024) {
+    flex-direction: column;
+  }
   &__right {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    @include r(1024) {
+      flex-direction: column;
+    }
   }
   &__btn {
     display: flex;
@@ -299,6 +340,7 @@
 }
 
 .advantages {
+  overflow: hidden;
   &__item {
     text-align: center;
   }
@@ -308,6 +350,11 @@
   &__caption {
     font-size: 15px;
     font-weight: 500;
+    color: $grey-5;
+    @include r(1024) {
+      max-width: 160px;
+      margin: 0 auto 15px;
+    }
   }
 }
 
@@ -316,13 +363,21 @@
     padding: 25px 20px;
     border-radius: 10px;
     background: #fff;
+    @include r(768) {
+      margin-bottom: 15px;
+      padding: 17px 20px;
+    }
   }
   &__heading {
     display: flex;
     gap: 0 45px;
     margin-bottom: 20px;
     @include r(1280) {
-      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 15px 0;
+    }
+    @include r(576) {
+      margin-top: 18px;
     }
   }
   &__question {
@@ -335,6 +390,12 @@
       br {
         display: none;
       }
+    }
+    @include r(768) {
+      margin-bottom: 0;
+    }
+    @include r(576) {
+      display: none;
     }
   }
   &__contacts {
@@ -370,6 +431,23 @@
     font-weight: 500;
     color: #1c1c1c;
   }
+  &__open {
+    display: none;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    @include r(576) {
+      display: flex;
+    }
+    svg {
+      transform: rotate(180deg);
+      transition: transform $trns;
+    }
+    &.collapsed svg {
+      transform: rotate(0);
+    }
+  }
 }
 
 .callback {
@@ -382,24 +460,88 @@
     @include r(1280) {
       flex-wrap: wrap;
     }
+    @include r(768) {
+      align-items: flex-start;
+    }
+    @include r(576) {
+      flex-direction: column;
+      padding: 25px 15px;
+    }
   }
   &__caption {
     font-weight: 700;
     font-size: 24px;
     color: #fff;
     line-height: 1.2;
+    @include r(768) {
+      margin-bottom: 30px;
+    }
+    @include r(576) {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
     span {
       display: block;
       font-weight: 500;
       font-size: 16px;
+      @include r(576) {
+        font-size: 14px;}
+    }
+  }
+  &__left {
+    flex: 0 0 40%;
+    max-width: 40%;
+    @include r(768) {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    @include r(576) {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  &__group {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    flex: 0 0 520px;
+    max-width: 520px;
+    margin-right: 20px;
+    @include r(1280) {
+      margin-right: 0;
+    }
+    @include r(1024) {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    @include r(768) {
+      flex-direction: column;
+      max-width: 50%;
+      flex: 0 0 45%;
+      gap: 15px 0;
+    }
+    @include r(576) {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-left: 0;
+      width: 100%;
+      margin-bottom: 20px;
     }
   }
   .form__label {
     flex: 0 0 300px;
     max-width: 300px;
     margin-right: 20px;
-    margin-left: 35px;
     margin-bottom: 0;
+    @include r(1024) {
+      flex: 0 0 55%;
+      max-width: 55%;
+    }
+    @include r(768) {
+      flex: 0 0 auto;
+      max-width: 100%;
+      margin-right: 0;
+    }
   }
   .checkbox__label {
     flex: 0 0 250px;
@@ -411,7 +553,31 @@
       margin-left: auto;
       margin-top: 20px;
       padding-top: 5px;
-      margin-right: 85px;
+      margin-right: 60px;
+      @include r(1024) {
+        margin-right: 0;
+      }
+      @include r(768) {
+        margin: 0;
+        max-width: 100%;
+      }
+    }
+    &_mob {
+      display: none;
+      @include r(768) {
+        display: block;
+      }
+      @include r(576) {
+        display: none;
+      }
+    }
+    &_desk {
+      @include r(768) {
+        display: none;
+      }
+      @include r(576) {
+        display: block;
+      }
     }
   }
   &__input {
@@ -422,8 +588,16 @@
     width: 200px;
     flex: 0 0 200px;
     max-width: 200px;
-    margin-right: 20px;
     margin-bottom: 0;
+    @include r(1024) {
+      flex: 0 0 40%;
+      max-width: 40%;
+    }
+    @include r(768) {
+      flex: 0 0 auto;
+      max-width: 100%;
+      width: 100%;
+    }
   }
 }
 
@@ -456,11 +630,24 @@
     align-items: flex-start;
     gap: 10px 80px;
     max-height: 190px;
+    @include r(1024) {
+      gap: 10px 15px;
+    }
+    @include r(768) {
+      flex-direction: row;
+      max-height: none;
+    }
   }
   &__item {
     flex: 0 0 auto;
     color: #1c1c1c;
     transition: color $trns;
+    @include r(768) {
+      flex: 0 0 23%;
+    }
+    @include r(576) {
+      flex: 0 0 45%;
+    }
     &:hover {
       color: $grey-4;
     }

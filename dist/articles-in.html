@@ -1090,42 +1090,60 @@
         <div class="col-12"><h2 class="title-h2">Контакты специалистов</h2></div>
       </div>
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-md-6">
           <div class="specialist__item">
-            <div class="specialist__heading">
-              <p class="specialist__question">По техническим <br>вопросам</p>
-              <p class="specialist__contacts  specialist__contacts_phone">8 (800) 900-70-70
-                <span>Бесплатно по России</span>
-              </p>
-              <p class="specialist__contacts  specialist__contacts_phone">info@dizel-generator.ru
-                <a href="">Отправить письмо</a>
-              </p>
-            </div>
-            <div class="specialist__flex">
-              <img src="/assets/img/spc-01.png" alt="" class="specialist__photo">
-              <div class="specialist__description">
-                <p class="specialist__status">Руководитель проектов</p>
-                <p class="specialist__name">Мария Александровна Иванова</p>
+            <button class="js-open-specialist collapsed btn-reset specialist__question specialist__open" data-toggle="collapse"
+                    data-target="#spec-01">
+              <span>По техническим вопросам</span>
+              <svg width="24" height="24">
+                <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom-blue"></use>
+              </svg>
+            </button>
+            <div class="js-specialist-collapse collapse show" id="spec-01">
+              <div class="specialist__heading">
+                <p class="specialist__question">По техническим <br>вопросам</p>
+                <p class="specialist__contacts  specialist__contacts_phone">8 (800) 900-70-70
+                  <span>Бесплатно по России</span>
+                </p>
+                <p class="specialist__contacts  specialist__contacts_phone">info@dizel-generator.ru
+                  <a href="">Отправить письмо</a>
+                </p>
+              </div>
+              <div class="specialist__flex">
+                <img src="/assets/img/spc-01.png" alt="" class="specialist__photo">
+                <div class="specialist__description">
+                  <p class="specialist__status">Руководитель проектов</p>
+                  <p class="specialist__name">Мария Александровна Иванова</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-md-6">
           <div class="specialist__item">
-            <div class="specialist__heading">
-              <p class="specialist__question">По коммерческим <br> вопросам</p>
-              <p class="specialist__contacts  specialist__contacts_phone">8 (800) 900-70-70
-                <span>Бесплатно по России</span>
-              </p>
-              <p class="specialist__contacts  specialist__contacts_phone">info@dizel-generator.ru
-                <a href="">Отправить письмо</a>
-              </p>
-            </div>
-            <div class="specialist__flex">
-              <img src="/assets/img/spc-02.png" alt="" class="specialist__photo">
-              <div class="specialist__description">
-                <p class="specialist__status">Руководитель проектов</p>
-                <p class="specialist__name">Мария Александровна Иванова</p>
+            <button class="js-open-specialist collapsed btn-reset specialist__question specialist__open" data-toggle="collapse"
+                    data-target="#spec-02">
+              <span>По техническим вопросам</span>
+              <svg width="24" height="24">
+                <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom-blue"></use>
+              </svg>
+            </button>
+            <div class="js-specialist-collapse collapse show" id="spec-02">
+              <div class="specialist__heading">
+                <p class="specialist__question">По коммерческим <br> вопросам</p>
+                <p class="specialist__contacts  specialist__contacts_phone">8 (800) 900-70-70
+                  <span>Бесплатно по России</span>
+                </p>
+                <p class="specialist__contacts  specialist__contacts_phone">info@dizel-generator.ru
+                  <a href="">Отправить письмо</a>
+                </p>
+              </div>
+              <div class="specialist__flex">
+                <img src="/assets/img/spc-02.png" alt="" class="specialist__photo">
+                <div class="specialist__description">
+                  <p class="specialist__status">Руководитель проектов</p>
+                  <p class="specialist__name">Мария Александровна Иванова</p>
+                </div>
               </div>
             </div>
           </div>
@@ -1139,17 +1157,28 @@
       <div class="row">
         <div class="col-12">
           <form action="" class="callback__form form">
-            <p class="callback__caption">
-              Заказать обратный звонок
-              <span>Напишите и мы ответим в течение 5 минут</span>
-            </p>
-            <label for="feed-phone" class="form__label">
-              <span class="form__caption">номер телефона</span>
-              <input type="tel" name="feed-phone" id="feed-phone" placeholder="+7 911-609-73-15"
-                     class="form__input phone-mask callback__input">
-            </label>
-            <button class="btn-reset btn btn_blue form__submit callback__submit" type="submit">Перезвоните мне</button>
-            <label for="conf" class="checkbox__label">
+  
+            <div class="callback__left">
+              <p class="callback__caption">
+                Заказать обратный звонок
+                <span>Напишите и мы ответим в течение 5 минут</span>
+              </p>
+              <label for="conf" class="checkbox__label checkbox__label_mob">
+                <input type="checkbox" name="conf" id="conf" class="checkbox__input js-hero-checkbox" checked>
+                <span class="checkbox__pane"></span>
+                Я даю согласие на <a href="/">обработку моих персональных данных</a>
+              </label>
+            </div>
+  
+            <div class="callback__group">
+              <label for="feed-phone" class="form__label">
+                <span class="form__caption">номер телефона</span>
+                <input type="tel" name="feed-phone" id="feed-phone" placeholder="+7 911-609-73-15"
+                       class="form__input phone-mask callback__input">
+              </label>
+              <button class="btn-reset btn btn_blue form__submit callback__submit" type="submit">Перезвоните мне</button>
+            </div>
+            <label for="conf" class="checkbox__label checkbox__label_desk">
               <input type="checkbox" name="conf" id="conf" class="checkbox__input js-hero-checkbox" checked>
               <span class="checkbox__pane"></span>
               Я даю согласие на <a href="/">обработку моих персональных данных</a>
