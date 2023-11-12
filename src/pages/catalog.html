@@ -202,22 +202,30 @@ title: Catalog
 <section class="section catalog catalog_vertical">
   <div class="container">
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-xl-3 col-lg-4 js-1000px-filter">
         {{> filters}}
       </div>
-      <div class="col-md-9">
+      <div class="col-xl-9 col-lg-8 js-1000px-catalog">
         <div id="catalog-tag-list" class="catalog-tag-list">
           <div id="hidden" class="catalog-tag-list__hidden"></div>
           <div id="checked" class="catalog-tag-list__checked"></div>
         </div>
         <div class="sorting">
           <div class="sorting__left">
-
-            <button class="btn-reset sorting__btn js-sorting-btn">
+            <button class="btn-reset sorting__btn sorting__btn_sort js-sorting-btn">
               <svg width="24" height="24">
                 <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom-2"></use>
               </svg>
               По популярности
+            </button>
+            <button class="btn-reset sorting__btn sorting__btn_filter js-filters-open ">
+              <svg width="24" height="24">
+                <use xlink:href="assets/img/sprite.svg#icon-filters"></use>
+              </svg>
+              Фильтры
+            </button>
+            <button class="btn-reset sorting__btn sorting__btn_popular js-popular-filters-open ">
+              Популярные подборки
             </button>
           </div>
           <div class="sorting__right">
@@ -733,21 +741,21 @@ title: Catalog
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6 js-catalog-seo-card">
+          <div class="col-xl-4 col-sm-6 js-catalog-seo-card">
             <div class="seo-card">
               <img src="assets/img/art-01.jpg" alt="" class="seo-card__img">
               <p class="seo-card__caption">Монтаж стационарного генератора</p>
               <a href="" class="lnk"></a>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6 js-catalog-seo-card">
+          <div class="col-xl-4 col-sm-6 js-catalog-seo-card">
             <div class="seo-card">
               <img src="assets/img/art-02.jpg" alt="" class="seo-card__img">
               <p class="seo-card__caption">Подключение ДГУ (электростанции) </p>
               <a href="" class="lnk"></a>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6 js-catalog-seo-card">
+          <div class="col-xl-4 col-sm-6 js-catalog-seo-card">
             <div class="seo-card seo-card_third">
               <img src="assets/img/art-03.jpg" alt="" class="seo-card__img">
               <p class="seo-card__caption">Резервное электроснабжение...</p>

@@ -1,4 +1,12 @@
-<div class="filters">
+<div class="filters js-mobile-filters ">
+  <div class="mobile-menu__heading filters__menu-heading">
+    <p class="mobile-menu__title">Фильтры</p>
+    <button class="btn-reset js-close-filters">
+      <svg width="24" height="24">
+        <use xlink:href="assets/img/sprite.svg#icon-close-big"></use>
+      </svg>
+    </button>
+  </div>
   <div class="filters__item filters__item_check">
     <div class="filters__heading" data-toggle="collapse" data-target="#filItm1">
       <p class="filters__caption filters__caption_check">Исполнение</p>
@@ -8,44 +16,58 @@
     </div>
     <div class="filters__hide collapse show" id="filItm1">
       <div class="filters-check">
-        <input class="filters-check__input" data-category="Исполнение"  type="checkbox" value="Открытые на раме" id="defaultCheck1" >
-        <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck1" >
+        <input class="filters-check__input" data-category="Исполнение" type="checkbox" data-jsvalue="Открытые на раме"
+               id="defaultCheck1">
+        <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+               for="defaultCheck1">
           Открытые на раме
         </label>
       </div>
       <div class="filters-check">
-        <input class="filters-check__input" data-category="Исполнение"  type="checkbox" value="В контейнере на базе морского" id="defaultCheck2" >
-        <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck2">
+        <input class="filters-check__input" data-category="Исполнение" type="checkbox"
+               data-jsvalue="В контейнере на базе морского" id="defaultCheck2">
+        <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+               for="defaultCheck2">
           В контейнере на базе морского
         </label>
       </div>
       <div class="filters-check">
-        <input class="filters-check__input" data-category="Исполнение"  type="checkbox" value="В контейнере из сендвич панелей" id="defaultCheck3">
-        <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck3">
+        <input class="filters-check__input" data-category="Исполнение" type="checkbox"
+               data-jsvalue="В контейнере из сендвич панелей" id="defaultCheck3">
+        <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+               for="defaultCheck3">
           В контейнере из сендвич панелей
         </label>
       </div>
       <div class="filters-check">
-        <input class="filters-check__input" data-category="Исполнение"  type="checkbox" value="В кожухе шумозащитном" id="defaultCheck4">
-        <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck4">
+        <input class="filters-check__input" data-category="Исполнение" type="checkbox" data-jsvalue="В кожухе шумозащитном"
+               id="defaultCheck4">
+        <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+               for="defaultCheck4">
           В кожухе шумозащитном
         </label>
       </div>
       <div class="filters-check">
-        <input class="filters-check__input" data-category="Исполнение"  type="checkbox" value="В кожухе шумозащитном" id="defaultCheck5">
-        <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck5">
+        <input class="filters-check__input" data-category="Исполнение" type="checkbox" data-jsvalue="В кожухе шумозащитном"
+               id="defaultCheck5">
+        <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+               for="defaultCheck5">
           В кожухе шумозащитном
         </label>
       </div>
       <div class="filters-check">
-        <input class="filters-check__input" data-category="Исполнение"  type="checkbox" value="В капоте погодозащитном" id="defaultCheck6">
-        <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck6">
+        <input class="filters-check__input" data-category="Исполнение" type="checkbox" data-jsvalue="В капоте погодозащитном"
+               id="defaultCheck6">
+        <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+               for="defaultCheck6">
           В капоте погодозащитном
         </label>
       </div>
       <div class="filters-check">
-        <input class="filters-check__input" data-category=""  type="checkbox" value="В мини-контейнере" id="defaultCheck20">
-        <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck20">
+        <input class="filters-check__input" data-category="" type="checkbox" data-jsvalue="В мини-контейнере"
+               id="defaultCheck20">
+        <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+               for="defaultCheck20">
           В мини-контейнере
         </label>
       </div>
@@ -60,20 +82,26 @@
     </div>
     <div class="filters__hide collapse show" id="filItm2">
       <div class="filters-check">
-        <input class="filters-check__input" data-category="Особенности исполнения" type="checkbox" value="На шасси (передвижной)" id="defaultCheck7" disabled>
-        <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck7">
+        <input class="filters-check__input" data-category="Особенности исполнения" type="checkbox"
+               data-jsvalue="На шасси (передвижной)" id="defaultCheck7" disabled>
+        <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+               for="defaultCheck7">
           На шасси (передвижной)
         </label>
       </div>
       <div class="filters-check">
-        <input class="filters-check__input" data-category="Особенности исполнения" type="checkbox" value="1 степень (ручной запуск)" id="defaultCheck8">
-        <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck8">
+        <input class="filters-check__input" data-category="Особенности исполнения" type="checkbox"
+               data-jsvalue="1 степень (ручной запуск)" id="defaultCheck8">
+        <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+               for="defaultCheck8">
           1 степень (ручной запуск)
         </label>
       </div>
       <div class="filters-check">
-        <input class="filters-check__input" data-category="Особенности исполнения" type="checkbox" value="2 степень (с АВР, автозапуск)" id="defaultCheck9">
-        <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck9">
+        <input class="filters-check__input" data-category="Особенности исполнения" type="checkbox"
+               data-jsvalue="2 степень (с АВР, автозапуск)" id="defaultCheck9">
+        <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+               for="defaultCheck9">
           2 степень (с АВР, автозапуск)
         </label>
       </div>
@@ -90,12 +118,12 @@
       <div class="filters__group">
         <label for="power-from" class="filters__label">
           <span class="filters__label--caption">от</span>
-          <input type="number" min="10" value="10" class="filters__input" id="power-from">
+          <input type="number" min="10" data-jsvalue="10" class="filters__input" id="power-from">
         </label>
         <hr>
         <label for="power-to" class="filters__label">
           <span class="filters__label--caption">до</span>
-          <input type="number" max="3200" value="3200" class="filters__input" id="power-to">
+          <input type="number" max="3200" data-jsvalue="3200" class="filters__input" id="power-to">
         </label>
       </div>
     </div>
@@ -107,15 +135,16 @@
         <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
       </svg>
     </div>
-    <div class="filters__hide collapse show" id="filItm4">
+    <div class="filters__hide collapse show d-lg-block d-none" id="filItm4">
       <label for="filters-search" class="filters-search">
-        <input type="search" placeholder="Поиск по мощности" id="filters-search" class="filters-search__input filters__input">
+        <input type="search" placeholder="Поиск по мощности" id="filters-search"
+               class="filters-search__input filters__input">
         <span class="filters-search__loup"></span>
       </label>
     </div>
   </div>
   <div class="filters__item filters__item_pwr">
-    <div class="filters__heading" data-toggle="collapse" data-target="#filPwr1">
+    <div class="filters__heading collapsed" data-toggle="collapse" data-target="#filPwr1">
       <p class="filters__caption filters__caption_bold">10-55 кВт</p>
       <svg width="24" height="24">
         <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
@@ -155,7 +184,7 @@
     </div>
   </div>
   <div class="filters__item filters__item_pwr">
-    <div class="filters__heading" data-toggle="collapse" data-target="#filPwr2">
+    <div class="filters__heading collapsed" data-toggle="collapse" data-target="#filPwr2">
       <p class="filters__caption filters__caption_bold">60-184 кВт</p>
       <svg width="24" height="24">
         <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
@@ -185,7 +214,7 @@
     </div>
   </div>
   <div class="filters__item filters__item_pwr">
-    <div class="filters__heading" data-toggle="collapse" data-target="#filPwr3">
+    <div class="filters__heading collapsed" data-toggle="collapse" data-target="#filPwr3">
       <p class="filters__caption filters__caption_bold">200-550 кВт</p>
       <svg width="24" height="24">
         <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
@@ -215,7 +244,7 @@
     </div>
   </div>
   <div class="filters__item filters__item_pwr">
-    <div class="filters__heading" data-toggle="collapse" data-target="#filPwr4">
+    <div class="filters__heading collapsed" data-toggle="collapse" data-target="#filPwr4">
       <p class="filters__caption filters__caption_bold">560-1300 кВт</p>
       <svg width="24" height="24">
         <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
@@ -242,7 +271,7 @@
     </div>
   </div>
   <div class="filters__item filters__item_pwr">
-    <div class="filters__heading" data-toggle="collapse" data-target="#filPwr5">
+    <div class="filters__heading collapsed" data-toggle="collapse" data-target="#filPwr5">
       <p class="filters__caption filters__caption_bold">1400-3200 кВт</p>
       <svg width="24" height="24">
         <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
@@ -274,26 +303,34 @@
     </div>
     <div class="filters__hide collapse show" id="filItm5">
       <div class="filters-check">
-        <input class="filters-check__input" data-category="Напряжение тока" type="checkbox" value="400/230В" id="defaultCheck10">
-        <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck10">
+        <input class="filters-check__input" data-category="Напряжение тока" type="checkbox" data-jsvalue="400/230В"
+               id="defaultCheck10">
+        <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+               for="defaultCheck10">
           400/230В
         </label>
       </div>
       <div class="filters-check">
-        <input class="filters-check__input" data-category="Напряжение тока" type="checkbox" value="230В" id="defaultCheck11">
-        <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck11">
+        <input class="filters-check__input" data-category="Напряжение тока" type="checkbox" data-jsvalue="230В"
+               id="defaultCheck11">
+        <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+               for="defaultCheck11">
           230В
         </label>
       </div>
       <div class="filters-check">
-        <input class="filters-check__input" data-category="Напряжение тока" type="checkbox" value="6300В" id="defaultCheck12">
-        <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck12">
+        <input class="filters-check__input" data-category="Напряжение тока" type="checkbox" data-jsvalue="6300В"
+               id="defaultCheck12">
+        <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+               for="defaultCheck12">
           6300В
         </label>
       </div>
       <div class="filters-check">
-        <input class="filters-check__input" data-category="Напряжение тока" type="checkbox" value="10500В" id="defaultCheck13">
-        <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck13">
+        <input class="filters-check__input" data-category="Напряжение тока" type="checkbox" data-jsvalue="10500В"
+               id="defaultCheck13">
+        <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+               for="defaultCheck13">
           10500В
         </label>
       </div>
@@ -302,171 +339,230 @@
   <div class="filters__item filters__item_check">
     <div class="filters__heading" data-toggle="collapse" data-target="#filItm6">
       <p class="filters__caption">Марка электростанции</p>
+      <div class="filters__heading-left">
+      <button class=" btn-reset filters__caption-all js-open-station-filters">Все</button>
       <svg width="24" height="24">
         <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
       </svg>
+      </div>
     </div>
+
     <div class="filters__hide collapse show" id="filItm6">
       <div class="filters-check">
-        <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" value="AKSA" id="defaultCheck14">
-        <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck14">
+        <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="AKSA"
+               id="defaultCheck114">
+        <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+               for="defaultCheck114">
           AKSA
         </label>
       </div>
       <div class="filters-check">
-        <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" value="Cummins" id="defaultCheck15">
-        <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck15">
+        <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Cummins"
+               id="defaultCheck115">
+        <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+               for="defaultCheck115">
           Cummins
         </label>
       </div>
       <div class="filters-check">
-        <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" value="Doosan" id="defaultCheck16">
-        <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck16">
+        <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Doosan"
+               id="defaultCheck16">
+        <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+               for="defaultCheck16">
           Doosan
         </label>
       </div>
       <div class="filters-check">
-        <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" value="Iveco FPT" id="defaultCheck17">
-        <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck17">
+        <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Iveco FPT"
+               id="defaultCheck127">
+        <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+               for="defaultCheck127">
           Iveco FPT
         </label>
       </div>
       <div class="filters-check">
-        <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" value="Mitsubishi" id="defaultCheck18">
-        <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck18">
+        <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Mitsubishi"
+               id="defaultCheck18">
+        <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+               for="defaultCheck18">
           Mitsubishi
         </label>
       </div>
       <div class="filters-check">
-        <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" value="Perkins" id="defaultCheck19">
-        <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck19">
+        <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Perkins"
+               id="defaultCheck119">
+        <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+               for="defaultCheck119">
           Perkins
         </label>
       </div>
       <div class="collapse" id="filtItm6-in">
         <div class="filters-check">
-          <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" value="AKSA" id="defaultCheck14">
-          <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck14">
+          <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="AKSA"
+                 id="defaultCheck14">
+          <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+                 for="defaultCheck14">
             AKSA
           </label>
         </div>
         <div class="filters-check">
-          <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" value="Cummins" id="defaultCheck15">
-          <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck15">
+          <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Cummins"
+                 id="defaultCheck185">
+          <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+                 for="defaultCheck185">
             Cummins
           </label>
         </div>
         <div class="filters-check">
-          <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" value="Doosan" id="defaultCheck16">
-          <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck16">
+          <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Doosan"
+                 id="defaultCheck116">
+          <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+                 for="defaultCheck116">
             Doosan
           </label>
         </div>
         <div class="filters-check">
-          <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" value="Iveco FPT" id="defaultCheck17">
-          <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck17">
+          <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Iveco FPT"
+                 id="defaultCheck137">
+          <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+                 for="defaultCheck137">
             Iveco FPT
           </label>
         </div>
         <div class="filters-check">
-          <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" value="Mitsubishi" id="defaultCheck18">
-          <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck18">
+          <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Mitsubishi"
+                 id="defaultCheck118">
+          <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+                 for="defaultCheck118">
             Mitsubishi
           </label>
         </div>
         <div class="filters-check">
-          <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" value="Perkins" id="defaultCheck19">
-          <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck19">
+          <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Perkins"
+                 id="defaultCheckMob219">
+          <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+                 for="defaultCheckMob219">
             Perkins
           </label>
         </div>
       </div>
-      <button class="btn-reset filters__showall js-filters-showall" data-toggle="collapse" data-target="#filtItm6-in">Показать все</button>
+      <button class="btn-reset filters__showall js-filters-showall d-none d-lg-block" data-toggle="collapse" data-target="#filtItm6-in">
+        Показать все
+      </button>
     </div>
   </div>
   <div class="filters__item filters__item_check">
     <div class="filters__heading" data-toggle="collapse" data-target="#filItm7">
       <p class="filters__caption">Марка двигателя</p>
-      <svg width="24" height="24">
-        <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
-      </svg>
+      <div class="filters__heading-left">
+      <button class=" btn-reset filters__caption-all js-open-engine-filters">Все</button>
+        <svg width="24" height="24">
+          <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+        </svg>
+      </div>
     </div>
     <div class="filters__hide collapse show" id="filItm7">
       <div class="filters-check">
-        <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" value="valueAKSA (Турция)" id="defaultCheck21">
-        <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck21">
+        <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="data-jsvalueAKSA (Турция)"
+               id="defaultCheckMob21">
+        <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+               for="defaultCheckMob21">
           AKSA (Турция)
         </label>
       </div>
       <div class="filters-check">
-        <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" value="Baudouin (Франция-Китай)" id="defaultCheck22">
-        <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck22">
+        <input class="filters-check__input" data-category="Марка двигателя" type="checkbox"
+               data-jsvalue="Baudouin (Франция-Китай)" id="defaultCheck22">
+        <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+               for="defaultCheck22">
           Baudouin (Франция-Китай)
         </label>
       </div>
       <div class="filters-check">
-        <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" value="Cummins (США)" id="defaultCheck23">
-        <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck23">
+        <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="Cummins (США)"
+               id="defaultCheck23">
+        <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+               for="defaultCheck23">
           Cummins (США)
         </label>
       </div>
       <div class="filters-check">
-        <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" value="Cummins-China (США-Китай)" id="defaultCheck24">
-        <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck24">
+        <input class="filters-check__input" data-category="Марка двигателя" type="checkbox"
+               data-jsvalue="Cummins-China (США-Китай)" id="defaultCheck24">
+        <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+               for="defaultCheck24">
           Cummins-China (США-Китай)
         </label>
       </div>
       <div class="filters-check">
-        <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" value="Doosan (Корея)" id="defaultCheck25">
-        <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck25">
+        <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="Doosan (Корея)"
+               id="defaultCheck55">
+        <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+               for="defaultCheck55">
           Doosan (Корея)
         </label>
       </div>
       <div class="filters-check">
-        <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" value="Iveco FPT (Италия)" id="defaultCheck26">
-        <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck26">
+        <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="Iveco FPT (Италия)"
+               id="defaultCheck56">
+        <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+               for="defaultCheck56">
           Iveco FPT (Италия)
         </label>
       </div>
       <div class="collapse" id="filtItm7-in">
         <div class="filters-check">
-          <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" value="AKSA (Турция)" id="defaultCheck21">
-          <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck21">
+          <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="AKSA (Турция)"
+                 id="defaultCheck38">
+          <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+                 for="defaultCheck38">
             AKSA (Турция)
           </label>
         </div>
         <div class="filters-check">
-          <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" value="Baudouin (Франция-Китай)" id="defaultCheck22">
-          <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck22">
+          <input class="filters-check__input" data-category="Марка двигателя" type="checkbox"
+                 data-jsvalue="Baudouin (Франция-Китай)" id="defaultCheck42">
+          <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+                 for="defaultCheck42">
             Baudouin (Франция-Китай)
           </label>
         </div>
         <div class="filters-check">
-          <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" value="Cummins (США)" id="defaultCheck23">
-          <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck23">
+          <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="Cummins (США)"
+                 id="defaultCheck43">
+          <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+                 for="defaultCheck43">
             Cummins (США)
           </label>
         </div>
         <div class="filters-check">
-          <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" value="Cummins-China (США-Китай)" id="defaultCheck24">
-          <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck24">
+          <input class="filters-check__input" data-category="Марка двигателя" type="checkbox"
+                 data-jsvalue="Cummins-China (США-Китай)" id="defaultCheck54">
+          <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+                 for="defaultCheck54">
             Cummins-China (США-Китай)
           </label>
         </div>
         <div class="filters-check">
-          <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" value="Doosan (Корея)" id="defaultCheck25">
-          <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck25">
+          <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="Doosan (Корея)"
+                 id="defaultCheck25">
+          <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+                 for="defaultCheck25">
             Doosan (Корея)
           </label>
         </div>
         <div class="filters-check">
-          <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" value="Iveco FPT (Италия)" id="defaultCheck26">
-          <label class="filters-check__label" data-toggle="tooltip"  title="Найдено <a href='home.html'>86 моделей</a>" for="defaultCheck26">
+          <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="Iveco FPT (Италия)"
+                 id="defaultCheck46">
+          <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+                 for="defaultCheck46">
             Iveco FPT (Италия)
           </label>
         </div>
       </div>
-      <button class="btn-reset filters__showall js-filters-showall" data-toggle="collapse" data-target="#filtItm7-in">Показать все</button>
+      <button class="btn-reset filters__showall js-filters-showall d-none d-lg-block" data-toggle="collapse" data-target="#filtItm7-in">
+        Показать все
+      </button>
     </div>
   </div>
   <div class="filters__item">
@@ -480,12 +576,12 @@
       <div class="filters__group">
         <label for="power-from" class="filters__label">
           <span class="filters__label--caption">от</span>
-          <input type="number"  value="500" class="filters__input" id="length-from">
+          <input type="number" data-jsvalue="500" class="filters__input" id="length-from">
         </label>
         <hr>
         <label for="power-to" class="filters__label">
           <span class="filters__label--caption">до</span>
-          <input type="number"  value="5425" class="filters__input" id="length-to">
+          <input type="number" data-jsvalue="5425" class="filters__input" id="length-to">
         </label>
       </div>
     </div>
@@ -501,12 +597,12 @@
       <div class="filters__group">
         <label for="power-from" class="filters__label">
           <span class="filters__label--caption">от</span>
-          <input type="number"  value="500" class="filters__input" id="width-from">
+          <input type="number" data-jsvalue="500" class="filters__input" id="width-from">
         </label>
         <hr>
         <label for="power-to" class="filters__label">
           <span class="filters__label--caption">до</span>
-          <input type="number"  value="5425" class="filters__input" id="width-to">
+          <input type="number" data-jsvalue="5425" class="filters__input" id="width-to">
         </label>
       </div>
     </div>
@@ -522,12 +618,12 @@
       <div class="filters__group">
         <label for="power-from" class="filters__label">
           <span class="filters__label--caption">от</span>
-          <input type="number"  value="500" class="filters__input" id="height-from">
+          <input type="number" data-jsvalue="500" class="filters__input" id="height-from">
         </label>
         <hr>
         <label for="power-to" class="filters__label">
           <span class="filters__label--caption">до</span>
-          <input type="number"  value="5425" class="filters__input" id="height-to">
+          <input type="number" data-jsvalue="5425" class="filters__input" id="height-to">
         </label>
       </div>
     </div>
@@ -544,14 +640,59 @@
     </svg>
     Сбросить все фильтры
   </button>
-  <div class="filters__item">
-    <div class="filters__heading" data-toggle="collapse" data-target="#filItm11">
-      <p class="filters__caption">Популярные подборки</p>
-      <svg width="24" height="24">
-        <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
-      </svg>
+  <div class="filters__item d-none d-lg-block">
+      <div class="filters__heading" data-toggle="collapse" data-target="#filItm11">
+        <p class="filters__caption">Популярные подборки</p>
+        <svg width="24" height="24">
+          <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+        </svg>
+      </div>
+      <div class="filters__hide collapse show" id="filItmMob11">
+        <div class="filters__group filters__collections" data-simplebar data-simplebar-auto-hide="false">
+          <a href="" class="filters__link">Двигатель 1500 об/мин</a>
+          <a href="" class="filters__link">С водяным охлаждением</a>
+          <a href="" class="filters__link">Бесшумные</a>
+          <a href="" class="filters__link">Блочные</a>
+          <a href="" class="filters__link">Аварийные</a>
+          <a href="" class="filters__link">Автономные</a>
+          <a href="" class="filters__link">Промышленные</a>
+          <a href="" class="filters__link">Резервные</a>
+          <a href="" class="filters__link">Уличные</a>
+          <a href="" class="filters__link">///</a>
+          <a href="" class="filters__link">///</a>
+          <a href="" class="filters__link">///</a>
+          <a href="" class="filters__link">///</a>
+          <a href="" class="filters__link">///</a>
+          <a href="" class="filters__link">///</a>
+          <a href="" class="filters__link">///</a>
+          <a href="" class="filters__link">///</a>
+          <a href="" class="filters__link">///</a>
+          <a href="" class="filters__link">///</a>
+          <a href="" class="filters__link">///</a>
+          <a href="" class="filters__link">///</a>
+        </div>
+      </div>
     </div>
-    <div class="filters__hide collapse show" id="filItm11">
+</div>
+
+<div class="mobile-filter-popular menu-filters js-mobile-filter-popular d-block d-lg-none">
+  <div class="mobile-menu__heading filters__menu-heading">
+    <p class="mobile-menu__title">Популярные подборки</p>
+    <button class="btn-reset js-close-filters">
+      <svg width="24" height="24">
+        <use xlink:href="assets/img/sprite.svg#icon-close-big"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="filters__item ">
+    <div class="mobile-menu__heading filters__menu-heading">
+    <label for="filters-search" class="filters-search mobile-filter-popular__search">
+      <input type="search" placeholder="Поиск по мощности" id="filters-search3"
+             class="filters-search__input filters__input">
+      <span class="filters-search__loup"></span>
+    </label>
+    </div>
+    <div class="filters__hide" id="filItm11">
       <div class="filters__group filters__collections" data-simplebar data-simplebar-auto-hide="false">
         <a href="" class="filters__link">Двигатель 1500 об/мин</a>
         <a href="" class="filters__link">С водяным охлаждением</a>
@@ -576,5 +717,385 @@
         <a href="" class="filters__link">///</a>
       </div>
     </div>
+  </div>
+</div>
+<div class="menu-filters js-sub-filter-station d-block d-lg-none">
+  <div class="mobile-menu__heading filters__menu-heading">
+    <button class="btn-reset js-close-sub-filter close-sub-filters">
+      <svg width="24" height="24">
+        <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+      </svg>
+    </button>
+    <p class="mobile-menu__title">Марки электростанций</p>
+    <button class="btn-reset js-close-filters">
+      <svg width="24" height="24">
+        <use xlink:href="assets/img/sprite.svg#icon-close-big"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="mobile-menu__heading filters__menu-heading">
+    <label for="filters-search" class="filters-search mobile-filter-popular__search">
+      <input type="search" placeholder="Поиск электростанций" id="filters-search2"
+             class="filters-search__input filters__input">
+      <span class="filters-search__loup"></span>
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="AKSA"
+           id="defaultCheckMob1">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob1">
+      AKSA
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Cummins"
+           id="defaultCheckMob2">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob2">
+      Cummins
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Doosan"
+           id="defaultCheckMob3">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob3">
+      Doosan
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Iveco FPT"
+           id="defaultCheckMob4">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob4">
+      Iveco FPT
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Mitsubishi"
+           id="defaultCheckMob5">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob5">
+      Mitsubishi
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Perkins"
+           id="defaultCheckMob6">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob6">
+      Perkins
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="AKSA"
+           id="defaultCheckMob7">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob7">
+      AKSA
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Cummins"
+           id="defaultCheckMob8">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob8">
+      Cummins
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Doosan"
+           id="defaultCheckMob24">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob24">
+      Doosan
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Iveco FPT"
+           id="defaultCheckMob9">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob9">
+      Iveco FPT
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Mitsubishi"
+           id="defaultCheckMob10">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob10">
+      Mitsubishi
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Perkins"
+           id="defaultCheckMob11">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob11">
+      Perkins
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="AKSA"
+           id="defaultCheckMob12">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob12">
+      AKSA
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Cummins"
+           id="defaultCheckMob13">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob13">
+      Cummins
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Doosan"
+           id="defaultCheckMob14">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob14">
+      Doosan
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Iveco FPT"
+           id="defaultCheckMob15">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob15">
+      Iveco FPT
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Mitsubishi"
+           id="defaultCheckMob16">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob16">
+      Mitsubishi
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Perkins"
+           id="defaultCheckMob17">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob17">
+      Perkins
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="AKSA"
+           id="defaultCheckMob18">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob18">
+      AKSA
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Cummins"
+           id="defaultCheckMob19">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob19">
+      Cummins
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Doosan"
+           id="defaultCheckMob20">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob20">
+      Doosan
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Iveco FPT"
+           id="defaultCheckMob211">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob211">
+      Iveco FPT
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Mitsubishi"
+           id="defaultCheckMob22">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob22">
+      Mitsubishi
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Perkins"
+           id="defaultCheckMob23">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob23">
+      Perkins
+    </label>
+  </div>
+</div>
+<div class="menu-filters js-sub-filter-engine d-block d-lg-none">
+  <div class="mobile-menu__heading filters__menu-heading">
+    <button class="btn-reset js-close-sub-filter close-sub-filters">
+      <svg width="24" height="24">
+        <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+      </svg>
+    </button>
+    <p class="mobile-menu__title">Марки двигателей</p>
+    <button class="btn-reset js-close-filters">
+      <svg width="24" height="24">
+        <use xlink:href="assets/img/sprite.svg#icon-close-big"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="mobile-menu__heading filters__menu-heading">
+    <label for="filters-search" class="filters-search mobile-filter-popular__search">
+      <input type="search" placeholder="Поиск двигателей" id="filters-search4"
+             class="filters-search__input filters__input">
+      <span class="filters-search__loup"></span>
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="data-jsvalueAKSA (Турция)"
+           id="defaultCheckMob201">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob201">
+      AKSA (Турция)
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка двигателя" type="checkbox"
+           data-jsvalue="Baudouin (Франция-Китай)" id="defaultCheckMob202">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob202">
+      Baudouin (Франция-Китай)
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="Cummins (США)"
+           id="defaultCheckMob203">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob203">
+      Cummins (США)
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка двигателя" type="checkbox"
+           data-jsvalue="Cummins-China (США-Китай)" id="defaultCheckMob204">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob204">
+      Cummins-China (США-Китай)
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="Doosan (Корея)"
+           id="defaultCheckMob505">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob505">
+      Doosan (Корея)
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="Iveco FPT (Италия)"
+           id="defaultCheckMob506">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob506">
+      Iveco FPT (Италия)
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="data-jsvalueAKSA (Турция)"
+           id="defaultCheckMob20111">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob20111">
+      AKSA (Турция)
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка двигателя" type="checkbox"
+           data-jsvalue="Baudouin (Франция-Китай)" id="defaultCheckMob20211">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob20211">
+      Baudouin (Франция-Китай)
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="Cummins (США)"
+           id="defaultCheckMob20311">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob20311">
+      Cummins (США)
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка двигателя" type="checkbox"
+           data-jsvalue="Cummins-China (США-Китай)" id="defaultCheckMob20411">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob20411">
+      Cummins-China (США-Китай)
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="Doosan (Корея)"
+           id="defaultCheckMob50511">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob5051">
+      Doosan (Корея)
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="Iveco FPT (Италия)"
+           id="defaultCheckMob50611">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob5061">
+      Iveco FPT (Италия)
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="data-jsvalueAKSA (Турция)"
+           id="defaultCheckMob2011">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob2011">
+      AKSA (Турция)
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка двигателя" type="checkbox"
+           data-jsvalue="Baudouin (Франция-Китай)" id="defaultCheckMob2021">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob2021">
+      Baudouin (Франция-Китай)
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="Cummins (США)"
+           id="defaultCheckMob2031">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob2031">
+      Cummins (США)
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка двигателя" type="checkbox"
+           data-jsvalue="Cummins-China (США-Китай)" id="defaultCheckMob2041">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob2041">
+      Cummins-China (США-Китай)
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="Doosan (Корея)"
+           id="defaultCheckMob5051">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob5051">
+      Doosan (Корея)
+    </label>
+  </div>
+  <div class="filters-check">
+    <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="Iveco FPT (Италия)"
+           id="defaultCheckMob5061">
+    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+           for="defaultCheckMob5061">
+      Iveco FPT (Италия)
+    </label>
   </div>
 </div>

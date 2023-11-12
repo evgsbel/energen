@@ -33,16 +33,16 @@ $(() => {
   });
 });
 
-
 //header catalog
 $(() => {
   function checkWidth() {
     let windowWidth = $('body').innerWidth()
     let menuBtn = $(".js-open-header-catalog");
+
     const closeBtn = $('.js-close-mobile-menu');
 
-    if ((/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) && windowWidth < 960) {
-
+    if ((/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) && windowWidth > 960 && windowWidth < 1100) {
+      console.log('mobile')
       // mobile menu
 
       const menu = document.querySelector('.js-mobile-menu');
@@ -72,8 +72,26 @@ $(() => {
         overlay.classList.remove('is-visible')
         menuBtn.removeClass("is-active");
       });
+      $('.js-1000px-filter').removeClass('col-lg-4')
+      $('.js-1000px-filter').addClass('col-lg-12')
+      $('.js-1000px-catalog').removeClass('col-lg-8')
+      $('.js-1000px-catalog').addClass('col-lg-12')
+      $('.js-catalog-item').removeClass('col-sm-6')
+      $('.js-catalog-item').addClass('col-md-4 col-sm-6')
+      $('.js-catalog-seo-card').removeClass('col-sm-6')
+      $('.js-catalog-seo-card').addClass('col-md-4 col-sm-6')
 
+      $('.js-filters-open').css('display', 'block')
+      $('.js-popular-filters-open').css('display', 'block')
+      $('.js-mobile-filters').addClass('menu-filters')
+
+    }
+    else if(windowWidth <= 960) {
+      $('.js-mobile-filters').addClass('menu-filters')
     } else {
+
+      console.log('desk')
+
       const menu = $(".js-header-catalog");
       menuBtn.on("click", function () {
 
@@ -101,6 +119,72 @@ $(() => {
   });
 
 });
+
+$(() => {
+  // mobile filters
+
+  const filters = document.querySelector('.js-mobile-filters');
+  const popularFilters = document.querySelector('.js-mobile-filter-popular');
+  const subFiltersStation = document.querySelector('.js-sub-filter-station');
+  const subFiltersEngine = document.querySelector('.js-sub-filter-engine');
+  const body = document.querySelector('body');
+  const overlay = document.querySelector('.js-overlay');
+  let filtersBtn = $(".js-filters-open");
+  let popularFiltersBtn = $(".js-popular-filters-open");
+  let filtersStationBtn = $(".js-open-station-filters");
+  let filtersEnginenBtn = $(".js-open-engine-filters");
+
+  filtersBtn.on("click", function () {
+    filters.classList.add('is-open');
+    body.classList.add('opened-menu')
+    overlay.classList.add('is-visible')
+  });
+
+  popularFiltersBtn.on("click", function () {
+    popularFilters.classList.add('is-open');
+    body.classList.add('opened-menu')
+    overlay.classList.add('is-visible')
+  });
+
+  filtersStationBtn.on("click", function () {
+    subFiltersStation.classList.add('is-open');
+  });
+
+  filtersEnginenBtn.on("click", function () {
+    subFiltersEngine.classList.add('is-open');
+  });
+
+  const closeBtns = document.querySelectorAll('.js-close-filters');
+  for (let e of closeBtns) {
+    e.addEventListener('click', function (e) {
+      e.stopPropagation();
+      filters.classList.remove('is-open');
+      popularFilters.classList.remove('is-open');
+      subFiltersStation.classList.remove('is-open');
+      subFiltersEngine.classList.remove('is-open');
+      body.classList.remove('opened-menu')
+      overlay.classList.remove('is-visible')
+    });
+  }
+  const closeSubBtn = document.querySelectorAll('.js-close-sub-filter');
+  for (let e of closeSubBtn) {
+  e.addEventListener('click',  function() {
+    subFiltersStation.classList.remove('is-open');
+    subFiltersEngine.classList.remove('is-open');
+  })
+  }
+  overlay.addEventListener('click', function (e) {
+    e.stopPropagation();
+    filters.classList.remove('is-open');
+    popularFilters.classList.remove('is-open');
+    subFiltersStation.classList.remove('is-open');
+    subFiltersEngine.classList.remove('is-open');
+    body.classList.remove('opened-menu')
+    overlay.classList.remove('is-visible')
+    filtersBtn.removeClass("is-active");
+    popularFiltersBtn.removeClass("is-active");
+  });
+})
 
 $(() => {
 // select2
@@ -586,18 +670,18 @@ $(document).ready(function () {
     $(".js-vertical-view").removeAttr('disabled')
     $('.js-vertical-view').removeClass('is-active')
     if ($('.js-catalog-item').hasClass('col-12')) {
-      $('.js-catalog-item').addClass('col-lg-4 col-sm-6');
-      $('.js-catalog-item').removeClass('col-12');
+      $('.js-catalog-item').addClass('col-md-4 col-lg-4 col-sm-6');
+      $('.js-catalog-item').removeClass('col-12 col-md-4');
     } else {
       $('.js-catalog-item').addClass('col-12');
-      $('.js-catalog-item').removeClass('col-lg-4 col-sm-6');
+      $('.js-catalog-item').removeClass('col-md-4 col-lg-4 col-sm-6');
     }
     if ($('.js-catalog-seo-card').hasClass('col-md-6')) {
-      $('.js-catalog-seo-card').addClass('col-lg-4 col-sm-6');
+      $('.js-catalog-seo-card').addClass('col-md-4 col-lg-4 col-sm-6');
       $('.js-catalog-seo-card').removeClass('col-md-6');
     } else {
       $('.js-catalog-seo-card').addClass('col-md-6');
-      $('.js-catalog-seo-card').removeClass('col-lg-4 col-sm-6');
+      $('.js-catalog-seo-card').removeClass('col-md-4 col-md-4 col-lg-4 col-sm-6');
     }
     return false;
   });
@@ -608,18 +692,18 @@ $(document).ready(function () {
     $(this).attr('disabled', '')
     $(".js-horizontal-view").removeAttr('disabled')
     $('.js-horizontal-view').removeClass('is-active')
-    if ($('.js-catalog-item').hasClass('col-lg-4 col-sm-6')) {
+    if ($('.js-catalog-item').hasClass('col-md-4 col-lg-4 col-sm-6')) {
       $('.js-catalog-item').addClass('col-12');
-      $('.js-catalog-item').removeClass('col-lg-4 col-sm-6');
+      $('.js-catalog-item').removeClass('col-md-4 col-lg-4 col-sm-6');
     } else {
-      $('.js-catalog-item').addClass('col-lg-4 col-sm-6');
+      $('.js-catalog-item').addClass('col-md-4 col-lg-4 col-sm-6');
       $('.js-catalog-item').removeClass('col-12');
     }
-    if ($('.js-catalog-seo-card').hasClass('col-lg-4 col-sm-6')) {
+    if ($('.js-catalog-seo-card').hasClass('col-md-4 col-lg-4 col-sm-6')) {
       $('.js-catalog-seo-card').addClass('col-md-6');
       $('.js-catalog-seo-card').removeClass('col-lg-4 col-sm-6');
     } else {
-      $('.js-catalog-seo-card').addClass('col-lg-4 col-sm-6');
+      $('.js-catalog-seo-card').addClass('col-md-4 col-lg-4 col-sm-6');
       $('.js-catalog-seo-card').removeClass('col-md-6');
     }
     return false;
