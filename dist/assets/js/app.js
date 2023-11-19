@@ -456,7 +456,15 @@ $(function () {
     spaceBetween: 15,
     slidesPerView: 3,
     freeMode: true,
-    watchSlidesProgress: true
+    watchSlidesProgress: true,
+    breakpoints: {
+      0: {
+        slidesPerView: 3.5
+      },
+      769: {
+        slidesPerView: 3
+      }
+    }
   });
   var pdoductImagesBig = new Swiper(".js-product-images-slider-big", {
     spaceBetween: 20,

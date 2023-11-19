@@ -549,7 +549,11 @@
   &__left {
     flex: 0 0 33%;
     max-width: 33%;
-    @include r(768) {
+    @include r(1280) {
+      flex: 0 0 40%;
+      max-width: 40%;
+    }
+    @include r(960) {
       flex: 0 0 50%;
       max-width: 50%;
     }
@@ -568,7 +572,7 @@
     @include r(1280) {
       margin-right: 0;
     }
-    @include r(1024) {
+    @include r(960) {
       flex: 0 0 50%;
       max-width: 50%;
     }
@@ -591,7 +595,7 @@
     max-width: 300px;
     margin-right: 20px;
     margin-bottom: 0;
-    @include r(1024) {
+    @include r(960) {
       flex: 0 0 55%;
       max-width: 55%;
     }
@@ -822,6 +826,16 @@
     border-radius: 10px;
     transition: box-shadow $trns;
     cursor: pointer;
+    @include r(768) {
+      grid-template-columns: 160px 1fr 24px;
+      padding: 15px;
+    }
+    @include r(576) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px 0;
+    }
     &:hover {
       box-shadow: 0px 0px 25px 6px rgba(0, 0, 0, 0.25);
     }
@@ -829,17 +843,41 @@
   &__img {
     width: 160px;
     height: 96px;
+    @include r(576) {
+      display: none;
+    }
   }
   &__title {
     color: $black;
     font-size: 16px;
     line-height: 1.5;
+    @include r(576) {
+      width: calc(100% - 50px);
+    }
   }
   &__count {
     margin: 0 auto;
     padding: 16px 15px;
     border-radius: 7px;
     border: 1px solid var(--2---EBEBEB, #EBEBEB);
+    @include r(768) {
+      order: 2;
+      margin-left: 40vw;
+    }
+    @include r(680) {
+      margin-left: 0;
+    }
+  }
+  &__price {
+    @include r(768) {
+      order: 3;
+      margin-left: auto;
+    }
+  }
+  &__del {
+    @include r(768) {
+      order: 1;
+    }
   }
   &__nds {
     margin-bottom: 5px;
@@ -861,15 +899,25 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include r(576) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
   &__title {
     font-size: 24px;
     color: $black;
+    @include r(576) {
+      order: 1;
+    }
   }
   &__sum {
     display: flex;
     align-items: center;
     gap: 0 20px;
+    justify-content: flex-end;
+    width: 100%;
+
   }
   &__label {
     font-size: 16px;
@@ -879,10 +927,21 @@
 }
 
 .cart-form {
+  background-color: #fff;
+  padding: 20px 15px;
+  border-radius: 10px;
+  &__title {
+    font-size: 24px;
+    color: $black;
+    margin-bottom: 30px;
+  }
   &__row {
     display: flex;
     align-items: center;
-    gap: 0 20px;
+    gap: 20px;
+    @include r(1280) {
+      flex-direction: column;
+    }
   }
   &__group {
     margin-bottom: 25px;
@@ -892,6 +951,10 @@
     background-color: #fff;
     box-shadow: 0px 1px 2px 0px rgba(198, 228, 246, 0.05);
     width: calc(50% - 20px);
+    @include r(1280) {
+      width: 100%;
+      margin-bottom: 0;
+    }
   }
   &__label {
     display: block;
@@ -916,12 +979,24 @@
   &__btn {
     width: calc(50% - 20px);
     height: 56px;
+    @include r(1280) {
+      width: 100%;
+    }
   }
   &__conf {
     width: calc(50% - 20px);
+    @include r(1280) {
+      width: 100%;
+      margin-top: 20px;
+    }
     label {
       max-width: 100%;
       color: $grey-5;
+    }
+  }
+  .conf-checkbox__label {
+    @include r(1280) {
+      padding-top: 10px;
     }
   }
 }

@@ -678,9 +678,9 @@
               <svg width="20" height="20">
                 <use xlink:href="assets/img/sprite.svg#icon-file"></use>
               </svg>
-              <span>Скачать описание в pdf</span>
+              <span><i>Скачать</i> описание в pdf</span>
             </a>
-            <button class="btn-reset product-heading__link">
+            <button class="btn-reset product-heading__link product-heading__print">
               <svg width="20" height="20">
                 <use xlink:href="assets/img/sprite.svg#icon-print"></use>
               </svg>
@@ -689,9 +689,18 @@
             <p class="product-heading__sales">Уже продано: <span>24 шт</span></p>
           </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-md-4 col-sm-6">
           <div class="product-images__big swiper js-product-images-slider-big">
             <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/img/ci-01.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/ci-01.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/ci-01.jpg" alt="">
+              </div>
               <div class="swiper-slide">
                 <img src="assets/img/ci-01.jpg" alt="">
               </div>
@@ -732,38 +741,53 @@
                   <img src="assets/img/ci-01.jpg" alt="">
                 </div>
               </div>
+              <div class="swiper-slide">
+                <div class="product-images__img">
+                  <img src="assets/img/ci-01.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-images__img">
+                  <img src="assets/img/ci-01.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-images__img">
+                  <img src="assets/img/ci-01.jpg" alt="">
+                </div>
+              </div>
             </div>
           </div>
           <a href="" class="product-images__link">Обзор марки SDMO</a>
         </div>
-        <div class="col-lg-5">
+        <div class="col-xl-4 col-md-4 col-sm-6 col-12 offset-sm-6 offset-md-0 order-1 order-md-0">
           <div class="product__content">
             <div class="product-check">
               <p class="product-check__caption">Исполнение:</p>
               <div class="product-check__wrapper">
                 <label class="product-check__btn">
                   <input type="checkbox" class="product-check__input">
-                  <span>В контейнере БКМ</span>
+                  <a>В контейнере БКМ</a>
                 </label>
                 <label class="product-check__btn">
                   <input type="checkbox" class="product-check__input">
-                  <span>В мини контейнере</span>
+                  <a>В мини контейнере</a>
                 </label>
                 <label class="product-check__btn">
                   <input type="checkbox" class="product-check__input">
-                  <span>В контейнере БКС</span>
+                  <a>В контейнере БКС</a>
                 </label>
                 <label class="product-check__btn">
                   <input type="checkbox" checked class="product-check__input">
-                  <span>Открытое</span>
+                  <a>Открытое</a>
                 </label>
                 <label class="product-check__btn">
                   <input type="checkbox" class="product-check__input">
-                  <span>В капоте</span>
+                  <a>В капоте</a>
                 </label>
                 <label class="product-check__btn">
                   <input type="checkbox" class="product-check__input">
-                  <span>В кожухе</span>
+                  <a>В кожухе</a>
                 </label>
               </div>
             </div>
@@ -772,13 +796,18 @@
               <div class="product-check__wrapper">
                 <label class="product-check__btn">
                   <input type="checkbox" checked class="product-check__input">
-                  <span>1 - ручной пуск</span>
+                  <a>1 - ручной пуск</a>
                 </label>
                 <label class="product-check__btn">
                   <input type="checkbox" class="product-check__input">
-                  <span>2 - с автозапуском</span>
+                  <a>2 - с автозапуском</a>
                 </label>
               </div>
+            </div>
+            <div class="product-buy__links product-buy__links_mobile">
+              <a href="" class="product-buy__link">Расчет доставки</a>
+              <a href="" class="product-buy__link">Оплата</a>
+              <a href="" class="product-buy__link">Гарантия</a>
             </div>
           </div>
           <ul class="product-card__properties-list ">
@@ -806,7 +835,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-lg-3">
+        <div class="col-xl-3 col-md-4 col-sm-6">
           <div class="product-buy product__buy">
             <p class="product-buy__price-caption">Цена с НДС:</p>
             <p class="product-buy__price">36 175 175 ₽</p>
@@ -861,7 +890,7 @@
             <div class="tab-pane fade show active product-char" id="characteristic" role="tabpanel"
                  aria-labelledby="characteristic">
               <div class="row mb-5">
-                <div class="col-6">
+                <div class="col-md-6">
                   <div class="product-tabs__card">
                     <p class="product-tabs__caption">Основные характеристики</p>
                     <ul class="product-card__properties-list product-char__list">
@@ -988,7 +1017,7 @@
                     </ul>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6">
                   <div class="product-tabs__card">
                     <p class="product-tabs__caption">Характеристики двигателя</p>
                     <ul class="product-card__properties-list product-char__list">
@@ -1106,8 +1135,8 @@
                 </div>
               </div>
               <div class="row mb-5">
-                <div class="col-6">
-                  <div class="product-tabs__card">
+                <div class="col-md-6 mb-md-0 mb-4">
+                  <div class="product-tabs__card product-tabs__card_with-list h-100 mb-0">
                     <p class="product-tabs__caption">Базовое оснащение электростанции</p>
                     <ul class="list list_grey-lighting">
                       <li>Комплект (2 шт.) аккумуляторных батарей 100 Ач</li>
@@ -1118,8 +1147,8 @@
                     <a href="" class="product-tabs__link">Смотреть полное описание</a>
                   </div>
                 </div>
-                <div class="col-6">
-                  <div class="product-tabs__card">
+                <div class="col-md-6">
+                  <div class="product-tabs__card product-tabs__card_with-list h-100 mb-0">
                     <p class="product-tabs__caption">Базовое оснащение электростанции</p>
                     <ul class="list list_blue-lighting">
                       <li>Простой и надежный топливный насос высокого давления</li>
@@ -1131,7 +1160,7 @@
                   </div>
                 </div>
               </div>
-              <ul class="nav product-nav" role="tablist">
+              <ul class="nav product-nav product-nav_sub" role="tablist">
                 <li class="product-nav__item">
                   <a class="product-nav__link active" data-toggle="tab" href="#char-description" role="tab">Описание
                     элеткростанции</a>
@@ -1199,7 +1228,7 @@
               <section class="articles">
                 <div class="container">
                   <div class="row align-items-center">
-                    <div class="col-7">
+                    <div class="col-12">
                       <h2 class="title-h2 articles__title">Советы по выбору генератора</h2>
                     </div>
                   </div>
@@ -1263,7 +1292,7 @@
               <p class="product-analog__title">Лучший аналог</p>
               <div class="product-analog__card">
                 <div class="row">
-                  <div class="col-3">
+                  <div class="col-sm-6 col-lg-4 col-xl-3 mb-4 mb-sm-0">
                     <img src="assets/img/ci-01.jpg" alt="" class="product-analog__img">
                     <div class="product-analog__flex">
                       <p class="product-buy__price-caption">Цена с НДС:</p>
@@ -1274,11 +1303,12 @@
                       <p class="product-analog__oldprice">136 175 175 ₽</p>
                     </div>
                     <p class="product-buy__availability">Поставка 6 недель</p>
-                    <button class="btn-reset btn btn_blue product-buy__btn product-buy__btn_order">Перейти к модели</button>
+                    <button class="btn-reset btn btn_blue product-buy__btn product-buy__btn_order">Перейти к модели
+                    </button>
                     <button class="btn-reset btn btn_grey product-buy__btn product-buy__btn_to-cart">Запросить КП</button>
                     <button class="btn-reset product-buy__one-click">Купить в один клик</button>
                   </div>
-                  <div class="col-5">
+                  <div class="col-sm-6 col-lg-8 col-xl-5 mb-5 mb-xl-0">
                     <p class="product-analog__caption">Дизельный генератор 100 кВт в контейнере АД-200С-Т400-РМ1</p>
                     <p class="product-analog__text mb-3">Таким образом реализация намеченных плановых заданий позволяет
                       оценить значение новых предложений. Идейные соображения высшего порядка, а также рамки и место
@@ -1347,7 +1377,7 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="col-4">
+                  <div class="col-xl-4">
                     <p class="product-analog__caption">Преимущества</p>
                     <p class="product-analog__text mb-3">Преимущества
                       Таким образом реализация намеченных плановых заданий позволяет оценить значение новых предложений.
@@ -1951,7 +1981,7 @@
             <div class="tab-pane fade  product-variants" id="variants" role="tabpanel"
                  aria-labelledby="variants">
               <div class="row">
-                <div class="col-6">
+                <div class="col-sm-6 mb-4">
                   <div class="product-variants__card">
                     <img src="assets/img/pv-01.jpg" alt="" class="product-variants__img">
                     <div class="product-variants__info">
@@ -2006,7 +2036,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-sm-6 mb-4">
                   <div class="product-variants__card">
                     <img src="assets/img/pv-02.jpg" alt="" class="product-variants__img">
                     <div class="product-variants__info">
@@ -2061,7 +2091,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-sm-6 mb-4">
                   <div class="product-variants__card">
                     <img src="assets/img/pv-01.jpg" alt="" class="product-variants__img">
                     <div class="product-variants__info">
@@ -2116,7 +2146,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-sm-6 mb-4">
                   <div class="product-variants__card">
                     <img src="assets/img/pv-01.jpg" alt="" class="product-variants__img">
                     <div class="product-variants__info">
@@ -2153,7 +2183,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-sm-6 mb-4">
                   <div class="product-variants__card">
                     <img src="assets/img/pv-03.jpg" alt="" class="product-variants__img">
                     <div class="product-variants__info">
@@ -2190,7 +2220,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-sm-6 mb-4">
                   <div class="product-variants__card">
                     <img src="assets/img/pv-04.jpg" alt="" class="product-variants__img">
                     <div class="product-variants__info">
@@ -2227,7 +2257,7 @@
             <div class="tab-pane fade product-options" id="options" role="tabpanel"
                  aria-labelledby="options">
               <div class="row">
-                <div class="col-6">
+                <div class="col-md-6">
                   <div class="product-tabs__card">
                     <p class="product-tabs__caption">Опции, необходимые для 2 степени автоматизации (автозапуск)</p>
                     <p class="product-tabs__text product-tabs__text_strong"><strong>Зарядное устройство аккумуляторных
@@ -2277,7 +2307,7 @@
                       оператора.</p>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6">
                   <div class="product-tabs__card">
                     <p class="product-tabs__caption">Опции двигателя</p>
                     <p class="product-tabs__text product-tabs__text_strong"><strong>Автономный (дизельный) предпусковой
@@ -2339,7 +2369,7 @@
             <div class="tab-pane fade product-service" id="service" role="tabpanel"
                  aria-labelledby="service">
               <div class="row">
-                <div class="col-6">
+                <div class="col-md-6 mb-4">
                   <div class="product-tabs__card product-service__card">
                     <p class="product-tabs__caption">Энергоаудит</p>
                     <p class="product-tabs__text">Для правильного подбора электростанции на объект к нашим заказчикам
@@ -2348,14 +2378,8 @@
                       оптимальную можность электростанции, которая уверенно сможет обеспечить питание объекта.</p>
                     <a href="" class="product-tabs__link product-tabs__link_abs">Заказать услугу</a>
                   </div>
-                  <div class="product-tabs__card product-service__card">
-                    <p class="product-tabs__caption">Монтаж и пуско-наладка</p>
-                    <p class="product-tabs__text">При необходимости инженеры нашей компании могут провести работы по
-                      монтажу и настроить все необходимое оборудование непостредственно на объекте.</p>
-                    <a href="" class="product-tabs__link product-tabs__link_abs">Заказать услугу</a>
-                  </div>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6 mb-4">
                   <div class="product-tabs__card product-service__card">
                     <p class="product-tabs__caption">Доставка</p>
                     <p class="product-tabs__text">Специалисты нашей компании могут организовать доставку оборудования до
@@ -2363,6 +2387,16 @@
                       в сжатые сроки и по приемлемой стоимости.</p>
                     <a href="" class="product-tabs__link product-tabs__link_abs">Заказать услугу</a>
                   </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="product-tabs__card product-service__card">
+                    <p class="product-tabs__caption">Монтаж и пуско-наладка</p>
+                    <p class="product-tabs__text">При необходимости инженеры нашей компании могут провести работы по
+                      монтажу и настроить все необходимое оборудование непостредственно на объекте.</p>
+                    <a href="" class="product-tabs__link product-tabs__link_abs">Заказать услугу</a>
+                  </div>
+                </div>
+                <div class="col-md-6">
                   <div class="product-tabs__card product-service__card">
                     <p class="product-tabs__caption">Сервисное обслуживание</p>
                     <p class="product-tabs__text">Специалисты нашей сервисной службы проводят техническое обслуживание
@@ -2376,8 +2410,8 @@
             <!--     docs     -->
             <div class="tab-pane fade product-docs" id="docs" role="tabpanel"
                  aria-labelledby="docs">
-              <div class="row">
-                <div class="col-4">
+              <div class="row product-docs__row">
+                <div class="col-lg-4 col-sm-6">
                   <div class="product-docs__item">
                     <svg width="32px" height="32px" class="product-docs__icon">
                       <use xlink:href="assets/img/sprite.svg#icon-pdf-blue"></use>
@@ -2389,7 +2423,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4 col-sm-6">
                   <div class="product-docs__item">
                     <svg width="32px" height="32px" class="product-docs__icon">
                       <use xlink:href="assets/img/sprite.svg#icon-pdf-blue"></use>
@@ -2401,7 +2435,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4 col-sm-6">
                   <div class="product-docs__item">
                     <svg width="32px" height="32px" class="product-docs__icon">
                       <use xlink:href="assets/img/sprite.svg#icon-pdf-blue"></use>
@@ -2529,19 +2563,24 @@
   <section class="section delivery">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6">
-          <div class="delivery__card">
-            <p class="delivery__title">Доставляем по России, Казахстану и Белоруссии</p>
+        <div class="col-md-6">
+  <!--        Добавлден класс delivery__card_first -->
+          <div class="delivery__card delivery__card_first">
+  <!--         Заголовок delivery__title перенес внутрь блока delivery__description-->
             <div class="delivery__description">
+              <p class="delivery__title">Доставляем по России, Казахстану и Белоруссии</p>
               <p class="delivery__text delivery__text_strong">Доставка до вашего склада или места эксплуатации</p>
-              <p class="delivery__text ">Отдел логистики нашей компании возьмет на себя все вопросы по оргнизации доставки оборудования. Вам останется только принять оборудование на вашем складе.</p>
+              <p class="delivery__text ">Отдел логистики нашей компании возьмет на себя все вопросы по оргнизации доставки
+                оборудования. Вам останется только принять оборудование на вашем складе.</p>
               <p class="delivery__text delivery__text_strong">Доставка до транспортной компании</p>
-              <p class="delivery__text">Мы бесплатно доставим оборудование до склада любой транспортной компании, с которой Вы привыкли работать.</p>
+              <p class="delivery__text">Мы бесплатно доставим оборудование до склада любой транспортной компании, с
+                которой Вы привыкли работать.</p>
             </div>
-            <img src="assets/img/img-delivery.png" alt="">
+  <!--          Добавлен класс delivery__img-->
+            <img src="assets/img/img-delivery.png" alt="" class="delivery__img">
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-md-6">
           <div class="delivery__wrapper">
             <div class="delivery__card">
               <p class="delivery__title">Сроки доставки</p>
@@ -2590,7 +2629,8 @@
                   <a href="#" class="product-card__properties-value product-char__prop-link">10 дней</a>
                 </li>
               </ul>
-              <p class="delivery__subtitle">Сроки доставки зависят от многих факторов, для уточнения <a href="">свяжитесь с нами</a> или закажите звонок менеджера по логистике.</p>
+              <p class="delivery__subtitle">Сроки доставки зависят от многих факторов, для уточнения <a href="">свяжитесь
+                с нами</a> или закажите звонок менеджера по логистике.</p>
             </div>
             <div class="specialist__item delivery__specialist">
               <div class="specialist__heading">
@@ -4485,116 +4525,122 @@
     </div>
   </section>
   
-  <section class="section">
-    <div class="container">
-      <div class="row">
-  <!--      Обычная (Стандартная)-->
-        <div class="col-lg-3">
-          <div class="product-buy product__buy">
-            <p class="product-buy__price-caption">Цена с НДС:</p>
-            <p class="product-buy__price">36 175 175 ₽</p>
-            <button class="btn-reset product-card__request-price product-buy__get-discount" >
+  <!--<section class="section">-->
+  <!--  <div class="container">-->
+  <!--    <div class="row">-->
+  <!--      &lt;!&ndash;      Обычная (Стандартная)&ndash;&gt;-->
+  <!--      <div class="col-lg-3">-->
+  <!--        <div class="product-buy product__buy">-->
+  <!--          <p class="product-buy__price-caption">Цена с НДС:</p>-->
+  <!--          <p class="product-buy__price">36 175 175 ₽</p>-->
+  <!--          <button class="btn-reset product-card__request-price product-buy__get-discount">-->
   
-            </button>
-            <p class="product-buy__availability">В наличии 1-2 шт</p>
-            <button class="btn-reset btn btn_blue product-buy__btn product-buy__btn_order">Запросить КП</button>
-            <button class="btn-reset btn btn_grey product-buy__btn product-buy__btn_to-cart">В корзину</button>
-            <button class="btn-reset product-buy__one-click">Купить в один клик</button>
-          </div>
-          <div class="product-buy__links">
-            <a href="" class="product-buy__link">Расчет доставки</a>
-            <a href="" class="product-buy__link">Оплата</a>
-            <a href="" class="product-buy__link">Гарантия</a>
-          </div>
-        </div>
-  <!--      Без цены-->
-        <div class="col-lg-3">
-          <div class="product-buy product__buy">
-            <p class="product-buy__price-caption">Цена с НДС:</p>
-            <p class="product-buy__price">по запросу</p>
-            <button class="btn-reset product-card__request-price product-buy__get-discount" data-toggle="modal" data-target="#getDiscount">
-              <svg width="20" height="20">
-                <use xlink:href="assets/img/sprite.svg#icon-check-in-circle"></use>
-              </svg>
-              <span>Запросить цену</span>
-            </button>
-            <p class="product-buy__availability"></p>
-            <button class="btn-reset btn btn_blue product-buy__btn product-buy__btn_order">Запросить КП</button>
-            <button class="btn-reset btn btn_grey product-buy__btn product-buy__btn_to-cart">В корзину</button>
-            <button class="btn-reset product-buy__one-click">Купить в один клик</button>
-          </div>
-          <div class="product-buy__links">
-            <a href="" class="product-buy__link">Расчет доставки</a>
-            <a href="" class="product-buy__link">Оплата</a>
-            <a href="" class="product-buy__link">Гарантия</a>
-          </div>
-        </div>
-  <!--      Запросить скидку-->
-        <div class="col-lg-3">
-          <div class="product-buy product__buy">
-            <p class="product-buy__price-caption">Цена с НДС:</p>
-            <p class="product-buy__price">36 175 175 ₽</p>
-            <button class="btn-reset product-card__request-price product-buy__get-discount" data-toggle="modal" data-target="#getDiscount">
-              <svg width="20" height="20">
-                <use xlink:href="assets/img/sprite.svg#percent-in-circle"></use>
-              </svg>
-              <span>Получить скидку</span>
-            </button>
-            <p class="product-buy__availability">Поставка 6 недель</p>
-            <button class="btn-reset btn btn_blue product-buy__btn product-buy__btn_order">Запросить КП</button>
-            <button class="btn-reset btn btn_grey product-buy__btn product-buy__btn_to-cart">В корзину</button>
-            <button class="btn-reset product-buy__one-click">Купить в один клик</button>
-          </div>
-          <div class="product-buy__links">
-            <a href="" class="product-buy__link">Расчет доставки</a>
-            <a href="" class="product-buy__link">Оплата</a>
-            <a href="" class="product-buy__link">Гарантия</a>
-          </div>
-        </div>
-  <!--      Снято с пр-ва / Не поставляется-->
-        <div class="col-lg-3">
-          <div class="product-buy product__buy">
-            <p class="product-buy__price-caption"></p>
-            <p class="product-buy__price"></p>
-            <button class="btn-reset product-card__request-price product-buy__get-discount"></button>
-            <p class="product-buy__availability product-buy__availability_grey">Снято с производства</p>
-            <button class="btn-reset btn btn_blue product-buy__btn product-buy__btn_order">Аналоги</button>
-            <button class="btn-reset btn btn_grey product-buy__btn product-buy__btn_to-cart product-buy__btn_to-cart_hidden">В корзину</button>
-            <button class="btn-reset product-buy__one-click"></button>
-          </div>
-          <div class="product-buy__links">
-            <a href="" class="product-buy__link">Расчет доставки</a>
-            <a href="" class="product-buy__link">Оплата</a>
-            <a href="" class="product-buy__link">Гарантия</a>
-          </div>
-        </div>
-  <!--      Со скидкой
-  P.S. Класс mt-5 тут просто для отделения карточек от остальных, при посадке он не нужен-->
-        <div class="col-lg-3 mt-5">
-          <div class="product-buy product__buy">
-            <p class="product-buy__price-caption">Цена с НДС:</p>
-            <p class="product-buy__price">36 175 175 ₽</p>
-            <div class="product-buy__with-discount">
-              <p class="product-buy__old">36 175 175 ₽ </p>
-              <span class="product-card__discount">15%</span>
-            </div>
-            <button class="btn-reset product-card__request-price product-buy__get-discount product-buy__get-discount_hide">
+  <!--          </button>-->
+  <!--          <p class="product-buy__availability">В наличии 1-2 шт</p>-->
+  <!--          <button class="btn-reset btn btn_blue product-buy__btn product-buy__btn_order">Запросить КП</button>-->
+  <!--          <button class="btn-reset btn btn_grey product-buy__btn product-buy__btn_to-cart">В корзину</button>-->
+  <!--          <button class="btn-reset product-buy__one-click">Купить в один клик</button>-->
+  <!--        </div>-->
+  <!--        <div class="product-buy__links">-->
+  <!--          <a href="" class="product-buy__link">Расчет доставки</a>-->
+  <!--          <a href="" class="product-buy__link">Оплата</a>-->
+  <!--          <a href="" class="product-buy__link">Гарантия</a>-->
+  <!--        </div>-->
+  <!--      </div>-->
+  <!--      &lt;!&ndash;      Без цены&ndash;&gt;-->
+  <!--      <div class="col-lg-3">-->
+  <!--        <div class="product-buy product__buy">-->
+  <!--          <p class="product-buy__price-caption">Цена с НДС:</p>-->
+  <!--          <p class="product-buy__price">по запросу</p>-->
+  <!--          <button class="btn-reset product-card__request-price product-buy__get-discount" data-toggle="modal"-->
+  <!--                  data-target="#getDiscount">-->
+  <!--            <svg width="20" height="20">-->
+  <!--              <use xlink:href="assets/img/sprite.svg#icon-check-in-circle"></use>-->
+  <!--            </svg>-->
+  <!--            <span>Запросить цену</span>-->
+  <!--          </button>-->
+  <!--          <p class="product-buy__availability"></p>-->
+  <!--          <button class="btn-reset btn btn_blue product-buy__btn product-buy__btn_order">Запросить КП</button>-->
+  <!--          <button class="btn-reset btn btn_grey product-buy__btn product-buy__btn_to-cart">В корзину</button>-->
+  <!--          <button class="btn-reset product-buy__one-click">Купить в один клик</button>-->
+  <!--        </div>-->
+  <!--        <div class="product-buy__links">-->
+  <!--          <a href="" class="product-buy__link">Расчет доставки</a>-->
+  <!--          <a href="" class="product-buy__link">Оплата</a>-->
+  <!--          <a href="" class="product-buy__link">Гарантия</a>-->
+  <!--        </div>-->
+  <!--      </div>-->
+  <!--      &lt;!&ndash;      Запросить скидку&ndash;&gt;-->
+  <!--      <div class="col-lg-3">-->
+  <!--        <div class="product-buy product__buy">-->
+  <!--          <p class="product-buy__price-caption">Цена с НДС:</p>-->
+  <!--          <p class="product-buy__price">36 175 175 ₽</p>-->
+  <!--          <button class="btn-reset product-card__request-price product-buy__get-discount" data-toggle="modal"-->
+  <!--                  data-target="#getDiscount">-->
+  <!--            <svg width="20" height="20">-->
+  <!--              <use xlink:href="assets/img/sprite.svg#percent-in-circle"></use>-->
+  <!--            </svg>-->
+  <!--            <span>Получить скидку</span>-->
+  <!--          </button>-->
+  <!--          <p class="product-buy__availability">Поставка 6 недель</p>-->
+  <!--          <button class="btn-reset btn btn_blue product-buy__btn product-buy__btn_order">Запросить КП</button>-->
+  <!--          <button class="btn-reset btn btn_grey product-buy__btn product-buy__btn_to-cart">В корзину</button>-->
+  <!--          <button class="btn-reset product-buy__one-click">Купить в один клик</button>-->
+  <!--        </div>-->
+  <!--        <div class="product-buy__links">-->
+  <!--          <a href="" class="product-buy__link">Расчет доставки</a>-->
+  <!--          <a href="" class="product-buy__link">Оплата</a>-->
+  <!--          <a href="" class="product-buy__link">Гарантия</a>-->
+  <!--        </div>-->
+  <!--      </div>-->
+  <!--      &lt;!&ndash;      Снято с пр-ва / Не поставляется&ndash;&gt;-->
+  <!--      <div class="col-lg-3">-->
+  <!--        <div class="product-buy product__buy">-->
+  <!--          <p class="product-buy__price-caption"></p>-->
+  <!--          <p class="product-buy__price"></p>-->
+  <!--          <button class="btn-reset product-card__request-price product-buy__get-discount"></button>-->
+  <!--          <p class="product-buy__availability product-buy__availability_grey">Снято с производства</p>-->
+  <!--          <button class="btn-reset btn btn_blue product-buy__btn product-buy__btn_order">Аналоги</button>-->
+  <!--          <button-->
+  <!--            class="btn-reset btn btn_grey product-buy__btn product-buy__btn_to-cart product-buy__btn_to-cart_hidden">В-->
+  <!--            корзину-->
+  <!--          </button>-->
+  <!--          <button class="btn-reset product-buy__one-click"></button>-->
+  <!--        </div>-->
+  <!--        <div class="product-buy__links">-->
+  <!--          <a href="" class="product-buy__link">Расчет доставки</a>-->
+  <!--          <a href="" class="product-buy__link">Оплата</a>-->
+  <!--          <a href="" class="product-buy__link">Гарантия</a>-->
+  <!--        </div>-->
+  <!--      </div>-->
+  <!--      &lt;!&ndash;      Со скидкой-->
+  <!--      P.S. Класс mt-5 тут просто для отделения карточек от остальных, при посадке он не нужен&ndash;&gt;-->
+  <!--      <div class="col-lg-3 mt-5">-->
+  <!--        <div class="product-buy product__buy">-->
+  <!--          <p class="product-buy__price-caption">Цена с НДС:</p>-->
+  <!--          <p class="product-buy__price">36 175 175 ₽</p>-->
+  <!--          <div class="product-buy__with-discount">-->
+  <!--            <p class="product-buy__old">36 175 175 ₽ </p>-->
+  <!--            <span class="product-card__discount">15%</span>-->
+  <!--          </div>-->
+  <!--          <button-->
+  <!--            class="btn-reset product-card__request-price product-buy__get-discount product-buy__get-discount_hide">-->
   
-            </button>
-            <p class="product-buy__availability">В наличии 1-2 шт</p>
-            <button class="btn-reset btn btn_blue product-buy__btn product-buy__btn_order">Запросить КП</button>
-            <button class="btn-reset btn btn_grey product-buy__btn product-buy__btn_to-cart">В корзину</button>
-            <button class="btn-reset product-buy__one-click">Купить в один клик</button>
-          </div>
-          <div class="product-buy__links">
-            <a href="" class="product-buy__link">Расчет доставки</a>
-            <a href="" class="product-buy__link">Оплата</a>
-            <a href="" class="product-buy__link">Гарантия</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!--          </button>-->
+  <!--          <p class="product-buy__availability">В наличии 1-2 шт</p>-->
+  <!--          <button class="btn-reset btn btn_blue product-buy__btn product-buy__btn_order">Запросить КП</button>-->
+  <!--          <button class="btn-reset btn btn_grey product-buy__btn product-buy__btn_to-cart">В корзину</button>-->
+  <!--          <button class="btn-reset product-buy__one-click">Купить в один клик</button>-->
+  <!--        </div>-->
+  <!--        <div class="product-buy__links">-->
+  <!--          <a href="" class="product-buy__link">Расчет доставки</a>-->
+  <!--          <a href="" class="product-buy__link">Оплата</a>-->
+  <!--          <a href="" class="product-buy__link">Гарантия</a>-->
+  <!--        </div>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  </div>-->
+  <!--</section>-->
   
   
 </main>
