@@ -1,4 +1,5 @@
 <div class="filters js-mobile-filters ">
+<!--  Новый блок раньше его вообще не было-->
   <div class="mobile-menu__heading filters__menu-heading">
     <p class="mobile-menu__title">Фильтры</p>
     <button class="btn-reset js-close-filters">
@@ -7,6 +8,7 @@
       </svg>
     </button>
   </div>
+<!--  Новый блок END-->
   <div class="filters__item filters__item_check">
     <div class="filters__heading" data-toggle="collapse" data-target="#filItm1">
       <p class="filters__caption filters__caption_check">Исполнение</p>
@@ -129,12 +131,14 @@
     </div>
   </div>
   <div class="filters__item filters__item_pwr">
+    <!--    Добавлям класс collapsed-->
     <div class="filters__heading" data-toggle="collapse" data-target="#filItm4">
       <p class="filters__caption">Подбор по мощности, кВт</p>
       <svg width="24" height="24">
         <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
       </svg>
     </div>
+<!--    Добавлям класс блоку  d-lg-block d-none-->
     <div class="filters__hide collapse show d-lg-block d-none" id="filItm4">
       <label for="filters-search" class="filters-search">
         <input type="search" placeholder="Поиск по мощности" id="filters-search"
@@ -183,6 +187,7 @@
       </ul>
     </div>
   </div>
+  <!--    Добавлям класс collapsed-->
   <div class="filters__item filters__item_pwr">
     <div class="filters__heading collapsed" data-toggle="collapse" data-target="#filPwr2">
       <p class="filters__caption filters__caption_bold">60-184 кВт</p>
@@ -213,6 +218,7 @@
       </ul>
     </div>
   </div>
+  <!--    Добавлям класс collapsed-->
   <div class="filters__item filters__item_pwr">
     <div class="filters__heading collapsed" data-toggle="collapse" data-target="#filPwr3">
       <p class="filters__caption filters__caption_bold">200-550 кВт</p>
@@ -243,6 +249,7 @@
       </ul>
     </div>
   </div>
+  <!--    Добавлям класс collapsed-->
   <div class="filters__item filters__item_pwr">
     <div class="filters__heading collapsed" data-toggle="collapse" data-target="#filPwr4">
       <p class="filters__caption filters__caption_bold">560-1300 кВт</p>
@@ -270,7 +277,9 @@
       </ul>
     </div>
   </div>
+  <!--    Добавлям класс collapsed-->
   <div class="filters__item filters__item_pwr">
+    <!--    Добавлям класс collapsed-->
     <div class="filters__heading collapsed" data-toggle="collapse" data-target="#filPwr5">
       <p class="filters__caption filters__caption_bold">1400-3200 кВт</p>
       <svg width="24" height="24">
@@ -339,12 +348,15 @@
   <div class="filters__item filters__item_check">
     <div class="filters__heading" data-toggle="collapse" data-target="#filItm6">
       <p class="filters__caption">Марка электростанции</p>
+<!--      Новый блок-обертка-->
       <div class="filters__heading-left">
+<!--        добавляем кнопку в мобилке она тут появляется. Она окткрывает доп меню со всеми марками в мобильной версии -->
       <button class=" btn-reset filters__caption-all js-open-station-filters">Все</button>
       <svg width="24" height="24">
         <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
       </svg>
       </div>
+      <!--      Новый блок-обертка END-->
     </div>
 
     <div class="filters__hide collapse show" id="filItm6">
@@ -446,6 +458,7 @@
           </label>
         </div>
       </div>
+<!--      Добавляем класс d-none d-lg-block-->
       <button class="btn-reset filters__showall js-filters-showall d-none d-lg-block" data-toggle="collapse" data-target="#filtItm6-in">
         Показать все
       </button>
@@ -454,12 +467,15 @@
   <div class="filters__item filters__item_check">
     <div class="filters__heading" data-toggle="collapse" data-target="#filItm7">
       <p class="filters__caption">Марка двигателя</p>
+      <!--      Новый блок-обертка-->
       <div class="filters__heading-left">
+        <!--        добавляем кнопку, в мобилке она тут появляется. Она окткрывает доп меню со всеми марками в мобильной версии -->
       <button class=" btn-reset filters__caption-all js-open-engine-filters">Все</button>
         <svg width="24" height="24">
           <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
         </svg>
       </div>
+      <!--      Новый блок-обертка END-->
     </div>
     <div class="filters__hide collapse show" id="filItm7">
       <div class="filters-check">
@@ -560,6 +576,7 @@
           </label>
         </div>
       </div>
+      <!--      Добавляем класс d-none d-lg-block-->
       <button class="btn-reset filters__showall js-filters-showall d-none d-lg-block" data-toggle="collapse" data-target="#filtItm7-in">
         Показать все
       </button>
@@ -640,6 +657,7 @@
     </svg>
     Сбросить все фильтры
   </button>
+  <!--      Добавляем класс d-none d-lg-block-->
   <div class="filters__item d-none d-lg-block">
       <div class="filters__heading" data-toggle="collapse" data-target="#filItm11">
         <p class="filters__caption">Популярные подборки</p>
@@ -647,7 +665,7 @@
           <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
         </svg>
       </div>
-      <div class="filters__hide collapse show" id="filItmMob11">
+      <div class="filters__hide collapse show" id="filItm11">
         <div class="filters__group filters__collections" data-simplebar data-simplebar-auto-hide="false">
           <a href="" class="filters__link">Двигатель 1500 об/мин</a>
           <a href="" class="filters__link">С водяным охлаждением</a>
@@ -675,6 +693,7 @@
     </div>
 </div>
 
+<!--Три новых блока. Открываются как отдельное меню фильтров. Популярные подборки открываются по кнопке рядом с сортировкой. Марки по новым кнопкам в самом фильтре рядом с названием-->
 <div class="mobile-filter-popular menu-filters js-mobile-filter-popular d-block d-lg-none">
   <div class="mobile-menu__heading filters__menu-heading">
     <p class="mobile-menu__title">Популярные подборки</p>
@@ -692,7 +711,7 @@
       <span class="filters-search__loup"></span>
     </label>
     </div>
-    <div class="filters__hide" id="filItm11">
+    <div class="filters__hide" id="filItm11Mob">
       <div class="filters__group filters__collections" data-simplebar data-simplebar-auto-hide="false">
         <a href="" class="filters__link">Двигатель 1500 об/мин</a>
         <a href="" class="filters__link">С водяным охлаждением</a>

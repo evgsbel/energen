@@ -678,8 +678,10 @@
               <svg width="20" height="20">
                 <use xlink:href="assets/img/sprite.svg#icon-file"></use>
               </svg>
+  <!--            Добавляем обертку для слова "Скачать" <i>Скачать</i>-->
               <span><i>Скачать</i> описание в pdf</span>
             </a>
+            <!--            Добавляем класс product-heading__print-->
             <button class="btn-reset product-heading__link product-heading__print">
               <svg width="20" height="20">
                 <use xlink:href="assets/img/sprite.svg#icon-print"></use>
@@ -689,6 +691,7 @@
             <p class="product-heading__sales">Уже продано: <span>24 шт</span></p>
           </div>
         </div>
+  <!--      Меняем классы на col-md-4 col-sm-6-->
         <div class="col-md-4 col-sm-6">
           <div class="product-images__big swiper js-product-images-slider-big">
             <div class="swiper-wrapper">
@@ -760,6 +763,7 @@
           </div>
           <a href="" class="product-images__link">Обзор марки SDMO</a>
         </div>
+        <!--      Меняем классы на col-xl-4 col-md-4 col-sm-6 col-12 offset-sm-6 offset-md-0 order-1 order-md-0-->
         <div class="col-xl-4 col-md-4 col-sm-6 col-12 offset-sm-6 offset-md-0 order-1 order-md-0">
           <div class="product__content">
             <div class="product-check">
@@ -835,6 +839,7 @@
             </li>
           </ul>
         </div>
+        <!--      Меняем классы на col-xl-3 col-md-4 col-sm-6-->
         <div class="col-xl-3 col-md-4 col-sm-6">
           <div class="product-buy product__buy">
             <p class="product-buy__price-caption">Цена с НДС:</p>
@@ -1160,6 +1165,7 @@
                   </div>
                 </div>
               </div>
+  <!--            Добавлен калсс product-nav_sub-->
               <ul class="nav product-nav product-nav_sub" role="tablist">
                 <li class="product-nav__item">
                   <a class="product-nav__link active" data-toggle="tab" href="#char-description" role="tab">Описание
@@ -1228,6 +1234,7 @@
               <section class="articles">
                 <div class="container">
                   <div class="row align-items-center">
+                    <!--      Меняем класс на col-12-->
                     <div class="col-12">
                       <h2 class="title-h2 articles__title">Советы по выбору генератора</h2>
                     </div>
@@ -1292,6 +1299,7 @@
               <p class="product-analog__title">Лучший аналог</p>
               <div class="product-analog__card">
                 <div class="row">
+  <!--                Меняем классы на col-sm-6 col-lg-4 col-xl-3 mb-4 mb-sm-0-->
                   <div class="col-sm-6 col-lg-4 col-xl-3 mb-4 mb-sm-0">
                     <img src="assets/img/ci-01.jpg" alt="" class="product-analog__img">
                     <div class="product-analog__flex">
@@ -1308,6 +1316,7 @@
                     <button class="btn-reset btn btn_grey product-buy__btn product-buy__btn_to-cart">Запросить КП</button>
                     <button class="btn-reset product-buy__one-click">Купить в один клик</button>
                   </div>
+                  <!-- Меняем классы на col-sm-6 col-lg-8 col-xl-5 mb-5 mb-xl-0-->
                   <div class="col-sm-6 col-lg-8 col-xl-5 mb-5 mb-xl-0">
                     <p class="product-analog__caption">Дизельный генератор 100 кВт в контейнере АД-200С-Т400-РМ1</p>
                     <p class="product-analog__text mb-3">Таким образом реализация намеченных плановых заданий позволяет
@@ -1377,6 +1386,7 @@
                       </li>
                     </ul>
                   </div>
+                  <!-- Меняем классы на col-xl-4-->
                   <div class="col-xl-4">
                     <p class="product-analog__caption">Преимущества</p>
                     <p class="product-analog__text mb-3">Преимущества
@@ -1388,7 +1398,6 @@
                       Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому
                       кругу (специалистов) участие в формировании новых предложений.</p>
                   </div>
-  
                 </div>
               </div>
               <section class="best">
@@ -1981,6 +1990,7 @@
             <div class="tab-pane fade  product-variants" id="variants" role="tabpanel"
                  aria-labelledby="variants">
               <div class="row">
+  <!--              Меняем класс у всех карточек на col-sm-6 mb-4-->
                 <div class="col-sm-6 mb-4">
                   <div class="product-variants__card">
                     <img src="assets/img/pv-01.jpg" alt="" class="product-variants__img">
@@ -2250,6 +2260,7 @@
                     </div>
                   </div>
                 </div>
+                <!--              Меняем класс у всех карточек на col-sm-6 mb-4 END-->
               </div>
             </div>
             <!--     variants     END-->
@@ -2257,6 +2268,7 @@
             <div class="tab-pane fade product-options" id="options" role="tabpanel"
                  aria-labelledby="options">
               <div class="row">
+                <!--              Меняем класс у всех карточек на col-md-6-->
                 <div class="col-md-6">
                   <div class="product-tabs__card">
                     <p class="product-tabs__caption">Опции, необходимые для 2 степени автоматизации (автозапуск)</p>
@@ -2362,14 +2374,17 @@
                       реальном времени.</p>
                   </div>
                 </div>
+                <!--              Меняем класс у всех карточек на col-md-6 END-->
               </div>
             </div>
             <!--     options     END-->
             <!--     service     -->
             <div class="tab-pane fade product-service" id="service" role="tabpanel"
                  aria-labelledby="service">
-              <div class="row">
-                <div class="col-md-6 mb-4">
+  <!--            Добавляем класс product-service__row-->
+              <div class="row product-service__row">
+                <!--              Меняем класс  на col-md-6-->
+                <div class="col-md-6">
                   <div class="product-tabs__card product-service__card">
                     <p class="product-tabs__caption">Энергоаудит</p>
                     <p class="product-tabs__text">Для правильного подбора электростанции на объект к нашим заказчикам
@@ -2379,7 +2394,8 @@
                     <a href="" class="product-tabs__link product-tabs__link_abs">Заказать услугу</a>
                   </div>
                 </div>
-                <div class="col-md-6 mb-4">
+                <!--              Меняем класс  на col-md-6-->
+                <div class="col-md-6">
                   <div class="product-tabs__card product-service__card">
                     <p class="product-tabs__caption">Доставка</p>
                     <p class="product-tabs__text">Специалисты нашей компании могут организовать доставку оборудования до
@@ -2388,6 +2404,7 @@
                     <a href="" class="product-tabs__link product-tabs__link_abs">Заказать услугу</a>
                   </div>
                 </div>
+                <!--              Меняем класс  на col-md-6-->
                 <div class="col-md-6">
                   <div class="product-tabs__card product-service__card">
                     <p class="product-tabs__caption">Монтаж и пуско-наладка</p>
@@ -2396,6 +2413,7 @@
                     <a href="" class="product-tabs__link product-tabs__link_abs">Заказать услугу</a>
                   </div>
                 </div>
+                <!--              Меняем класс  на col-md-6-->
                 <div class="col-md-6">
                   <div class="product-tabs__card product-service__card">
                     <p class="product-tabs__caption">Сервисное обслуживание</p>
@@ -2410,7 +2428,9 @@
             <!--     docs     -->
             <div class="tab-pane fade product-docs" id="docs" role="tabpanel"
                  aria-labelledby="docs">
+  <!--            Добавляем класс product-docs__row-->
               <div class="row product-docs__row">
+  <!--              Меняем классы на col-lg-4 col-sm-6-->
                 <div class="col-lg-4 col-sm-6">
                   <div class="product-docs__item">
                     <svg width="32px" height="32px" class="product-docs__icon">
@@ -2423,6 +2443,7 @@
                     </div>
                   </div>
                 </div>
+                <!--              Меняем классы на col-lg-4 col-sm-6-->
                 <div class="col-lg-4 col-sm-6">
                   <div class="product-docs__item">
                     <svg width="32px" height="32px" class="product-docs__icon">
@@ -2435,6 +2456,7 @@
                     </div>
                   </div>
                 </div>
+                <!--              Меняем классы на col-lg-4 col-sm-6-->
                 <div class="col-lg-4 col-sm-6">
                   <div class="product-docs__item">
                     <svg width="32px" height="32px" class="product-docs__icon">
@@ -2462,6 +2484,7 @@
         <div class="col-12"><h2 class="title-h2">Контакты специалистов</h2></div>
       </div>
       <div class="row">
+  <!--      Практически полностью блок переверстался. Он дублируется на нескольких старницах - поменялся везде там где спецов два. там где один(например в доставке - он остался как раньше)-->
         <div class="col-md-6">
           <div class="specialist__item">
             <button class="js-open-specialist collapsed btn-reset specialist__question specialist__open" data-toggle="collapse"
@@ -2520,6 +2543,7 @@
             </div>
           </div>
         </div>
+        <!--      Практически полностью блок переверстался END-->
       </div>
     </div>
   
@@ -2529,8 +2553,8 @@
       <div class="row">
         <div class="col-12">
           <form action="" class="callback__form form">
-  
-            <div class="callback__left">
+  <!--Добавился блок-обертка-->
+             <div class="callback__left">
               <p class="callback__caption">
                 Заказать обратный звонок
                 <span>Напишите и мы ответим в течение 5 минут</span>
@@ -2541,7 +2565,8 @@
                 Я даю согласие на <a href="/">обработку моих персональных данных</a>
               </label>
             </div>
-  
+            <!--Добавился блок-обертка END-->
+            <!--Добавился блок-обертка-->
             <div class="callback__group">
               <label for="feed-phone" class="form__label">
                 <span class="form__caption">номер телефона</span>
@@ -2550,6 +2575,7 @@
               </label>
               <button class="btn-reset btn btn_blue form__submit callback__submit" type="submit">Перезвоните мне</button>
             </div>
+            <!--Добавился блок-обертка END-->
             <label for="conf" class="checkbox__label checkbox__label_desk">
               <input type="checkbox" name="conf" id="conf" class="checkbox__input js-hero-checkbox" checked>
               <span class="checkbox__pane"></span>
@@ -2563,6 +2589,7 @@
   <section class="section delivery">
     <div class="container">
       <div class="row">
+  <!--      Меняем класс на col-md-6-->
         <div class="col-md-6">
   <!--        Добавлден класс delivery__card_first -->
           <div class="delivery__card delivery__card_first">
@@ -2580,6 +2607,7 @@
             <img src="assets/img/img-delivery.png" alt="" class="delivery__img">
           </div>
         </div>
+        <!--      Меняем класс на col-md-6-->
         <div class="col-md-6">
           <div class="delivery__wrapper">
             <div class="delivery__card">

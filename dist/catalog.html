@@ -661,13 +661,14 @@
         </div>
       </div>
       <div class="row category__mb">
+  <!--      Меняем классы на col-12 category__wrapper-->
         <div class="col-12 category__wrapper">
           <div class="category__item">
             <img src="assets/img/ct-01.jpg" alt="" class="category__img">
             <p class="category__caption">Открытые на раме</p>
             <a href="" class="lnk"></a>
           </div>
-  
+  <!--У каждой карточки убирается блок обертка col-md-2-->
           <div class="category__item">
             <img src="assets/img/ct-02.jpg" alt="" class="category__img">
             <p class="category__caption">В контейнере Север
@@ -700,17 +701,22 @@
             <a href="" class="lnk"></a>
           </div>
         </div>
+        <!--У каждой карточки убирается блок обертка col-md-2 END-->
       </div>
       <div class="row category__mb">
         <div class="col-12">
           <div class="category-tags">
             <div class="category-tags__heading">
               <p class="category-tags__title">Быстрый выбор марки дизельных генераторов</p>
+  <!--            Меням полностью кнопку-->
               <button type="button" class="btn-reset category-tags__link-all js-category-tags-open">Показать
                 все
               </button>
+  <!--            Меням полностью кнопку END-->
             </div>
+  
             <div class="category-tags__list">
+  <!--            Тут остается просто список без блока обертки внутри <div class="collapse category-tags__hide" id="collapceTagsOne"></div>-->
               <div class="category-tags__item"><a href="" class="category-tags__link">AKSA</a></div>
               <div class="category-tags__item"><a href="" class="category-tags__link">Airman</a></div>
               <div class="category-tags__item"><a href="" class="category-tags__link">Atlas Copco</a></div>
@@ -751,6 +757,7 @@
               <div class="category-tags__item"><a href="" class="category-tags__link">Рикардо</a></div>
               <div class="category-tags__item"><a href="" class="category-tags__link">ТСС</a></div>
               <div class="category-tags__item"><a href="" class="category-tags__link">ЯМЗ</a></div>
+              <!--            Тут остается просто список без блока обертки внутри <div class="collapse category-tags__hide" id="collapceTagsOne"></div> END-->
             </div>
           </div>
         </div>
@@ -760,11 +767,14 @@
           <div class="category-tags">
             <div class="category-tags__heading">
               <p class="category-tags__title">Популярные мощности дизельных генераторов</p>
+              <!--            Меням полностью кнопку-->
               <button type="button" class="btn-reset category-tags__link-all js-category-tags-open">Показать
                 все
               </button>
+              <!--            Меням полностью кнопку END-->
             </div>
             <div class="category-tags__list">
+              <!--            Тут остается просто список без блока обертки внутри <div class="collapse category-tags__hide" id="collapceTagsTwo"></div> -->
               <div class="category-tags__item"><a href="" class="category-tags__link">15 кВт</a></div>
               <div class="category-tags__item"><a href="" class="category-tags__link">20 кВт</a></div>
               <div class="category-tags__item"><a href="" class="category-tags__link">30 кВт</a></div>
@@ -798,7 +808,6 @@
               <div class="category-tags__item"><a href="" class="category-tags__link">650 кВт</a></div>
               <div class="category-tags__item"><a href="" class="category-tags__link">700 кВт</a></div>
               <div class="category-tags__item"><a href="" class="category-tags__link">720 кВт</a></div>
-  
               <div class="category-tags__item"><a href="" class="category-tags__link">750 кВт</a></div>
               <div class="category-tags__item"><a href="" class="category-tags__link">800 кВт</a></div>
               <div class="category-tags__item"><a href="" class="category-tags__link">900 кВт</a></div>
@@ -816,6 +825,7 @@
               <div class="category-tags__item"><a href="" class="category-tags__link">2100 кВт</a></div>
               <div class="category-tags__item"><a href="" class="category-tags__link">2200 кВт</a></div>
               <div class="category-tags__item"><a href="" class="category-tags__link">2500 кВт</a></div>
+              <!--            Тут остается просто список без блока обертки внутри <div class="collapse category-tags__hide" id="collapceTagsTwo"></div> END-->
             </div>
           </div>
         </div>
@@ -852,8 +862,10 @@
   <section class="section catalog catalog_vertical">
     <div class="container">
       <div class="row">
+  <!--      Меняем полностью клссы у блока этого на эти col-xl-3 col-lg-4 js-1000px-filter-->
         <div class="col-xl-3 col-lg-4 js-1000px-filter">
           <div class="filters js-mobile-filters ">
+          <!--  Новый блок раньше его вообще не было-->
             <div class="mobile-menu__heading filters__menu-heading">
               <p class="mobile-menu__title">Фильтры</p>
               <button class="btn-reset js-close-filters">
@@ -862,6 +874,7 @@
                 </svg>
               </button>
             </div>
+          <!--  Новый блок END-->
             <div class="filters__item filters__item_check">
               <div class="filters__heading" data-toggle="collapse" data-target="#filItm1">
                 <p class="filters__caption filters__caption_check">Исполнение</p>
@@ -984,12 +997,14 @@
               </div>
             </div>
             <div class="filters__item filters__item_pwr">
+              <!--    Добавлям класс collapsed-->
               <div class="filters__heading" data-toggle="collapse" data-target="#filItm4">
                 <p class="filters__caption">Подбор по мощности, кВт</p>
                 <svg width="24" height="24">
                   <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
                 </svg>
               </div>
+          <!--    Добавлям класс блоку  d-lg-block d-none-->
               <div class="filters__hide collapse show d-lg-block d-none" id="filItm4">
                 <label for="filters-search" class="filters-search">
                   <input type="search" placeholder="Поиск по мощности" id="filters-search"
@@ -1038,6 +1053,7 @@
                 </ul>
               </div>
             </div>
+            <!--    Добавлям класс collapsed-->
             <div class="filters__item filters__item_pwr">
               <div class="filters__heading collapsed" data-toggle="collapse" data-target="#filPwr2">
                 <p class="filters__caption filters__caption_bold">60-184 кВт</p>
@@ -1068,6 +1084,7 @@
                 </ul>
               </div>
             </div>
+            <!--    Добавлям класс collapsed-->
             <div class="filters__item filters__item_pwr">
               <div class="filters__heading collapsed" data-toggle="collapse" data-target="#filPwr3">
                 <p class="filters__caption filters__caption_bold">200-550 кВт</p>
@@ -1098,6 +1115,7 @@
                 </ul>
               </div>
             </div>
+            <!--    Добавлям класс collapsed-->
             <div class="filters__item filters__item_pwr">
               <div class="filters__heading collapsed" data-toggle="collapse" data-target="#filPwr4">
                 <p class="filters__caption filters__caption_bold">560-1300 кВт</p>
@@ -1125,7 +1143,9 @@
                 </ul>
               </div>
             </div>
+            <!--    Добавлям класс collapsed-->
             <div class="filters__item filters__item_pwr">
+              <!--    Добавлям класс collapsed-->
               <div class="filters__heading collapsed" data-toggle="collapse" data-target="#filPwr5">
                 <p class="filters__caption filters__caption_bold">1400-3200 кВт</p>
                 <svg width="24" height="24">
@@ -1194,12 +1214,15 @@
             <div class="filters__item filters__item_check">
               <div class="filters__heading" data-toggle="collapse" data-target="#filItm6">
                 <p class="filters__caption">Марка электростанции</p>
+          <!--      Новый блок-обертка-->
                 <div class="filters__heading-left">
+          <!--        добавляем кнопку в мобилке она тут появляется. Она окткрывает доп меню со всеми марками в мобильной версии -->
                 <button class=" btn-reset filters__caption-all js-open-station-filters">Все</button>
                 <svg width="24" height="24">
                   <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
                 </svg>
                 </div>
+                <!--      Новый блок-обертка END-->
               </div>
           
               <div class="filters__hide collapse show" id="filItm6">
@@ -1301,6 +1324,7 @@
                     </label>
                   </div>
                 </div>
+          <!--      Добавляем класс d-none d-lg-block-->
                 <button class="btn-reset filters__showall js-filters-showall d-none d-lg-block" data-toggle="collapse" data-target="#filtItm6-in">
                   Показать все
                 </button>
@@ -1309,12 +1333,15 @@
             <div class="filters__item filters__item_check">
               <div class="filters__heading" data-toggle="collapse" data-target="#filItm7">
                 <p class="filters__caption">Марка двигателя</p>
+                <!--      Новый блок-обертка-->
                 <div class="filters__heading-left">
+                  <!--        добавляем кнопку, в мобилке она тут появляется. Она окткрывает доп меню со всеми марками в мобильной версии -->
                 <button class=" btn-reset filters__caption-all js-open-engine-filters">Все</button>
                   <svg width="24" height="24">
                     <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
                   </svg>
                 </div>
+                <!--      Новый блок-обертка END-->
               </div>
               <div class="filters__hide collapse show" id="filItm7">
                 <div class="filters-check">
@@ -1415,6 +1442,7 @@
                     </label>
                   </div>
                 </div>
+                <!--      Добавляем класс d-none d-lg-block-->
                 <button class="btn-reset filters__showall js-filters-showall d-none d-lg-block" data-toggle="collapse" data-target="#filtItm7-in">
                   Показать все
                 </button>
@@ -1495,6 +1523,7 @@
               </svg>
               Сбросить все фильтры
             </button>
+            <!--      Добавляем класс d-none d-lg-block-->
             <div class="filters__item d-none d-lg-block">
                 <div class="filters__heading" data-toggle="collapse" data-target="#filItm11">
                   <p class="filters__caption">Популярные подборки</p>
@@ -1502,7 +1531,7 @@
                     <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
                   </svg>
                 </div>
-                <div class="filters__hide collapse show" id="filItmMob11">
+                <div class="filters__hide collapse show" id="filItm11">
                   <div class="filters__group filters__collections" data-simplebar data-simplebar-auto-hide="false">
                     <a href="" class="filters__link">Двигатель 1500 об/мин</a>
                     <a href="" class="filters__link">С водяным охлаждением</a>
@@ -1530,6 +1559,7 @@
               </div>
           </div>
           
+          <!--Три новых блока. Открываются как отдельное меню фильтров. Популярные подборки открываются по кнопке рядом с сортировкой. Марки по новым кнопкам в самом фильтре рядом с названием-->
           <div class="mobile-filter-popular menu-filters js-mobile-filter-popular d-block d-lg-none">
             <div class="mobile-menu__heading filters__menu-heading">
               <p class="mobile-menu__title">Популярные подборки</p>
@@ -1547,7 +1577,7 @@
                 <span class="filters-search__loup"></span>
               </label>
               </div>
-              <div class="filters__hide" id="filItm11">
+              <div class="filters__hide" id="filItm11Mob">
                 <div class="filters__group filters__collections" data-simplebar data-simplebar-auto-hide="false">
                   <a href="" class="filters__link">Двигатель 1500 об/мин</a>
                   <a href="" class="filters__link">С водяным охлаждением</a>
@@ -1955,6 +1985,7 @@
             </div>
           </div>
         </div>
+        <!--      Меняем полностью клссы у блока этого на эти col-xl-9 col-lg-8 js-1000px-catalog-->
         <div class="col-xl-9 col-lg-8 js-1000px-catalog">
           <div id="catalog-tag-list" class="catalog-tag-list">
             <div id="hidden" class="catalog-tag-list__hidden"></div>
@@ -1962,12 +1993,14 @@
           </div>
           <div class="sorting">
             <div class="sorting__left">
+  <!--            Добавляем класс sorting__btn_sort-->
               <button class="btn-reset sorting__btn sorting__btn_sort js-sorting-btn">
                 <svg width="24" height="24">
                   <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom-2"></use>
                 </svg>
                 По популярности
               </button>
+  <!--            Две новых кнопки для мобилок-->
               <button class="btn-reset sorting__btn sorting__btn_filter js-filters-open ">
                 <svg width="24" height="24">
                   <use xlink:href="assets/img/sprite.svg#icon-filters"></use>
@@ -1977,6 +2010,7 @@
               <button class="btn-reset sorting__btn sorting__btn_popular js-popular-filters-open ">
                 Популярные подборки
               </button>
+              <!--            Две новых кнопки для мобилок END-->
             </div>
             <div class="sorting__right">
               <p class="sorting__count">Найдено товаров: <span>376</span></p>
@@ -2001,6 +2035,7 @@
             </div>
           </div>
           <div class="catalog__list row">
+  <!--          У всех карточек меняются классы на col-lg-4 col-sm-6 js-catalog-item-->
             <div class="col-lg-4 col-sm-6 js-catalog-item">
               <div class="product-card">
                 <div>
@@ -3364,6 +3399,7 @@
           <h2 class="title-h2 advantages__title">Наши преимущества</h2>
         </div>
         <div class="row advantages__list">
+  <!--        У всех карточек меняем классы на col-lg-2 col-sm-4 col-6-->
           <div class="col-lg-2 col-sm-4 col-6">
             <div class="advantages__item">
               <svg class="advantages__icon" width="32" height="32">
@@ -3412,6 +3448,7 @@
               <p class="advantages__caption">Специальные <br>решения</p>
             </div>
           </div>
+          <!--        У всех карточек меняем классы на col-lg-2 col-sm-4 col-6 END-->
         </div>
       </div>
     </div>
@@ -3422,6 +3459,7 @@
         <div class="col-12"><h2 class="title-h2">Контакты специалистов</h2></div>
       </div>
       <div class="row">
+  <!--      Практически полностью блок переверстался. Он дублируется на нескольких старницах - поменялся везде там где спецов два. там где один(например в доставке - он остался как раньше)-->
         <div class="col-md-6">
           <div class="specialist__item">
             <button class="js-open-specialist collapsed btn-reset specialist__question specialist__open" data-toggle="collapse"
@@ -3480,6 +3518,7 @@
             </div>
           </div>
         </div>
+        <!--      Практически полностью блок переверстался END-->
       </div>
     </div>
   
@@ -3489,8 +3528,8 @@
       <div class="row">
         <div class="col-12">
           <form action="" class="callback__form form">
-  
-            <div class="callback__left">
+  <!--Добавился блок-обертка-->
+             <div class="callback__left">
               <p class="callback__caption">
                 Заказать обратный звонок
                 <span>Напишите и мы ответим в течение 5 минут</span>
@@ -3501,7 +3540,8 @@
                 Я даю согласие на <a href="/">обработку моих персональных данных</a>
               </label>
             </div>
-  
+            <!--Добавился блок-обертка END-->
+            <!--Добавился блок-обертка-->
             <div class="callback__group">
               <label for="feed-phone" class="form__label">
                 <span class="form__caption">номер телефона</span>
@@ -3510,6 +3550,7 @@
               </label>
               <button class="btn-reset btn btn_blue form__submit callback__submit" type="submit">Перезвоните мне</button>
             </div>
+            <!--Добавился блок-обертка END-->
             <label for="conf" class="checkbox__label checkbox__label_desk">
               <input type="checkbox" name="conf" id="conf" class="checkbox__input js-hero-checkbox" checked>
               <span class="checkbox__pane"></span>

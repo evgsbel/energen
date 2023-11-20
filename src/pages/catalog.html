@@ -11,13 +11,14 @@ title: Catalog
       </div>
     </div>
     <div class="row category__mb">
+<!--      Меняем классы на col-12 category__wrapper-->
       <div class="col-12 category__wrapper">
         <div class="category__item">
           <img src="assets/img/ct-01.jpg" alt="" class="category__img">
           <p class="category__caption">Открытые на раме</p>
           <a href="" class="lnk"></a>
         </div>
-
+<!--У каждой карточки убирается блок обертка col-md-2-->
         <div class="category__item">
           <img src="assets/img/ct-02.jpg" alt="" class="category__img">
           <p class="category__caption">В контейнере Север
@@ -50,17 +51,22 @@ title: Catalog
           <a href="" class="lnk"></a>
         </div>
       </div>
+      <!--У каждой карточки убирается блок обертка col-md-2 END-->
     </div>
     <div class="row category__mb">
       <div class="col-12">
         <div class="category-tags">
           <div class="category-tags__heading">
             <p class="category-tags__title">Быстрый выбор марки дизельных генераторов</p>
+<!--            Меням полностью кнопку-->
             <button type="button" class="btn-reset category-tags__link-all js-category-tags-open">Показать
               все
             </button>
+<!--            Меням полностью кнопку END-->
           </div>
+
           <div class="category-tags__list">
+<!--            Тут остается просто список без блока обертки внутри <div class="collapse category-tags__hide" id="collapceTagsOne"></div>-->
             <div class="category-tags__item"><a href="" class="category-tags__link">AKSA</a></div>
             <div class="category-tags__item"><a href="" class="category-tags__link">Airman</a></div>
             <div class="category-tags__item"><a href="" class="category-tags__link">Atlas Copco</a></div>
@@ -101,6 +107,7 @@ title: Catalog
             <div class="category-tags__item"><a href="" class="category-tags__link">Рикардо</a></div>
             <div class="category-tags__item"><a href="" class="category-tags__link">ТСС</a></div>
             <div class="category-tags__item"><a href="" class="category-tags__link">ЯМЗ</a></div>
+            <!--            Тут остается просто список без блока обертки внутри <div class="collapse category-tags__hide" id="collapceTagsOne"></div> END-->
           </div>
         </div>
       </div>
@@ -110,11 +117,14 @@ title: Catalog
         <div class="category-tags">
           <div class="category-tags__heading">
             <p class="category-tags__title">Популярные мощности дизельных генераторов</p>
+            <!--            Меням полностью кнопку-->
             <button type="button" class="btn-reset category-tags__link-all js-category-tags-open">Показать
               все
             </button>
+            <!--            Меням полностью кнопку END-->
           </div>
           <div class="category-tags__list">
+            <!--            Тут остается просто список без блока обертки внутри <div class="collapse category-tags__hide" id="collapceTagsTwo"></div> -->
             <div class="category-tags__item"><a href="" class="category-tags__link">15 кВт</a></div>
             <div class="category-tags__item"><a href="" class="category-tags__link">20 кВт</a></div>
             <div class="category-tags__item"><a href="" class="category-tags__link">30 кВт</a></div>
@@ -148,7 +158,6 @@ title: Catalog
             <div class="category-tags__item"><a href="" class="category-tags__link">650 кВт</a></div>
             <div class="category-tags__item"><a href="" class="category-tags__link">700 кВт</a></div>
             <div class="category-tags__item"><a href="" class="category-tags__link">720 кВт</a></div>
-
             <div class="category-tags__item"><a href="" class="category-tags__link">750 кВт</a></div>
             <div class="category-tags__item"><a href="" class="category-tags__link">800 кВт</a></div>
             <div class="category-tags__item"><a href="" class="category-tags__link">900 кВт</a></div>
@@ -166,6 +175,7 @@ title: Catalog
             <div class="category-tags__item"><a href="" class="category-tags__link">2100 кВт</a></div>
             <div class="category-tags__item"><a href="" class="category-tags__link">2200 кВт</a></div>
             <div class="category-tags__item"><a href="" class="category-tags__link">2500 кВт</a></div>
+            <!--            Тут остается просто список без блока обертки внутри <div class="collapse category-tags__hide" id="collapceTagsTwo"></div> END-->
           </div>
         </div>
       </div>
@@ -202,9 +212,11 @@ title: Catalog
 <section class="section catalog catalog_vertical">
   <div class="container">
     <div class="row">
+<!--      Меняем полностью клссы у блока этого на эти col-xl-3 col-lg-4 js-1000px-filter-->
       <div class="col-xl-3 col-lg-4 js-1000px-filter">
         {{> filters}}
       </div>
+      <!--      Меняем полностью клссы у блока этого на эти col-xl-9 col-lg-8 js-1000px-catalog-->
       <div class="col-xl-9 col-lg-8 js-1000px-catalog">
         <div id="catalog-tag-list" class="catalog-tag-list">
           <div id="hidden" class="catalog-tag-list__hidden"></div>
@@ -212,12 +224,14 @@ title: Catalog
         </div>
         <div class="sorting">
           <div class="sorting__left">
+<!--            Добавляем класс sorting__btn_sort-->
             <button class="btn-reset sorting__btn sorting__btn_sort js-sorting-btn">
               <svg width="24" height="24">
                 <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom-2"></use>
               </svg>
               По популярности
             </button>
+<!--            Две новых кнопки для мобилок-->
             <button class="btn-reset sorting__btn sorting__btn_filter js-filters-open ">
               <svg width="24" height="24">
                 <use xlink:href="assets/img/sprite.svg#icon-filters"></use>
@@ -227,6 +241,7 @@ title: Catalog
             <button class="btn-reset sorting__btn sorting__btn_popular js-popular-filters-open ">
               Популярные подборки
             </button>
+            <!--            Две новых кнопки для мобилок END-->
           </div>
           <div class="sorting__right">
             <p class="sorting__count">Найдено товаров: <span>376</span></p>
@@ -251,6 +266,7 @@ title: Catalog
           </div>
         </div>
         <div class="catalog__list row">
+<!--          У всех карточек меняются классы на col-lg-4 col-sm-6 js-catalog-item-->
           <div class="col-lg-4 col-sm-6 js-catalog-item">
             <div class="product-card">
               <div>
@@ -1605,6 +1621,7 @@ title: Catalog
         <h2 class="title-h2 advantages__title">Наши преимущества</h2>
       </div>
       <div class="row advantages__list">
+<!--        У всех карточек меняем классы на col-lg-2 col-sm-4 col-6-->
         <div class="col-lg-2 col-sm-4 col-6">
           <div class="advantages__item">
             <svg class="advantages__icon" width="32" height="32">
@@ -1653,6 +1670,7 @@ title: Catalog
             <p class="advantages__caption">Специальные <br>решения</p>
           </div>
         </div>
+        <!--        У всех карточек меняем классы на col-lg-2 col-sm-4 col-6 END-->
       </div>
     </div>
   </div>
