@@ -476,6 +476,24 @@ $(function () {
       swiper: pdoductImagesSmall
     }
   });
+  var partnersSlider = new Swiper(".js-partners-slider", {
+    speed: 700,
+    slidesPerView: 5,
+    spaceBetween: 30,
+    breakpoints: {
+      0: {
+        slidesPerView: 1.5,
+        spaceBetween: 20
+      },
+      768: {
+        slidesPerView: 3.5,
+        spaceBetween: 20
+      },
+      960: {
+        slidesPerView: 5
+      }
+    }
+  });
 });
 
 //change city

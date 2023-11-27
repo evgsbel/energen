@@ -4,6 +4,7 @@
 @include font-face("Onest", "../fonts/Onest-ExtraBold", 800, normal, "Onest-SemiBold");
 @include font-face("Inter", "../fonts/Inter-Regular", 400, normal, "Inter-Regular");
 @include font-face("Inter", "../fonts/Inter-Medium", 500, normal, "Inter-Medium");
-@include font-face("Inter", "../fonts/Inter-ExtraBold", 800, normal, "Onest-SemiBold");
-@include font-face("MuseoSansCyrl", "../fonts/MuseoSansCyrl-700", 700, normal, "Onest-SemiBold");
-@include font-face("MuseoSansCyrl", "../fonts/MuseoSansCyrl-900", 900, normal, "Onest-SemiBold");
+@include font-face("Inter", "../fonts/Inter-ExtraBold", 800, normal, "Inter-ExtraBold");
+@include font-face("MuseoSansCyrl", "../fonts/MuseoSansCyrl-700", 700, normal, "MuseoSansCyrl-700");
+@include font-face("MuseoSansCyrl", "../fonts/MuseoSansCyrl-900", 900, normal, "MuseoSansCyrl-900");
+@include font-face("BebasNeue", "../fonts/BebasNeueRegular", 400, normal, "BebasNeue");
