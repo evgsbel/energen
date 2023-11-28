@@ -146,12 +146,14 @@ $(() => {
     overlay.classList.add('is-visible')
   });
 
-  filtersStationBtn.on("click", function () {
+  filtersStationBtn.on("click", function (e) {
     subFiltersStation.classList.add('is-open');
+    e.stopPropagation();
   });
 
-  filtersEnginenBtn.on("click", function () {
+  filtersEnginenBtn.on("click", function (e) {
     subFiltersEngine.classList.add('is-open');
+    e.stopPropagation();
   });
 
   const closeBtns = document.querySelectorAll('.js-close-filters');

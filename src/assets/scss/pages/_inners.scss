@@ -716,3 +716,148 @@
 
   }
 }
+
+.manufacture-in {
+  &__title {
+    margin-bottom: 5px;
+  }
+  &__strong {
+    font-size: 20px;
+    font-weight: 500;
+    color: $black;
+  }
+  &__img {
+    border-radius: 10px;
+    width: 100%;
+    @include r(576) {
+      border-radius: 5px;
+    }
+  }
+  &__caption {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    color: $black;
+  }
+  &__card {
+    background-color: #fff;
+    padding: 20px 25px;
+    border-radius: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    gap: 20px 0;
+    @include r(576) {
+      padding: 20px 15px;
+    }
+    .manufacture__strong {
+      margin-bottom: 15px;
+    }
+  }
+  &__card--wr {
+    @include r(768) {
+      padding: 0;
+    }
+  }
+  &__text {
+    margin-bottom: 15px;
+    color: $black;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  &__list {
+    list-style: disc;
+    margin-left: 30px;
+    @include r(576) {
+      margin-left: 20px;
+    }
+    li {
+      color: $black;
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.rents {
+  .feedback {
+    padding: 20px 15px;
+    position: relative;
+    @include r(1024) {
+      height: auto;
+    }
+  }
+  .feedback__caption {
+    font-size: 18px;
+  }
+  .feedback__subcaption {
+    font-size: 14px;
+  }
+  .checkbox__label {
+    position: absolute;
+    width: 90%;
+    bottom: 15px;
+    @include r(1024) {
+      position: relative;
+      bottom: auto;
+      margin-top: 20px;
+    }
+  }
+}
+
+.rents-table {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px 15px;
+  @include r(768) {
+    margin-bottom: 20px;
+  }
+  &__caption {
+    font-size: 18px;
+    font-weight: 500;
+    color: $black;
+    margin-bottom: 15px;
+  }
+  table {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  table tr {
+    border-bottom: 1px solid $grey-2;
+    @include r(992) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 10px 0;
+    }
+  }
+  table td {
+    font-size: 15px;
+    color: $black;
+    padding: 15px 15px 10px 0;
+    @include r(1024) {
+      &:first-child {
+        max-width: 160px;
+        @include r(992) {
+          max-width: none;
+        }
+      }
+    }
+    @include r(992) {
+      flex: 0 0 50%;
+    }
+    span {
+      display: none;
+      font-size: 14px;
+      color: $grey-5;
+      @include r(992) {
+        display: block;
+      }
+    }
+  }
+  table th {
+    padding-bottom: 10px;
+    @include r(992) {
+      display: none;
+    }
+  }
+}

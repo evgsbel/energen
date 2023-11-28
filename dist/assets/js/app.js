@@ -134,11 +134,13 @@ $(function () {
     body.classList.add('opened-menu');
     overlay.classList.add('is-visible');
   });
-  filtersStationBtn.on("click", function () {
+  filtersStationBtn.on("click", function (e) {
     subFiltersStation.classList.add('is-open');
+    e.stopPropagation();
   });
-  filtersEnginenBtn.on("click", function () {
+  filtersEnginenBtn.on("click", function (e) {
     subFiltersEngine.classList.add('is-open');
+    e.stopPropagation();
   });
   var closeBtns = document.querySelectorAll('.js-close-filters');
   var _iterator = _createForOfIteratorHelper(closeBtns),
