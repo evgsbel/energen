@@ -53,3 +53,7 @@ accessibility-reports/
 
 ### ide ###
 .idea
+
+### archive ###
+.zip
+.rar

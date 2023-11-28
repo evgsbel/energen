@@ -16513,6 +16513,9 @@ ul {
   color: #5a5a5a;
   line-height: 1.2;
 }
+.contacts__subtitle:not(button) {
+  cursor: text;
+}
 .contacts__map {
   display: block;
   margin: 0 auto 50px;

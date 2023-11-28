@@ -521,6 +521,9 @@
     font-size: 14px;
     color: $grey-5;
     line-height: 1.2;
+    &:not(button) {
+      cursor: text;
+    }
   }
   &__map {
     display: block;
