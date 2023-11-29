@@ -81,7 +81,8 @@ $(() => {
       $('.js-catalog-seo-card').removeClass('col-sm-6')
       $('.js-catalog-seo-card').addClass('col-md-4 col-sm-6')
 
-      $('.js-filters-open').css('display', 'block')
+      $('.filters__caption-all').css('display', 'block') //добавилась строка
+      $('.js-open-station-filters').css('display', 'block')
       $('.js-popular-filters-open').css('display', 'block')
       $('.js-mobile-filters').addClass('menu-filters')
 
@@ -148,12 +149,24 @@ $(() => {
 
   filtersStationBtn.on("click", function (e) {
     subFiltersStation.classList.add('is-open');
+//добавилось несколько строк
     e.stopPropagation();
+    $('.filters__item').hide()
+    $('.filters__submit').hide()
+    $('.filters__reset').hide()
+    $('.sub-in-hide').hide()
+    //добавилось несколько строк END
   });
 
   filtersEnginenBtn.on("click", function (e) {
     subFiltersEngine.classList.add('is-open');
+    //добавилось несколько строк
     e.stopPropagation();
+    $('.filters__item').hide()
+    $('.filters__submit').hide()
+    $('.filters__reset').hide()
+    $('.sub-in-hide').hide()
+    //добавилось несколько строк END
   });
 
   const closeBtns = document.querySelectorAll('.js-close-filters');
@@ -166,6 +179,12 @@ $(() => {
       subFiltersEngine.classList.remove('is-open');
       body.classList.remove('opened-menu')
       overlay.classList.remove('is-visible')
+      //добавилось несколько строк
+      $('.filters__item').show()
+      $('.filters__submit').show()
+      $('.filters__reset').show()
+      $('.sub-in-hide').show()
+      //добавилось несколько строк END
     });
   }
   const closeSubBtn = document.querySelectorAll('.js-close-sub-filter');
@@ -173,6 +192,12 @@ $(() => {
   e.addEventListener('click',  function() {
     subFiltersStation.classList.remove('is-open');
     subFiltersEngine.classList.remove('is-open');
+    //добавилось несколько строк
+    $('.filters__item').show()
+    $('.filters__submit').show()
+    $('.filters__reset').show()
+    $('.sub-in-hide').show()
+    //добавилось несколько строк END
   })
   }
   overlay.addEventListener('click', function (e) {
@@ -185,6 +210,12 @@ $(() => {
     overlay.classList.remove('is-visible')
     filtersBtn.removeClass("is-active");
     popularFiltersBtn.removeClass("is-active");
+    //добавилось несколько строк
+    $('.filters__item').show()
+    $('.filters__submit').show()
+    $('.filters__reset').show()
+    $('.sub-in-hide').show()
+    //добавилось несколько строк END
   });
 })
 

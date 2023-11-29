@@ -35,9 +35,6 @@
     font-weight: 500;
     font-size: 15px;
     color: $grey-5;
-    @include r(960) {
-      display: block;
-    }
   }
   &__group {
     display: flex;
@@ -262,7 +259,22 @@
 }
 
 .close-sub-filters {
+
   svg {
     transform: rotate(90deg);
+  }
+}
+
+.sub-filter-mobile {
+  position: fixed;
+  display: none;
+  width: 360px;
+  left: 0;
+  margin-top: -15px;
+  padding: 15px;
+  max-height: 100vh;
+  overflow: auto;
+  &.is-open {
+    display: block;
   }
 }

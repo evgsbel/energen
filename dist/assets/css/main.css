@@ -13886,11 +13886,6 @@ ul {
   font-size: 15px;
   color: #5a5a5a;
 }
-@media only screen and (max-width: 960px) {
-  .filters__caption-all {
-    display: block;
-  }
-}
 .filters__group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14157,6 +14152,20 @@ ul {
 .close-sub-filters svg {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+
+.sub-filter-mobile {
+  position: fixed;
+  display: none;
+  width: 360px;
+  left: 0;
+  margin-top: -15px;
+  padding: 15px;
+  max-height: 100vh;
+  overflow: auto;
+}
+.sub-filter-mobile.is-open {
+  display: block;
 }
 
 .product-card {

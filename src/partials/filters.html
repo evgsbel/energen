@@ -1,6 +1,8 @@
 <div class="filters js-mobile-filters ">
+
 <!--  Новый блок раньше его вообще не было-->
-  <div class="mobile-menu__heading filters__menu-heading">
+  <!--  !!!Добавляем класс sub-in-hide-->
+  <div class="mobile-menu__heading sub-in-hide filters__menu-heading">
     <p class="mobile-menu__title">Фильтры</p>
     <button class="btn-reset js-close-filters">
       <svg width="24" height="24">
@@ -9,6 +11,388 @@
     </button>
   </div>
 <!--  Новый блок END-->
+<!--  !!!Сюда кладем два мобильных фильтра раскрывающихся 30-11-2023 и меняем классы -->
+  <div class="sub-filter-mobile js-sub-filter-station">
+    <div class="mobile-menu__heading filters__menu-heading">
+      <button class="btn-reset js-close-sub-filter close-sub-filters">
+        <svg width="24" height="24">
+          <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+        </svg>
+      </button>
+      <p class="mobile-menu__title">Марки электростанций</p>
+      <button class="btn-reset js-close-filters">
+        <svg width="24" height="24">
+          <use xlink:href="assets/img/sprite.svg#icon-close-big"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-menu__heading filters__menu-heading">
+      <label for="filters-search" class="filters-search mobile-filter-popular__search">
+        <input type="search" placeholder="Поиск электростанций" id="filters-search2"
+               class="filters-search__input filters__input">
+        <span class="filters-search__loup"></span>
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="AKSA"
+             id="defaultCheckMob1">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob1">
+        AKSA
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Cummins"
+             id="defaultCheckMob2">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob2">
+        Cummins
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Doosan"
+             id="defaultCheckMob3">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob3">
+        Doosan
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Iveco FPT"
+             id="defaultCheckMob4">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob4">
+        Iveco FPT
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Mitsubishi"
+             id="defaultCheckMob5">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob5">
+        Mitsubishi
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Perkins"
+             id="defaultCheckMob6">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob6">
+        Perkins
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="AKSA"
+             id="defaultCheckMob7">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob7">
+        AKSA
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Cummins"
+             id="defaultCheckMob8">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob8">
+        Cummins
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Doosan"
+             id="defaultCheckMob24">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob24">
+        Doosan
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Iveco FPT"
+             id="defaultCheckMob9">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob9">
+        Iveco FPT
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Mitsubishi"
+             id="defaultCheckMob10">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob10">
+        Mitsubishi
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Perkins"
+             id="defaultCheckMob11">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob11">
+        Perkins
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="AKSA"
+             id="defaultCheckMob12">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob12">
+        AKSA
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Cummins"
+             id="defaultCheckMob13">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob13">
+        Cummins
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Doosan"
+             id="defaultCheckMob14">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob14">
+        Doosan
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Iveco FPT"
+             id="defaultCheckMob15">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob15">
+        Iveco FPT
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Mitsubishi"
+             id="defaultCheckMob16">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob16">
+        Mitsubishi
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Perkins"
+             id="defaultCheckMob17">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob17">
+        Perkins
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="AKSA"
+             id="defaultCheckMob18">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob18">
+        AKSA
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Cummins"
+             id="defaultCheckMob19">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob19">
+        Cummins
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Doosan"
+             id="defaultCheckMob20">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob20">
+        Doosan
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Iveco FPT"
+             id="defaultCheckMob211">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob211">
+        Iveco FPT
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Mitsubishi"
+             id="defaultCheckMob22">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob22">
+        Mitsubishi
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Perkins"
+             id="defaultCheckMob23">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob23">
+        Perkins
+      </label>
+    </div>
+  </div>
+  <div class="sub-filter-mobile js-sub-filter-engine">
+    <div class="mobile-menu__heading filters__menu-heading">
+      <button class="btn-reset js-close-sub-filter close-sub-filters">
+        <svg width="24" height="24">
+          <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+        </svg>
+      </button>
+      <p class="mobile-menu__title">Марки двигателей</p>
+      <button class="btn-reset js-close-filters">
+        <svg width="24" height="24">
+          <use xlink:href="assets/img/sprite.svg#icon-close-big"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-menu__heading filters__menu-heading">
+      <label for="filters-search" class="filters-search mobile-filter-popular__search">
+        <input type="search" placeholder="Поиск двигателей" id="filters-search4"
+               class="filters-search__input filters__input">
+        <span class="filters-search__loup"></span>
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="data-jsvalueAKSA (Турция)"
+             id="defaultCheckMob201">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob201">
+        AKSA (Турция)
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка двигателя" type="checkbox"
+             data-jsvalue="Baudouin (Франция-Китай)" id="defaultCheckMob202">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob202">
+        Baudouin (Франция-Китай)
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="Cummins (США)"
+             id="defaultCheckMob203">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob203">
+        Cummins (США)
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка двигателя" type="checkbox"
+             data-jsvalue="Cummins-China (США-Китай)" id="defaultCheckMob204">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob204">
+        Cummins-China (США-Китай)
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="Doosan (Корея)"
+             id="defaultCheckMob505">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob505">
+        Doosan (Корея)
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="Iveco FPT (Италия)"
+             id="defaultCheckMob506">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob506">
+        Iveco FPT (Италия)
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="data-jsvalueAKSA (Турция)"
+             id="defaultCheckMob20111">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob20111">
+        AKSA (Турция)
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка двигателя" type="checkbox"
+             data-jsvalue="Baudouin (Франция-Китай)" id="defaultCheckMob20211">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob20211">
+        Baudouin (Франция-Китай)
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="Cummins (США)"
+             id="defaultCheckMob20311">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob20311">
+        Cummins (США)
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка двигателя" type="checkbox"
+             data-jsvalue="Cummins-China (США-Китай)" id="defaultCheckMob20411">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob20411">
+        Cummins-China (США-Китай)
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="Doosan (Корея)"
+             id="defaultCheckMob50511">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob5051">
+        Doosan (Корея)
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="Iveco FPT (Италия)"
+             id="defaultCheckMob50611">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob5061">
+        Iveco FPT (Италия)
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="data-jsvalueAKSA (Турция)"
+             id="defaultCheckMob2011">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob2011">
+        AKSA (Турция)
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка двигателя" type="checkbox"
+             data-jsvalue="Baudouin (Франция-Китай)" id="defaultCheckMob2021">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob2021">
+        Baudouin (Франция-Китай)
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="Cummins (США)"
+             id="defaultCheckMob2031">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob2031">
+        Cummins (США)
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка двигателя" type="checkbox"
+             data-jsvalue="Cummins-China (США-Китай)" id="defaultCheckMob2041">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob2041">
+        Cummins-China (США-Китай)
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="Doosan (Корея)"
+             id="defaultCheckMob5051">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob5051">
+        Doosan (Корея)
+      </label>
+    </div>
+    <div class="filters-check">
+      <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="Iveco FPT (Италия)"
+             id="defaultCheckMob5061">
+      <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
+             for="defaultCheckMob5061">
+        Iveco FPT (Италия)
+      </label>
+    </div>
+  </div>
+  <!--  !!!Сюда кладем два мобильных фильтра раскрывающихся 30-11-2023 и меняем классы END-->
   <div class="filters__item filters__item_check">
     <div class="filters__heading" data-toggle="collapse" data-target="#filItm1">
       <p class="filters__caption filters__caption_check">Исполнение</p>
@@ -691,8 +1075,8 @@
         </div>
       </div>
     </div>
+  </div>
 
-</div>
 
 <!--Три новых блока. Открываются как отдельное меню фильтров. Популярные подборки открываются по кнопке рядом с сортировкой. Марки по новым кнопкам в самом фильтре рядом с названием-->
 <div class="mobile-filter-popular menu-filters js-mobile-filter-popular d-block d-lg-none">
@@ -739,384 +1123,5 @@
     </div>
   </div>
 </div>
-<div class="menu-filters js-sub-filter-station d-block d-lg-none">
-  <div class="mobile-menu__heading filters__menu-heading">
-    <button class="btn-reset js-close-sub-filter close-sub-filters">
-      <svg width="24" height="24">
-        <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
-      </svg>
-    </button>
-    <p class="mobile-menu__title">Марки электростанций</p>
-    <button class="btn-reset js-close-filters">
-      <svg width="24" height="24">
-        <use xlink:href="assets/img/sprite.svg#icon-close-big"></use>
-      </svg>
-    </button>
-  </div>
-  <div class="mobile-menu__heading filters__menu-heading">
-    <label for="filters-search" class="filters-search mobile-filter-popular__search">
-      <input type="search" placeholder="Поиск электростанций" id="filters-search2"
-             class="filters-search__input filters__input">
-      <span class="filters-search__loup"></span>
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="AKSA"
-           id="defaultCheckMob1">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob1">
-      AKSA
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Cummins"
-           id="defaultCheckMob2">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob2">
-      Cummins
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Doosan"
-           id="defaultCheckMob3">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob3">
-      Doosan
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Iveco FPT"
-           id="defaultCheckMob4">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob4">
-      Iveco FPT
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Mitsubishi"
-           id="defaultCheckMob5">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob5">
-      Mitsubishi
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Perkins"
-           id="defaultCheckMob6">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob6">
-      Perkins
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="AKSA"
-           id="defaultCheckMob7">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob7">
-      AKSA
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Cummins"
-           id="defaultCheckMob8">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob8">
-      Cummins
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Doosan"
-           id="defaultCheckMob24">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob24">
-      Doosan
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Iveco FPT"
-           id="defaultCheckMob9">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob9">
-      Iveco FPT
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Mitsubishi"
-           id="defaultCheckMob10">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob10">
-      Mitsubishi
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Perkins"
-           id="defaultCheckMob11">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob11">
-      Perkins
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="AKSA"
-           id="defaultCheckMob12">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob12">
-      AKSA
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Cummins"
-           id="defaultCheckMob13">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob13">
-      Cummins
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Doosan"
-           id="defaultCheckMob14">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob14">
-      Doosan
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Iveco FPT"
-           id="defaultCheckMob15">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob15">
-      Iveco FPT
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Mitsubishi"
-           id="defaultCheckMob16">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob16">
-      Mitsubishi
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Perkins"
-           id="defaultCheckMob17">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob17">
-      Perkins
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="AKSA"
-           id="defaultCheckMob18">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob18">
-      AKSA
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Cummins"
-           id="defaultCheckMob19">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob19">
-      Cummins
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Doosan"
-           id="defaultCheckMob20">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob20">
-      Doosan
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Iveco FPT"
-           id="defaultCheckMob211">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob211">
-      Iveco FPT
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Mitsubishi"
-           id="defaultCheckMob22">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob22">
-      Mitsubishi
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка электростанции" type="checkbox" data-jsvalue="Perkins"
-           id="defaultCheckMob23">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob23">
-      Perkins
-    </label>
-  </div>
-</div>
-<div class="menu-filters js-sub-filter-engine d-block d-lg-none">
-  <div class="mobile-menu__heading filters__menu-heading">
-    <button class="btn-reset js-close-sub-filter close-sub-filters">
-      <svg width="24" height="24">
-        <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
-      </svg>
-    </button>
-    <p class="mobile-menu__title">Марки двигателей</p>
-    <button class="btn-reset js-close-filters">
-      <svg width="24" height="24">
-        <use xlink:href="assets/img/sprite.svg#icon-close-big"></use>
-      </svg>
-    </button>
-  </div>
-  <div class="mobile-menu__heading filters__menu-heading">
-    <label for="filters-search" class="filters-search mobile-filter-popular__search">
-      <input type="search" placeholder="Поиск двигателей" id="filters-search4"
-             class="filters-search__input filters__input">
-      <span class="filters-search__loup"></span>
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="data-jsvalueAKSA (Турция)"
-           id="defaultCheckMob201">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob201">
-      AKSA (Турция)
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка двигателя" type="checkbox"
-           data-jsvalue="Baudouin (Франция-Китай)" id="defaultCheckMob202">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob202">
-      Baudouin (Франция-Китай)
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="Cummins (США)"
-           id="defaultCheckMob203">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob203">
-      Cummins (США)
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка двигателя" type="checkbox"
-           data-jsvalue="Cummins-China (США-Китай)" id="defaultCheckMob204">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob204">
-      Cummins-China (США-Китай)
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="Doosan (Корея)"
-           id="defaultCheckMob505">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob505">
-      Doosan (Корея)
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="Iveco FPT (Италия)"
-           id="defaultCheckMob506">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob506">
-      Iveco FPT (Италия)
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="data-jsvalueAKSA (Турция)"
-           id="defaultCheckMob20111">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob20111">
-      AKSA (Турция)
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка двигателя" type="checkbox"
-           data-jsvalue="Baudouin (Франция-Китай)" id="defaultCheckMob20211">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob20211">
-      Baudouin (Франция-Китай)
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="Cummins (США)"
-           id="defaultCheckMob20311">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob20311">
-      Cummins (США)
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка двигателя" type="checkbox"
-           data-jsvalue="Cummins-China (США-Китай)" id="defaultCheckMob20411">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob20411">
-      Cummins-China (США-Китай)
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="Doosan (Корея)"
-           id="defaultCheckMob50511">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob5051">
-      Doosan (Корея)
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="Iveco FPT (Италия)"
-           id="defaultCheckMob50611">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob5061">
-      Iveco FPT (Италия)
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="data-jsvalueAKSA (Турция)"
-           id="defaultCheckMob2011">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob2011">
-      AKSA (Турция)
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка двигателя" type="checkbox"
-           data-jsvalue="Baudouin (Франция-Китай)" id="defaultCheckMob2021">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob2021">
-      Baudouin (Франция-Китай)
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="Cummins (США)"
-           id="defaultCheckMob2031">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob2031">
-      Cummins (США)
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка двигателя" type="checkbox"
-           data-jsvalue="Cummins-China (США-Китай)" id="defaultCheckMob2041">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob2041">
-      Cummins-China (США-Китай)
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="Doosan (Корея)"
-           id="defaultCheckMob5051">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob5051">
-      Doosan (Корея)
-    </label>
-  </div>
-  <div class="filters-check">
-    <input class="filters-check__input" data-category="Марка двигателя" type="checkbox" data-jsvalue="Iveco FPT (Италия)"
-           id="defaultCheckMob5061">
-    <label class="filters-check__label" data-toggle="tooltip" title="Найдено <a href='home.html'>86 моделей</a>"
-           for="defaultCheckMob5061">
-      Iveco FPT (Италия)
-    </label>
-  </div>
-</div>
+
 
