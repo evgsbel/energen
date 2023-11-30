@@ -107,6 +107,8 @@
     font-size: 15px;
     color: $grey-5;
     transition: color $trns;
+    flex: 0 0 70px;
+    max-width: 70px;
     &:hover {
       color: $grey-4;
     }
@@ -1233,5 +1235,225 @@
   }
   &__label input[type=checkbox]:checked + .compare-differences__pane:before {
     transform:translateX(16px);
+  }
+}
+
+.brands-in-tags {
+  .category-tags__list {
+    max-height: none;
+    overflow: visible;
+  }
+}
+
+
+.brands-in {
+  &__title {
+    @include r(576) {
+      font-size: 24px !important;
+      margin-bottom: 0;
+    }
+  }
+  &__heading {
+    display: flex;
+    align-items: flex-start;
+    gap: 0 10px;
+  }
+  &__left {
+    float: left;
+    margin-right: 30px;
+    @include r(576) {
+      float: none;
+      margin-right: 0;
+    }
+  }
+  &__logo {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #fff;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    flex: 0 0 100px;
+    @include r(576) {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  &__link {
+    max-width: 150px;
+    padding: 10px;
+    position: relative;
+    border: 1px solid $grey-2-5;
+    border-radius: 10px;
+    transition: border-color $trns;
+    @include r(576) {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+    a {
+      display: block;
+      font-size: 15px;
+      text-align: center;
+      color: $blue;
+      transition: color $trns;
+    }
+    &:hover {
+      border-color: $grey-3;
+      a {
+        color: $blueHover;
+      }
+    }
+  }
+  &__top-text {
+    p {
+      font-size: 15px;
+      color: $black;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+  }
+  &__card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px 25px;
+    p {
+      color: $black;
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.brands-list {
+  &__row {
+    margin-bottom: 50px;
+    gap: 20px 0;
+  }
+  &__caption {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 24px;
+    color: $black;
+  }
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    height: 100%;
+    @include r(576) {
+      flex-direction: column;
+      gap: 20px 0;
+    }
+  }
+  &__left {
+    flex: 0 0 150px;
+    text-align: center;
+    @include r(576) {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0 10px;
+    }
+    a {
+      font-weight: 500;
+      font-size: 15px;
+      color: $blue;
+      &:hover {
+        color: $blueHover;
+      }
+    }
+    p {
+      font-weight: 500;
+      font-size: 15px;
+      color: $black;
+    }
+  }
+  &__logo {
+    position: relative;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 10px;
+  }
+  &__description {
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: $black;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    @include r(1280) {
+      -webkit-line-clamp: 11;
+    }
+    @include r(576) {
+      -webkit-line-clamp: 8;
+    }
+  }
+  &__more {
+    font-size: 15px;
+    color: $blue;
+    &:hover {
+      color: $blueHover;
+    }
+  }
+}
+
+
+.variants {
+  margin-bottom: 30px;
+  &__title {
+    margin-bottom: 5px;
+    @include r(768) {
+      font-size: 24px !important;
+
+    }
+  }
+  &__subtitle {
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 20px;
+    color: $black;
+    @include r(768) {
+      font-size: 20px;
+    }
+  }
+  &__img {
+    border-radius: 10px;
+    width: 100%;
+  }
+}
+
+.sketches {
+  &__row {
+    gap: 30px 0;
+  }
+  &__item {
+    padding: 20px;
+    background-color: #fff;
+  }
+  &__img {
+    display: block;
+    margin-bottom: 15px;
+  }
+  &__caption {
+    font-weight: 500;
+    font-size: 18px;
+    color: $black;
+    line-height: 1.6;
+    margin-bottom: 5px;
+  }
+  &__for {
+    font-size: 15px;
+    color: $grey-5;
+    line-height: 1.6;
+    margin-bottom: 32px;
   }
 }

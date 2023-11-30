@@ -1,5 +1,5 @@
 .is-inner-page {
-  .title-h2 {
+  h1.title-h2 {
     font-size: 28px;
     @include r(600) {
       font-size: 20px;
@@ -808,9 +808,7 @@
   background-color: #fff;
   border-radius: 10px;
   padding: 20px 15px;
-  @include r(768) {
-    margin-bottom: 20px;
-  }
+
   &__caption {
     font-size: 18px;
     font-weight: 500;

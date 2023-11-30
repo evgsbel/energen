@@ -894,11 +894,11 @@
 
 //content
 .content {
-  p,
-  li {
+  p
+   {
     font-size: 15px;
     line-height: 1.6;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     @include r(1280) {
       font-size: 14px;
       margin-bottom: 15px;
@@ -910,35 +910,39 @@
   }
 
   ul,
+  {
+    margin: 30px 25px;
+    @include r(1280) {
+      margin: 15px 25px;
+    }
+  }
+
   ol {
     margin: 30px 0;
     @include r(1280) {
       margin: 15px 0;
     }
   }
+  ul {
+    list-style-type: disc;
 
-  ul li {
-    position: relative;
-    padding-left: 40px;
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 24px;
-      height: 24px;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M12 10H19L8 22L11 13H5L13 2L12 10Z' fill='%231858D6'/%3E%3C/svg%3E");
-      background-repeat: no-repeat;
+    li {
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 12px;
+      position: relative;
+      padding-left: 10px;
     }
   }
-
   ol {
     counter-reset: myCounter;
 
     li {
       position: relative;
       padding-left: 40px;
-
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 12px;
       &::before {
         counter-increment: myCounter;
         content: counter(myCounter);
@@ -951,7 +955,7 @@
         font-weight: 700;
         width: 24px;
         height: 24px;
-        color: $blue-2-hover;
+        color: $black;
         text-align: center;
       }
     }
