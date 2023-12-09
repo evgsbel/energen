@@ -271,18 +271,18 @@
   margin-top: -60px;
   margin-bottom: 30px;
   display: none;
-  @include r(600) {
+  @include r(576) {
     display: block;
   }
   &__list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px 30px;
+    gap: 20px 15px;
   }
   &__item {
     position: relative;
-    flex: 0 0 calc(50% - 30px);
+    flex: 0 0 calc(50% - 15px);
   }
   &__img {
     margin-bottom: 5px;
@@ -531,6 +531,7 @@
 
     img {
       display: block;
+      width: 100%;
       height: 100%;
       object-fit: cover;
       transition: all $trns;
