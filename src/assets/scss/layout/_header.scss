@@ -8,8 +8,9 @@
     border-bottom: 1px solid $grey-2-5;
   }
   &__bottom {
-    padding: 28px 0;
+    padding: 25px 0;
     background-color: $grey-0;
+    border-bottom: 1px solid #d6d6d6;
     @include r(960) {
       padding: 12px 0;
     }
@@ -27,6 +28,17 @@
     color: $grey-5;
     gap: 0 5px;
     line-height: 1.2;
+    transition: color $trns;
+    svg {
+      fill: #5A5A5A;
+      transition: fill $trns;
+    }
+    &:hover {
+      color: $grey-3;
+      svg {
+        fill: $grey-3;
+      }
+    }
   }
   &__time {
     color: $grey-5;
@@ -39,9 +51,9 @@
   &__contact {
     display: block;
     margin-bottom: 4px;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 16px;
-    line-height: 1.2;
+    line-height: 1;
     @include r(1280) {
       font-size: 14px;
       line-height: 1;
@@ -50,14 +62,14 @@
 
   &__contacts-link {
     font-size: 14px;
-    line-height: 1.2;
+    line-height: 1;
     color: $blue;
     transition: color $trns;
     @include r(1280) {
       font-size: 12px;
     }
     &:hover {
-      color: $blue-2-hover;
+      color: $blue-2;
     }
   }
   &__contacts-text {
@@ -98,6 +110,12 @@
     color: $grey-5;
     transition: color $trns;
     height: calc(100% + 1px);
+    &.show {
+      color: $grey-3;
+      &::after {
+        opacity: 0.3;
+      }
+    }
     @include r(1280) {
       font-size: 14px;
     }
@@ -113,10 +131,14 @@
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M6 8L10 12L14 8' stroke='%235A5A5A' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
         background-repeat: no-repeat;
         transform: translateY(-50%);
+        transition: opacity $trns;
       }
     }
     &:hover {
-      color: $grey-4;
+      color: $grey-3;
+      &::after {
+        opacity: 0.3;
+      }
     }
   }
 }
@@ -125,7 +147,7 @@
   display: flex;
   align-items: center;
   gap: 0  15px;
-  @include r(960) {
+  @include r(1024) {
     margin-left: auto;
     justify-content: flex-end;
     order: 3;
@@ -140,7 +162,7 @@
 }
 
 .logo {
-  @include r(960) {
+  @include r(1024) {
     order: 2;
   }
   &__title {
@@ -189,19 +211,13 @@
     margin-right: 10px;
     width: 24px;
     height: 24px;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transition: .5s ease-in-out;
-    -moz-transition: .5s ease-in-out;
-    -o-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
+
     cursor: pointer;
     @include r(1280) {
       margin-right: 0;
     }
     i {
+      flex: 0 0 auto;
       display: block;
       position: absolute;
       left: 0;
@@ -218,7 +234,7 @@
       -o-transition: .25s ease-in-out;
       transition: .25s ease-in-out;
       border-radius: 7px;
-      @include r(960) {
+      @include r(1024) {
         background-color: $grey-5;
       }
       &:nth-child(1) {
@@ -260,7 +276,7 @@
     @include r(1280) {
       padding: 12px 15px;
     }
-    @include r(960) {
+    @include r(1024) {
       background-color: transparent;
       border: none;
       &:hover {
@@ -308,17 +324,24 @@
 }
 
 .header-search {
+  .simplebar-track {
+    background-color: $grey-1;
+  }
   &__btn {
+    position: relative;
+    z-index: 30;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 48px;
-    height: 48px;
+    height: 47px;
     background-color: $grey-2;
     border-radius: 7px;
     &.is-active {
       transform: translateX(553px);
       transition: all 0.5s ease-in-out;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
     }
     svg {
       fill: $grey-3;
@@ -336,15 +359,21 @@
   &__bar {
     position: absolute;
     top: 0;
-    z-index: 20;
+    z-index: 30;
+    padding: 1px;
     width: 0;
     height: 46px;
     opacity: 0;
     visibility: hidden;
-    background-color: #fff;
-    border: 1px solid $grey-3;
+    background-color: $grey-2;
     border-radius: 7px;
     transition: all 0.5s ease-in-out, opacity 0.25s ease-in-out;
+    &:focus,
+    &:active,
+    &:focus-visible {
+      outline: none;
+
+    }
     &.is-visible {
       opacity: 1;
       visibility: visible;
@@ -358,22 +387,26 @@
     border-radius: 7px;
     color: $grey-5;
     font-size: 15px;
+    border: none;
+    background-color: #fff;
+
     &:focus,
-    &:active {
+    &:active,
+    &:focus-visible {
       outline: none;
-      border: none;
+
     }
   }
   &__drop-down {
     position: absolute;
-    top: 46px;
-    left: 0;
+    top: 40px;
+    left: 1px;
     z-index: 20;
-    padding-top: 22px;
-    width: 600px;
-    border-radius: 7px;
+    padding-top: 25px;
+    width: 598px;
+    border-radius: 0 0 7px 7px;
     background: #fff;
-    box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.20);
     opacity: 0;
     transform: translateY(-10px);
     visibility: hidden;
@@ -424,6 +457,8 @@
     &_with-close {
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      margin-bottom: 7px;
     }
   }
   &__reset {
@@ -443,7 +478,7 @@
 
 .sub-menu {
   position: absolute;
-  top: 46px;
+  top: 10px !important;
   left: 0;
   z-index: 20;
   padding: 15px 40px 15px 20px;
@@ -451,16 +486,7 @@
   background-color: #fff;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.50);
   border-radius: 0 0 7px 7px;
-  opacity: 0;
-  transform: translateY(-10px);
-  visibility: hidden;
-  transition: all 0.5s ease-in-out, opacity 0.25s ease-in-out;
-  &.is-open {
-    opacity: 1;
-    visibility: visible;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
+  border: none;
   &__item {
     margin-bottom: 10px;
     font-size: 15px;
@@ -519,7 +545,7 @@
     color: $grey-5;
     transition: color $trns;
     &:hover {
-      color: $grey-4;
+      color: $grey-3;
     }
     &::before {
       content: '';
@@ -544,19 +570,23 @@
     justify-content: space-between;
   }
   &__col {
-    flex: 1 1 auto;
+    flex: 0 0 auto;
   }
   &__list {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 15px;
-    column-fill: auto;
-    columns: $columns-count2;
-    height: calc($row-height2 * $rows-count2);
+
+    height: 380px;
+    //column-fill: auto;
+    //columns: $columns-count2;
+    //height: calc($row-height2 * $rows-count2);
     li {
-      height: $row-height2;
-      line-height: $row-height2;
+      margin-bottom: 10px;
+      margin-right: 40px;
+      //height: $row-height2;
+      //line-height: $row-height2;
     }
   }
   &__scroll-list {
@@ -741,7 +771,7 @@
     padding: 0 15px 15px;
   }
   &__title {
-    font-size: 15px;
+    font-size: 16px;
     color: $grey-5;
     font-weight: 500;
   }

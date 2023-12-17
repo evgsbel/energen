@@ -72,16 +72,16 @@
           <nav class="header__nav nav h-100">
             <ul class="nav__list h-100  js-header-nav">
               <li class="nav__item"><a href="" class="nav__link">Производство</a></li>
-              <li class="nav__item nav__item_sub js-nav-item-sub">
-                <a href="" class="nav__link">Услуги и сервис</a>
-                <ul class="sub-menu">
+              <li class="nav__item nav__item_sub js-nav-item-sub dropdown" >
+                <a href="" class="nav__link" data-toggle="dropdown">Услуги и сервис</a>
+                <ul class="sub-menu dropdown-menu">
                   <li class="sub-menu__item"><a href="" class="sub-menu__link">Аренда электростанций</a></li>
                   <li class="sub-menu__item"><a href="" class="sub-menu__link">Сервис и ремонт</a></li>
                 </ul>
               </li>
-              <li class="nav__item nav__item_sub js-nav-item-sub">
-                <a href="" class="nav__link">О заводе</a>
-                <ul class="sub-menu">
+              <li class="nav__item nav__item_sub js-nav-item-sub dropdown">
+                <a href="" class="nav__link" data-toggle="dropdown">О заводе</a>
+                <ul class="sub-menu dropdown-menu">
                   <li class="sub-menu__item"><a href="" class="sub-menu__link">О компании</a></li>
                   <li class="sub-menu__item"><a href="" class="sub-menu__link">Оплата</a></li>
                   <li class="sub-menu__item"><a href="" class="sub-menu__link">Отзывы</a></li>
@@ -236,19 +236,19 @@
             <p class="header__contact">+7 (800) 900-70-70</p>
             <button  class="btn-reset header__contacts-link" data-toggle="modal" data-target="#callback">Заказать звонок</button>
           </div>
-          <a href="" class="header__mini-cart mini-cart header__icon">
+          <a href="" class="header__mini-cart mini-cart header__icon d-none d-lg-block">
             <svg width="24" height="24">
               <use xlink:href="assets/img/sprite.svg#icon-cart"></use>
             </svg>
             <span>Корзина</span>
           </a>
-          <a href="" class="header__favorite header__icon">
+          <a href="" class="header__favorite header__icon d-none d-lg-block">
             <svg width="24" height="24">
               <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
             </svg>
             <span>Отложено</span>
           </a>
-          <a href="" class="header__compare header__icon">
+          <a href="" class="header__compare header__icon d-none d-lg-block">
             <svg width="24" height="24">
               <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
             </svg>
@@ -1428,7 +1428,7 @@
       
           <div class="row">
             <div class="col-12">
-              <div class="swiper js-articles-slider">
+              <div class="swiper js-articles-slider articles__slider">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="articles__item">

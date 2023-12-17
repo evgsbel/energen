@@ -69,7 +69,7 @@ title: Home Page
                 </div>
                 <form class="hero-form main-filters__form">
                   <div class="main-filters__row">
-                    <div class="main-filters__group">
+                    <div class="main-filters__group main-filters__group_power">
                       <label for="power_from" class="main-filters__label">
                         <span class="main-filters__caption main-filters__caption_power">мощность, кВт</span>
                         <span class="main-filters__subcaption">от</span>
@@ -90,117 +90,697 @@ title: Home Page
                       </label>
                     </div>
                     <div class="main-filters__group">
-                      <label for="station" class="main-filters__label">
-                        <span class="main-filters__caption">марка электростанции</span>
-                        <select class="js-select" name="station" id="station" multiple="multiple" data-placeholder="не важно">
-                          <option value="AKSA">AKSA</option>
-                          <option value="Cummins">Cummins</option>
-                          <option value="Cummins-China">Cummins-China</option>
-                          <option value="Doosan">Doosan</option>
-                          <option value="FG Wilson">FG Wilson</option>
-                          <option value="Iveco FPT1">Iveco FPT</option>
-                          <option value="Iveco FPT2">Iveco FPT</option>
-                          <option value="Iveco FPT3">Iveco FPT</option>
-                          <option value="Iveco FPT4">Iveco FPT</option>
-                          <option value="Iveco FPT5">Iveco FPT</option>
-                          <option value="Iveco FPT6">Iveco FPT</option>
-                          <option value="Iveco FPT7">Iveco FPT</option>
-                        </select>
-                      </label>
-                    </div>
-                    <div class="main-filters__group">
-                      <label for="mark" class="main-filters__label">
+                      <div class="main-filters__label">
                         <span class="main-filters__caption">марка двигателя</span>
-                        <select class="js-select" name="mark" id="mark" multiple="multiple" data-placeholder="не важно">
-                          <option value="AKSA">AKSA</option>
-                          <option value="Cummins">Cummins</option>
-                          <option value="Cummins-China">Cummins-China</option>
-                          <option value="Doosan">Doosan</option>
-                          <option value="FG Wilson">FG Wilson</option>
-                          <option value="Iveco FPT1">Iveco FPT</option>
-                          <option value="Iveco FPT2">Iveco FPT</option>
-                          <option value="Iveco FPT3">Iveco FPT</option>
-                          <option value="Iveco FPT4">Iveco FPT</option>
-                          <option value="Iveco FPT5">Iveco FPT</option>
-                          <option value="Iveco FPT6">Iveco FPT</option>
-                          <option value="Iveco FPT7">Iveco FPT</option>
-                        </select>
-                      </label>
+                        <input
+                          class="js-main-filter-checkbox"
+                          style="display: none;"
+                          data-path="station-one"
+                          type="checkbox"
+                          name="AKSA"
+                          id="AKSA"
+                          value="AKSA"
+                        />
+                        <input
+                          class="js-main-filter-checkbox"
+                          style="display: none;"
+                          data-path="station-two"
+                          type="checkbox"
+                          name="Cummins"
+                          id="Cummins"
+                          value="Cummins"
+                        />
+                        <input
+                          class="js-main-filter-checkbox"
+                          style="display: none;"
+                          data-path="station-tree"
+                          type="checkbox"
+                          name="Cummins-China"
+                          id="Cummins-China"
+                          value="Cummins-China"
+                        />
+                        <input
+                          class="js-main-filter-checkbox"
+                          style="display: none;"
+                          data-path="station-four"
+                          type="checkbox"
+                          name="FG Wilson"
+                          id="FG Wilson"
+                          value="FG Wilson"
+                        />
+                        <input
+                          class="js-main-filter-checkbox"
+                          style="display: none;"
+                          data-path="station-six"
+                          type="checkbox"
+                          name="Doosan"
+                          id="Doosan"
+                          value="Doosan"
+                        />
+                        <input
+                          class="js-main-filter-checkbox"
+                          style="display: none;"
+                          data-path="station-five"
+                          type="checkbox"
+                          name="Iveco FPT"
+                          id="Iveco FPT"
+                          value="Iveco FPT"
+                        />
+                        <button for="station" class="main-filters__open btn-reset" data-toggle="dropdown">
+                          <p class="js-main-filter-count main-filters__not-check">не важно</p>
+                        </button>
+                        <ul class="dropdown-menu main-filters__dropdown allow-focus" aria-labelledby="dropdownMenuButton" data-simplebar data-simplebar-auto-hide="false">
+                          <li data-target="station-one">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="AKSA" class="" data-role="AKSA">
+                              AKSA
+                            </label>
+                          </li>
+                          <li data-target="station-two">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="Cummins" class="" data-role="Cummins">
+                              Cummins
+                            </label>
+                          </li>
+                          <li data-target="station-tree">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="Cummins-China" class="" data-role="Cummins-China">
+                              Cummins-China
+                            </label>
+                          </li>
+                          <li data-target="station-six">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="Doosan" class="" data-role="Doosan">
+                              Doosan
+                            </label>
+                          </li>
+                          <li data-target="station-four">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="FG Wilson" class="" data-role="FG Wilson">
+                              FG Wilson
+                            </label>
+                          </li>
+                          <li data-target="station-five">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="Iveco FPT" class="" data-role="Iveco FPT">
+                             Iveco FPT
+                            </label>
+                          </li>
+                          <li data-target="station-one">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="AKSA" class="" data-role="AKSA">
+                              AKSA
+                            </label>
+                          </li>
+                          <li data-target="station-two">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="Cummins" class="" data-role="Cummins">
+                              Cummins
+                            </label>
+                          </li>
+                          <li data-target="station-tree">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="Cummins-China" class="" data-role="Cummins-China">
+                              Cummins-China
+                            </label>
+                          </li>
+                          <li data-target="station-six">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="Doosan" class="" data-role="Doosan">
+                              Doosan
+                            </label>
+                          </li>
+                          <li data-target="station-four">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="FG Wilson" class="" data-role="FG Wilson">
+                              FG Wilson
+                            </label>
+                          </li>
+                          <li data-target="station-five">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="Iveco FPT" class="" data-role="Iveco FPT">
+                              Iveco FPT
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                     <div class="main-filters__group">
-                      <label for="execution" class="main-filters__label">
-                        <span class="main-filters__caption">исполнение</span>
-                        <select class="js-select" name="execution" id="execution" multiple="multiple" data-placeholder="не важно">
-                          <option value="AKSA">AKSA</option>
-                          <option value="Cummins">Cummins</option>
-                          <option value="Cummins-China">Cummins-China</option>
-                          <option value="Doosan">Doosan</option>
-                          <option value="FG Wilson">FG Wilson</option>
-                          <option value="Iveco FPT1">Iveco FPT</option>
-                          <option value="Iveco FPT2">Iveco FPT</option>
-                          <option value="Iveco FPT3">Iveco FPT</option>
-                          <option value="Iveco FPT4">Iveco FPT</option>
-                          <option value="Iveco FPT5">Iveco FPT</option>
-                          <option value="Iveco FPT6">Iveco FPT</option>
-                          <option value="Iveco FPT7">Iveco FPT</option>
-                        </select>
-                      </label>
-                    </div>
-                    <div class="main-filters__group">
-                      <label for="voltage" class="main-filters__label">
+                      <div class="main-filters__label">
                         <span class="main-filters__caption">напряжение тока, В</span>
-                        <select class="js-select" name="voltage" id="voltage" multiple="multiple" data-placeholder="не важно">
-
-                          <option value="AKSA">AKSA</option>
-                          <option value="Cummins">Cummins</option>
-                          <option value="Cummins-China">Cummins-China</option>
-                          <option value="Doosan">Doosan</option>
-                          <option value="FG Wilson">FG Wilson</option>
-                          <option value="Iveco FPT1">Iveco FPT</option>
-                          <option value="Iveco FPT2">Iveco FPT</option>
-                          <option value="Iveco FPT3">Iveco FPT</option>
-                          <option value="Iveco FPT4">Iveco FPT</option>
-                          <option value="Iveco FPT5">Iveco FPT</option>
-                          <option value="Iveco FPT6">Iveco FPT</option>
-                          <option value="Iveco FPT7">Iveco FPT</option>
-                        </select>
-                      </label>
+                        <input
+                          class="js-main-filter-checkbox"
+                          style="display: none;"
+                          data-path="npr-one"
+                          type="checkbox"
+                          name="npr-AKSA"
+                          id="nprAKSA"
+                          value="AKSA"
+                        />
+                        <input
+                          class="js-main-filter-checkbox"
+                          style="display: none;"
+                          data-path="npr-two"
+                          type="checkbox"
+                          name="npr-Cummins"
+                          id="nprCummins"
+                          value="Cummins"
+                        />
+                        <input
+                          class="js-main-filter-checkbox"
+                          style="display: none;"
+                          data-path="npr-tree"
+                          type="checkbox"
+                          name="npr-Cummins-China"
+                          id="nprCummins-China"
+                          value="Cummins-China"
+                        />
+                        <input
+                          class="js-main-filter-checkbox"
+                          style="display: none;"
+                          data-path="npr-four"
+                          type="checkbox"
+                          name="npr-FG Wilson"
+                          id="nprFG Wilson"
+                          value="FG Wilson"
+                        />
+                        <input
+                          class="js-main-filter-checkbox"
+                          style="display: none;"
+                          data-path="npr-six"
+                          type="checkbox"
+                          name="npr-Doosan"
+                          id="nprDoosan"
+                          value="Doosan"
+                        />
+                        <input
+                          class="js-main-filter-checkbox"
+                          style="display: none;"
+                          data-path="npr-five"
+                          type="checkbox"
+                          name="npr-Iveco FPT"
+                          id="nprIveco FPT"
+                          value="Iveco FPT"
+                        />
+                        <button for="station" class="main-filters__open btn-reset" data-toggle="dropdown">
+                          <p class="js-main-filter-count main-filters__not-check">не важно</p>
+                        </button>
+                        <ul class="dropdown-menu main-filters__dropdown allow-focus" aria-labelledby="dropdownMenuButton" data-simplebar data-simplebar-auto-hide="false">
+                          <li data-target="npr-one">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="nprAKSA" class="" data-role="AKSA">
+                              AKSA
+                            </label>
+                          </li>
+                          <li data-target="npr-two">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="nprCummins" class="" data-role="Cummins">
+                              Cummins
+                            </label>
+                          </li>
+                          <li data-target="npr-tree">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="nprCummins-China" class="" data-role="Cummins-China">
+                              Cummins-China
+                            </label>
+                          </li>
+                          <li data-target="npr-six">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="nprDoosan" class="" data-role="Doosan">
+                              Doosan
+                            </label>
+                          </li>
+                          <li data-target="npr-four">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="nprFG Wilson" class="" data-role="FG Wilson">
+                              FG Wilson
+                            </label>
+                          </li>
+                          <li data-target="npr-five">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="nprIveco FPT" class="" data-role="Iveco FPT">
+                              Iveco FPT
+                            </label>
+                          </li>
+                          <li data-target="npr-one">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="nprAKSA" class="" data-role="AKSA">
+                              AKSA
+                            </label>
+                          </li>
+                          <li data-target="npr-two">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="nprCummins" class="" data-role="Cummins">
+                              Cummins
+                            </label>
+                          </li>
+                          <li data-target="npr-tree">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="nprCummins-China" class="" data-role="Cummins-China">
+                              Cummins-China
+                            </label>
+                          </li>
+                          <li data-target="npr-six">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="nprDoosan" class="" data-role="Doosan">
+                              Doosan
+                            </label>
+                          </li>
+                          <li data-target="npr-four">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="nprFG Wilson" class="" data-role="FG Wilson">
+                              FG Wilson
+                            </label>
+                          </li>
+                          <li data-target="npr-five">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="nprIveco FPT" class="" data-role="Iveco FPT">
+                              Iveco FPT
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                     <div class="main-filters__group">
-                      <label for="automation" class="main-filters__label">
+                      <div class="main-filters__label">
+                        <span class="main-filters__caption">марка электростанции</span>
+                        <input
+                          class="js-main-filter-checkbox"
+                          style="display: none;"
+                          data-path="mr-one"
+                          type="checkbox"
+                          name="mr-AKSA"
+                          id="mr-AKSA"
+                          value="AKSA"
+                        />
+                        <input
+                          class="js-main-filter-checkbox"
+                          style="display: none;"
+                          data-path="mr-two"
+                          type="checkbox"
+                          name="mr-Cummins"
+                          id="mr-Cummins"
+                          value="Cummins"
+                        />
+                        <input
+                          class="js-main-filter-checkbox"
+                          style="display: none;"
+                          data-path="mr-tree"
+                          type="checkbox"
+                          name="mr-Cummins-China"
+                          id="mr-Cummins-China"
+                          value="Cummins-China"
+                        />
+                        <input
+                          class="js-main-filter-checkbox"
+                          style="display: none;"
+                          data-path="mr-four"
+                          type="checkbox"
+                          name="mr-FG Wilson"
+                          id="mr-FG Wilson"
+                          value="FG Wilson"
+                        />
+                        <input
+                          class="js-main-filter-checkbox"
+                          style="display: none;"
+                          data-path="mr-six"
+                          type="checkbox"
+                          name="mr-Doosan"
+                          id="mr-Doosan"
+                          value="Doosan"
+                        />
+                        <input
+                          class="js-main-filter-checkbox"
+                          style="display: none;"
+                          data-path="mr-five"
+                          type="checkbox"
+                          name="mr-Iveco FPT"
+                          id="mr-Iveco FPT"
+                          value="Iveco FPT"
+                        />
+                        <button for="mr-station" class="main-filters__open btn-reset" data-toggle="dropdown">
+                          <p class="js-main-filter-count main-filters__not-check">не важно</p>
+                        </button>
+                        <ul class="dropdown-menu main-filters__dropdown allow-focus" aria-labelledby="dropdownMenuButton" data-simplebar data-simplebar-auto-hide="false">
+                          <li data-target="mr-one">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="mr-AKSA" class="" data-role="AKSA">
+                              AKSA
+                            </label>
+                          </li>
+                          <li data-target="mr-two">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="mr-Cummins" class="" data-role="Cummins">
+                              Cummins
+                            </label>
+                          </li>
+                          <li data-target="mr-tree">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="mr-Cummins-China" class="" data-role="Cummins-China">
+                              Cummins-China
+                            </label>
+                          </li>
+                          <li data-target="mr-six">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="mr-Doosan" class="" data-role="Doosan">
+                              Doosan
+                            </label>
+                          </li>
+                          <li data-target="mr-four">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="mr-FG Wilson" class="" data-role="FG Wilson">
+                              FG Wilson
+                            </label>
+                          </li>
+                          <li data-target="mr-five">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="mr-Iveco FPT" class="" data-role="Iveco FPT">
+                              Iveco FPT
+                            </label>
+                          </li>
+                          <li data-target="mr-one">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="mr-AKSA" class="" data-role="AKSA">
+                              AKSA
+                            </label>
+                          </li>
+                          <li data-target="mr-two">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="mr-Cummins" class="" data-role="Cummins">
+                              Cummins
+                            </label>
+                          </li>
+                          <li data-target="mr-tree">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="mr-Cummins-China" class="" data-role="Cummins-China">
+                              Cummins-China
+                            </label>
+                          </li>
+                          <li data-target="mr-six">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="mr-Doosan" class="" data-role="Doosan">
+                              Doosan
+                            </label>
+                          </li>
+                          <li data-target="mr-four">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="mr-FG Wilson" class="" data-role="FG Wilson">
+                              FG Wilson
+                            </label>
+                          </li>
+                          <li data-target="mr-five">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="mr-Iveco FPT" class="" data-role="Iveco FPT">
+                              Iveco FPT
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="main-filters__group">
+                      <div class="main-filters__label">
+                        <span class="main-filters__caption">исполнение</span>
+                        <input
+                          class="js-main-filter-checkbox"
+                          style="display: none;"
+                          data-path="isp-one"
+                          type="checkbox"
+                          name="isp-AKSA"
+                          id="isp-AKSA"
+                          value="AKSA"
+                        />
+                        <input
+                          class="js-main-filter-checkbox"
+                          style="display: none;"
+                          data-path="isp-two"
+                          type="checkbox"
+                          name="isp-Cummins"
+                          id="isp-Cummins"
+                          value="Cummins"
+                        />
+                        <input
+                          class="js-main-filter-checkbox"
+                          style="display: none;"
+                          data-path="isp-tree"
+                          type="checkbox"
+                          name="isp-Cummins-China"
+                          id="isp-Cummins-China"
+                          value="Cummins-China"
+                        />
+                        <input
+                          class="js-main-filter-checkbox"
+                          style="display: none;"
+                          data-path="isp-four"
+                          type="checkbox"
+                          name="isp-FG Wilson"
+                          id="isp-FG Wilson"
+                          value="FG Wilson"
+                        />
+                        <input
+                          class="js-main-filter-checkbox"
+                          style="display: none;"
+                          data-path="isp-six"
+                          type="checkbox"
+                          name="isp-Doosan"
+                          id="isp-Doosan"
+                          value="Doosan"
+                        />
+                        <input
+                          class="js-main-filter-checkbox"
+                          style="display: none;"
+                          data-path="isp-five"
+                          type="checkbox"
+                          name="isp-Iveco FPT"
+                          id="isp-Iveco FPT"
+                          value="Iveco FPT"
+                        />
+                        <button for="isp-station" class="main-filters__open btn-reset" data-toggle="dropdown">
+                          <p class="js-main-filter-count main-filters__not-check">не важно</p>
+                        </button>
+                        <ul class="dropdown-menu main-filters__dropdown allow-focus" aria-labelledby="dropdownMenuButton" data-simplebar data-simplebar-auto-hide="false">
+                          <li data-target="isp-one">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="isp-AKSA" class="" data-role="AKSA">
+                              AKSA
+                            </label>
+                          </li>
+                          <li data-target="isp-two">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="isp-Cummins" class="" data-role="Cummins">
+                              Cummins
+                            </label>
+                          </li>
+                          <li data-target="isp-tree">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="isp-Cummins-China" class="" data-role="Cummins-China">
+                              Cummins-China
+                            </label>
+                          </li>
+                          <li data-target="isp-six">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="isp-Doosan" class="" data-role="Doosan">
+                              Doosan
+                            </label>
+                          </li>
+                          <li data-target="isp-four">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="isp-FG Wilson" class="" data-role="FG Wilson">
+                              FG Wilson
+                            </label>
+                          </li>
+                          <li data-target="isp-five">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="isp-Iveco FPT" class="" data-role="Iveco FPT">
+                              Iveco FPT
+                            </label>
+                          </li>
+                          <li data-target="isp-one">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="isp-AKSA" class="" data-role="AKSA">
+                              AKSA
+                            </label>
+                          </li>
+                          <li data-target="isp-two">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="isp-Cummins" class="" data-role="Cummins">
+                              Cummins
+                            </label>
+                          </li>
+                          <li data-target="isp-tree">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="isp-Cummins-China" class="" data-role="Cummins-China">
+                              Cummins-China
+                            </label>
+                          </li>
+                          <li data-target="isp-six">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="isp-Doosan" class="" data-role="Doosan">
+                              Doosan
+                            </label>
+                          </li>
+                          <li data-target="isp-four">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="isp-FG Wilson" class="" data-role="FG Wilson">
+                              FG Wilson
+                            </label>
+                          </li>
+                          <li data-target="isp-five">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="isp-Iveco FPT" class="" data-role="Iveco FPT">
+                              Iveco FPT
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="main-filters__group">
+                      <div class="main-filters__label">
                         <span class="main-filters__caption">степень автоматизации</span>
-                        <select class="js-select" name="automation" id="automation" multiple="multiple" data-placeholder="не важно">
-
-                          <option value="AKSA">AKSA</option>
-                          <option value="Cummins">Cummins</option>
-                          <option value="Cummins-China">Cummins-China</option>
-                          <option value="Doosan">Doosan</option>
-                          <option value="FG Wilson">FG Wilson</option>
-                          <option value="Iveco FPT1">Iveco FPT</option>
-                          <option value="Iveco FPT2">Iveco FPT</option>
-                          <option value="Iveco FPT3">Iveco FPT</option>
-                          <option value="Iveco FPT4">Iveco FPT</option>
-                          <option value="Iveco FPT5">Iveco FPT</option>
-                          <option value="Iveco FPT6">Iveco FPT</option>
-                          <option value="Iveco FPT7">Iveco FPT</option>
-                        </select>
-                      </label>
+                        <input
+                          class="js-main-filter-checkbox"
+                          style="display: none;"
+                          data-path="stp-one"
+                          type="checkbox"
+                          name="stp-AKSA"
+                          id="stp-AKSA"
+                          value="AKSA"
+                        />
+                        <input
+                          class="js-main-filter-checkbox"
+                          style="display: none;"
+                          data-path="stp-two"
+                          type="checkbox"
+                          name="stp-Cummins"
+                          id="stp-Cummins"
+                          value="Cummins"
+                        />
+                        <input
+                          class="js-main-filter-checkbox"
+                          style="display: none;"
+                          data-path="stp-tree"
+                          type="checkbox"
+                          name="stp-Cummins-China"
+                          id="stp-Cummins-China"
+                          value="Cummins-China"
+                        />
+                        <input
+                          class="js-main-filter-checkbox"
+                          style="display: none;"
+                          data-path="stp-four"
+                          type="checkbox"
+                          name="stp-FG Wilson"
+                          id="stp-FG Wilson"
+                          value="FG Wilson"
+                        />
+                        <input
+                          class="js-main-filter-checkbox"
+                          style="display: none;"
+                          data-path="stp-six"
+                          type="checkbox"
+                          name="stp-Doosan"
+                          id="stp-Doosan"
+                          value="Doosan"
+                        />
+                        <input
+                          class="js-main-filter-checkbox"
+                          style="display: none;"
+                          data-path="stp-five"
+                          type="checkbox"
+                          name="stp-Iveco FPT"
+                          id="stp-Iveco FPT"
+                          value="Iveco FPT"
+                        />
+                        <button for="stp-station" class="main-filters__open btn-reset" data-toggle="dropdown">
+                          <p class="js-main-filter-count main-filters__not-check">не важно</p>
+                        </button>
+                        <ul class="dropdown-menu main-filters__dropdown allow-focus" aria-labelledby="dropdownMenuButton" data-simplebar data-simplebar-auto-hide="false">
+                          <li data-target="stp-one">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="stp-AKSA" class="" data-role="AKSA">
+                              AKSA
+                            </label>
+                          </li>
+                          <li data-target="stp-two">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="stp-Cummins" class="" data-role="Cummins">
+                              Cummins
+                            </label>
+                          </li>
+                          <li data-target="stp-tree">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="stp-Cummins-China" class="" data-role="Cummins-China">
+                              Cummins-China
+                            </label>
+                          </li>
+                          <li data-target="stp-six">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="stp-Doosan" class="" data-role="Doosan">
+                              Doosan
+                            </label>
+                          </li>
+                          <li data-target="stp-four">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="stp-FG Wilson" class="" data-role="FG Wilson">
+                              FG Wilson
+                            </label>
+                          </li>
+                          <li data-target="stp-five">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="stp-Iveco FPT" class="" data-role="Iveco FPT">
+                              Iveco FPT
+                            </label>
+                          </li>
+                          <li data-target="stp-one">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="stp-AKSA" class="" data-role="AKSA">
+                              AKSA
+                            </label>
+                          </li>
+                          <li data-target="stp-two">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="stp-Cummins" class="" data-role="Cummins">
+                              Cummins
+                            </label>
+                          </li>
+                          <li data-target="stp-tree">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="stp-Cummins-China" class="" data-role="Cummins-China">
+                              Cummins-China
+                            </label>
+                          </li>
+                          <li data-target="stp-six">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="stp-Doosan" class="" data-role="Doosan">
+                              Doosan
+                            </label>
+                          </li>
+                          <li data-target="stp-four">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="stp-FG Wilson" class="" data-role="FG Wilson">
+                              FG Wilson
+                            </label>
+                          </li>
+                          <li data-target="stp-five">
+                            <div class="main-filters__check-appearance"></div>
+                            <label  for="stp-Iveco FPT" class="" data-role="Iveco FPT">
+                              Iveco FPT
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
 
                   <div class="main-filters__col">
-                    <button class="btn-reset btn btn_blue  main-filters__btn main-filters__btn-blue">
-                      <svg width="24" height="24">
-                        <use xlink:href="assets/img/sprite.svg#icon-loup"></use>
-                      </svg>
-                      Подобрать
-                    </button>
-                    <button class="btn-reset btn btn_trnsp  main-filters__btn main-filters__btn-trnsp">
+                    <div class="main-filters__submit main-filters__btn">
+                    <input type="submit" class="btn-reset  main-filters__btn-blue" value="Подобрать">
+                    </div>
+                    <a href="" class="btn-reset btn btn_trnsp  main-filters__btn main-filters__btn-trnsp">
                       Перейти в каталог
                       <svg width="24" height="24">
                         <use xlink:href="assets/img/sprite.svg#icon-arrow-right"></use>
                       </svg>
-                    </button>
+                    </a>
                   </div>
                 </form>
               </div>
@@ -275,7 +855,7 @@ title: Home Page
                aria-labelledby="contact-tab">
             <div class="generators__inner">
               <div class="generators__col">
-                <p class="generators__caption">Популярные мощности</p>
+                <p class="generators__caption">Популярные</p>
                 <ul class="generators__tags">
                   <li><a href="" class="generators__tag">30 кВт</a></li>
                   <li><a href="" class="generators__tag">50 кВт</a></li>
@@ -360,7 +940,7 @@ title: Home Page
                aria-labelledby="contact-tab">
             <div class="generators__inner">
               <div class="generators__col">
-                <p class="generators__caption">Популярные мощности</p>
+                <p class="generators__caption">Популярные</p>
                 <ul class="generators__tags">
                   <li><a href="" class="generators__tag">37 кВА</a></li>
                   <li><a href="" class="generators__tag">62 кВА</a></li>
@@ -384,7 +964,7 @@ title: Home Page
                 </ul>
               </div>
               <div class="generators__col">
-                <p class="generators__caption">18 - 187 кВА</p>
+                <p class="generators__caption">18 - 300 кВт</p>
                 <ul class="generators__tags">
                   <li><a href="" class="generators__tag">18 кВА</a></li>
                   <li><a href="" class="generators__tag">25 кВА</a></li>
@@ -396,26 +976,21 @@ title: Home Page
                   <li><a href="" class="generators__tag">150 кВА</a></li>
                   <li><a href="" class="generators__tag">162 кВА</a></li>
                   <li><a href="" class="generators__tag">187 кВА</a></li>
-                </ul>
-              </div>
-              <div class="generators__col">
-                <p class="generators__caption">200 - 400 кВА</p>
-                <ul class="generators__tags">
                   <li><a href="" class="generators__tag">200 кВА</a></li>
                   <li><a href="" class="generators__tag">225 кВА</a></li>
                   <li><a href="" class="generators__tag">250 кВА</a></li>
                   <li><a href="" class="generators__tag">275 кВА</a></li>
                   <li><a href="" class="generators__tag">300 кВА</a></li>
+                </ul>
+              </div>
+              <div class="generators__col">
+                <p class="generators__caption">312 - 800 кВт</p>
+                <ul class="generators__tags">
                   <li><a href="" class="generators__tag">312 кВА</a></li>
                   <li><a href="" class="generators__tag">350 кВА</a></li>
                   <li><a href="" class="generators__tag">375 кВА</a></li>
                   <li><a href="" class="generators__tag">393 кВА</a></li>
                   <li><a href="" class="generators__tag">400 кВА</a></li>
-                </ul>
-              </div>
-              <div class="generators__col">
-                <p class="generators__caption">437 - 800 кВА</p>
-                <ul class="generators__tags">
                   <li><a href="" class="generators__tag">437 кВА</a></li>
                   <li><a href="" class="generators__tag">450 кВА</a></li>
                   <li><a href="" class="generators__tag">500 кВА</a></li>
@@ -423,7 +998,6 @@ title: Home Page
                   <li><a href="" class="generators__tag">600 кВА</a></li>
                   <li><a href="" class="generators__tag">625 кВА</a></li>
                   <li><a href="" class="generators__tag">687 кВА</a></li>
-                  <li><a href="" class="generators__tag">700 кВА</a></li>
                   <li><a href="" class="generators__tag">700 кВА</a></li>
                   <li><a href="" class="generators__tag">750 кВА</a></li>
                   <li><a href="" class="generators__tag">800 кВА</a></li>
@@ -450,88 +1024,66 @@ title: Home Page
                aria-labelledby="contact-tab">
             <div class="generators__inner">
               <div class="generators__col">
-                <p class="generators__caption">Популярные мощности</p>
+                <p class="generators__caption">Популярные</p>
                 <ul class="generators__tags">
-                  <li><a href="" class="generators__tag">37 кВА</a></li>
-                  <li><a href="" class="generators__tag">62 кВА</a></li>
-                  <li><a href="" class="generators__tag">75 кВА</a></li>
-                  <li><a href="" class="generators__tag">125 кВА</a></li>
-                  <li><a href="" class="generators__tag">150 кВА</a></li>
-                  <li><a href="" class="generators__tag">187 кВА</a></li>
-                  <li><a href="" class="generators__tag">220 кВА</a></li>
-                  <li><a href="" class="generators__tag">312 кВА</a></li>
-                  <li><a href="" class="generators__tag">375 кВА</a></li>
-                  <li><a href="" class="generators__tag">500 кВА</a></li>
-                  <li><a href="" class="generators__tag">750 кВА</a></li>
-                  <li><a href="" class="generators__tag">1000 кВА</a></li>
-                  <li><a href="" class="generators__tag">1125 кВА</a></li>
-                  <li><a href="" class="generators__tag">1250 кВА</a></li>
-                  <li><a href="" class="generators__tag">1375 кВА</a></li>
-                  <li><a href="" class="generators__tag">1875 кВА</a></li>
-                  <li><a href="" class="generators__tag">2000 кВА</a></li>
-                  <li><a href="" class="generators__tag">2500 кВА</a></li>
-                  <li><a href="" class="generators__tag">3125 кВА</a></li>
+                  <li><a href="" class="generators__tag">AKSA</a></li>
+                  <li><a href="" class="generators__tag">Cummins</a></li>
+                  <li><a href="" class="generators__tag">Cummins-China</a></li>
+                  <li><a href="" class="generators__tag">Doosan</a></li>
+                  <li><a href="" class="generators__tag">FG Wilson</a></li>
+                  <li><a href="" class="generators__tag">Iveco-FPT</a></li>
+                  <li><a href="" class="generators__tag">Perkins</a></li>
+                  <li><a href="" class="generators__tag">Pramac</a></li>
+                  <li><a href="" class="generators__tag">SDMO</a></li>
+                  <li><a href="" class="generators__tag">Teksan</a></li>
+                  <li><a href="" class="generators__tag">Volvo Penta</a></li>
+                  <li><a href="" class="generators__tag">АД</a></li>
+                  <li><a href="" class="generators__tag">Азимут</a></li>
+                  <li><a href="" class="generators__tag">ММЗ</a></li>
+                  <li><a href="" class="generators__tag">ТСС</a></li>
+                  <li><a href="" class="generators__tag">ЯМЗ</a></li>
                 </ul>
               </div>
               <div class="generators__col">
-                <p class="generators__caption">18 - 187 кВА</p>
+                <p class="generators__caption">Все производители</p>
                 <ul class="generators__tags">
-                  <li><a href="" class="generators__tag">18 кВА</a></li>
-                  <li><a href="" class="generators__tag">25 кВА</a></li>
-                  <li><a href="" class="generators__tag">37 кВА</a></li>
-                  <li><a href="" class="generators__tag">62 кВА</a></li>
-                  <li><a href="" class="generators__tag">75 кВА</a></li>
-                  <li><a href="" class="generators__tag">87 кВА</a></li>
-                  <li><a href="" class="generators__tag">125 кВА</a></li>
-                  <li><a href="" class="generators__tag">150 кВА</a></li>
-                  <li><a href="" class="generators__tag">162 кВА</a></li>
-                  <li><a href="" class="generators__tag">187 кВА</a></li>
+                  <li><a href="" class="generators__tag">Airman</a></li>
+                  <li><a href="" class="generators__tag">Altas Copco</a></li>
+                  <li><a href="" class="generators__tag">Baudouin</a></li>
+                  <li><a href="" class="generators__tag">Caterpillar</a></li>
+                  <li><a href="" class="generators__tag">Denyo</a></li>
+                  <li><a href="" class="generators__tag">Deutz</a></li>
+                  <li><a href="" class="generators__tag">Elcos</a></li>
+                  <li><a href="" class="generators__tag">Emsa</a></li>
+                  <li><a href="" class="generators__tag">Energo</a></li>
+                  <li><a href="" class="generators__tag">Fogo</a></li>
+                  <li><a href="" class="generators__tag">Geko</a></li>
+                  <li><a href="" class="generators__tag">Gesan</a></li>
+                  <li><a href="" class="generators__tag">GMGen</a></li>
+                  <li><a href="" class="generators__tag">Himoinsa</a></li>
+                  <li><a href="" class="generators__tag">JCB</a></li>
+                  <li><a href="" class="generators__tag">John Deere</a></li>
+                  <li><a href="" class="generators__tag">Kubota</a></li>
+                  <li><a href="" class="generators__tag">Mitsubishi</a></li>
+                  <li><a href="" class="generators__tag">MTU</a></li>
+                  <li><a href="" class="generators__tag">Onis Visa</a></li>
+                  <li><a href="" class="generators__tag">Powerlink</a></li>
+                  <li><a href="" class="generators__tag">Scania</a></li>
+                  <li><a href="" class="generators__tag">Вепрь</a></li>
+                  <li><a href="" class="generators__tag">Исток</a></li>
+                  <li><a href="" class="generators__tag">Ricardo</a></li>
+                  <li><a href="" class="generators__tag">Weichai</a></li>
                 </ul>
               </div>
               <div class="generators__col">
-                <p class="generators__caption">200 - 400 кВА</p>
+                <p class="generators__caption">По стране производства</p>
                 <ul class="generators__tags">
-                  <li><a href="" class="generators__tag">200 кВА</a></li>
-                  <li><a href="" class="generators__tag">225 кВА</a></li>
-                  <li><a href="" class="generators__tag">250 кВА</a></li>
-                  <li><a href="" class="generators__tag">275 кВА</a></li>
-                  <li><a href="" class="generators__tag">300 кВА</a></li>
-                  <li><a href="" class="generators__tag">312 кВА</a></li>
-                  <li><a href="" class="generators__tag">350 кВА</a></li>
-                  <li><a href="" class="generators__tag">375 кВА</a></li>
-                  <li><a href="" class="generators__tag">393 кВА</a></li>
-                  <li><a href="" class="generators__tag">400 кВА</a></li>
-                </ul>
-              </div>
-              <div class="generators__col">
-                <p class="generators__caption">437 - 800 кВА</p>
-                <ul class="generators__tags">
-                  <li><a href="" class="generators__tag">437 кВА</a></li>
-                  <li><a href="" class="generators__tag">450 кВА</a></li>
-                  <li><a href="" class="generators__tag">500 кВА</a></li>
-                  <li><a href="" class="generators__tag">550 кВА</a></li>
-                  <li><a href="" class="generators__tag">600 кВА</a></li>
-                  <li><a href="" class="generators__tag">625 кВА</a></li>
-                  <li><a href="" class="generators__tag">687 кВА</a></li>
-                  <li><a href="" class="generators__tag">700 кВА</a></li>
-                  <li><a href="" class="generators__tag">700 кВА</a></li>
-                  <li><a href="" class="generators__tag">750 кВА</a></li>
-                  <li><a href="" class="generators__tag">800 кВА</a></li>
-                </ul>
-              </div>
-              <div class="generators__col">
-                <p class="generators__caption">900 - 2750 кВА</p>
-                <ul class="generators__tags">
-                  <li><a href="" class="generators__tag">900 кВА</a></li>
-                  <li><a href="" class="generators__tag">937 кВА</a></li>
-                  <li><a href="" class="generators__tag">1200 кВА</a></li>
-                  <li><a href="" class="generators__tag">1625 кВА</a></li>
-                  <li><a href="" class="generators__tag">1750 кВА</a></li>
-                  <li><a href="" class="generators__tag">2125 кВА</a></li>
-                  <li><a href="" class="generators__tag">2250 кВА</a></li>
-                  <li><a href="" class="generators__tag">2375 кВА</a></li>
-                  <li><a href="" class="generators__tag">2625 кВА</a></li>
-                  <li><a href="" class="generators__tag">2750 кВА</a></li>
+                  <li><a href="" class="generators__tag">Европейские</a></li>
+                  <li><a href="" class="generators__tag">Японские</a></li>
+                  <li><a href="" class="generators__tag">Российские</a></li>
+                  <li><a href="" class="generators__tag">Американские</a></li>
+                  <li><a href="" class="generators__tag">Китайские</a></li>
+                  <li><a href="" class="generators__tag">Белорусские</a></li>
                 </ul>
               </div>
             </div>
@@ -724,7 +1276,7 @@ title: Home Page
                  data-parent="#generators-mob">
               <div class="generators__inner">
                 <div class="generators__col">
-                  <p class="generators__caption">Популярные мощности</p>
+                  <p class="generators__caption">Популярные</p>
                   <ul class="generators__tags">
                     <li><a href="" class="generators__tag">37 кВА</a></li>
                     <li><a href="" class="generators__tag">62 кВА</a></li>
@@ -1220,83 +1772,82 @@ title: Home Page
               <img src="assets/img/gal-014.jpg" alt="" class="gallery__img">
             </a>
           </div>
-          <div class="gallery__item multi-collapse collapse ">
+          <div class="gallery__item multi-collapse ">
             <a href="assets/img/gal-015.jpg" class="gallery__link lnk" data-fancybox="gallery">
               <img src="assets/img/gal-015.jpg" alt="" class="gallery__img">
             </a>
           </div>
-          <div class="gallery__item multi-collapse collapse">
+          <div class="gallery__item multi-collapse">
             <a href="assets/img/gal-016.jpg" class="gallery__link lnk" data-fancybox="gallery">
               <img src="assets/img/gal-016.jpg" alt="" class="gallery__img">
             </a>
           </div>
-          <div class="gallery__item multi-collapse collapse">
+          <div class="gallery__item multi-collapse">
             <a href="assets/img/gal-017.jpg" class="gallery__link lnk" data-fancybox="gallery">
               <img src="assets/img/gal-017.jpg" alt="" class="gallery__img">
             </a>
           </div>
-          <div class="gallery__item multi-collapse collapse">
+          <div class="gallery__item multi-collapse">
             <a href="assets/img/gal-018.jpg" class="gallery__link lnk" data-fancybox="gallery">
               <img src="assets/img/gal-018.jpg" alt="" class="gallery__img">
             </a>
           </div>
-          <div class="gallery__item multi-collapse collapse">
+          <div class="gallery__item multi-collapse">
             <a href="assets/img/gal-019.jpg" class="gallery__link lnk" data-fancybox="gallery">
               <img src="assets/img/gal-019.jpg" alt="" class="gallery__img">
             </a>
           </div>
-          <div class="gallery__item multi-collapse collapse">
+          <div class="gallery__item multi-collapse">
             <a href="assets/img/gal-020.jpg" class="gallery__link lnk" data-fancybox="gallery">
               <img src="assets/img/gal-020.jpg" alt="" class="gallery__img">
             </a>
           </div>
-          <div class="gallery__item multi-collapse collapse">
+          <div class="gallery__item multi-collapse">
             <a href="assets/img/gal-021.jpg" class="gallery__link lnk" data-fancybox="gallery">
               <img src="assets/img/gal-021.jpg" alt="" class="gallery__img">
             </a>
           </div>
-          <div class="gallery__item multi-collapse collapse">
+          <div class="gallery__item multi-collapse">
             <a href="assets/img/gal-022.jpg" class="gallery__link lnk" data-fancybox="gallery">
               <img src="assets/img/gal-022.jpg" alt="" class="gallery__img">
             </a>
           </div>
-          <div class="gallery__item multi-collapse collapse">
+          <div class="gallery__item multi-collapse">
             <a href="assets/img/gal-023.jpg" class="gallery__link lnk" data-fancybox="gallery">
               <img src="assets/img/gal-023.jpg" alt="" class="gallery__img">
             </a>
           </div>
-          <div class="gallery__item multi-collapse collapse">
+          <div class="gallery__item multi-collapse">
             <a href="assets/img/gal-024.jpg" class="gallery__link lnk" data-fancybox="gallery">
               <img src="assets/img/gal-024.jpg" alt="" class="gallery__img">
             </a>
           </div>
-          <div class="gallery__item multi-collapse collapse">
+          <div class="gallery__item multi-collapse">
             <a href="assets/img/gal-025.jpg" class="gallery__link lnk" data-fancybox="gallery">
               <img src="assets/img/gal-025.jpg" alt="" class="gallery__img">
             </a>
           </div>
-          <div class="gallery__item multi-collapse collapse">
+          <div class="gallery__item multi-collapse">
             <a href="assets/img/gal-026.jpg" class="gallery__link lnk" data-fancybox="gallery">
               <img src="assets/img/gal-026.jpg" alt="" class="gallery__img">
             </a>
           </div>
-          <div class="gallery__item multi-collapse collapse">
+          <div class="gallery__item multi-collapse">
             <a href="assets/img/gal-027.jpg" class="gallery__link lnk" data-fancybox="gallery">
               <img src="assets/img/gal-027.jpg" alt="" class="gallery__img">
             </a>
           </div>
-          <div class="gallery__item multi-collapse collapse">
+          <div class="gallery__item multi-collapse">
             <a href="assets/img/gal-028.jpg" class="gallery__link lnk" data-fancybox="gallery">
               <img src="assets/img/gal-028.jpg" alt="" class="gallery__img">
             </a>
           </div>
-          <div class="gallery__item multi-collapse collapse">
+          <div class="gallery__item multi-collapse">
             <a href="assets/img/gal-029.jpg" class="gallery__link lnk" data-fancybox="gallery">
               <img src="assets/img/gal-029.jpg" alt="" class="gallery__img">
             </a>
           </div>
-          <button class="btn-reset gallery__item gallery__item_more js-gallery-show-more collapsed"
-                  data-toggle="collapse" data-target=".multi-collapse">
+          <button class="btn-reset gallery__item gallery__item_more js-gallery-show-more">
             <span>Показать еще</span>
             <svg width="24" height="24">
               <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
@@ -1315,7 +1866,7 @@ title: Home Page
       </div>
     </div>
     <div class="row row-gap">
-      <div class="col-lg-4 col-sm-6">
+      <div class="col-md-4 col-sm-6">
         <div class="directions__item">
           <div class="directions__inner">
             <p class="directions__caption">Производим электростанции европейского уровня для российских условий</p>
@@ -1333,7 +1884,7 @@ title: Home Page
           <img src="assets/img/dr-01.png" alt="" class="directions__img">
         </div>
       </div>
-      <div class="col-lg-4 col-sm-6">
+      <div class="col-md-4 col-sm-6">
         <div class="directions__item">
           <div class="directions__inner">
             <p class="directions__caption">Производим электростацнии в блок-контейнерах различных типов</p>
@@ -1349,7 +1900,7 @@ title: Home Page
           <img src="assets/img/dr-02.png" alt="" class="directions__img">
         </div>
       </div>
-      <div class="col-lg-4 col-sm-6">
+      <div class="col-md-4 col-sm-6">
         <div class="directions__item">
           <div class="directions__inner">
             <p class="directions__caption">Производим электростацнии в шумозащитных кожухах и погодозащитных капотах</p>
@@ -1366,7 +1917,7 @@ title: Home Page
           <img src="assets/img/dr-03.png" alt="" class="directions__img">
         </div>
       </div>
-      <div class="col-lg-4 col-sm-6">
+      <div class="col-md-4 col-sm-6">
         <div class="directions__item">
           <div class="directions__inner">
             <p class="directions__caption">Поставляем генераторы ведущих зарубежных производителей</p>
@@ -1394,7 +1945,7 @@ title: Home Page
           <img src="assets/img/dr-01.png" alt="" class="directions__img">
         </div>
       </div>
-      <div class="col-lg-4 col-sm-6">
+      <div class="col-md-4 col-sm-6">
         <div class="directions__item">
           <div class="directions__inner">
             <p class="directions__caption">Газопоршневые электростанции от 200 кВт до 2000 мВт единичной мощности</p>
@@ -1422,7 +1973,7 @@ title: Home Page
           <img src="assets/img/dr-05.png" alt="" class="directions__img">
         </div>
       </div>
-      <div class="col-lg-4 col-sm-6">
+      <div class="col-md-4 col-sm-6">
         <div class="directions__item">
           <div class="directions__inner">
             <p class="directions__caption">Энергокомплексы от 1 до 50 мВт на базе дизельных и газопоршневых
@@ -1639,6 +2190,9 @@ title: Home Page
         </a>
       </div>
     </div>
-{{> articles}}
+    {{> articles}}
   </div>
 </section>
+
+
+

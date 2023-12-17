@@ -4,34 +4,34 @@ $(() => {
 });
 
 //hover top menu
-$(() => {
-  var timer, pause = 900;
-  $(".js-header-nav").on("mouseenter mouseleave", function (event) {
-    window.clearTimeout(timer);
-    var that = this;
-    if (event.type == "mouseenter") {
-      timer = window.setTimeout(function () {
-        that.classList.add("is-hover")
-      }, pause)
-    } else {
-      this.classList.remove("is-hover")
-
-    }
-  })
-  $(".js-nav-item-sub").on("mouseenter mouseleave", function (event) {
-    window.clearTimeout(timer);
-    var that = this;
-    if (event.type == "mouseenter") {
-      timer = window.setTimeout(function () {
-        that.classList.add('is-hover')
-        that.querySelector('ul').classList.add('is-open');
-      }, pause)
-    } else {
-      this.classList.remove("is-hover")
-      that.querySelector('ul').classList.remove('is-open');
-    }
-  });
-});
+// $(() => {
+//   var timer, pause = 900;
+//   $(".js-header-nav").on("click", function (event) {
+//     window.clearTimeout(timer);
+//     var that = this;
+//     if (event.type == "mouseenter") {
+//       timer = window.setTimeout(function () {
+//         that.classList.add("is-hover")
+//       }, pause)
+//     } else {
+//       this.classList.remove("is-hover")
+//
+//     }
+//   })
+//   $(".js-nav-item-sub").on("mouseenter mouseleave", function (event) {
+//     window.clearTimeout(timer);
+//     var that = this;
+//     if (event.type == "mouseenter") {
+//       timer = window.setTimeout(function () {
+//         that.classList.add('is-hover')
+//         that.querySelector('ul').classList.add('is-open');
+//       }, pause)
+//     } else {
+//       this.classList.remove("is-hover")
+//       that.querySelector('ul').classList.remove('is-open');
+//     }
+//   });
+// });
 
 $(() => {
 
@@ -69,7 +69,7 @@ $(() => {
 
 
     if ((/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) && windowWidth > 960 && windowWidth < 1100) {
-      console.log('mobile')
+
       // mobile menu
 
       menuBtn.on("click", function () {
@@ -105,7 +105,7 @@ $(() => {
       });
     } else {
 
-      console.log('desk')
+
 
       const menu = $(".js-header-catalog");
       menuBtn.on("click", function () {
@@ -271,7 +271,14 @@ $(() => {
     } else {
       $(this).find('span').text('Показать еще');
     }
+    if ($(this).hasClass("active")) {
+    }
+     else {
+        $('.gallery__list')[0].scrollIntoView({ block: "start", behavior: "smooth" });
+      }
+    $(this).closest('.gallery__list').find('.multi-collapse').toggleClass('is-open')
   });
+
 });
 
 //toggle favorite and matches
@@ -316,7 +323,7 @@ $(() => {
 $(() => {
   //news slider
   const homeNewsSlider = new Swiper(".js-news-slider", {
-    speed: 700,
+    speed: 100,
     watchSlidesProgress: true,
     spaceBetween: 30,
     navigation: {
@@ -337,7 +344,8 @@ $(() => {
   });
 
   const homeBestSlider = new Swiper(".js-best-slider", {
-    speed: 700,
+    speed: 200,
+    slidesPerGroup: 4,
     watchSlidesProgress: true,
     navigation: {
       nextEl: ".favorite-nav-next",
@@ -365,7 +373,7 @@ $(() => {
   });
 
   const compareBestSlider = new Swiper(".js-compare-slider", {
-    speed: 700,
+    speed: 100,
     watchSlidesProgress: true,
     allowTouchMove: false,
     navigation: {
@@ -393,7 +401,7 @@ $(() => {
     }
   });
   const filterTagsSlider = new Swiper(".js-main-filters-tags", {
-    speed: 700,
+    speed: 100,
     loop: true,
     spaceBetween: 16,
     watchSlidesProgress: true,
@@ -445,8 +453,8 @@ $(() => {
       0: {
         slidesPerView: 3.5,
       },
-      768: {
-        slidesPerView: 9,
+      600: {
+        slidesPerView: 8,
       },
       960: {
         slidesPerView: 10,
@@ -456,7 +464,7 @@ $(() => {
 
   //articles slider
   const articlesSlider = new Swiper(".js-articles-slider", {
-    speed: 700,
+    speed: 100,
     watchSlidesProgress: true,
     spaceBetween: 30,
 
@@ -476,7 +484,7 @@ $(() => {
     }
   });
   const certSlider = new Swiper(".js-cert-slider", {
-    speed: 700,
+    speed: 100,
     slidesPerView: 3,
     spaceBetween: 30,
     breakpoints: {
@@ -485,18 +493,24 @@ $(() => {
       },
       576: {
         slidesPerView: 2.5,
+
       },
       768: {
         slidesPerView: 3.5,
       },
       960: {
         slidesPerView: 4,
+        spaceBetween: 24,
+      },
+      1280: {
+        slidesPerView: 4,
+        spaceBetween: 30,
       }
     }
   });
 
   const reviewssSlider = new Swiper(".js-reviews-slider", {
-    speed: 700,
+    speed: 100,
     loop: true,
     spaceBetween: 30,
     breakpoints: {
@@ -506,6 +520,14 @@ $(() => {
       600: {
         slidesPerView: 2,
       },
+      1024: {
+        spaceBetween: 10,
+         slidesPerView: 2,
+      },
+      1280: {
+        spaceBetween: 30,
+         slidesPerView: 2,
+      }
     }
   });
 
@@ -536,7 +558,7 @@ $(() => {
   });
 
   const partnersSlider = new Swiper(".js-partners-slider", {
-    speed: 700,
+    speed: 100,
     slidesPerView: 5,
     spaceBetween: 30,
     breakpoints: {
@@ -926,4 +948,24 @@ document.addEventListener('DOMContentLoaded', function () {
       el.classList.add('is-active');
     });
   });
+});
+
+
+$('.js-main-filter-checkbox').change(function (ev) {
+  const path = ev.currentTarget.dataset.path;
+  $(`[data-target="${path}"]`).toggleClass('is-check');
+  let inputCount = $(this).closest('.main-filters__group').find('.js-main-filter-checkbox:checked').length;
+  let inputCheck =  $(this).closest('.main-filters__group').find('.js-main-filter-checkbox:checked').val()
+
+  if (inputCount === 1) {
+    $(this).closest('.main-filters__group').find(".js-main-filter-count").text(inputCheck);
+  } else if  (inputCount > 1) {
+    $(this).closest('.main-filters__group').find(".js-main-filter-count").text('Выбрано: ' + inputCount);
+  } else {
+    $(this).closest('.main-filters__group').find(".js-main-filter-count").text('не важно');
+  }
+});
+
+$(document).on('click', '.allow-focus', function (e) {
+  e.stopPropagation();
 });

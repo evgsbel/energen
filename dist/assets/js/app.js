@@ -11,34 +11,35 @@ $(function () {
 });
 
 //hover top menu
-$(function () {
-  var timer,
-    pause = 900;
-  $(".js-header-nav").on("mouseenter mouseleave", function (event) {
-    window.clearTimeout(timer);
-    var that = this;
-    if (event.type == "mouseenter") {
-      timer = window.setTimeout(function () {
-        that.classList.add("is-hover");
-      }, pause);
-    } else {
-      this.classList.remove("is-hover");
-    }
-  });
-  $(".js-nav-item-sub").on("mouseenter mouseleave", function (event) {
-    window.clearTimeout(timer);
-    var that = this;
-    if (event.type == "mouseenter") {
-      timer = window.setTimeout(function () {
-        that.classList.add('is-hover');
-        that.querySelector('ul').classList.add('is-open');
-      }, pause);
-    } else {
-      this.classList.remove("is-hover");
-      that.querySelector('ul').classList.remove('is-open');
-    }
-  });
-});
+// $(() => {
+//   var timer, pause = 900;
+//   $(".js-header-nav").on("click", function (event) {
+//     window.clearTimeout(timer);
+//     var that = this;
+//     if (event.type == "mouseenter") {
+//       timer = window.setTimeout(function () {
+//         that.classList.add("is-hover")
+//       }, pause)
+//     } else {
+//       this.classList.remove("is-hover")
+//
+//     }
+//   })
+//   $(".js-nav-item-sub").on("mouseenter mouseleave", function (event) {
+//     window.clearTimeout(timer);
+//     var that = this;
+//     if (event.type == "mouseenter") {
+//       timer = window.setTimeout(function () {
+//         that.classList.add('is-hover')
+//         that.querySelector('ul').classList.add('is-open');
+//       }, pause)
+//     } else {
+//       this.classList.remove("is-hover")
+//       that.querySelector('ul').classList.remove('is-open');
+//     }
+//   });
+// });
+
 $(function () {});
 
 //header catalog
@@ -69,7 +70,6 @@ $(function () {
   function checkWidth() {
     var windowWidth = $('body').innerWidth();
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent) && windowWidth > 960 && windowWidth < 1100) {
-      console.log('mobile');
       // mobile menu
 
       menuBtn.on("click", function () {
@@ -99,7 +99,6 @@ $(function () {
         overlay.addClass('is-visible');
       });
     } else {
-      console.log('desk');
       var _menu = $(".js-header-catalog");
       menuBtn.on("click", function () {
         if ($(this).hasClass("is-active")) {
@@ -268,6 +267,13 @@ $(function () {
     } else {
       $(this).find('span').text('Показать еще');
     }
+    if ($(this).hasClass("active")) {} else {
+      $('.gallery__list')[0].scrollIntoView({
+        block: "start",
+        behavior: "smooth"
+      });
+    }
+    $(this).closest('.gallery__list').find('.multi-collapse').toggleClass('is-open');
   });
 });
 
@@ -312,7 +318,7 @@ $(function () {
 $(function () {
   //news slider
   var homeNewsSlider = new Swiper(".js-news-slider", {
-    speed: 700,
+    speed: 100,
     watchSlidesProgress: true,
     spaceBetween: 30,
     navigation: {
@@ -332,7 +338,8 @@ $(function () {
     }
   });
   var homeBestSlider = new Swiper(".js-best-slider", {
-    speed: 700,
+    speed: 200,
+    slidesPerGroup: 4,
     watchSlidesProgress: true,
     navigation: {
       nextEl: ".favorite-nav-next",
@@ -358,7 +365,7 @@ $(function () {
     }
   });
   var compareBestSlider = new Swiper(".js-compare-slider", {
-    speed: 700,
+    speed: 100,
     watchSlidesProgress: true,
     allowTouchMove: false,
     navigation: {
@@ -385,7 +392,7 @@ $(function () {
     }
   });
   var filterTagsSlider = new Swiper(".js-main-filters-tags", {
-    speed: 700,
+    speed: 100,
     loop: true,
     spaceBetween: 16,
     watchSlidesProgress: true,
@@ -437,8 +444,8 @@ $(function () {
       0: {
         slidesPerView: 3.5
       },
-      768: {
-        slidesPerView: 9
+      600: {
+        slidesPerView: 8
       },
       960: {
         slidesPerView: 10
@@ -448,7 +455,7 @@ $(function () {
 
   //articles slider
   var articlesSlider = new Swiper(".js-articles-slider", {
-    speed: 700,
+    speed: 100,
     watchSlidesProgress: true,
     spaceBetween: 30,
     breakpoints: {
@@ -467,7 +474,7 @@ $(function () {
     }
   });
   var certSlider = new Swiper(".js-cert-slider", {
-    speed: 700,
+    speed: 100,
     slidesPerView: 3,
     spaceBetween: 30,
     breakpoints: {
@@ -481,12 +488,17 @@ $(function () {
         slidesPerView: 3.5
       },
       960: {
-        slidesPerView: 4
+        slidesPerView: 4,
+        spaceBetween: 24
+      },
+      1280: {
+        slidesPerView: 4,
+        spaceBetween: 30
       }
     }
   });
   var reviewssSlider = new Swiper(".js-reviews-slider", {
-    speed: 700,
+    speed: 100,
     loop: true,
     spaceBetween: 30,
     breakpoints: {
@@ -494,6 +506,14 @@ $(function () {
         slidesPerView: 1
       },
       600: {
+        slidesPerView: 2
+      },
+      1024: {
+        spaceBetween: 10,
+        slidesPerView: 2
+      },
+      1280: {
+        spaceBetween: 30,
         slidesPerView: 2
       }
     }
@@ -525,7 +545,7 @@ $(function () {
     }
   });
   var partnersSlider = new Swiper(".js-partners-slider", {
-    speed: 700,
+    speed: 100,
     slidesPerView: 5,
     spaceBetween: 30,
     breakpoints: {
@@ -908,4 +928,20 @@ document.addEventListener('DOMContentLoaded', function () {
       el.classList.add('is-active');
     });
   });
+});
+$('.js-main-filter-checkbox').change(function (ev) {
+  var path = ev.currentTarget.dataset.path;
+  $("[data-target=\"".concat(path, "\"]")).toggleClass('is-check');
+  var inputCount = $(this).closest('.main-filters__group').find('.js-main-filter-checkbox:checked').length;
+  var inputCheck = $(this).closest('.main-filters__group').find('.js-main-filter-checkbox:checked').val();
+  if (inputCount === 1) {
+    $(this).closest('.main-filters__group').find(".js-main-filter-count").text(inputCheck);
+  } else if (inputCount > 1) {
+    $(this).closest('.main-filters__group').find(".js-main-filter-count").text('Выбрано: ' + inputCount);
+  } else {
+    $(this).closest('.main-filters__group').find(".js-main-filter-count").text('не важно');
+  }
+});
+$(document).on('click', '.allow-focus', function (e) {
+  e.stopPropagation();
 });
