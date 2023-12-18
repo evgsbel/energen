@@ -85,9 +85,7 @@
     @include r(1280) {
       font-size: 10px;
     }
-    @include r(960) {
-      display: none;
-    }
+
     svg {
       display: block;
       margin: 0 auto 5px;
@@ -148,8 +146,7 @@
   align-items: center;
   gap: 0  15px;
   @include r(1024) {
-    margin-left: auto;
-    justify-content: flex-end;
+    gap: 0 30px;
     order: 3;
   }
   svg {
@@ -795,7 +792,7 @@
   &__link {
     position: relative;
     display: block;
-    font-size: 16px;
+    font-size: 15px;
     color: $grey-5;
     padding-right: 20px;
     &:hover,
@@ -864,6 +861,34 @@
       max-width: 50%;
     }
   }
+  &__actions {
+    margin-bottom: 20px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #d6d6d6;
+  }
+  .header__icon {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    font-size: 15px;
+    margin-bottom: 18px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    svg {
+      margin: 0;
+    }
+  }
+  &__cities-list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    li {
+      font-size: 15px;
+      color: $black;
+    }
+  }
 }
 
 .overlay {
@@ -895,7 +920,8 @@
   padding: 15px;
   background-color: #fff;
   width: 360px;
-  height: 100vh;
+  min-height: 100vh;
+  max-height: 100vh;
   overflow: auto;
   box-shadow: 0 19px 20px 0 rgba(0, 0, 0, 0.10);
   opacity: 0;
@@ -935,5 +961,78 @@
       stroke: $blue;
       stroke-width: 2px;
     }
+  }
+}
+
+.mobile-menu-search {
+  margin-bottom: 15px;
+  &__form {
+    position: relative;
+    width: 100%;
+  }
+  .header-search__reset {
+    left: 90%;
+    opacity: 0;
+    &.is-active {
+      opacity: 1;
+    }
+  }
+  &__input {
+    border-radius: 6px;
+    border: 1px solid $blue-signal;
+    width: 100%;
+    padding: 0 10px;
+    height: 40px;
+    color: $black;
+    font-size: 15px;
+    &.is-active {
+      text-decoration: underline;
+    }
+    &::placeholder {
+      color: $black;
+      font-size: 15px;
+    }
+    &:focus,
+    &:active {
+      outline: none;
+      border: 1px solid $blue-signal;
+    }
+  }
+  .close-sub-filters svg {
+    transform: none;
+    margin-right: 20px;
+  }
+  .header-search__drop-down {
+    top: 60px;
+    width: 360px;
+    min-height: 100vh;
+    max-height: 100vh;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .mobile-sub-menu .filters__item {
+    border: none;
+  }
+  .filters__caption {
+    margin-bottom: 15px;
+  }
+  .header-search__list-item_with-close::before {
+    left: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='18' height='20' viewBox='0 0 18 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 2C7.21997 2 5.47991 2.52784 3.99987 3.51677C2.51983 4.50571 1.36628 5.91131 0.685088 7.55585C0.00389961 9.20038 -0.17433 11.01 0.172936 12.7558C0.520203 14.5016 1.37737 16.1053 2.63604 17.364C3.89471 18.6226 5.49836 19.4798 7.24419 19.8271C8.99002 20.1743 10.7996 19.9961 12.4442 19.3149C14.0887 18.6337 15.4943 17.4802 16.4832 16.0001C17.4722 14.5201 18 12.78 18 11C17.9972 8.61391 17.0481 6.32636 15.3609 4.63915C13.6736 2.95193 11.3861 2.00281 9 2ZM9 18.3636C7.54361 18.3636 6.11993 17.9318 4.90899 17.1226C3.69804 16.3135 2.75423 15.1635 2.19689 13.8179C1.63955 12.4724 1.49373 10.9918 1.77786 9.56343C2.06198 8.13502 2.7633 6.82294 3.79313 5.79312C4.82295 4.7633 6.13502 4.06198 7.56343 3.77785C8.99183 3.49373 10.4724 3.63955 11.8179 4.19689C13.1635 4.75422 14.3135 5.69804 15.1226 6.90898C15.9318 8.11993 16.3636 9.54361 16.3636 11C16.3615 12.9523 15.585 14.824 14.2045 16.2045C12.824 17.585 10.9523 18.3615 9 18.3636ZM13.9091 11C13.9091 11.217 13.8229 11.4251 13.6695 11.5785C13.516 11.732 13.3079 11.8182 13.0909 11.8182H9C8.78301 11.8182 8.5749 11.732 8.42146 11.5785C8.26802 11.4251 8.18182 11.217 8.18182 11V6.09091C8.18182 5.87391 8.26802 5.66581 8.42146 5.51237C8.5749 5.35893 8.78301 5.27273 9 5.27273C9.217 5.27273 9.4251 5.35893 9.57854 5.51237C9.73198 5.66581 9.81818 5.87391 9.81818 6.09091V10.1818H13.0909C13.3079 10.1818 13.516 10.268 13.6695 10.4215C13.8229 10.5749 13.9091 10.783 13.9091 11Z' fill='%231C1C1C'/%3E%3C/svg%3E%0A");
+  }
+  .header-search__list-item::before {
+    left: 0;
+  }
+  .mobile-menu__search-item {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $grey-2-5;
+    &:last-of-type {
+      border: none;
+    }
+  }
+  .header-search__list-item {
+    padding-right: 0;
+    padding-left: 25px;
   }
 }

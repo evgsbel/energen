@@ -254,7 +254,7 @@
             </svg>
             <span>Сравнение</span>
           </a>
-          <ul class="header__social social d-flex d-lg-none">
+          <ul class="header__social social d-none d-lg-flex">
             <li class="social__item"><a href="" class="social__link">
               <svg width="24" height="24">
                 <use xlink:href="assets/img/sprite.svg#icon-tlg"></use>
@@ -455,7 +455,7 @@
 </header>
 
 
-<div class="mobile-menu js-mobile-menu" data-simplebar data-simplebar-auto-hide="false">
+<div class="mobile-menu js-mobile-menu" >
   <div class="mobile-menu__heading">
     <p class="mobile-menu__title">Меню</p>
     <button class="btn-reset js-close-mobile-menu">
@@ -1114,6 +1114,9 @@
   </ul>
   <ul class="mobile-menu__list" id="mobile-sub-menu-other">
     <li class="mobile-menu__item">
+      <a href="" class="mobile-menu__link">Выполненные проекты</a>
+    </li>
+    <li class="mobile-menu__item">
       <a href="" class="mobile-menu__link">Наше производство</a>
     </li>
     <li class="mobile-menu__item">
@@ -1150,6 +1153,26 @@
       <a href="" class="mobile-menu__link">Контакты</a>
     </li>
   </ul>
+  <div class="mobile-menu__actions">
+    <a href="" class="header__favorite header__icon">
+      <svg width="24" height="24">
+        <use xlink:href="assets/img/sprite.svg#icon-star-trnsp"></use>
+      </svg>
+      <span>Избранное</span>
+    </a>
+    <a href="" class="header__compare header__icon">
+      <svg width="24" height="24">
+        <use xlink:href="assets/img/sprite.svg#icon-diagramm"></use>
+      </svg>
+      <span>Сравнение</span>
+    </a>
+    <a href="" class="header__mini-cart mini-cart header__icon">
+      <svg width="24" height="24">
+        <use xlink:href="assets/img/sprite.svg#icon-cart"></use>
+      </svg>
+      <span>Корзина</span>
+    </a>
+  </div>
   <div class="mobile-menu__contacts">
     <div class="mobile-menu__contacts--item">
       <a href="tel:88009007070" class="mobile-menu__contacts--link">8 (800) 900-70-70</a>
@@ -1164,50 +1187,7 @@
       <button class="mobile-menu__contacts--caption btn-reset" data-toggle="modal" data-target="#getOffer">Отправить заявку</button>
     </div>
   </div>
-  <div class="mobile-menu__bottom">
-    <div class="change-city">
-      <button class="btn-reset header__location flex flex_ai-center js-change-city-btn">
-        <svg width="16" height="16">
-          <use xlink:href="assets/img/sprite.svg#icon-location"></use>
-        </svg>
-        <span>Санкт-Петербург</span>
-      </button>
-      <div class="js-city-drop-down change-city__drop-down">
-        <div class="x-drop-down__search">
-          <p class="change-city__caption">Ваш город: <span class="js-change-city-caption">Санкт-Петербург</span>
-          </p>
-          <div class="x-input change-city__input">
-            <input type="text" class="js-city-field change-city__field" autocomplete="off" value=""
-                   placeholder="Введите название Вашего города или выберете из списка ниже">
-          </div>
-        </div>
-        <ul class="x-drop-down__list js-dropdown change-city__list">
-          <li class="js-city-item  change-city__list-item">Волгоград</li>
-          <li class="js-city-item  change-city__list-item">Воронеж</li>
-          <li class="js-city-item  change-city__list-item">Екатеринбург</li>
-          <li class="js-city-item  change-city__list-item">Ижевск</li>
-          <li class="js-city-item  change-city__list-item">Казань</li>
-          <li class="js-city-item  change-city__list-item">Калининград</li>
-          <li class="js-city-item  change-city__list-item">Кемерово</li>
-          <li class="js-city-item  change-city__list-item">Кострома</li>
-          <li class="js-city-item  change-city__list-item">Красноярск</li>
-          <li class="js-city-item  change-city__list-item">Магнитогорск</li>
-          <li class="js-city-item  change-city__list-item">Москва</li>
-          <li class="js-city-item  change-city__list-item">Набережные челны</li>
-          <li class="js-city-item  change-city__list-item">Новосибирск</li>
-          <li class="js-city-item  change-city__list-item">Нижний Новгород</li>
-          <li class="js-city-item  change-city__list-item">Омск</li>
-          <li class="js-city-item  change-city__list-item">Пенза</li>
-          <li class="js-city-item  change-city__list-item">Пермь</li>
-          <li class="js-city-item  change-city__list-item">Ростов-на-Дону</li>
-          <li class="js-city-item  change-city__list-item">Самара</li>
-          <li class="js-city-item  change-city__list-item">Санкт-Петербург</li>
-          <li class="js-city-item  change-city__list-item"> Тюмень</li>
-          <li class="js-city-item  change-city__list-item">Уфа</li>
-          <li class="js-city-item  change-city__list-item">Челябинск</li>
-        </ul>
-      </div>
-    </div>
+  <div class="mobile-menu__contacts">
     <ul class="header__social social">
       <li class="social__item"><a href="" class="social__link">
         <svg width="24" height="24">
@@ -1226,7 +1206,892 @@
       </a></li>
     </ul>
   </div>
+  <div class="mobile-menu__bottom">
+    <div class="change-city">
+      <button class="btn-reset header__location flex flex_ai-center js-open-mobile-sub" data-path="changeMobileCity" >
+        <svg width="16" height="16">
+          <use xlink:href="assets/img/sprite.svg#icon-location"></use>
+        </svg>
+        <span>Санкт-Петербург</span>
+      </button>
+    </div>
+  </div>
+
 </div>
+<div class="mobile-menu js-mobile-catalog-menu" >
+  <div class="mobile-menu__heading">
+    <p class="mobile-menu__title">Каталог</p>
+    <button class="btn-reset js-close-mobile-menu">
+      <svg width="24" height="24">
+        <use xlink:href="assets/img/sprite.svg#icon-close-big"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="mobile-menu__search mobile-menu-search">
+    <form action="" class="mobile-menu-search__form">
+      <input type="search" placeholder="Быстрый и умный поиск" class="mobile-menu-search__input js-mobile-menu-search-open">
+    </form>
+    <div class="mobile-sub-menu js-mobile-search-drop-down">
+      <div class="mobile-menu__heading filters__menu-heading">
+        <button class="btn-reset js-close-sub-menu close-sub-filters">
+          <svg width="24" height="24">
+            <use xlink:href="assets/img/sprite.svg#icon-arrow-left-blue"></use>
+          </svg>
+        </button>
+        <form action="" class="mobile-menu-search__form">
+          <input type="search" placeholder="Быстрый и умный поиск" class="mobile-menu-search__input js-mobile-menu-search-input">
+          <button class="header-search__reset btn-reset" type="reset">
+            <svg width="24" height="24">
+              <use xlink:href="assets/img/sprite.svg#icon-close-sm"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+      <div class="filters__item">
+        <div class="filters__heading" data-toggle="collapse" data-target="#filItm112">
+          <p class="filters__caption">Популярные подборки</p>
+          <svg width="24" height="24">
+            <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+          </svg>
+        </div>
+        <div class="filters__hide collapse show" id="filItm112">
+          <div class="filters__group filters__collections" >
+            <a href="" class="filters__link">Популярные подборки</a>
+            <a href="" class="filters__link">Генераторы 100 кВт</a>
+            <a href="" class="filters__link">С водяным охлаждением</a>
+            <a href="" class="filters__link">Бесшумные</a>
+            <a href="" class="filters__link">Блочные</a>
+            <a href="" class="filters__link">Аварийные</a>
+            <a href="" class="filters__link">Автономные</a>
+            <a href="" class="filters__link">Промышленные</a>
+            <a href="" class="filters__link">Уличные</a>
+            <a href="" class="filters__link">Дизельные генераторы 100 кВт</a>
+            <a href="" class="filters__link">Электростанции 60 кВт в капоте</a>
+            <a href="" class="filters__link">Дизельная электростанция 30 кВт</a>
+            <a href="" class="filters__link">Энергокомплекс 2,3 МВт</a>
+          </div>
+        </div>
+      </div>
+      <div class="header-search__drop-down js-search-drop-down" >
+        <div class="mobile-menu__search-item">
+          <p class="filters__caption">Последние запросы</p>
+        <ul class="header-search__list">
+          <li class="header-search__list-item header-search__list-item_with-close ">
+            <a href="" class="header-search__list-link">дизельный генератор</a>
+          </li>
+          <li class="header-search__list-item header-search__list-item_with-close ">
+            <a href="" class="header-search__list-link">дизельный генератор 100 кВт</a>
+          </li>
+          <li class="header-search__list-item header-search__list-item_with-close ">
+            <a href="" class="header-search__list-link">дизельный генератор 100 кВт в кожухе</a>
+          </li>
+        </ul>
+        </div>
+        <div class="mobile-menu__search-item">
+          <p class="filters__caption">Популярные запросы</p>
+          <ul class="header-search__list">
+            <li class="header-search__list-item ">
+              <a href="" class="header-search__list-link">дизельный генератор</a>
+            </li>
+            <li class="header-search__list-item ">
+              <a href="" class="header-search__list-link">дизельный генератор 100 кВт</a>
+            </li>
+            <li class="header-search__list-item ">
+              <a href="" class="header-search__list-link">дизельный генератор 100 кВт в кожухе</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-menu__search-item">
+          <p class="filters__caption">Популярные запросы</p>
+        <ul class="header-search__list">
+          <li class="header-search__list-item">
+            <a href="" class="header-search__list-link">Cummins</a>
+            <span>Категория</span>
+          </li>
+          <li class="header-search__list-item">
+            <a href="" class="header-search__list-link">ТСС</a>
+            <span>Категория</span>
+          </li>
+          <li class="header-search__list-item">
+            <a href="" class="header-search__list-link">SDMO</a>
+            <span>Категория</span>
+          </li>
+          <li class="header-search__list-item">
+            <a href="" class="header-search__list-link">FG Wilson</a>
+            <span>Категория</span>
+          </li>
+        </ul>
+        </div>
+        <div class="mobile-menu__search-item">
+          <p class="filters__caption">Бренды</p>
+          <ul class="header-search__list">
+            <li class="header-search__list-item">
+              <a href="" class="header-search__list-link">Cummins</a>
+              <span>Бренды</span>
+            </li>
+            <li class="header-search__list-item">
+              <a href="" class="header-search__list-link">ТСС</a>
+              <span>Бренды</span>
+            </li>
+            <li class="header-search__list-item">
+              <a href="" class="header-search__list-link">SDMO</a>
+              <span>Бренды</span>
+            </li>
+            <li class="header-search__list-item">
+              <a href="" class="header-search__list-link">FG Wilson</a>
+              <span>Бренды</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="mobile-menu__caption">Продукция</p>
+  <ul class="mobile-menu__list" id="mobile-sub-menu-production">
+    <li class="mobile-menu__item">
+      <a href="" class="mobile-menu__link mobile-menu__link_with-sub js-open-mobile-sub collapsed"
+         data-path="collapseMenuOne1" aria-expanded="true">Дизельные генераторы</a>
+      <div class="mobile-sub-menu" data-target="collapseMenuOne1">
+        <div class="mobile-menu__heading filters__menu-heading">
+          <button class="btn-reset js-close-sub-menu close-sub-filters">
+            <svg width="24" height="24">
+              <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+            </svg>
+          </button>
+          <p class="mobile-menu__title">Дизельные генераторы</p>
+          <button class="btn-reset js-close-mobile-menu">
+            <svg width="24" height="24">
+              <use xlink:href="assets/img/sprite.svg#icon-close-big"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="mobile-menu__heading filters__menu-heading">
+          <a href="" class="mobile-sub-menu__link-category">Перейти в категорию</a>
+          <svg width="24" height="24">
+            <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+          </svg>
+        </div>
+        <div class="filters__item filters__item_pwr">
+          <div class="filters__heading" data-toggle="collapse" data-target="#filPwr1" aria-expanded="true">
+            <p class="filters__caption filters__caption_bold">Подобрать по мощности</p>
+            <svg width="24" height="24">
+              <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+            </svg>
+          </div>
+          <div class="filters__hide collapse show" id="filPwr1" style="">
+            <ul class="filters__pwr-list">
+              <li class="filters__pwr-item"><a href="">10 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">11 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">12 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">13 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">14 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">15 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">16 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">17 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">18 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">19 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">20 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">22 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">23 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">24 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">25 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">27 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">28 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">30 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">32 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">35 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">36 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">37 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">38 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">40 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">45 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">48 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">50 кВт</a></li>
+              <li class="filters__pwr-item">
+                <a href="" class="mobile-sub-menu__link-all">
+                  <span>Все</span>
+                  <svg width="24" height="24">
+                    <use xlink:href="assets/img/sprite.svg#icon-arrow-right-blue"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="filters__item">
+          <div class="filters__heading" data-toggle="collapse" data-target="#filItm1113">
+            <p class="filters__caption">Подобрать по исполнению</p>
+            <svg width="24" height="24">
+              <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+            </svg>
+          </div>
+          <div class="filters__hide collapse show" id="filItm1113">
+            <div class="filters__group filters__collections" >
+              <div class=" category__wrapper">
+                <div class="category__item">
+                  <img src="assets/img/ct-01.jpg" alt="" class="category__img">
+                  <p class="category__caption">Открытые на раме</p>
+                  <a href="" class="lnk"></a>
+                </div>
+                <!--У каждой карточки убирается блок обертка col-md-2-->
+                <div class="category__item">
+                  <img src="assets/img/ct-02.jpg" alt="" class="category__img">
+                  <p class="category__caption">В&nbsp;контейнере Север
+                    на&nbsp;базе морского</p>
+                  <a href="" class="lnk"></a>
+                </div>
+
+                <div class="category__item">
+                  <img src="assets/img/ct-03.jpg" alt="" class="category__img">
+                  <p class="category__caption">В&nbsp;контейнере Север
+                    из&nbsp;сендвич паналей</p>
+                  <a href="" class="lnk"></a>
+                </div>
+
+                <div class="category__item">
+                  <img src="assets/img/ct-04.jpg" alt="" class="category__img">
+                  <p class="category__caption">В&nbsp;мини-контейнере Север</p>
+                  <a href="" class="lnk"></a>
+                </div>
+
+                <div class="category__item">
+                  <img src="assets/img/ct-05.jpg" alt="" class="category__img">
+                  <p class="category__caption">В кожухе шумозащитном</p>
+                  <a href="" class="lnk"></a>
+                </div>
+
+                <div class="category__item">
+                  <img src="assets/img/ct-06.jpg" alt="" class="category__img">
+                  <p class="category__caption">В капоте погодозащитном</p>
+                  <a href="" class="lnk"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="filters__item">
+          <div class="filters__heading" data-toggle="collapse" data-target="#filItm111">
+            <p class="filters__caption">Подобрать по марке двигателя</p>
+            <svg width="24" height="24">
+              <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+            </svg>
+          </div>
+          <div class="filters__hide collapse show" id="filItm111">
+            <div class="filters__group filters__collections" >
+              <a href="" class="filters__link">AKSA (Турция)</a>
+              <a href="" class="filters__link">Baudouin
+                (Франция-Китай)</a>
+              <a href="" class="filters__link">Cummins (США)</a>
+              <a href="" class="filters__link">Cummins-China
+                (США-Китай)</a>
+              <a href="" class="filters__link">Doosan (Корея)</a>
+              <a href="" class="filters__link">ММЗ
+                (Бларусия)</a>
+              <a href="" class="filters__link">Iveco FPT (Италия)</a>
+              <a href="" class="filters__link">Mitsubishi
+                (Япония)</a>
+              <a href="" class="filters__link">Perkins (Англия)</a>
+              <a href="" class="filters__link">Kubota
+                (Япония)</a>
+              <a href="" class="filters__link">MTU (Германия)</a>
+              <a href="" class="filters__link">Volvo
+                Penta (Швеция)</a>
+              <a href="" class="filters__link">Weichai (Китай)</a>
+              <a href="" class="filters__link">Scania
+                (Швеция)</a>
+              <a href="" class="filters__link">ММЗ (Россия)</a>
+              <a href="" class="filters__link">TSS Diesel
+                (Китай)</a>
+              <a href="" class="filters__link">ЯМЗ (Россия)</a>
+              <a href="" class="filters__link">Deutz
+                (Германия)</a>
+              <a href="" class="filters__link">John Deere (США)</a>
+              <a href="" class="filters__link">Kohler
+                (США)</a>
+            </div>
+          </div>
+        </div>
+        <div class="filters__item">
+          <div class="filters__heading" data-toggle="collapse" data-target="#filItm112">
+            <p class="filters__caption">Популярные подборки</p>
+            <svg width="24" height="24">
+              <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+            </svg>
+          </div>
+          <div class="filters__hide collapse show" id="filItm112">
+            <div class="filters__group filters__collections" >
+              <a href="" class="filters__link">Двигатель 1500 об/мин</a>
+              <a href="" class="filters__link">С водяным охлаждением</a>
+              <a href="" class="filters__link">Бесшумные</a>
+              <a href="" class="filters__link">Блочные</a>
+              <a href="" class="filters__link">Аварийные</a>
+              <a href="" class="filters__link">Автономные</a>
+              <a href="" class="filters__link">Промышленные</a>
+              <a href="" class="filters__link">Резервные</a>
+              <a href="" class="filters__link">Уличные</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="" class="mobile-menu__link mobile-menu__link_with-sub js-open-mobile-sub collapsed"
+         data-path="collapseMenuTwo2" aria-expanded="true">Газовые генераторы</a>
+      <div class="mobile-sub-menu" data-target="collapseMenuTwo2">
+        <div class="mobile-menu__heading filters__menu-heading">
+          <button class="btn-reset js-close-sub-menu close-sub-filters">
+            <svg width="24" height="24">
+              <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+            </svg>
+          </button>
+          <p class="mobile-menu__title">Газовые генераторы</p>
+          <button class="btn-reset js-close-mobile-menu">
+            <svg width="24" height="24">
+              <use xlink:href="assets/img/sprite.svg#icon-close-big"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="mobile-menu__heading filters__menu-heading">
+          <a href="" class="mobile-sub-menu__link-category">Перейти в категорию</a>
+          <svg width="24" height="24">
+            <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+          </svg>
+        </div>
+        <div class="filters__item filters__item_pwr">
+          <div class="filters__heading" data-toggle="collapse" data-target="#filPwr1" aria-expanded="true">
+            <p class="filters__caption filters__caption_bold">Подобрать по мощности</p>
+            <svg width="24" height="24">
+              <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+            </svg>
+          </div>
+          <div class="filters__hide collapse show" id="filPwr1" style="">
+            <ul class="filters__pwr-list">
+              <li class="filters__pwr-item"><a href="">10 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">11 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">12 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">13 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">14 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">15 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">16 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">17 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">18 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">19 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">20 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">22 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">23 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">24 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">25 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">27 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">28 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">30 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">32 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">35 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">36 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">37 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">38 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">40 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">45 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">48 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">50 кВт</a></li>
+              <li class="filters__pwr-item">
+                <a href="" class="mobile-sub-menu__link-all">
+                  <span>Все</span>
+                  <svg width="24" height="24">
+                    <use xlink:href="assets/img/sprite.svg#icon-arrow-right-blue"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="filters__item">
+          <div class="filters__heading" data-toggle="collapse" data-target="#filItm1113">
+            <p class="filters__caption">Подобрать по исполнению</p>
+            <svg width="24" height="24">
+              <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+            </svg>
+          </div>
+          <div class="filters__hide collapse show" id="filItm1113">
+            <div class="filters__group filters__collections" >
+              <div class=" category__wrapper">
+                <div class="category__item">
+                  <img src="assets/img/ct-01.jpg" alt="" class="category__img">
+                  <p class="category__caption">Открытые на раме</p>
+                  <a href="" class="lnk"></a>
+                </div>
+                <!--У каждой карточки убирается блок обертка col-md-2-->
+                <div class="category__item">
+                  <img src="assets/img/ct-02.jpg" alt="" class="category__img">
+                  <p class="category__caption">В&nbsp;контейнере Север
+                    на&nbsp;базе морского</p>
+                  <a href="" class="lnk"></a>
+                </div>
+
+                <div class="category__item">
+                  <img src="assets/img/ct-03.jpg" alt="" class="category__img">
+                  <p class="category__caption">В&nbsp;контейнере Север
+                    из&nbsp;сендвич паналей</p>
+                  <a href="" class="lnk"></a>
+                </div>
+
+                <div class="category__item">
+                  <img src="assets/img/ct-04.jpg" alt="" class="category__img">
+                  <p class="category__caption">В&nbsp;мини-контейнере Север</p>
+                  <a href="" class="lnk"></a>
+                </div>
+
+                <div class="category__item">
+                  <img src="assets/img/ct-05.jpg" alt="" class="category__img">
+                  <p class="category__caption">В кожухе шумозащитном</p>
+                  <a href="" class="lnk"></a>
+                </div>
+
+                <div class="category__item">
+                  <img src="assets/img/ct-06.jpg" alt="" class="category__img">
+                  <p class="category__caption">В капоте погодозащитном</p>
+                  <a href="" class="lnk"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="filters__item">
+          <div class="filters__heading" data-toggle="collapse" data-target="#filItm111">
+            <p class="filters__caption">Подобрать по марке двигателя</p>
+            <svg width="24" height="24">
+              <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+            </svg>
+          </div>
+          <div class="filters__hide collapse show" id="filItm111">
+            <div class="filters__group filters__collections" >
+              <a href="" class="filters__link">AKSA (Турция)</a>
+              <a href="" class="filters__link">Baudouin
+                (Франция-Китай)</a>
+              <a href="" class="filters__link">Cummins (США)</a>
+              <a href="" class="filters__link">Cummins-China
+                (США-Китай)</a>
+              <a href="" class="filters__link">Doosan (Корея)</a>
+              <a href="" class="filters__link">ММЗ
+                (Бларусия)</a>
+              <a href="" class="filters__link">Iveco FPT (Италия)</a>
+              <a href="" class="filters__link">Mitsubishi
+                (Япония)</a>
+              <a href="" class="filters__link">Perkins (Англия)</a>
+              <a href="" class="filters__link">Kubota
+                (Япония)</a>
+              <a href="" class="filters__link">MTU (Германия)</a>
+              <a href="" class="filters__link">Volvo
+                Penta (Швеция)</a>
+              <a href="" class="filters__link">Weichai (Китай)</a>
+              <a href="" class="filters__link">Scania
+                (Швеция)</a>
+              <a href="" class="filters__link">ММЗ (Россия)</a>
+              <a href="" class="filters__link">TSS Diesel
+                (Китай)</a>
+              <a href="" class="filters__link">ЯМЗ (Россия)</a>
+              <a href="" class="filters__link">Deutz
+                (Германия)</a>
+              <a href="" class="filters__link">John Deere (США)</a>
+              <a href="" class="filters__link">Kohler
+                (США)</a>
+            </div>
+          </div>
+        </div>
+        <div class="filters__item">
+          <div class="filters__heading" data-toggle="collapse" data-target="#filItm112">
+            <p class="filters__caption">Популярные подборки</p>
+            <svg width="24" height="24">
+              <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+            </svg>
+          </div>
+          <div class="filters__hide collapse show" id="filItm112">
+            <div class="filters__group filters__collections" >
+              <a href="" class="filters__link">Двигатель 1500 об/мин</a>
+              <a href="" class="filters__link">С водяным охлаждением</a>
+              <a href="" class="filters__link">Бесшумные</a>
+              <a href="" class="filters__link">Блочные</a>
+              <a href="" class="filters__link">Аварийные</a>
+              <a href="" class="filters__link">Автономные</a>
+              <a href="" class="filters__link">Промышленные</a>
+              <a href="" class="filters__link">Резервные</a>
+              <a href="" class="filters__link">Уличные</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="" class="mobile-menu__link mobile-menu__link_with-sub js-open-mobile-sub collapsed"
+         data-path="collapseMenuThree3" aria-expanded="true">Источники бесперебойного питания</a>
+      <div class="mobile-sub-menu" data-target="collapseMenuThree3">
+        <div class="mobile-menu__heading filters__menu-heading">
+          <button class="btn-reset js-close-sub-menu close-sub-filters">
+            <svg width="24" height="24">
+              <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+            </svg>
+          </button>
+          <p class="mobile-menu__title">Источники бесперебойного питания</p>
+          <button class="btn-reset js-close-mobile-menu">
+            <svg width="24" height="24">
+              <use xlink:href="assets/img/sprite.svg#icon-close-big"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="mobile-menu__heading filters__menu-heading">
+          <a href="" class="mobile-sub-menu__link-category">Перейти в категорию</a>
+          <svg width="24" height="24">
+            <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+          </svg>
+        </div>
+        <div class="filters__item filters__item_pwr">
+          <div class="filters__heading" data-toggle="collapse" data-target="#filPwr1" aria-expanded="true">
+            <p class="filters__caption filters__caption_bold">Подобрать по мощности</p>
+            <svg width="24" height="24">
+              <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+            </svg>
+          </div>
+          <div class="filters__hide collapse show" id="filPwr1" style="">
+            <ul class="filters__pwr-list">
+              <li class="filters__pwr-item"><a href="">10 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">11 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">12 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">13 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">14 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">15 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">16 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">17 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">18 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">19 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">20 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">22 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">23 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">24 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">25 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">27 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">28 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">30 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">32 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">35 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">36 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">37 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">38 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">40 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">45 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">48 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">50 кВт</a></li>
+              <li class="filters__pwr-item">
+                <a href="" class="mobile-sub-menu__link-all">
+                  <span>Все</span>
+                  <svg width="24" height="24">
+                    <use xlink:href="assets/img/sprite.svg#icon-arrow-right-blue"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="filters__item">
+          <div class="filters__heading" data-toggle="collapse" data-target="#filItm111">
+            <p class="filters__caption">Подобрать по марке двигателя</p>
+            <svg width="24" height="24">
+              <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+            </svg>
+          </div>
+          <div class="filters__hide collapse show" id="filItm111">
+            <div class="filters__group filters__collections" >
+              <a href="" class="filters__link">AKSA (Турция)</a>
+              <a href="" class="filters__link">Baudouin
+                (Франция-Китай)</a>
+              <a href="" class="filters__link">Cummins (США)</a>
+              <a href="" class="filters__link">Cummins-China
+                (США-Китай)</a>
+              <a href="" class="filters__link">Doosan (Корея)</a>
+              <a href="" class="filters__link">ММЗ
+                (Бларусия)</a>
+              <a href="" class="filters__link">Iveco FPT (Италия)</a>
+              <a href="" class="filters__link">Mitsubishi
+                (Япония)</a>
+              <a href="" class="filters__link">Perkins (Англия)</a>
+              <a href="" class="filters__link">Kubota
+                (Япония)</a>
+              <a href="" class="filters__link">MTU (Германия)</a>
+              <a href="" class="filters__link">Volvo
+                Penta (Швеция)</a>
+              <a href="" class="filters__link">Weichai (Китай)</a>
+              <a href="" class="filters__link">Scania
+                (Швеция)</a>
+              <a href="" class="filters__link">ММЗ (Россия)</a>
+              <a href="" class="filters__link">TSS Diesel
+                (Китай)</a>
+              <a href="" class="filters__link">ЯМЗ (Россия)</a>
+              <a href="" class="filters__link">Deutz
+                (Германия)</a>
+              <a href="" class="filters__link">John Deere (США)</a>
+              <a href="" class="filters__link">Kohler
+                (США)</a>
+            </div>
+          </div>
+        </div>
+        <div class="filters__item">
+          <div class="filters__heading" data-toggle="collapse" data-target="#filItm112">
+            <p class="filters__caption">Популярные подборки</p>
+            <svg width="24" height="24">
+              <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+            </svg>
+          </div>
+          <div class="filters__hide collapse show" id="filItm112">
+            <div class="filters__group filters__collections" >
+              <a href="" class="filters__link">Двигатель 1500 об/мин</a>
+              <a href="" class="filters__link">С водяным охлаждением</a>
+              <a href="" class="filters__link">Бесшумные</a>
+              <a href="" class="filters__link">Блочные</a>
+              <a href="" class="filters__link">Аварийные</a>
+              <a href="" class="filters__link">Автономные</a>
+              <a href="" class="filters__link">Промышленные</a>
+              <a href="" class="filters__link">Резервные</a>
+              <a href="" class="filters__link">Уличные</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="" class="mobile-menu__link mobile-menu__link_with-sub js-open-mobile-sub collapsed"
+         data-path="collapseMenuFour4" aria-expanded="true">Стабилизаторы напряжения</a>
+      <div class="mobile-sub-menu" data-target="collapseMenuFour4">
+        <div class="mobile-menu__heading filters__menu-heading">
+          <button class="btn-reset js-close-sub-menu close-sub-filters">
+            <svg width="24" height="24">
+              <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+            </svg>
+          </button>
+          <p class="mobile-menu__title">Стабилизаторы напряжения</p>
+          <button class="btn-reset js-close-mobile-menu">
+            <svg width="24" height="24">
+              <use xlink:href="assets/img/sprite.svg#icon-close-big"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="mobile-menu__heading filters__menu-heading">
+          <a href="" class="mobile-sub-menu__link-category">Перейти в категорию</a>
+          <svg width="24" height="24">
+            <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+          </svg>
+        </div>
+        <div class="filters__item filters__item_pwr">
+          <div class="filters__heading" data-toggle="collapse" data-target="#filPwr1" aria-expanded="true">
+            <p class="filters__caption filters__caption_bold">Подобрать по мощности</p>
+            <svg width="24" height="24">
+              <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+            </svg>
+          </div>
+          <div class="filters__hide collapse show" id="filPwr1" style="">
+            <ul class="filters__pwr-list">
+              <li class="filters__pwr-item"><a href="">10 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">11 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">12 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">13 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">14 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">15 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">16 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">17 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">18 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">19 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">20 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">22 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">23 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">24 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">25 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">27 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">28 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">30 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">32 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">35 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">36 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">37 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">38 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">40 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">45 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">48 кВт</a></li>
+              <li class="filters__pwr-item"><a href="">50 кВт</a></li>
+              <li class="filters__pwr-item">
+                <a href="" class="mobile-sub-menu__link-all">
+                  <span>Все</span>
+                  <svg width="24" height="24">
+                    <use xlink:href="assets/img/sprite.svg#icon-arrow-right-blue"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="filters__item">
+          <div class="filters__heading" data-toggle="collapse" data-target="#filItm111">
+            <p class="filters__caption">Подобрать по марке двигателя</p>
+            <svg width="24" height="24">
+              <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+            </svg>
+          </div>
+          <div class="filters__hide collapse show" id="filItm111">
+            <div class="filters__group filters__collections" >
+              <a href="" class="filters__link">AKSA (Турция)</a>
+              <a href="" class="filters__link">Baudouin
+                (Франция-Китай)</a>
+              <a href="" class="filters__link">Cummins (США)</a>
+              <a href="" class="filters__link">Cummins-China
+                (США-Китай)</a>
+              <a href="" class="filters__link">Doosan (Корея)</a>
+              <a href="" class="filters__link">ММЗ
+                (Бларусия)</a>
+              <a href="" class="filters__link">Iveco FPT (Италия)</a>
+              <a href="" class="filters__link">Mitsubishi
+                (Япония)</a>
+              <a href="" class="filters__link">Perkins (Англия)</a>
+              <a href="" class="filters__link">Kubota
+                (Япония)</a>
+              <a href="" class="filters__link">MTU (Германия)</a>
+              <a href="" class="filters__link">Volvo
+                Penta (Швеция)</a>
+              <a href="" class="filters__link">Weichai (Китай)</a>
+              <a href="" class="filters__link">Scania
+                (Швеция)</a>
+              <a href="" class="filters__link">ММЗ (Россия)</a>
+              <a href="" class="filters__link">TSS Diesel
+                (Китай)</a>
+              <a href="" class="filters__link">ЯМЗ (Россия)</a>
+              <a href="" class="filters__link">Deutz
+                (Германия)</a>
+              <a href="" class="filters__link">John Deere (США)</a>
+              <a href="" class="filters__link">Kohler
+                (США)</a>
+            </div>
+          </div>
+        </div>
+        <div class="filters__item">
+          <div class="filters__heading" data-toggle="collapse" data-target="#filItm112">
+            <p class="filters__caption">Популярные подборки</p>
+            <svg width="24" height="24">
+              <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+            </svg>
+          </div>
+          <div class="filters__hide collapse show" id="filItm112">
+            <div class="filters__group filters__collections" >
+              <a href="" class="filters__link">Двигатель 1500 об/мин</a>
+              <a href="" class="filters__link">С водяным охлаждением</a>
+              <a href="" class="filters__link">Бесшумные</a>
+              <a href="" class="filters__link">Блочные</a>
+              <a href="" class="filters__link">Аварийные</a>
+              <a href="" class="filters__link">Автономные</a>
+              <a href="" class="filters__link">Промышленные</a>
+              <a href="" class="filters__link">Резервные</a>
+              <a href="" class="filters__link">Уличные</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </li>
+  </ul>
+  <ul class="mobile-menu__list" id="mobile-sub-menu-other">
+    <li class="mobile-menu__item">
+      <a href="" class="mobile-menu__link">Выполненные проекты</a>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="" class="mobile-menu__link">Наше производство</a>
+    </li>
+  </ul>
+  <div class="mobile-menu__contacts">
+    <div class="mobile-menu__contacts--item">
+      <a href="tel:88009007070" class="mobile-menu__contacts--link">8 (800) 900-70-70</a>
+      <p class="mobile-menu__contacts--caption">Бесплатно по России</p>
+    </div>
+    <div class="mobile-menu__contacts--item ml-auto">
+      <a href="tel:88009007070" class="mobile-menu__contacts--link">8 (800) 900-70-70</a>
+      <button class="btn-reset mobile-menu__contacts--caption" data-toggle="modal" data-target="#callback">Перезвоните мне</button>
+    </div>
+    <div class="mobile-menu__contacts--item">
+      <a href="mailto:info@dizel-generator.ru" class="mobile-menu__contacts--link" >info@dizel-generator.ru</a>
+      <button class="mobile-menu__contacts--caption btn-reset" data-toggle="modal" data-target="#getOffer">Отправить заявку</button>
+    </div>
+  </div>
+  <div class="mobile-menu__contacts">
+    <ul class="header__social social">
+      <li class="social__item"><a href="" class="social__link">
+        <svg width="24" height="24">
+          <use xlink:href="assets/img/sprite.svg#icon-tlg"></use>
+        </svg>
+      </a></li>
+      <li class="social__item"><a href="" class="social__link">
+        <svg width="24" height="24">
+          <use xlink:href="assets/img/sprite.svg#icon-vk"></use>
+        </svg>
+      </a></li>
+      <li class="social__item"><a href="" class="social__link">
+        <svg width="24" height="24">
+          <use xlink:href="assets/img/sprite.svg#icon-wup"></use>
+        </svg>
+      </a></li>
+    </ul>
+  </div>
+  <div class="mobile-menu__bottom">
+    <div class="change-city">
+      <button class="btn-reset header__location flex flex_ai-center js-open-mobile-sub" data-path="changeMobileCity" >
+        <svg width="16" height="16">
+          <use xlink:href="assets/img/sprite.svg#icon-location"></use>
+        </svg>
+        <span>Санкт-Петербург</span>
+      </button>
+    </div>
+  </div>
+
+</div>
+<div class="mobile-sub-menu" data-target="changeMobileCity">
+  <div class="mobile-menu__heading filters__menu-heading">
+    <button class="btn-reset js-close-sub-menu close-sub-filters">
+      <svg width="24" height="24">
+        <use xlink:href="assets/img/sprite.svg#icon-arrow-bottom"></use>
+      </svg>
+    </button>
+    <p class="mobile-menu__title">Выбор города</p>
+    <button class="btn-reset js-close-mobile-menu">
+      <svg width="24" height="24">
+        <use xlink:href="assets/img/sprite.svg#icon-close-big"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="mobile-menu__heading filters__menu-heading">
+    Ваш город: Санкт-Петербург
+  </div>
+  <p class="filters__caption filters__caption_bold">Выбрать другой город</p>
+  <ul class="mobile-menu__cities-list">
+    <li><a href="">Волгоград</a></li>
+    <li><a href="">Воронеж</a></li>
+    <li><a href="">Екатеринбург</a></li>
+    <li><a href="">Ижевск</a></li>
+    <li><a href="">Казань</a></li>
+    <li><a href="">Калининград</a></li>
+    <li><a href="">Кемерово</a></li>
+    <li><a href="">Кострома</a></li>
+    <li><a href="">Красноярск</a></li>
+    <li><a href="">Магнитогорск</a></li>
+    <li><a href="">Москва</a></li>
+    <li><a href="">Набережные челны</a></li>
+    <li><a href="">Новосибирск</a></li>
+    <li><a href="">Нижний Новгород</a></li>
+    <li><a href="">Омск</a></li>
+    <li><a href="">Пенза</a></li>
+    <li><a href="">Пермь</a></li>
+    <li><a href="">Ростов-на-Дону</a></li>
+    <li><a href="">Самара</a></li>
+    <li><a href="">Санкт-Петербург</a></li>
+    <li><a href="">Тюмень</a></li>
+    <li><a href="">Уфа</a></li>
+    <li><a href="">Челябинск</a></li>
+  </ul>
+</div>
+
 
 <main role="main" class="main">
    <div class="container">
@@ -1922,7 +2787,7 @@
             </a>
           </li>
           <li class="bottom-menu__item">
-            <button class="bottom-menu__link js-open-header-catalog btn-reset">
+            <button class="bottom-menu__link js-open-header-menu btn-reset">
               <svg width="24" height="24">
                 <use xlink:href="assets/img/sprite.svg#icon-list"></use>
               </svg>
